@@ -1,0 +1,389 @@
+html{ overflow-x: hidden; }
+
+/*  ~~~~~~~~~ HEADER ~~~~~~~~~  */
+#title { font-family : "Noto Serif JP"; font-weight: 200; font-size: 30px; }
+#logo img {
+    height: 35px;
+    margin: 10px 0px 0px 20%;
+}
+
+/*  ~~~~~~~~~ NAVIGATION ~~~~~~~~~  */
+nav {
+    font-family : "Alegreya Sans SC"; font-weight: 500;
+    white-space: nowrap;
+    height: 35px;
+}
+ nav a:hover {
+ color : #b57e00 !important;
+}
+.nav-container { width : 50%; }
+
+.nav-separator { width: 50%; min-width: 20px; }
+.nav-separator-2 { width: 50%; min-width: 35px; }
+
+.nav-link-4 { margin-top: 2px; }
+.nav-link { padding: 0px; }
+
+.account-shop-link { display: flex; }
+
+/*  ~~~~~~~~~~~~~~~~~~ INDEX PAGE ~~~~~~~~~~~~~~~~~~  */
+/* ~~~~~~~~~ MAINCONTENT ~~~~~~~~~  */
+/* ~~~~~~~~~ 1ERE SECTION ~~~~~~~~~  */
+.section-index-1 { padding-top: 4%; }
+
+.blazon-lion {
+    width: 100%;     
+    position: relative; 
+    left: -1%;
+}
+.blazon {
+    width: 65%; height: 100%;
+    position: relative;
+    bottom: 7%; left: 10.5%;
+}
+.blazon img { width: 100%; min-width: 406px; height: auto ;}
+.lion { width: 60%; height: auto;}
+.lion img { width: 92.25%; min-width: 346px; height: auto; }
+
+.creation {
+    width: 40%; min-width: 320px;
+    height: auto;
+    position: relative;
+    left: -5%;
+}
+.creation h2, .creation a { 
+    font-family : "Noto Serif JP"; 
+    font-weight: 200; 
+    white-space: nowrap; 
+}
+.text-middle-part { padding-left: 15%; } .text-end-part { padding-left: 27%; }
+
+.create-button {
+    position: relative;
+    top: 26%; left : 35%;
+    width: 230px; height: 75px;
+}
+.create-button::after {
+    content: '';
+    display: block;
+    width: 200px; height:150px;
+    background: url('img/button_anim.png') no-repeat;
+    background-size: 150px 75px;
+    transform: translate(40px, -60px);
+}
+
+/*  ~~~~~~~~~~~~~~~~~~ CREATE A SHIELD PAGE ~~~~~~~~~~~~~~~~~~  */
+/* ~~~~~~~~~ 1ERE SECTION ~~~~~~~~~  */
+
+.section-create-1{
+    width: 100%; 
+    font-family : "Alegreya Sans SC"; 
+}
+
+.section-create-1 h1{
+    margin-bottom: 4%;
+    margin-top: 1%;
+}
+
+.gold{
+    color : #b57e00 !important;
+}
+.merlette{
+    width: 60%; max-width: 154px; min-width: 84px;
+    height: 60%; max-height: 142px;
+    background-image: url(img/merlette.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.arc{
+    width: 60%; max-width: 154px; min-width: 93px;
+    height: 55%; max-height: 137px;
+    background-image: url(img/arc.png);
+    background-repeat: no-repeat;
+    background-size: 75% ;
+}
+.section-create-1 h1, .section-create-1 .tile .selection{
+    height: 30px;
+    font-family : "Noto Serif JP"; font-weight: 200;
+    white-space: nowrap;
+}
+
+.section-create-1 .tile .selection::after{
+    content: '';
+    display: block;
+    width: 150px; height:75px;
+    background: url('img/button_anim.png') no-repeat;
+    background-size: 150px 75px;
+    transform: translate(40px, -50px);
+}
+
+.perso-test::after {
+    transform: translate(75px, -50px) !important;
+}
+
+.section-create-1 .tile a strong {
+    font-weight: bold;
+}
+
+.section-create-1 strong {
+    font-weight: 500;
+}
+
+.section-create-1 .tile{
+    height: 400px;
+    width: 100%;
+}
+.section-create-1 .tile .description{
+    width: 85%;
+    height: 80%;
+}
+
+.values-link .separator{
+width: 10%; min-width : 12px;
+}
+
+.transition{
+    width: 100%;
+
+} 
+.presentation-value-select{
+    padding-top:  2%;
+}
+
+.tile{
+    background-color: rgb(243, 243, 243);
+}
+
+.tile1:hover, .tile2:hover{
+    background-color: rgb(255, 255, 255);
+    color : #b57e00 !important;
+}
+
+/*  ~~~~~~~~~~~~~~~~~~ PERSO-SELECTION ~~~~~~~~~~~~~~~~~~  */
+/* ~~~~~~~~~ MAINCONTENT ~~~~~~~~~  */
+
+.tileperso {
+   height: 550px !important;
+   padding-left: 15px;
+   padding-right: 15px;
+}
+
+.counter{ 
+    white-space: nowrap;
+}
+
+.perso {
+    width : 100% ; max-width: 380px;
+    height : auto; max-height: 460px;
+
+}
+
+.perso img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* ~~~~~~~~~ RESPONSIVE ~~~~~~~~~  */
+/* ~~~~~~~~~ ECRAN ~~~~~~~~~ */
+@media (max-width : 1300px) {
+    /* ~~~~~~~~~ MAINCONTENT ~~~~~~~~~  */
+    /* ~~~~~~~~~ 1ERE SECTION ~~~~~~~~~  */
+        .section-index-1{
+            flex-direction: column;
+            align-items: center;
+            padding-top: 3%;
+        }
+
+        .blazon-lion {
+            position: relative; 
+            left: -1%; padding-top: 3%;
+            order: 2;
+        }
+
+        .blazon img { min-width: 0px; }
+        .lion img { min-width: 0px; }
+
+        .creation{
+            flex-direction: row !important;
+            width: auto; min-width: none;
+            order: 1;
+            left: 1.4%;
+        }
+        .creation h2, .creation a { padding: 4px; font-size: 33px !important; }
+        .create-button { top: -6%; left : 2.85%; }
+        .create-button::after {
+            background-size: 120px 62px;
+            transform: translate(35px, -50px);
+        }
+}
+@media (max-width : 1210px) {
+    /* ~~~~~~~~~ MAINCONTENT ~~~~~~~~~  */
+    /* ~~~~~~~~~ 1ERE SECTION ~~~~~~~~~  */
+
+}
+@media (max-width : 992px) {
+    /*  ~~~~~~~~~ HEADER ~~~~~~~~~  */
+        #logo img { height: 30px; }
+
+    /*  ~~~~~~~~~ NAVIGATION ~~~~~~~~~  */
+        .nav-link, .center-nav-link { font-size: 20px !important; }
+
+        .account-shop img{ height: 20px; }
+
+    /*  ~~~~~~~~~~~~~~~~~~ INDEX PAGE ~~~~~~~~~~~~~~~~~~  */
+    /* ~~~~~~~~~ 1ERE SECTION ~~~~~~~~~  */
+        .section-index-1{ padding-top: 5%; }
+        .creation{ left: 5%; }
+        .creation h2, .creation a { 
+            padding: 4px; font-size:  27.5px !important;
+        }
+        .create-button { top: -4.7%; left : 0.15%; }
+        .create-button::after {
+            background-size: 100px 52px;
+            transform: translate(30px, -41px);
+        }
+    /*  ~~~~~~~~~~~~~~~~~~ CREATE A SHIELD PAGE ~~~~~~~~~~~~~~~~~~  */
+    /* ~~~~~~~~~ 1ERE SECTION ~~~~~~~~~  */
+    .description{
+        flex-direction: column;
+    }
+
+    .description p{
+        order : 2
+    }
+    .description div{
+        order : 1
+    }
+
+@media (max-width : 814px) {
+    body {
+        width: 100% !important;
+    }
+    /*  ~~~~~~~~~ HEADER ~~~~~~~~~  */
+        #logo img { height: 25px; }
+
+    /*  ~~~~~~~~~ NAVIGATION ~~~~~~~~~  */
+        .nav-link, .center-nav-link { font-size: 15px !important; }
+
+        .nav-separator { min-width: 18px; }
+        .nav-separator-2 { min-width: 33px; }
+
+        .account-shop img{ height: 15px; }
+
+    /*  ~~~~~~~~~~~~~~~~~~ INDEX PAGE ~~~~~~~~~~~~~~~~~~  */
+    /* ~~~~~~~~~ 1ERE SECTION ~~~~~~~~~  */
+        .blazon-lion {
+            left: 1%; padding-top: 1%;
+        }
+        .blazon {
+            width: 50%; height: auto;
+            bottom: 7%; left: 10.5%;
+        }
+        .blazon img { width: 100%; height: auto ;}
+        
+        .lion { width: 60%;}
+        .lion img { width: 80%;}
+
+        .creation { top : -2%}
+
+        .create-button::after {
+            background-size: 100px 52px;
+            transform: translate(30px, -41px);
+        }
+
+       
+}
+@media (max-width : 614px) {
+    /*  ~~~~~~~~~~~~~~~~~~ INDEX PAGE ~~~~~~~~~~~~~~~~~~  */
+    /* ~~~~~~~~~ 1ERE SECTION ~~~~~~~~~  */
+        .blazon-lion {
+            left: 1%; padding-top: 1%;
+        }
+        .blazon {
+            width: 50%; height: auto;
+            bottom: 7%; left: 10.5%;
+        }
+        .blazon img { width: 100%; height: auto ;}
+        
+        .lion { width: 60%;}
+        .lion img { width: 80%;}
+
+        .creation{ left: 8.5%; }
+        .creation h2, .creation a { 
+            padding: 4px; font-size:  22.5px !important;
+        }
+        .create-button { top: -3.5%; left : 0.15%; }
+        .create-button::after {
+            background-size: 83px 45px;
+            transform: translate(20px, -34px);
+        }
+
+        /*creation*/
+        .create-title{
+            font-size: 25px !important;
+        }
+        .section-create-1 .tile a{
+            font-size: 20px !important;
+        }
+
+        .section-create-1 .tile a::after {
+            content: '';
+            display: block;
+            width: 150px; height:75px;
+            background: url('img/button_anim.png') no-repeat;
+            background-size: 150px 75px;
+            transform: translate(20px, -50px);
+        }
+        
+        .perso-test::after {
+            transform: translate(35px, -50px) !important;
+        }
+        .section-create-1 .tile p{
+            font-size: 20px !important;
+        }
+}
+/* ~~~~~~~~~ MOBILE ~~~~~~~~~ */
+@media (max-width : 480px) {
+    /*  ~~~~~~~~~ HEADER ~~~~~~~~~  */
+        #title { font-size: 20px; }
+        #logo img {
+            height: 20px;
+            margin: 8px 0px 0px 20%;
+        }
+    /*  ~~~~~~~~~ NAVIGATION ~~~~~~~~~  */
+        .nav-link, .center-nav-link { font-size: 11px !important; }
+        .nav-center-container{ padding: 0px 0px 3px 5px; }
+
+        .nav-separator { min-width: 8px; }
+        .nav-separator-2 { min-width: 13px; }
+
+        .account-shop img{ height: 12px; }
+
+    /*  ~~~~~~~~~~~~~~~~~~ INDEX PAGE ~~~~~~~~~~~~~~~~~~  */
+    /* ~~~~~~~~~ 1ERE SECTION ~~~~~~~~~  */
+        .blazon-lion {
+            left: 6.5%; padding-top: 0%; margin-top: -2%;
+        }
+        .blazon {
+            width: 42%; height: auto;
+            bottom: 8%; left: 8%;
+        }
+        .blazon img { width: 100%; height: auto ;}
+        
+        .lion { width: 55%;}
+        .lion img { width: 68%;}
+
+        .creation{ left: 13.5%; }
+        .creation h2, .creation a { 
+            padding: 2px; font-size:  17px !important;
+        }
+        .create-button { top: -3.5%; left : 0.15%; }
+        .create-button::after {
+            background-size: 62px 30px;
+            transform: translate(19px, -25px);
+        }
+}
+
+}
