@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>responsive box with images</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="">
+		<style type="text/css">
+			.msg  {
+				background-color: #feffca;
+				border-color: #953d75;
+				border-width: 2px;
+				border-style: solid;
+				width: 250px;
+				height: 350px;
+				max-width: 350px;
+				background-image: url(./images/Crane.png);				
+			}
+			.ma {
+				margin: auto;
+  				border: 3px solid #73AD21;
+			}
+			div.ex1 {
+				text-align: center;
+				font-size: 32px;
+				width: 40%;
+				xheight: 500px;
+				margin: auto;
+				border: 3px solid #73AD21;
+				background-image: url(./images/2grues.png);
+				background-size: cover;	
+				background-repeat: no-repeat;		
+				background-position-y: top;
+				}
+				div.ex1 > div {
+					max-width: 50%;
+					margin:auto;
+				}
+
+
+				div.ex2 {
+
+					background:yellowgreen;
+				text-align: center;
+				font-size: 32px;
+				width: 30%;
+				xheight: 500px;
+				margin: auto;
+				border: 3px solid #73AD21;
+				background-image: url(./img/Crane2.png), url(./img/CraneH2.png);
+				background-size: contain;	
+				background-repeat: no-repeat, no-repeat;		
+				background-position: bottom right, bottom left;
+				
+				}
+				div.ex2 > div {
+					max-width: 50%;
+					margin:auto;
+					padding-bottom: 12px;
+					padding-top: 12px;
+				}
+		</style>
+	</head>
+	<body>
+		<!--[if lt IE 7]>
+			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+		<div class="msg ma">Voici le message<br/>az</div>
+		<hr/>
+		<span class="msg">Voici le message</span>
+		<hr/>
+		<div class="ex1"><div>This div element has width: xxx px;</div></div>
+		<hr/>
+r><div class="ex2"><div>This div element has width: xxx px;</div></div>
+r>
+		<script src="" async defer></script>
+	</body>
+</html>
