@@ -18,7 +18,7 @@
 				border-width: 2px;
 				border-style: solid;
 				width: 250px;
-				height: 350px;
+				height: 100px;
 				max-width: 350px;
 				background-image: url(./images/Crane.png);				
 			}
@@ -65,6 +65,27 @@
 					padding-bottom: 12px;
 					padding-top: 12px;
 				}
+
+				.bt  {
+					background:transparent;
+					background-image: url(./img/1px-ocre.png);
+					background-size: 0% 6px;	
+					background-position: bottom left; 
+					background-repeat: no-repeat;
+					border: none;
+					height: auto;
+				}
+
+				.bt:hover  {
+					background-size: 100% 6px;	
+					/*background-image: url(./img/1px-ocre.png);
+					background-position: bottom left; 
+					background-repeat: no-repeat;
+					transform: scaleX(100%);*/
+					transition: all 1s;
+					/*animation-duration: 5s;*/
+					
+				}
 		</style>
 	</head>
 	<body>
@@ -77,8 +98,13 @@
 		<hr/>
 		<div class="ex1"><div>This div element has width: xxx px;</div></div>
 		<hr/>
-r><div class="ex2"><div>This div element has width: xxx px;</div></div>
-r>
+r><div class="ex2"><div>This div element is responsive ! Yeah</div></div>
+r><hr/>
+<div class="msg ma bt">Passe la souris sur le bouton DIV<br/>Cool effect !</div>
+<hr/>
+<span class="msg ma bt" style="margin-left: 40%;">Passe la souris sur le bouton SPAN</span>
+
 		<script src="" async defer></script>
 	</body>
+
 </html>
