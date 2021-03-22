@@ -1,389 +1,449 @@
-html{ overflow-x: hidden; }
-
-/*  ~~~~~~~~~ HEADER ~~~~~~~~~  */
-#title { font-family : "Noto Serif JP"; font-weight: 200; font-size: 30px; }
-#logo img {
+/*  ~~~~~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~~~~~  */
+#logo{
     height: 35px;
-    margin: 10px 0px 0px 20%;
+    margin: 10px 0px 0px 10px;
+}
+header h1{
+    font-size : 40px;
 }
 
-/*  ~~~~~~~~~ NAVIGATION ~~~~~~~~~  */
-nav {
-    font-family : "Alegreya Sans SC"; font-weight: 500;
-    white-space: nowrap;
-    height: 35px;
+/*  ~~~~~~~~~~~~~~~~~~ NAVIGATION ~~~~~~~~~~~~~~~~~~  */
+nav{
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
 }
- nav a:hover {
- color : #b57e00 !important;
+.nav-separator{ 
+    min-width: 15px; 
 }
-.nav-container { width : 50%; }
+.nav-separator-2{ 
+    min-width: 25px; 
+}
+.nav-underline{
+    transition: all 0.3s;
+    background:transparent;
+    background-image: url(img/titleBorderLine.png);
+    background-size: 0% 3px;	
+    background-position: bottom center; 
+    background-repeat: no-repeat;
+    border: none;
+    height: auto;
+}
+.nav-underline:hover{
+    color: var(--gold) !important;
+    background-size: 100% 3px;	
+    transition: all 0.3s;
+}
+.nav-center-link{
+    position: relative;
+    top: 0px;
+}
+.nav-center-link:hover{
+    color: var(--gold) !important;
+    transition: all 0.3s;
+}
 
-.nav-separator { width: 50%; min-width: 20px; }
-.nav-separator-2 { width: 50%; min-width: 35px; }
+/*  ~~~~~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~~~~~  */
+footer a{
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+}
+footer a:hover{
+    font-weight: 400;
+}
 
-.nav-link-4 { margin-top: 2px; }
-.nav-link { padding: 0px; }
-
-.account-shop-link { display: flex; }
-
-/*  ~~~~~~~~~~~~~~~~~~ INDEX PAGE ~~~~~~~~~~~~~~~~~~  */
-/* ~~~~~~~~~ MAINCONTENT ~~~~~~~~~  */
+/*  ~~~~~~~~~~~~~~~~~~ HOME ~~~~~~~~~~~~~~~~~~  */
 /* ~~~~~~~~~ 1ERE SECTION ~~~~~~~~~  */
-.section-index-1 { padding-top: 4%; }
-
-.blazon-lion {
-    width: 100%;     
-    position: relative; 
+.home-section-1{ 
+    padding-top: 4%; 
+}
+.blazon-lion{
     left: -1%;
 }
-.blazon {
-    width: 65%; height: 100%;
-    position: relative;
-    bottom: 7%; left: 10.5%;
+.blazon{
+    width: 65%; 
+    bottom: 7%; 
+    left: 10.5%;
 }
-.blazon img { width: 100%; min-width: 406px; height: auto ;}
-.lion { width: 60%; height: auto;}
-.lion img { width: 92.25%; min-width: 346px; height: auto; }
-
-.creation {
-    width: 40%; min-width: 320px;
-    height: auto;
+.blazon img{ 
+    min-width: 406px; 
+}
+.lion{ 
+    width: 60%; 
+}
+.lion img{ 
+    width: 92.25%; 
+    min-width: 346px; 
+}
+.creation{
+    width: 40%; 
+    min-width: 320px;
     position: relative;
     left: -5%;
 }
-.creation h2, .creation a { 
-    font-family : "Noto Serif JP"; 
-    font-weight: 200; 
-    white-space: nowrap; 
+.text-middle-part{ 
+    padding-left: 15%; 
+} 
+.text-end-part{ 
+    padding-left: 27%; 
 }
-.text-middle-part { padding-left: 15%; } .text-end-part { padding-left: 27%; }
-
-.create-button {
+.home-button{
     position: relative;
-    top: 26%; left : 35%;
-    width: 230px; height: 75px;
-}
-.create-button::after {
-    content: '';
-    display: block;
-    width: 200px; height:150px;
-    background: url('img/button_anim.png') no-repeat;
-    background-size: 150px 75px;
-    transform: translate(40px, -60px);
+    top: 26%; 
+    left : 35%;
+    width: 230px; 
+    height: 75px;
+    padding-right: 20px;
 }
 
-/*  ~~~~~~~~~~~~~~~~~~ CREATE A SHIELD PAGE ~~~~~~~~~~~~~~~~~~  */
+/*  ~~~~~~~~~~~~~~~~~~ CREATE-COAT-OF-ARMS ~~~~~~~~~~~~~~~~~~  */
 /* ~~~~~~~~~ 1ERE SECTION ~~~~~~~~~  */
-
-.section-create-1{
-    width: 100%; 
-    font-family : "Alegreya Sans SC"; 
+.cas-section-1 h2{
+ font-size: 2.5rem;
+}
+.cas-tile-container{
+    height: 275px;
 }
 
-.section-create-1 h1{
-    margin-bottom: 4%;
-    margin-top: 1%;
+.cas-tile-container .button {
+    margin-top: 3%;
+    padding-bottom: 7px;
 }
 
-.gold{
-    color : #b57e00 !important;
+.cas-tile{
+    background-color: rgba(243,243,243,1);
+    background-image: linear-gradient(135deg, rgb(255, 255, 255) 5%, rgba(243, 243, 243, 0) 63% 100%);
+    box-shadow: rgb(212, 212, 212) 3px 3px 7px;
+    transition: all 0.5s;
+    border-radius: 10px;
+}
+.cas-tile:hover{
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(212, 212, 212) -3px 3px 7px;
+    opacity: 0.8;
+    cursor : pointer;
+}
+
+#cas-tile-2{
+    box-shadow: rgb(212, 212, 212) -3px 3px 7px;
+}
+#cas-tile-2:hover{
+    box-shadow: rgb(212, 212, 212) 3px 3px 7px;
+}
+#cas-button-1{
+    transition: all 0.5s;
+    font-weight: 200;
+}
+#cas-tile-1:hover  #cas-button-1{
+    color: #b57e00;
+}
+#cas-button-2{
+    transition: all 0.5s;
+    font-weight: 200;
+}
+#cas-tile-2:hover  #cas-button-2{
+    color: #b57e00;
+}
+
+.cas-tile .button{
+    font-size: 1.4rem;
 }
 .merlette{
-    width: 60%; max-width: 154px; min-width: 84px;
-    height: 60%; max-height: 142px;
     background-image: url(img/merlette.png);
+    background-size: contain;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-position: center;
+    min-height: 100px;
 }
-
 .arc{
-    width: 60%; max-width: 154px; min-width: 93px;
-    height: 55%; max-height: 137px;
     background-image: url(img/arc.png);
+    background-size: contain;
     background-repeat: no-repeat;
-    background-size: 75% ;
+    background-position: center;
 }
-.section-create-1 h1, .section-create-1 .tile .selection{
+
+.cas-section-1-text{
+    font-size: 1.5rem;
+}
+
+/*  ~~~~~~~~~~~~~~~~~~ HERALDRY ~~~~~~~~~~~~~~~~~~  */
+.heraldry-section h2{
+    background-color: #b57e00;
+    color: white;
+    width: 280px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin : 0px;
+}
+.heraldry-section:nth-child(1) img{
+    float: left;
+    width: 45%;
+}
+.heraldry-section:nth-child(1) h3{
+    width: 430px;
+    padding-left: 5px;
+    border : solid 4px #b57e00;
+    position: relative;
+    top: -4px
+}
+.tech-glossary .heraldry-section:nth-child(1) h3, .tech-glossary .heraldry-section:nth-child(2) h3{
+    width: 315px;
+    padding-left: 5px;
+    margin-top: 68px;
+    border-bottom : solid 4px #b57e00;
+    border-left: solid 4px #b57e00;
+    border-top: none !important;
+    border-right: none !important;
+
+}
+.tech-glossary .heraldry-section:nth-child(1) h3{
+    margin-top: 72px;
+}
+/*  ~~~~~~~~~~~~~~~~~~ ROLL-OF-ARMS ~~~~~~~~~~~~~~~~~~  */
+
+.roa-tile{
+    /*180 240*/
+}
+.roa-section-1 em{
+    font-size: 15px;
+}
+.roa-section-1 span{
+    font-size: 20px;
+}
+
+/*  ~~~~~~~~~~~~~~~~~~ TEST-PERSO ~~~~~~~~~~~~~~~~~~  */
+.test-perso-section-1 h2{
+margin: 0px;
+}
+
+.perso{
+    border-radius: 10px;
+    background-color: rgba(237,237,237,1);
+    background-image: linear-gradient(128deg, rgba(255,255,255,1) 50%, rgba(237, 237, 237, 0) 100%);
+    box-shadow: rgb(212, 212, 212) 3px 3px 7px;
+    transition: all 0.5s;
+    max-width: 370px;
+}
+.perso:hover{
+    background-color: #4add5b;
+    background-image: linear-gradient(128deg, rgb(223, 255, 228) 50%, rgba(237, 237, 237, 0) 100%);
+    box-shadow: rgb(212, 212, 212) -3px 3px 7px;
+
+}
+.perso h4{
+    transition: all 0.5s;    
+    font-weight: 600;
+}
+.perso:hover h4 {
+    color: #b57e00;
+}
+.perso-2{
+    box-shadow: rgb(212, 212, 212) -3px 3px 7px;
+}
+.perso-2:hover{
+    box-shadow: rgb(212, 212, 212) 3px 3px 7px;
+}
+.perso img{
+    border-radius: 10px 10px 0px 0px;
+    transition: all 0.5s;
+}
+.perso:hover img{
+    opacity: 0.8;
+}
+.no-perso{
+    cursor: pointer;
+    box-shadow: rgb(212, 212, 212) 0px 0px 9px;
+    background-color: rgb(237, 237, 237);
+    background-image: linear-gradient(150deg, rgba(255,255,255,1) 24%, rgba(237, 237, 237, 0) 88%);
+    border-radius: 10px;
+    transition: all 0.5s;
+    font-family: 'Abel', sans-serif;  
+}
+.no-perso:hover{
+    background-color: #dd4a4a;
+    background-image: linear-gradient(150deg, rgb(255, 223, 223) 24%, rgba(237, 237, 237, 0) 88%);
+    box-shadow: rgb(212, 212, 212) 0px 3px 9px;
+    font-weight: bold;
+}
+.no-perso h4{
+    margin: 0px;
+}
+
+/*  ~~~~~~~~~~~~~~~~~~ TEST-PERSO-RESULT ~~~~~~~~~~~~~~~~~~  */
+.tpr-section-1 h3{
+font-weight: bold;
+color: #b57e00;
+border-bottom: #b57e00 4px solid;
+}
+.tpr-section-1 .badge{
+    font-size: 20px !important;
+    width: 190px;
+}
+.value-selected{
+width: 188px;
+height: 30px;
+}
+
+.tpr-button{
+    cursor: pointer;
+}
+/*  ~~~~~~~~~~~~~~~~~~ SHARE-YOUR-VALUES ~~~~~~~~~~~~~~~~~~  */
+.syv-section .title{
+margin-bottom: 20px;
+border-bottom: solid 4px #b57e00 !important;
+}
+.syv-section h2{
+    height: 45px;
+    font-weight: bold;
+}
+.syv-section h3{
+    height: 32px;
+    position: relative;
+    top: 5px;
+    background-image: url(img/titleBorderLine.png);
+    background-size: 100% 4px;	
+    background-position: top center; 
+    background-repeat: no-repeat;
+    border: none;
+    height: auto;
+
+}
+.syv-section h2, .syv-section h3{
+margin-bottom: 0px;
+padding-bottom: 0px !important;
+padding-top: 0px !important;
+}
+
+.syv-section .msg-box-1{
+    height: 230px;
+}
+.syv-section .inside-msg-box{
+    position: relative !important;
+    top: -15px !important;
+}
+.syv-section .msg-box-1 .badge{
+    box-shadow: rgb(0, 0, 0) 0px 0px 15px;
+}
+
+.share h3{
+    border : none !important;
+    background-image: none;
+}
+.share h4{
+    margin-bottom: 0px !important;
+    position: relative;
+    top: 5px;
+    font-weight: bold;
+
+}
+
+.facebook, .twitter, .tumblr, .other{
+    width: 30px;
     height: 30px;
-    font-family : "Noto Serif JP"; font-weight: 200;
-    white-space: nowrap;
+    cursor: pointer;
+}
+.facebook:hover, .twitter:hover, .tumblr:hover, .other:hover{
+opacity: 0.8;
+}
+.facebook{
+    background-image: url(img/facebook.png);
+    background-size: contain;
+}
+.twitter{
+    background-image: url(img/twitter.png);
+    background-size: contain;
+}
+.tumblr{
+    background-image: url(img/tumblr.png);
+    background-size: contain;
+}
+.other{
+    background-image: url(img/other.png);
+    background-size: contain;
+}
+.syv-section .border-deco{
+    height: 20px;
+}
+.syv-section .button{
+    position: relative;
+    top: -13px;
+    background-position: 50% 100%;
+    cursor: pointer;
+}
+/*  ~~~~~~~~~~~~~~~~~~ CHOOSE-VALUES ~~~~~~~~~~~~~~~~~~  */
+
+/*.select-unselect label{
+font-size: 17px;
+}
+*/
+.choose-values-section h1{
+    padding-left: 250px;
+    font-size: 2rem;
+}
+.choose-values-section h1 strong{
+    background-image: url(img/titleBorderLine.png);
+    background-size: 100% 4px;	
+    background-position: bottom center; 
+    background-repeat: no-repeat;
+    border: none;
+    height: auto;
+    color: #b57e00;
 }
 
-.section-create-1 .tile .selection::after{
-    content: '';
-    display: block;
-    width: 150px; height:75px;
-    background: url('img/button_anim.png') no-repeat;
-    background-size: 150px 75px;
-    transform: translate(40px, -50px);
+.choose-values-section h3 + span{
+    font-size: 23px;
 }
-
-.perso-test::after {
-    transform: translate(75px, -50px) !important;
-}
-
-.section-create-1 .tile a strong {
+.select-unselect span:nth-child(1){
+    font-size: 22px;
     font-weight: bold;
 }
 
-.section-create-1 strong {
-    font-weight: 500;
+.choose-values-section ul{
+    font-size : 23px;
+}
+.input-label label{
+    width: 130px;
+    font-size: 20px !important;
+    margin-left: -37px !important;
 }
 
-.section-create-1 .tile{
-    height: 400px;
-    width: 100%;
+.filter{
+width: 30%;
+min-width: 210px;
 }
-.section-create-1 .tile .description{
-    width: 85%;
-    height: 80%;
+.filter li{
+    width: 150px;
+    display: flex;
+    align-items: center;
 }
-
-.values-link .separator{
-width: 10%; min-width : 12px;
+.for-who{
+    margin-right : 192px !important;
 }
-
-.transition{
-    width: 100%;
-
-} 
-.presentation-value-select{
-    padding-top:  2%;
+.for-who .btn{
+    padding: 0px 2px !important;
+    height: 30px;
+    width: 70px;
+    margin-right: 5px;
 }
-
-.tile{
-    background-color: rgb(243, 243, 243);
-}
-
-.tile1:hover, .tile2:hover{
-    background-color: rgb(255, 255, 255);
-    color : #b57e00 !important;
-}
-
-/*  ~~~~~~~~~~~~~~~~~~ PERSO-SELECTION ~~~~~~~~~~~~~~~~~~  */
-/* ~~~~~~~~~ MAINCONTENT ~~~~~~~~~  */
-
-.tileperso {
-   height: 550px !important;
-   padding-left: 15px;
-   padding-right: 15px;
-}
-
-.counter{ 
-    white-space: nowrap;
-}
-
-.perso {
-    width : 100% ; max-width: 380px;
-    height : auto; max-height: 460px;
+.choose-values-undersection-2 {
+    background: rgb(255,255,255);
+background: linear-gradient(261deg, rgba(255,255,255,1) 49%, rgba(208,208,208,1) 100%);
 
 }
-
-.perso img {
-    width: 100%;
-    height: 100%;
+.values {
+max-height: 400px;
+overflow-y: hidden;
 }
 
 
-/* ~~~~~~~~~ RESPONSIVE ~~~~~~~~~  */
-/* ~~~~~~~~~ ECRAN ~~~~~~~~~ */
-@media (max-width : 1300px) {
-    /* ~~~~~~~~~ MAINCONTENT ~~~~~~~~~  */
-    /* ~~~~~~~~~ 1ERE SECTION ~~~~~~~~~  */
-        .section-index-1{
-            flex-direction: column;
-            align-items: center;
-            padding-top: 3%;
-        }
-
-        .blazon-lion {
-            position: relative; 
-            left: -1%; padding-top: 3%;
-            order: 2;
-        }
-
-        .blazon img { min-width: 0px; }
-        .lion img { min-width: 0px; }
-
-        .creation{
-            flex-direction: row !important;
-            width: auto; min-width: none;
-            order: 1;
-            left: 1.4%;
-        }
-        .creation h2, .creation a { padding: 4px; font-size: 33px !important; }
-        .create-button { top: -6%; left : 2.85%; }
-        .create-button::after {
-            background-size: 120px 62px;
-            transform: translate(35px, -50px);
-        }
-}
-@media (max-width : 1210px) {
-    /* ~~~~~~~~~ MAINCONTENT ~~~~~~~~~  */
-    /* ~~~~~~~~~ 1ERE SECTION ~~~~~~~~~  */
+.selected-values-content{
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 
 }
-@media (max-width : 992px) {
-    /*  ~~~~~~~~~ HEADER ~~~~~~~~~  */
-        #logo img { height: 30px; }
 
-    /*  ~~~~~~~~~ NAVIGATION ~~~~~~~~~  */
-        .nav-link, .center-nav-link { font-size: 20px !important; }
 
-        .account-shop img{ height: 20px; }
-
-    /*  ~~~~~~~~~~~~~~~~~~ INDEX PAGE ~~~~~~~~~~~~~~~~~~  */
-    /* ~~~~~~~~~ 1ERE SECTION ~~~~~~~~~  */
-        .section-index-1{ padding-top: 5%; }
-        .creation{ left: 5%; }
-        .creation h2, .creation a { 
-            padding: 4px; font-size:  27.5px !important;
-        }
-        .create-button { top: -4.7%; left : 0.15%; }
-        .create-button::after {
-            background-size: 100px 52px;
-            transform: translate(30px, -41px);
-        }
-    /*  ~~~~~~~~~~~~~~~~~~ CREATE A SHIELD PAGE ~~~~~~~~~~~~~~~~~~  */
-    /* ~~~~~~~~~ 1ERE SECTION ~~~~~~~~~  */
-    .description{
-        flex-direction: column;
-    }
-
-    .description p{
-        order : 2
-    }
-    .description div{
-        order : 1
-    }
-
-@media (max-width : 814px) {
-    body {
-        width: 100% !important;
-    }
-    /*  ~~~~~~~~~ HEADER ~~~~~~~~~  */
-        #logo img { height: 25px; }
-
-    /*  ~~~~~~~~~ NAVIGATION ~~~~~~~~~  */
-        .nav-link, .center-nav-link { font-size: 15px !important; }
-
-        .nav-separator { min-width: 18px; }
-        .nav-separator-2 { min-width: 33px; }
-
-        .account-shop img{ height: 15px; }
-
-    /*  ~~~~~~~~~~~~~~~~~~ INDEX PAGE ~~~~~~~~~~~~~~~~~~  */
-    /* ~~~~~~~~~ 1ERE SECTION ~~~~~~~~~  */
-        .blazon-lion {
-            left: 1%; padding-top: 1%;
-        }
-        .blazon {
-            width: 50%; height: auto;
-            bottom: 7%; left: 10.5%;
-        }
-        .blazon img { width: 100%; height: auto ;}
-        
-        .lion { width: 60%;}
-        .lion img { width: 80%;}
-
-        .creation { top : -2%}
-
-        .create-button::after {
-            background-size: 100px 52px;
-            transform: translate(30px, -41px);
-        }
-
-       
-}
-@media (max-width : 614px) {
-    /*  ~~~~~~~~~~~~~~~~~~ INDEX PAGE ~~~~~~~~~~~~~~~~~~  */
-    /* ~~~~~~~~~ 1ERE SECTION ~~~~~~~~~  */
-        .blazon-lion {
-            left: 1%; padding-top: 1%;
-        }
-        .blazon {
-            width: 50%; height: auto;
-            bottom: 7%; left: 10.5%;
-        }
-        .blazon img { width: 100%; height: auto ;}
-        
-        .lion { width: 60%;}
-        .lion img { width: 80%;}
-
-        .creation{ left: 8.5%; }
-        .creation h2, .creation a { 
-            padding: 4px; font-size:  22.5px !important;
-        }
-        .create-button { top: -3.5%; left : 0.15%; }
-        .create-button::after {
-            background-size: 83px 45px;
-            transform: translate(20px, -34px);
-        }
-
-        /*creation*/
-        .create-title{
-            font-size: 25px !important;
-        }
-        .section-create-1 .tile a{
-            font-size: 20px !important;
-        }
-
-        .section-create-1 .tile a::after {
-            content: '';
-            display: block;
-            width: 150px; height:75px;
-            background: url('img/button_anim.png') no-repeat;
-            background-size: 150px 75px;
-            transform: translate(20px, -50px);
-        }
-        
-        .perso-test::after {
-            transform: translate(35px, -50px) !important;
-        }
-        .section-create-1 .tile p{
-            font-size: 20px !important;
-        }
-}
-/* ~~~~~~~~~ MOBILE ~~~~~~~~~ */
-@media (max-width : 480px) {
-    /*  ~~~~~~~~~ HEADER ~~~~~~~~~  */
-        #title { font-size: 20px; }
-        #logo img {
-            height: 20px;
-            margin: 8px 0px 0px 20%;
-        }
-    /*  ~~~~~~~~~ NAVIGATION ~~~~~~~~~  */
-        .nav-link, .center-nav-link { font-size: 11px !important; }
-        .nav-center-container{ padding: 0px 0px 3px 5px; }
-
-        .nav-separator { min-width: 8px; }
-        .nav-separator-2 { min-width: 13px; }
-
-        .account-shop img{ height: 12px; }
-
-    /*  ~~~~~~~~~~~~~~~~~~ INDEX PAGE ~~~~~~~~~~~~~~~~~~  */
-    /* ~~~~~~~~~ 1ERE SECTION ~~~~~~~~~  */
-        .blazon-lion {
-            left: 6.5%; padding-top: 0%; margin-top: -2%;
-        }
-        .blazon {
-            width: 42%; height: auto;
-            bottom: 8%; left: 8%;
-        }
-        .blazon img { width: 100%; height: auto ;}
-        
-        .lion { width: 55%;}
-        .lion img { width: 68%;}
-
-        .creation{ left: 13.5%; }
-        .creation h2, .creation a { 
-            padding: 2px; font-size:  17px !important;
-        }
-        .create-button { top: -3.5%; left : 0.15%; }
-        .create-button::after {
-            background-size: 62px 30px;
-            transform: translate(19px, -25px);
-        }
-}
-
-}

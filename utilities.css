@@ -1,0 +1,194 @@
+html{
+    font-size: 20px;
+
+    --gold: #b57e00;
+    --golder: #724a00;
+    --light-gray: #f3f3f3;
+    --light-green: #cbffd1;
+    --light-red: #ffcaca;
+    --parchemin: #9e8067;
+}
+
+.text-gold{color: var(--gold);}
+.text-golder{color: var(--golder)}
+.text-light-gray{color: var(--light-gray)}
+
+.bg-gold{background-color: var(--gold);}
+.bg-golder{background-color: var(--golder)}
+.bg-light-gray{background-color: var(--light-gray)}
+
+.border-light-gray{
+    border-color: var(--light-gray) !important;
+}
+.border-gold{
+    border-color: var(--gold) !important;
+}
+
+.noto-font{
+    font-family: 'Noto Serif JP', serif; 
+}
+.alegreya-font{
+    font-family: 'Alegreya Sans SC', sans-serif;  
+}
+.abel-font{
+    font-family: 'Abel', sans-serif;  
+}
+.italic{
+    font-style: italic;
+}
+
+/*________________________________FONT____________________________________*/
+
+h1, .button {
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 200;
+}
+
+
+h2, h3, h4, p, span {
+    font-family: 'Abel', sans-serif; 
+}
+.button strong {
+    font-weight: 500;
+}
+.fs-10{font-size: 10px;}
+.fs-15{font-size: 15px;}
+.fs-20{font-size: 20px;}
+.fs-25{font-size: 25px;}
+.fs-30{font-size: 30px;}
+.fs-35{font-size: 35px;}
+.fs-40{font-size: 40px;}
+.fs-45{font-size: 45px;}
+
+/*________________________________WIDTH-HEIGHT____________________________________*/
+
+.w-1{width: 10%;}
+.w-2{width: 20%;}
+.w-3{width: 30%;}
+.w-4{width: 40%;}
+.w-5{width: 50%;}
+.w-6{width: 60%;}
+.w-7{width: 70%;}
+.w-8{width: 80%;}
+.w-9{width: 90%;}
+
+.h-1{height: 10%;}
+.h-2{height: 20%;}
+.h-3{height: 30%;}
+.h-4{height: 40%;}
+.h-5{height: 50%;}
+.h-6{height: 60%;}
+.h-7{height: 70%;}
+.h-8{height: 80%;}
+.h-9{height: 90%;}
+
+/*________________________________BUTTON____________________________________*/
+/* 
+maniere simple de faire un bouton fonctionnel partout
+a ajusté a chaque situation
+*/
+.button{
+    font-size: 1.75rem;
+    font-weight: 100;
+    white-space: nowrap;
+    background-image: url(img/button_anim.png);
+    background-size: contain;	
+    background-repeat: no-repeat;		
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*________________________________TILE____________________________________*/
+.tile{
+    background-color: var(--parchemin);
+    padding: 3%;
+    width: 100%;
+    height: 100%;
+    transition: background-color 0.3s;
+    color: white;
+    border-radius: 10px;
+    box-shadow: rgb(212, 212, 212) 3px 3px 7px;
+}
+.tile:hover{
+    background-color: white;
+    opacity: 0.8;
+    color: black;
+    cursor : pointer;
+}
+
+.tile-success:hover{
+    background-color: var(--light-green);
+}
+
+.tile-danger:hover{
+    background-color: var(--light-red);
+}
+/*________________________________BORDER-DECO____________________________________*/
+.star{
+    width: 50px;
+    height: 20px;
+    background-image: url(img/dot.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.1;
+}
+
+.line{
+    background-image: url(img/borderLine.png);
+    background-size: 100% 3px;	
+    background-position: center; 
+    background-repeat: no-repeat;
+    border: none;
+    height: auto;
+}
+
+/* _________________________MESSAGE-BOX_______________________________________________________________________ */
+/* _________________________EXEMPLE-1________________________ */
+.msg-box-1{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 200px;
+    width: 50%;
+    
+    background: 
+    url(img/msgBoxMotif6.png), url(img/msgBoxMotif5.png), 
+    linear-gradient(145deg, rgba(44,72,218,1) 0%, rgba(35,21,139,1) 80%);
+    
+    background-size: contain;	
+    background-repeat: no-repeat, no-repeat;		
+    background-position: bottom right, bottom left;
+    
+    border-radius: 5px;
+    box-shadow: 3px 1px 20px -1px rgba(174,174,174,1);
+    
+    }
+    
+    .msg-box-1 > h1{
+        padding-bottom: 20px;
+        font-family: 'Noto Serif JP', serif;
+        color: white;
+        font-weight: 200;
+    }
+/*________________________________BADGE-VALUE____________________________________*/
+
+.badge-value{
+    width: 150px;
+    height: 35px;
+    font-family: 'Abel', sans-serif;  
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(119,59,59);
+    background: linear-gradient(160deg, rgba(119,59,59,1) 0%, rgba(68,17,17,1) 100%);
+    box-shadow: #858585 3px 3px 7px;
+    letter-spacing: 2px;
+    font-weight:bold;
+}
+
+
