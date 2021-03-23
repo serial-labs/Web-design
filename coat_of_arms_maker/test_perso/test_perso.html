@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="bootstrap.css">
-    <link rel="stylesheet" href="utilities.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="../../bootstrap.css">
+    <link rel="stylesheet" href="../../utilities.css">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../responsive.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
@@ -19,12 +19,11 @@
 <body class="d-flex justify-content-center">
 <div class="col-md-9 col-12 d-flex flex-column">
 
-
 <!-- __________________________________HEADER_________________________________________ -->    
 <header class="w-100 d-flex justify-content-center border-bottom  border-2">
     <div class="d-flex justify-content-center">
-        <a href="index.html" class="link-dark text-decoration-none"><h1>My Blazon</h1></a>
-        <img id="logo" src="img/mBLogoBase.png" alt="">
+        <a href="../../index.html" class="link-dark text-decoration-none"><h1>My Blazon</h1></a>
+        <img id="logo" src="../../img/mBLogoBase.png" alt="">
     </div>
 </header>
 
@@ -32,9 +31,9 @@
 <nav class="d-flex justify-content-center border-bottom  border-2 pt-1">
     <div class="d-flex col-11 justify-content-center text-nowrap">
         <div class="w-50 d-flex">
-                <a href="heraldry.html" class=" nav-underline link-dark text-decoration-none">Heradry</a>
+                <a href="../../heraldry.html" class=" nav-underline link-dark text-decoration-none">Heradry</a>
                 <div class="w-50 nav-separator"></div>
-                <a href="create_a_shield.html" class="nav-underline link-dark text-decoration-none">Create a Shield</a>
+                <a href="../../create_a_shield.html" class="nav-underline link-dark text-decoration-none">Create a Shield</a>
                 <div class="w-50 nav-separator"></div>
         </div>
         <div class="nav-underline nav-center-container">
@@ -42,36 +41,45 @@
         </div>
         <div class="w-50 d-flex">
             <div class="w-50 nav-separator-2"></div>
-            <a class="nav-underline link-dark text-decoration-none" href="rool_of_arms.html" >Roll of Arms</a>
+            <a class="nav-underline link-dark text-decoration-none" href="../../rool_of_arms.html" >Roll of Arms</a>
             <div class="w-50 nav-separator-2"></div>
             <div class="d-flex">
-                    <a href="" ><img src="img/account.png" alt="customer account logo"></a>
-                    <a href="" class="ps-lg-4 ps-md-2" ><img src="img/shop.png" alt="shop logo"></a>
+                    <a href="" ><img src="../../img/account.png" alt="customer account logo"></a>
+                    <a href="" class="ps-lg-4 ps-md-2" ><img src="../../img/shop.png" alt="shop logo"></a>
             </div>
         </div>
     </div>
 </nav>
 
 <!-- __________________________________MAIN_________________________________________ -->   
-<main class="d-flex justify-content-center align-items-center">
+<main class="d-flex flex-column justify-content-center align-items-center">
 
-    <section class="home-section-1 d-flex justify-content-start mb-4">
-        <div class="blazon-lion w-100 position-relative d-flex">
-                <div class="blazon h-100 position-relative">
-                        <img class="w-100" src="img/blason-slider3.gif" alt="empty blason">
+    <section class="test-perso-section-1 text-center d-flex flex-column align-items-center col-lg-10 col-12">
+        <span class="d-flex pt-2"><h2>Which one inspires you the most?</h2> <span class="d-flex align-items-center ps-3">1/12</span></span>
+        <span class="pb-2">Pick the character that you feel is closest to your values</span>
+        <div class="col-md-9 col-sm-11 col-12 d-flex flex-column align-items-center justify-content-center">
+            <div class="d-flex flex-column justify-content-center w-100">
+                <div class="d-flex justify-content-center w-100">
+                    <a href="test_perso_result.html" class="perso perso-1 d-flex flex-column align-items-center w-100 me-4 link-dark text-decoration-none">
+                        <img class="img-fluid w-100" src="../../img/columbus.jpg" alt="">
+                        <h4 class="noto-font mt-2">Christopher Columbus</h4>
+                        <p >Italian explorer</p>
+                    </a>
+                    <a href="test_perso_result.html" class="perso perso-2 d-flex flex-column align-items-center w-100 link-dark text-decoration-none">
+                        <img class="img-fluid w-100" src="../../img/da-vinci.jpg" alt="">
+                        <h4 class="noto-font mt-2">Leonard Da Vinci</h3>
+                        <p>Italian, painter, scientist, polymath</p>
+                    </a>
                 </div>
-                <div class="lion h-auto">
-                        <img src="img/lion-slider1.png" alt="heraldic charge rampant lion"></img>
-                </div>
+                <a href="test_perso_result.html"   class="no-perso mt-3 mb-3 p-2 col-12 d-flex justify-content-center link-dark text-decoration-none">
+                        <h4>I do not feel close enough to any of them</h4>
+                </a>
+            </div>
+
+            </a>
         </div>
-        <div class="creation d-flex flex-column text-nowrap">
-                <h2 class="text-start-part d-block noto-font" >create your</h2>
-                <h2 class="text-middle-part d-block noto-font" >very own</h2>
-                <h2 class="text-end-part d-block noto-font">coat of arms</h2>
-                <div class="button home-button">
-                    <a href="" class="link-dark text-decoration-none">Create Now</a>
-                </div>
-        </div>
+
+
     </section>
 
 </main>
@@ -92,6 +100,8 @@
     <a class="link-dark text-decoration-none border-2" href="" >FAQ</a>
     <div></div>
 </footer>
+
+
 </div>
 </body>
 </html>

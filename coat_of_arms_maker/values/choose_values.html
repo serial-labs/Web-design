@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../bootstrap.css">
+    <link rel="stylesheet" href="../../utilities.css">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../responsive.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+
+    <title>myBlazon</title>
+</head>
+
+<body class="d-flex justify-content-center">
+<div class="col-md-9 col-12 d-flex flex-column">
+
+<!-- __________________________________HEADER_________________________________________ -->    
+<header class="w-100 d-flex justify-content-center border-bottom  border-2">
+    <div class="d-flex justify-content-center">
+        <a href="../../index.html" class="link-dark text-decoration-none"><h1>My Blazon</h1></a>
+        <img id="logo" src="../../img/mBLogoBase.png" alt="">
+    </div>
+</header>
+
+<!-- __________________________________NAV_________________________________________ -->
+<nav class="d-flex justify-content-center border-bottom  border-2 pt-1">
+    <div class="d-flex col-11 justify-content-center text-nowrap">
+        <div class="w-50 d-flex">
+                <a href="../../heraldry.html" class=" nav-underline link-dark text-decoration-none">Heradry</a>
+                <div class="w-50 nav-separator"></div>
+                <a href="../../create_a_shield.html" class="nav-underline link-dark text-decoration-none">Create a Shield</a>
+                <div class="w-50 nav-separator"></div>
+        </div>
+        <div class="nav-underline nav-center-container">
+                <a href="" class="nav-center-link link-dark text-decoration-none">My Coat of Arms</a>
+        </div>
+        <div class="w-50 d-flex">
+            <div class="w-50 nav-separator-2"></div>
+            <a class="nav-underline link-dark text-decoration-none" href="../../rool_of_arms.html" >Roll of Arms</a>
+            <div class="w-50 nav-separator-2"></div>
+            <div class="d-flex">
+                    <a href="" ><img src="../../img/account.png" alt="customer account logo"></a>
+                    <a href="" class="ps-lg-4 ps-md-2" ><img src="../../img/shop.png" alt="shop logo"></a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- __________________________________MAIN_________________________________________ -->   
+<main class="d-flex flex-column justify-content-center align-items-center">
+    
+    <section class="choose-values-section d-flex flex-column col-lg-12 col-6">
+        <h1 class="text-center mt-3 abel-font">choose <strong>3 values</strong> that describes you best</h1>
+        <div class="d-flex h-100 border-top border-2 border-light-gray" >
+            <div class="filter d-flex flex-column bg-light-gray h-100">
+                    <h3 class="text-center">Filters</h3>
+                    <span class="text-center mt-1 mb-3"><strong>Values categories</strong></span>
+                <div class="d-flex flex-column">
+                    <ul class="w-50">
+                        <li><span>Heroic</span><div class="w-100"></div><input type="checkbox"></li>
+                        <li><span>Warlike</span><div class="w-100"></div><input type="checkbox"></li>
+                        <li><span>Moral</span><div class="w-100"></div><input type="checkbox"></li>
+                        <li><span>Virtuous</span><div class="w-100"></div><input type="checkbox"></li>
+                        <li><span>Majestous</span><div class="w-100"></div><input type="checkbox"></li>
+                        <li><span>Prestigious</span><div class="w-100"></div><input type="checkbox"></li>
+                        <li><span>Spiritual</span><div class="w-100"></div><input type="checkbox"></li>
+                        <li><span>Antogonist</span><div class="w-100"></div><input type="checkbox"></li>
+                        <li><span>Nobility</span><div class="w-100"></div><input type="checkbox"></li>
+                        <li><span>Intelligent</span><div class="w-100"></div><input type="checkbox"></li>
+                        <li><span>Romantic</span><div class="w-100"></div><input type="checkbox"></li>
+                        <li><span>Fortunate</span><div class="w-100"></div><input type="checkbox"></li>
+                        <li><span>Modern</span><div class="w-100"></div><input type="checkbox"></li>
+                    </ul>
+                    <div class=" select-unselect d-flex flex-column abel-font mb-3">
+                            <span class="text-center mb-2"><strong>Select / Unselect all:</strong></span>
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                                <div class="input-label d-flex justify-content-between align-items-center">
+                                    <label for="selected" class="ms-2" style="font-size: 15px">Select all</label>
+                                    <input type="radio" id="select" value="select" checked>
+                                </div>
+                                <div class="input-label d-flex justify-content-between align-items-center">
+                                    <label for="unselected"  class="ms-2" style="font-size: 15px">Unselected all</label>
+                                    <input type="radio" id="unselected" value="unselected">
+                                </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="choose-values-undersection-2 d-flex flex-column w-100 h-100">
+                <div class=" value-container w-100 h-7">
+                    <div class=" value d-flex flex-wrap justify-content-center">
+                        <span class="badge badge-value bg-warning text-light m-2 p-1" title="Unusual, exciting, and possibly dangerous activity, trip, or experience.">Adventure</span>
+                        <span class="badge badge-value bg-warning text-light m-2 p-1">Charitable</span>
+                        <span class="badge badge-value bg-warning text-light m-2 p-1">Courage</span>
+                        <span class="badge badge-value bg-warning text-light m-2 p-1">Dignity</span>
+                        <span class="badge badge-value bg-warning text-light m-2 p-1">Diligence</span>
+                        <span class="badge badge-value bg-warning text-light m-2 p-1">Glory</span>
+                        <span class="badge badge-value bg-warning text-light m-2 p-1">Honour</span>
+                        <span class="badge badge-value bg-warning text-light m-2 p-1">Humility</span>
+                        <span class="badge badge-value bg-warning text-light m-2 p-1">Impartiality</span>
+                        <span class="badge badge-value bg-warning text-light m-2 p-1">Independance</span>
+                        <span class="badge badge-value bg-warning text-light m-2 p-1">Justice</span>
+                        <span class="badge badge-value bg-warning text-light m-2 p-1">Kindness</span>
+                        <span class="badge badge-value bg-warning text-light m-2 p-1">Light</span>
+                        <span class="badge badge-value bg-warning text-light m-2 p-1">Loyalty</span>
+                        <span class="badge badge-value bg-warning text-light m-2 p-1">Luck</span>
+                        <span class="badge badge-value bg-warning text-light m-2 p-1">Magnanimity</span>
+                        <span class="badge badge-value bg-warning text-light m-2 p-1">Peace</span>
+                        <span class="badge badge-value bg-warning text-light m-2 p-1">Protection</span>
+                        <span class="badge badge-value bg-warning text-light m-2 p-1">Ressurection</span>
+                        <span class="badge badge-value bg-warning text-light m-2 p-1">Purification</span>
+                        <span class="badge badge-value bg-warning text-light m-2 p-1">Sacrifice</span>
+                        <span class="badge badge-value bg-warning text-light m-2 p-1">Strength</span>
+                        <span class="badge badge-value bg-warning text-light m-2 p-1">Vengeance</span>
+                        <span class="badge badge-value bg-warning text-light m-2 p-1">Victory</span>
+                        <span class="badge badge-value bg-warning text-light m-2 p-1">Vigour</span>
+                        <span class="badge badge-value bg-warning text-light m-2 p-1">Virtue</span>
+                        <span class="badge badge-value bg-warning text-light m-2 p-1">Warrior Spirit</span>
+                        <span class="badge badge-value bg-warning text-light m-2 p-1">Wisdom</span>
+                        <span class="badge badge-value bg-warning text-light m-2 p-1">Labor</span>
+                        <span class="badge badge-value bg-warning text-light m-2 p-1">Obedience</span>
+                        <span class="badge badge-value bg-warning text-light m-2 p-1">Patience</span>
+                        <span class="badge badge-value bg-warning text-light m-2 p-1">Vigilence</span>
+                        <span class="badge badge-value bg-warning text-light m-2 p-1">Virility</span>
+                        <span class="badge badge-value bg-warning text-light m-2 p-1">Piety</span>
+                        <span class="badge badge-value bg-warning text-light m-2 p-1">Purity</span>
+                        <span class="badge badge-value bg-warning text-light m-2 p-1">Sovereignty</span>
+                        
+
+                    </div>
+                </div>
+                <div class="selected-values w-100 h-3 d-flex flex-column align-items-center justify-content-center border-top border-2 border-dark">
+                    <h3 class="text-center">selected values </h3>
+                    <div class="d-flex align-items-center justify-content-end w-100 h-25 mt-2 me-5 pe-5">
+                        <div class="selected-values-content d-flex align-items-center border border-2 border-gold bg-light ">
+                            <span class="badge badge-value bg-warning text-light m-2 p-1">Light</span>
+                            <span class="badge badge-value bg-warning text-light m-2 p-1">Loyalty</span>
+                            <span class="badge badge-value bg-warning text-light m-2 p-1">Luck</span>
+                        </div>
+                        <a class="button link-dark text-decoration-none ms-5">
+                            <div>create</div>
+                        </a>
+                    </div>
+                    <div class="for-who abel-font d-flex justify-content-center align-items-center mt-3 align-self-end me-5 pe-5">
+                        <span class=" text-nowrap me-2 mb-3"> This blazon is for : </span>
+                        <div class="d-flex text-nowrap mb-3">
+                            <button type="button" class="btn btn-secondary me-2">me</button>
+                            <button type="button" class="btn btn-secondary me-2">a friend</button>
+                            <button type="button" class="btn btn-secondary">a team</button>
+                        </div>
+                        <input type="text" placeholder="Write your name here" class="mb-3 ms-3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</main>
+
+<!-- __________________________________FOOTER_________________________________________ -->   
+<footer class="d-flex align-self-center justify-content-between text-nowrap col-lg-10 col-11 border-2 mt-2 mb-2">
+    <div></div>
+    <a class="link-dark text-decoration-none" href="" >Home</a>
+    <div class="border-end  border-2"></div>
+    <a class="link-dark text-decoration-none" href="" >About My Blazon</a>
+    <div class="border-end  border-2"></div>
+    <a class="link-dark text-decoration-none" href="" >Terms of Use</a>
+    <div class="border-end  border-2"></div>
+    <a class="link-dark text-decoration-none" href="" >Privacy Police</a>
+    <div class="border-end  border-2"></div>
+    <a class="link-dark text-decoration-none" href="" >Contact Us</a>
+    <div class="border-end "></div>
+    <a class="link-dark text-decoration-none border-2" href="" >FAQ</a>
+    <div></div>
+</footer>
+
+</div>
+</body>
+</html>

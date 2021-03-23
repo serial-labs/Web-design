@@ -1,0 +1,214 @@
+/* ~~~~~~~~~ RESPONSIVE ~~~~~~~~~ */
+@media(max-width : 1300px){
+/*  ~~~~~~~~~~~~~~~~~~ HOME ~~~~~~~~~~~~~~~~~~  */
+/* ~~~~~~~~~ 1ERE SECTION ~~~~~~~~~  */
+    .home-section-1{
+        flex-direction: column;
+        align-items: center;
+        margin-left: -5%;
+        padding-top: 3%;
+    }
+    .blazon-lion{
+        position: relative; 
+        left: -1%; 
+        order: 2;
+    }
+    .blazon{
+        margin-top: -4%;
+    }
+    .blazon img, .lion img{ 
+        min-width: 0px; 
+    }
+    .creation{
+        flex-direction: row !important;
+        width: auto; 
+        min-width: none;
+        order: 1;
+        left: 0.5%;
+    }
+    .creation h2, .creation a{ 
+        padding: 4px;  
+    }
+    .home-button { 
+        top: -8px; 
+        left : 4.5%;
+        width: 150px;
+        padding-bottom: 4px;
+    }
+}
+@media(max-width : 1200px){
+/*  ~~~~~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~~~~~  */
+    #logo{
+        margin: 10px 0px 0px 8px;
+    }
+/*  ~~~~~~~~~~~~~~~~~~ CREATE-COAT-OF-ARMS ~~~~~~~~~~~~~~~~~~  */
+/* ~~~~~~~~~ 1ERE SECTION ~~~~~~~~~  */
+    .cas-tile .button{
+        font-size: 1.175rem;
+    }
+}
+    @media (max-width : 992px){
+/*  ~~~~~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~~~~~  */
+    #logo{
+        margin: 12px 0px 0px 8px;
+    }
+/*  ~~~~~~~~~~~~~~~~~~ NAV ~~~~~~~~~~~~~~~~~~  */
+nav a{
+    font-size: 1.1rem;
+}
+.nav-center-link{
+    position: relative;
+    top: -3px;
+}
+/*  ~~~~~~~~~~~~~~~~~~ HOME ~~~~~~~~~~~~~~~~~~  */
+/* ~~~~~~~~~ 1ERE SECTION ~~~~~~~~~  */
+    .home-section-1{
+        flex-direction: column;
+        align-items: center;
+        margin-left: -8%;
+        padding-top: 3%;
+    }
+    .creation{ 
+        left: 3%; 
+    }
+    .creation h2, .creation a { 
+        margin-left: -1%;
+        padding: 6px; 
+        font-size:  27.5px;
+    }
+        .home-button { 
+            top: -12px; 
+            left : 2%;
+            width: 110px;
+            margin-left: 15px;
+            padding-right: 10px;
+            padding-bottom: 4px;
+        }
+/*  ~~~~~~~~~~~~~~~~~~ CREATE-COAT-OF-ARMS ~~~~~~~~~~~~~~~~~~  */
+/* ~~~~~~~~~ 1ERE SECTION ~~~~~~~~~  */
+    .under-cas-tile-2 h3 span{
+        white-space: nowrap;
+    }
+    .under-cas-tile-1 h3 span{
+        white-space: nowrap;
+    }
+    .under-cas-tile-1{
+        flex-direction: column;
+        align-items: center;
+    }
+    .under-cas-tile-1 div:nth-child(1){
+        order: 2;
+        height: 50%;
+    }
+    .under-cas-tile-1 div:nth-child(2){
+        order: 1;
+        height: 50%;
+    }
+
+    .under-cas-tile-2{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .under-cas-tile-2 div:nth-child(1){
+        order: 1;
+        height: 50%;
+    }
+    .under-cas-tile-2 div:nth-child(2){
+        order: 2;
+        height: 50%;
+    }
+    .under-cas-tile-1{
+     position: relative;
+     bottom : -10px;
+    }
+/*  ~~~~~~~~~~~~~~~~~~ HERALDRY ~~~~~~~~~~~~~~~~~~  */
+    .tech-glossary{
+    flex-direction: column;
+    }
+    .tech-glossary .heraldry-section{
+    width: 100%;
+    }
+    .tech-glossary .heraldry-section:nth-child(2) h3{
+    margin-top: 10px !important;
+    }
+    .tech-glossary .heraldry-section:nth-child(2) img{
+        margin-top: 5px !important;
+        margin-left: 10px !important;
+        margin-bottom: 10px !important;
+        }
+    .tech-glossary .heraldry-section:nth-child(1) h3{
+        margin-top: 66px !important;
+        }
+/*  ~~~~~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~~~~~  */
+footer a{
+    font-size: 1rem;
+}
+}
+@media (max-width : 814px){
+/*  ~~~~~~~~~~~~~~~~~~ HOME ~~~~~~~~~~~~~~~~~~  */
+/* ~~~~~~~~~ 1ERE SECTION ~~~~~~~~~  */
+.creation{ 
+    left: 5%; 
+}
+    .blazon-lion{
+        left: 4%;
+    }
+    .blazon{
+        width: 50%; 
+        bottom: 7%; 
+        left: 10.5%;
+    }
+    .blazon img{ 
+        width: 100%; 
+    }
+    .lion {
+        width: 60%;
+    }
+    .lion img{ 
+    width: 80%;
+    }
+    .creation { 
+        top : -2%;
+    }
+    .home-button { 
+        top: -11px; 
+    }
+
+}
+@media (max-width : 614px) {
+    html{
+        font-size: 14px;
+        }
+/*  ~~~~~~~~~~~~~~~~~~ NAV ~~~~~~~~~~~~~~~~~~  */
+    .nav-center-link{
+        position: relative;
+        top: -2px;
+    }
+/*  ~~~~~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~~~~~  */
+    #logo{
+
+        margin: 10px 0px 0px 5px;
+    }
+/*  ~~~~~~~~~~~~~~~~~~ HOME ~~~~~~~~~~~~~~~~~~  */
+/* ~~~~~~~~~ 1ERE SECTION ~~~~~~~~~  */
+    .creation{ 
+        left: 6%; 
+    }
+    .creation h2, .creation a { 
+        padding: 4px; 
+        font-size: 22.5px !important;
+    }
+    .home-button { 
+        top: -17px;
+        left: -3px; 
+    }
+/*  ~~~~~~~~~~~~~~~~~~ CREATE-COAT-OF-ARMS ~~~~~~~~~~~~~~~~~~  */
+/* ~~~~~~~~~ 1ERE SECTION ~~~~~~~~~  */
+    .cas-tile-container{
+        height: 240px;
+    }    
+    .cas-tile .button{
+        font-size: 1.4rem;
+    }
+}
