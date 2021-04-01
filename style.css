@@ -201,9 +201,20 @@ footer a:hover{
     margin-top: 72px;
 }
 /*  ~~~~~~~~~~~~~~~~~~ ROLL-OF-ARMS ~~~~~~~~~~~~~~~~~~  */
-
-.roa-tile{
-    /*180 240*/
+.roa-section-1 span{
+    text-align: start;
+    color: white;
+    background-color: #b57e00;
+    font-size: 40px !important;
+}
+.roa-title-separation{
+    height: 4px;
+    position: relative;
+    top: -12px;
+}
+.roa-section-1 em{
+ color : #212529;
+ font-weight: normal;
 }
 .roa-section-1 em{
     font-size: 15px;
@@ -211,7 +222,73 @@ footer a:hover{
 .roa-section-1 span{
     font-size: 20px;
 }
-
+.roa-blazon{
+    width :210px;
+    height: 240px;
+    background-color: rgba(243,243,243,1);
+    background-image: linear-gradient(135deg, rgb(255, 255, 255) 5%, rgba(243, 243, 243, 0) 63% 100%);
+    box-shadow: rgb(212, 212, 212) -3px 3px 7px;
+    border-radius: 5px;
+    margin: 7px 10px;
+    cursor: pointer;
+    transition:  all 0.3s;
+}
+.roa-blazon:hover{
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(212, 212, 212) 0px 3px 7px;
+    opacity: 0.8;
+    box-shadow: rgb(212, 212, 212) 3px 3px 7px;
+}
+.roa-blazon h3{
+    overflow: hidden;
+    color: #946801;
+    font-size: 20px;
+    font-weight: bold;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~COAT-OF-ARMS~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~MY~~~~~~~~~~~~~~~~~~~~ */
+.coa-section-1 h2 .name{
+    text-align: start;
+    color: white;
+    background-color: #b57e00;
+}
+.coa-section-1 h2 .separator{
+    margin-left: 40px;
+}
+.coa-title-separation{
+    height: 4px;
+    position: relative;
+    top: -10px;
+}
+.coa-nickname{
+    position: relative;
+    top: -10px;
+    margin-bottom: 0px;
+}
+.coa-blazon{
+    width :70%;
+    height: 350px;
+    background-color: rgba(243,243,243,1);
+    background-image: linear-gradient(135deg, rgb(255, 255, 255) 5%, rgba(243, 243, 243, 0) 63% 100%);
+    box-shadow: rgb(212, 212, 212) 0px 3px 7px;
+    border-radius: 5px;
+    margin: 7px 10px 0px 10px;
+    position: relative;
+    top: -20px;
+}
+.coa-section-1 h3{
+    position : relative;
+    top: -20px;
+}
+.txt-blazon{
+    margin-bottom: 10px;
+    margin-top: 0px !important;
+    font-size: 22px;
+}
+.coa-section-2 div:nth-child(1){
+    border-radius: 5px 5px 0px 0px;
+    background-color: rgb(119,59,59);
+}
 /*  ~~~~~~~~~~~~~~~~~~ TEST-PERSO ~~~~~~~~~~~~~~~~~~  */
 .test-perso-section-1 h2{
 margin: 0px;
@@ -322,8 +399,9 @@ padding-top: 0px !important;
     position: relative !important;
     top: -15px !important;
 }
-.syv-section .msg-box-1 .badge{
+.syv-section .msg-box-5 .badge{
     box-shadow: rgb(0, 0, 0) 0px 0px 15px;
+    width: 160px;
 }
 
 .share h3{
@@ -435,15 +513,13 @@ background: linear-gradient(261deg, rgba(255,255,255,1) 49%, rgba(208,208,208,1)
 max-height: 400px;
 overflow-y: hidden;
 }
-
-
 .selected-values-content{
     width: 500px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    
-
+    justify-content: center;  
 }
+
+
 
 

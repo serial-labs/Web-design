@@ -1,25 +1,27 @@
 html{
     font-size: 20px;
-
+    --white: #ffffff;
     --gold: #b57e00;
     --golder: #724a00;
     --light-gray: #f3f3f3;
     --light-green: #cbffd1;
     --light-red: #ffcaca;
     --parchemin: #9e8067;
+    --faceblue: #4267B2;
 }
 
+.text-white{color: var(--white)}
 .text-gold{color: var(--gold);}
 .text-golder{color: var(--golder)}
 .text-light-gray{color: var(--light-gray)}
+.text-faceblue{color: var(--faceblue)}
 
 .bg-gold{background-color: var(--gold);}
 .bg-golder{background-color: var(--golder)}
 .bg-light-gray{background-color: var(--light-gray)}
-
-.border-light-gray{
-    border-color: var(--light-gray) !important;
-}
+.bg-white{background-color: var(--white);}
+.bg-faceblue{background-color: var(--faceblue);}
+.border-light-gray{border-color: var(--light-gray) !important;}
 .border-gold{
     border-color: var(--gold) !important;
 }
@@ -36,6 +38,14 @@ html{
 .italic{
     font-style: italic;
 }
+.bold{
+    font-weight: bold;
+}
+
+.bolder{
+    font-weight: bolder;
+}
+
 
 /*________________________________FONT____________________________________*/
 
@@ -81,6 +91,7 @@ h2, h3, h4, p, span {
 .h-7{height: 70%;}
 .h-8{height: 80%;}
 .h-9{height: 90%;}
+/*________________________________WIDTH-HEIGHT____________________________________*/
 
 /*________________________________BUTTON____________________________________*/
 /* 
@@ -174,6 +185,41 @@ a ajusté a chaque situation
         color: white;
         font-weight: 200;
     }
+/* _________________________EXEMPLE-5________________________ */
+.message-box-container-5{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.msg-box-5{
+    position : relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+    background: url(img/border.png), url(img/border1.png), 
+    linear-gradient(180deg, rgba(255,251,251,1) 0%, rgba(207,207,207,1) 48%, rgba(181,180,180,1) 95%);
+    
+    box-shadow: 3px 1px 20px -1px rgba(174,174,174,1);
+
+    background-size: contain;	
+    background-repeat: no-repeat, no-repeat;		
+    background-position: top right, bottom left;
+    
+    border-radius: 5px;
+
+}
+.under-message-box-5{
+    position : relative;
+    z-index: 10;
+    width: 154px;
+    height: 55px;
+}
+
 /*________________________________BADGE-VALUE____________________________________*/
 
 .badge-value{
@@ -188,7 +234,6 @@ a ajusté a chaque situation
     background: linear-gradient(160deg, rgba(119,59,59,1) 0%, rgba(68,17,17,1) 100%);
     box-shadow: #858585 3px 3px 7px;
     letter-spacing: 2px;
-    font-weight:bold;
 }
 
 
