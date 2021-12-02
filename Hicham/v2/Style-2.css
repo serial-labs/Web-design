@@ -1,0 +1,1290 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Staatliches&display=swap');
+:root {
+    --primary-color: #141850;
+    --secondary-color: #006AC6;
+    --light-color: white;
+    --dark-color: black;
+    --blue-light-color: #548dbd;
+    --green-color: #198b7e;
+    --orange-color: rgba(247,154,10, 0.1);
+    --max-width: 90rem;
+}
+html {
+    font-size: 62.5%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'poppins', sans-serif;
+    position: relative;
+    overflow-x: hidden;
+    font-size: 1.8rem;
+}
+body:after {
+    content: '';
+    background-color: white;
+    background-image: url("https://www.transparenttextures.com/patterns/subtle-white-feathers.png");
+    z-index: -6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+
+/* -------------------------BUTTONS-------------------- */
+.btn-dark {
+    color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
+    padding: 5px 3rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    transition: ease-out 0.3s;
+}
+.btn-light {
+    color: var(--light-color);
+    border: 1px solid var(--light-color);
+    padding: 5px 3rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    transition: ease-out 0.3s;
+}
+.btn-dark:hover {
+    box-shadow: inset 35rem 0 0 1px var(--secondary-color);
+    color: var(--light-color);
+    transition: ease-in 0.5s;
+}
+.btn-light:hover {
+    box-shadow: inset 35rem 0 0 1px var(--light-color);
+    color: var(--primary-color);
+    transition: ease-in 0.5s;
+}
+/* ------------------ BUTTON FOR SKIPPING PAGES ---------------*/
+.button-skip {
+    display: flex;
+    margin: auto;
+    margin-top: 9rem;
+    justify-content: center;
+    align-items: center;
+}
+.button-skip i{
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+.button-skip i:hover {
+    color: var(--secondary-color);
+    transition: 0.1s;
+}
+.button-skip p {
+    font-size: 2rem;
+    margin: 0 1rem;
+    color: var(--primary-color);
+}
+
+sup a {
+    color: rgb(255, 0, 0, 0.8);
+}
+/* -----------------------UTILITIES TEXT & STUFF------------------------------ */
+
+a{
+    color: var(--dark-color);
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+.utility-text {
+    color: var(--secondary-color);
+}
+.gras {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+.italic {
+    font-style: italic;
+}
+.posr {
+    position: relative;
+}
+/* ------------------ IMAGES --------------- */
+img {
+    margin: auto;
+}
+.img-shadow{
+    filter: drop-shadow(0.5rem 0.5rem 0.85rem rgb(110, 110, 110));    
+}
+
+/* ----------------- width + height --------------*/
+.w10 {
+    width: 10rem;
+}
+.w15 {
+    width: 15rem;
+}
+.w20 {
+    width: 20rem;
+}
+.w25 {
+    width: 25rem;
+}
+.w30 {
+    width: 30rem;
+}
+.w100{
+    width: 100%;
+}
+.w50p{
+    width: 50%;
+}
+
+.h10 {
+    height: 10rem;
+}
+.h15 {
+    height: 15rem;
+}
+.h20 {
+    height: 20rem;
+}
+.h25 {
+    height: 25rem;
+}
+.h30 {
+    height: 30rem;
+}
+.h35 {
+    height: 35rem;
+}
+.h50 {
+    height: 50rem;
+}
+.h100 {
+    height: 100%;
+}
+
+/* ------------------------ PADDING------------- */
+.p05 {
+    padding: 0.5rem;
+}
+.p1 {
+    padding: 1rem;
+}
+.px05{
+    padding-right:  0.5rem;
+    padding-left:  0.5rem;
+}
+.py05{
+    padding-top:  0.5rem;
+    padding-bottom:  0.5rem;
+}
+.p2 {
+    padding: 2rem;
+}
+.px1{
+    padding-right:  1rem;
+    padding-left:  1rem;
+}
+.px2{
+    padding-right:  2rem;
+    padding-left:  2rem;
+}
+.py1{
+    padding-top:  1rem;
+    padding-bottom:  1rem;
+}
+.py2{
+    padding-top:  2rem;
+    padding-bottom:  2rem;
+}
+.p2 {
+    padding: 2rem;
+}
+.px2{
+    padding-right:  2rem;
+    padding-left:  2rem;
+}
+.py2{
+    padding-top:  2rem;
+    padding-bottom:  2rem;
+}
+.p3 {
+    padding: 3rem;
+}
+.px3{
+    padding-right:  3rem;
+    padding-left:  3rem;
+}
+.py3{
+    padding-top:  3rem;
+    padding-bottom:  3rem;
+}
+
+/* --------------------------MARGIN------------------- */
+.m05 {
+    margin: 0.5rem;
+}
+.mx1 {
+    margin: 1rem;
+}
+.my1 {
+    margin: 1rem;
+}
+.mx05{
+    margin-right:  0.5rem;
+    margin-left:  0.5rem;
+}
+.my05{
+    margin-top:  0.5rem;
+    margin-bottom:  0.5rem;
+}
+.m2 {
+    margin: 2rem;
+}
+.mx2{
+    margin-right:  2rem;
+    margin-left:  2rem;
+}
+.my2{
+    margin-top:  2rem;
+    margin-bottom:  2rem;
+}
+.m2 {
+    margin: 2rem;
+}
+.mx2{
+    margin-right:  2rem;
+    margin-left:  2rem;
+}
+.my2{
+    margin-top:  2rem;
+    margin-bottom:  2rem;
+}
+.m3 {
+    margin: 3rem;
+}
+.mx3{
+    margin-right:  3rem;
+    margin-left:  3rem;
+}
+.my3{
+    margin-top:  3rem;
+    margin-bottom:  3rem;
+}
+.m5 {
+    margin: 5rem;
+}
+.mx5{
+    margin-right:   5rem;
+    margin-left:   5rem;
+}
+.my5{
+    margin-top:   5rem;
+    margin-bottom:   5rem;
+}
+.m10 {
+    margin: 10rem;
+}
+.mx10{
+    margin-right:   10rem;
+    margin-left:   10rem;
+}
+.my10{
+    margin-top:   10rem;
+    margin-bottom:   10rem;
+}
+.ma {
+    margin: auto;
+}
+/* -------------------BORDERS--------------- */
+.bo1 {
+    border: 1px solid black;
+}
+.bot1 {
+    border-top: 1px solid black;
+}
+.bor1 {
+    border-right: 1px solid black;
+}
+.bob1 {
+    border-bottom: 1px solid black;
+}
+.bol1 {
+    border-left: 1px solid black;
+}
+/* ------------ TEXT ALIGN -------------- */
+.txtc {
+    text-align: center;
+}
+.txtj {
+    text-align: justify;
+}
+.txtl {
+    text-align: left;
+}
+.txtr {
+    text-align: right;
+}
+
+/* ---------------grid --------------- */
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-gap: 1rem;
+    margin: 1rem;
+}
+/* --------------flex------------- */
+.row-c {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.row-sb {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.row-sa {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.row-se {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.row-fs {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.row-fe {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.col-c {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.col-sb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.col-sa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.col-se {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.col-fs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.col-fe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.gap1 {
+    gap: 1rem;
+}
+.gap2 {
+    gap: 2rem;
+}
+.gap3 {
+    gap: 3rem;
+}
+.gap4 {
+    gap: 4rem;
+}
+.gap5 {
+    gap: 5rem;
+}
+.gap8 {
+    gap: 8rem;
+}
+
+/* --------------section POUR TOUTES LES PAGES------------- */
+.main-section {
+    max-width: var(--max-width);
+    max-width: 90rem;
+    margin: auto;
+    position: relative;
+    padding: 0 3rem;
+}
+
+
+/*-------------------NAVIGATION WITH MENU----------------------- */
+header {
+    margin: auto;
+    padding: 1rem;
+}
+#navbar ul {
+    width: 100%;
+    font-size: 2rem;
+    flex-grow: 1;
+}
+
+#navbar .fa-bars {
+    display: none;
+}
+
+/* Esthéthique logo */
+header .logo {
+    color: var(--secondary-color);
+    font-family: 'poppins';
+    font-size: 5rem;
+}
+header .logo span {
+    font-family: 'poppins';
+    margin-left: 1rem;
+    font-size: 5rem;
+}
+header .logo .fa-shield-alt {
+    font-size: 5rem;
+}
+header .logo a {
+    color: var(--secondary-color);
+}
+
+/* --------------------------------- NAVBAR ORNAMENT WITHOUT UL --------------------------- */
+/* .ornament {
+    position: relative;
+}
+.ornament:after {
+    content: '';
+    position: absolute;
+    width: 28rem;
+    height: 25%;
+    top: 50%;
+    transform: translate(0,-50%);   
+    right: 2%;
+    background: url('/Images/SVG/separator.svg') no-repeat;
+}
+.ornament:before {
+    content: '';
+    position: absolute;
+    width: 28rem;
+    height: 25%;
+    top: 50%;
+    transform: translate(0,-50%);
+    left: 2%;
+    background: url('/Images/SVG/separator.svg') no-repeat;
+} */
+
+
+/* ------------- H1 du HEADER (BLUE BANNER) TOUTES LES PAGES--------------- */
+.titre-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    color: var(--light-color);
+    background: var(--secondary-color);
+    font-weight: 200; 
+    letter-spacing: 0.3rem;
+    width: 100%;
+    padding: 2rem;
+    height: 6rem;
+}
+
+.first-title {
+    color: var(--light-color);
+    border-bottom: 1px solid white;
+}
+.titre-section span {
+    font-weight: 500;
+    border-top: 1px solid white;
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+/* ---------------------PAGE ABOUT HERALDRY--------------------- */
+/* ------------- ETIQUETTE EXCEPTION CARDS--------------- */
+.creation-card {
+    padding: 0 2rem 2rem 2rem;
+    background: var(--secondary-color);
+    color: var(--light-color);
+    height: 40rem;
+}
+.creation-card .etiquette-link {
+    padding: 0.5rem 0.5rem;
+    transform:  translate(0, -50%); 
+    transition: 0.5s;
+
+}
+/* ------------------ ETIQUETTE troisième TITRE ----------------------*/
+.glossary-card {
+    padding: 0 2rem 2rem 2rem;
+    background: var(--secondary-color);
+    color: var(--light-color);
+    line-height: 1.8;
+    height: 40rem;
+}
+.glossary-card .etiquette-link {
+    transform: translate(0,-50%);
+    transition: 0.5s;
+}
+/* ------------- H4 du HEADER ETIQUETTE (SOUS TITRE)--------------- */
+.etiquette-link {
+    transform:  translate(100%);
+    background: var(--light-color);
+    color: var(--secondary-color);
+    transition: 0.5s;
+}
+.etiquette-link:hover {
+    background: var(--secondary-color);
+    color: var(--light-color);
+}
+.etiquette {
+    transform:  translate(100%);
+    background: var(--light-color);
+    color: var(--secondary-color);
+    font-weight: 400;
+    border: 1px solid var(--secondary-color);
+    /* background: var(--primary-color);
+    color: var(--light-color);
+    font-weight: 300; */
+    transition: 0.5s;
+}
+/* ---------------------PAGE CREATION TECHNIQUE PAGE 02--------------------- */
+.mid-title {
+    background: var(--light-color);
+    color: var(--primary-color);
+    height: 4rem;
+    font-size: 2.5rem;
+}
+/* ---------------------PAGE CREATION TECHNIQUE PAGE 08--------------------- */
+.slogan {
+    background: var(--orange-color);
+    border: 1px solid var(--blue-light-color);
+}
+/* --------------------------PAGE GLOSSARY------------------------------------- */
+.alphabet a {
+    padding: 0 0.5rem;
+}
+.alphabet a:hover {
+    text-decoration: underline;
+    color: var(--secondary-color)
+}
+.alphabet .actif {
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+.alphabet .vide {
+    text-decoration: none; 
+    pointer-events: none;
+    opacity: 0.5;
+}
+/* --------------------------------------------------------------- */
+
+
+/* -----------PROCESS PROGRESSION BAR------------ */
+.process {
+    margin: auto;
+}
+.proc01, .proc02, .proc03, .proc04 {
+    position: relative;
+    opacity: 0.5;
+    width: 100%;
+}
+.proc01::after, .proc02::after, .proc03::after, .proc04::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: var(--green-color);
+    z-index: -1;
+    transform: skewx(-25deg);
+}
+.current {
+    opacity: 1;
+}
+
+.process h3 {
+    padding: 1rem 3rem;
+    font-weight: 300;
+    text-align: center;
+    color: var(--light-color);
+}
+/* ---------------- COMPLEMENTAIRE SKEW --------------- */
+.proc01:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -1.1rem;
+    bottom: 0;
+    width: 5rem;
+    background: var(--green-color);
+    z-index: -1;
+}
+.proc04:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -1.1rem;
+    bottom: 0;
+    width: 5rem;
+    background: var(--green-color);
+    z-index: -2;
+
+}
+/* --------------------------PAGE ORDER VALUES AFTER TEST------------------------------------- */
+.after-test {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1.5rem;
+    text-align: center;
+    max-width: 90rem;
+    margin: auto;
+    margin-top: 5rem;
+    border-top: 1px solid black;
+}
+
+.after-test .box:first-child{
+    border-right: 1px solid var(--primary-color);
+    
+}
+
+.after-test .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0px 0px 5px rgb(46, 45, 45, 0.3); */
+    max-width: 44rem;
+    padding: 3rem;
+}
+.after-test .box p {
+    font-weight: 300;
+    text-align: center;
+}
+
+.after-test .values {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 2rem;
+    gap: 0.5rem;
+}
+.after-test .values span {
+    color: var(--primary-color);
+}
+.after-test .values-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 2rem;
+    gap: 1.6rem;
+}
+
+.button-choices {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 2rem;
+    border-top: 1px solid black;
+
+}
+.button-choices div:first-child a {
+    color: var(--green-color);
+}
+.button-choices div:first-child a:hover {
+    opacity: 0.8;
+}
+.after-test .placement {
+    border: 0.2rem dotted var(--primary-color);
+    border-radius: 0.5rem;
+    padding: 0.5rem 9rem ;
+    margin-left: 0.5rem;
+    opacity: 0.08;
+}
+.after-test .btn-values {
+    padding: 0.5rem 6rem ;
+    background: var(--secondary-color);
+    color: var(--light-color);
+    cursor: pointer;
+}
+.after-test .btn-values:hover {
+    background: var(--light-color);
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+/* -------------------------------ROLL OF ARMS ----------------------------- */
+.grid-wrapper .user-blazon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(247,154,10, 0.1);
+    padding: 20px;
+}
+.grid-wrapper .user-blazon img {
+    width: 100%;
+}
+
+
+/* -------------------------------Test or direct ----------------------------- */
+.test-or-direct {
+    display: grid;
+    font-size: 18px;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+    grid-gap: 1.5rem;
+    text-align: center;
+    margin-top: 30px;
+
+} 
+.test-or-direct .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 20rem;
+    width: 100%;
+    box-shadow: 0px 0px 5px rgb(46, 45, 45, 0.3); 
+    /* transition: 0.5s; */
+}
+
+.test-or-direct .box:hover { 
+    transition: 0.5s ease-in-out;
+}
+ .test-or-direct .box:first-child::after,
+  .test-or-direct .box:last-child::after  {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    z-index: -1;
+    opacity: 0.0;
+}
+.test-or-direct .box:first-child::after {
+    background: url('/Images/be-yourself-young-cute-boy-mock-up_23-2148462265.jpg') no-repeat center center/cover;    
+    transition: 0.5s ease-in-out; 
+}
+.test-or-direct .box:last-child::after {
+    background: url('/Images/Planche\ Contact-1b.jpg') no-repeat center center/cover;    
+    transition: 0.5s ease-in-out;
+}
+
+
+.test-or-direct .box:hover:first-child::after,
+.test-or-direct .box:hover:last-child::after  {
+    opacity: 0.3;
+}
+.test-or-direct .take-test {
+    margin: auto;
+}
+.test-or-direct p {
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+.separator   {
+    background: url('/Images/SVG/separator.svg')  center center/contain;
+    height: 15px;
+}
+.description-value {
+    /* max-width: 90rem; */
+    margin: auto;
+    text-align: justify;
+    line-height: 1.9;
+    padding: 30px;
+}
+.description-value p {
+    color: var(--primary-color);
+}
+.description-value span {
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+.description-value:last-child span:last-child {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* --------------SIGN IN OR CREATE----------------- */
+.blazon-choose {
+    background: url('/Images/SVG/BLAZON.svg') no-repeat center center/contain;
+    width: 100%;
+    height: 40rem;
+}
+.learn-more-heraldry {
+    color: var(--light-color);
+    background: var(--secondary-color);
+}
+.learn-more-heraldry p {
+    font-size: 1.7rem;
+    text-align: justify;
+}
+
+/* ------------------CHOOSE YOUR COAT OF ARM----------- */
+.coat-choice-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    margin: 2rem 0;
+}
+.coat-choice-container .values {
+    border-left: 1px solid black;
+    line-height: 2;
+    height: 100%;
+    font-size: 1.5rem;
+}
+.coat-choice-container img {
+    width: 60%;
+    display: flex;
+}
+.coat-choice-container a:hover {
+    background: rgb(0,106,198);
+    background: linear-gradient(90deg, rgba(0,106,198,1) 0%, rgba(4,80,145,1) 120%);
+    color: var(--light-color);
+}
+.coat-choice-container a:hover .gras {
+    color: var(--light-color);
+}
+/* ------------------BLAZON GENERATED----------- */
+.message-box {
+    max-width: 90rem;
+    background: rgb(0,106,198);
+    background: linear-gradient(90deg, rgba(0,106,198,1) 0%, rgba(0,61,115,1) 100%);
+    color: var(--light-color);
+    overflow:hidden;
+    z-index: +2;
+}
+.message-box:after {
+    content: '';
+    background: url('/Images/SVG/corner.svg') no-repeat center center;
+    position: absolute;
+    width: 50%;
+    height: 20rem;
+    top: 0%;
+    left: 63%;
+    opacity: 0.5;
+    z-index: 1;
+}
+.message-box:before {
+    content: '';
+    background: url('/Images/SVG/corner.svg') no-repeat center center;
+    position: absolute;
+    width: 50%;
+    height: 20rem;
+    bottom: 0%;
+    right: 63%;
+    transform: rotate(180deg);
+    opacity: 0.5;
+    z-index: 1;
+}
+.message-box p {
+    line-height: 3;
+}
+
+/* ------------------------------SHOP------------------- */
+.shop-introduction p {
+    text-align: center;
+    margin: auto;
+    background: var(--orange-color);
+    color: var(--primary-color);
+    padding: 1rem;
+    margin-top: 1rem ;
+}
+.shop-box {
+    background: var(--orange-color);
+}
+
+/* option store -------------------- */
+.optionsStore {
+    background:rgba(247,154,10, 0.1);
+    max-width: var(--max-width);
+    padding: 10px 80px;
+    line-height: 2;
+    margin-top: 30px;
+    line-height: 2.5;
+}
+
+.optionsStore  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 1rem;
+}
+.add-name, .add-values {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+}
+#userfirstname, #userlastname {
+    height: 3.5rem;
+    max-width: 21rem;
+}
+
+.shop-zazzle {
+    background: var(--orange-color);
+}
+
+.shop-zazzle img {
+    transition: 0.5s;
+}
+.shop-zazzle img:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+
+
+
+
+
+/* -------------------------PERSONALITY TEST------------------- */
+#number::after {
+    content: ' / 12';
+}
+/* .choosing-container-personality-test {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: auto;
+    grid-gap: 1.5rem;
+    text-align: center;
+    max-width: 900px;
+    margin: 0.9rem 0 2rem 0;
+    color: var(--primary-color);
+} */
+.choosing-container-personality-test i {
+    font-size: 3rem;
+    position: relative;
+}
+.choosing-container-personality-test .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 0;
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0px 0px 5px rgb(46, 45, 45, 0.3);
+    transition: 0.5s;
+}
+.choosing-container-personality-test.box img {
+    max-width: 60%;
+    border: 1px solid black;
+    position: relative;
+}
+.choosing-container-personality-test.box img {
+    max-width: 60%;
+    border: 1px solid black;
+    position: relative;
+}
+.btn-1 {
+    padding: 5px 60px ;
+    border-radius: 30px;
+    background: var(--secondary-color);
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+.last-choice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    background: var(--light-color);
+    color: var(--primary-color);
+    height: 6rem;
+    margin-bottom: 3rem;
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0px 0px 5px rgb(46, 45, 45, 0.3);
+    padding: 0 10px;
+    transition: 0.3s;
+}
+.last-choice h3 {
+    font-weight: 400;
+}
+.last-choice i {
+    font-size: 2rem;
+}
+.choosing-container-personality-test .box:hover {
+    background: var(--green-color) ;
+    color: white;
+    transform: scale(1.01);
+    transition: 0.5s;
+}
+.choosing-container-personality-test .box:hover::after {
+    content: '';
+    background: url('/Images/SVG/check-solid.svg') no-repeat;
+    position: absolute;
+    width: 12%;
+    height: 12%;
+    top: 0;
+    right: 5%;
+    opacity: 0.5;
+    z-index: 55;
+}
+.last-choice:hover {
+    background: rgba(220,30,10, 0.7) ;
+    color: white;
+    transition: 0.2s;
+}
+.last-choice i {
+    position: relative;
+}
+.last-choice:hover i::after {
+    content: '';
+    background: url('/Images/SVG/check-solid.svg') no-repeat;
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+}
+
+/* ----- BUTTON ALTERNATIVE CHOICES ----- */
+.button-alternative {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+.button-alternative a, .button-alternative i {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    transition: 0.5s;
+
+}
+
+/* --------HOVER SECTION BUTTON CHOICES ---------- */
+.button-alternative a:hover i, .button-alternative a:hover {
+    opacity: 0.7;
+    color: var(--green-color);
+    transition: 0.5s;
+}
+
+.button-alternative a:hover i {
+    margin: 0 0.5rem;
+    transition: 0.5;
+}
+.button-alternative a:hover:last-child i:last-child {
+    margin: 0 5px;
+    transform: rotateZ(360deg);
+    transition: 0.5;
+}
+
+
+/* ---------------------SHARE WITH YOUR FRIEND BOOSTYOURSELF */
+.message-box span {
+    background: var(--light-color);
+    color: var(--secondary-color);
+    padding: 0.5rem 1rem;
+}
+.socialnetwork {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.2rem;
+    margin: 2rem 0 ;
+    padding: 1rem 2rem;
+    border-top: 1px solid var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+.socialnetwork .icons {
+    display: flex;
+    gap: 2rem;
+}
+.socialnetwork .icons i {
+    margin-top: 2rem;
+    font-size: 3.5rem;
+    transition: 0.5s;
+}
+.socialnetwork .icons i:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+.socialnetwork .icons a:nth-child(1) {
+    color: var(--secondary-color);
+}
+.socialnetwork .icons a:nth-child(2) {
+    color: var(--blue-light-color);
+}
+.socialnetwork .icons a:nth-child(3) {
+    color: var(--green-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+footer {
+    margin-top: 150px;
+    background: var(--secondary-color);
+    padding: 10px;
+    position: relative;
+}
+footer:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.1;
+}
+.content {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    color: var(--light-color);
+    width: 100%;
+    margin: auto;
+    line-height: 2.3;
+}
+
+footer .content h3, .content a {
+    color: var(--light-color);
+}
+footer .content i {
+    font-family: 'poppins';
+}
+footer .content h3, .content a:hover {
+    opacity: 0.7;
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--secondary-color);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-color);
+  }
+
+
+
+  
+  @media screen  and (max-width: 800px) {
+    .row-sa-mobile {
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: center;
+      }
+    .col-sb-mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .grid-wrapper-mobile {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 1rem;
+        margin: auto;
+    }
+    .titre-section-mobile {
+        font-size: 1.8rem;
+    }
+    /* ---------------------------------- */
+    .logo {
+        align-items: center;
+    }
+
+    #navbar {
+          justify-content: flex-end;
+      }
+
+    #navbar ul {
+          display: none;
+      }
+    #navbar .fa-bars {
+          display: block;
+          font-size: 3rem;
+      }
+    .ornament a:after {
+        display: none;
+    }
+    .ornament a:before {
+        display: none;
+    }
+    /* ---------------------------------- */
+    /* ------------------------------------- */
+    .glossary-card {
+        height: fit-content;
+    }
+    .creation-card {
+        height: fit-content;
+    }
+    .etiquette-link {
+        transform:  translate(0%);
+        width: 100%;
+        background: var(--light-color);
+        color: var(--secondary-color);
+        transition: 0.5s;
+    }
+    .etiquette {
+        transform:  translate(0%);
+        width: 100%;
+        background: var(--light-color);
+        color: var(--secondary-color);
+        transition: 0.5s;
+    }
+    /* ------------------------------------------ */
+}
