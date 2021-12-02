@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Staatliches&display=swap');
+:root {
+    --primary-color: #141850;
+    --secondary-color: #006AC6;
+    --light-color: white;
+    --dark-color: black;
+    --max-width: 1280px;
+}
+html {
+    font-size: 62.5%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+    /* line-height: 1.5; */
+    font-size: 1.8rem;
+    position: relative;
+    padding-top: 10px;
+
+}
+/* body::before {
+    content: '';
+    background: url('/Images/SVG/wave-main.svg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -5;
+} */
+
+body:after {
+    content: '';
+    background-color: white;
+    /* background-image: url("https://www.transparenttextures.com/patterns/arches.png");
+    background-image: url("https://www.transparenttextures.com/patterns/black-felt.png");
+    background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
+    background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+    background-image: url("https://www.transparenttextures.com/patterns/xv.png");
+    background-image: url("https://www.transparenttextures.com/patterns/scribble-light.png"); */
+    background-image: url("https://www.transparenttextures.com/patterns/subtle-white-feathers.png");
+    z-index: -6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+
+
+
+
+a{
+    color: #333;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+h1 {
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+i {
+    font-family: 'poppins', sans-serif;
+    font-size: 2rem;
+}
+.fa, .fab, .fas {
+    font-size: 2rem;
+}
+
+
+
+
+
+
+/* utility  */
+
+.btn {
+    background: var(--secondary-color);
+    color: var(--light-color);
+    padding: 5px 80px;
+    border-radius: 30px;
+    /* font-size: 25px; */
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+.btn:hover {
+    box-shadow:
+                1px 1px #284155,
+                2px 2px #284155,
+                3px 3px #284155;
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+        transition: 0.5s;
+}
+
+/* navbar */
+/* Esthéthique logo */
+#navbar .logo {
+    align-self: center;
+    text-align: center;
+    justify-self: center;
+    padding-top: 15px;
+    color: var(--secondary-color);
+    margin-left: 90px;
+}
+
+#navbar .logo span {
+    font-family: 'poppins';
+    margin-left: 10px;
+    font-size: 5rem;
+}
+
+.logo .fa-shield-alt {
+    font-size: 5rem;
+}
+.logo a {
+    color: var(--secondary-color);
+}
+
+
+
+
+
+
+
+
+/*-----------Main Page-----------------*/
+
+.process-wrapper {
+    max-width: 900px;
+    margin: auto;
+}
+.process-creation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    max-width: 900px;
+    margin-top: 25px;
+}
+
+.process {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 250px;
+    font-weight: 300;
+    background: #9AC2C9;
+    background: #5C09E0;
+    color: var(--dark-color);
+    opacity: 0.5;
+    background: url('/Images/SVG/progres.svg') no-repeat center center/cover;
+}
+.process h3 {
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin-left: 29px;
+}
+
+
+.current-process {
+    color: var(--light-color);
+    opacity: 1; 
+    background: #9AC2C9;
+    background: #5C09E0;
+    background: url('/Images/SVG/progres.svg') no-repeat center center/cover;
+    filter: drop-shadow(8px 0 0.8rem #2a9d8f);
+    
+
+}
+
+.question-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    margin: auto;
+    margin-top: 15px;
+    color: var(--light-color);
+    /* background: #5b305a; */
+    /* background: #9AC2C9; */
+    /* background: #5C09E0; */
+    background: #2a9d8f;
+
+}
+
+.question-title h1 {
+    display: table-cell; 
+    vertical-align: middle; 
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+/* call to action */
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0px 0px 5px rgb(46, 45, 45, 0.3);
+    transition: 0.5s;
+    width: 440px;
+}
+
+.box:hover {
+    background: #2a9d8f ;
+    color: white;
+    transition: 0.5s;
+    transform: scale(1.03);
+}
+
+.choosing-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
+    margin: auto;
+    grid-gap: 1.5rem;
+    text-align: center;
+    max-width: 900px;
+    margin-top: 30px;
+
+}
+.choosing-container .btn-1 {
+    padding: 5px 60px ;
+    border-radius: 30px;
+    background: var(--secondary-color);
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+.box:hover .btn-1 {
+    background: none;
+    border: 1px solid white;
+    color: white;
+    transition: 0.1s;
+
+}
+.box:hover .btn-1:hover {
+    background: white;
+    color: var(--primary-color);
+    box-shadow:
+    1px 1px #284155,
+    2px 2px #284155,
+    3px 3px #284155;
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+    transition: 0.2s;
+}
+
+.select-value {
+    margin: auto;
+    position: relative;
+}
+.select-value:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.take-test {
+    margin: auto;
+
+}
+.choosing-container p {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.separator   {
+  background: url('/Images/SVG/separator.svg')  center center/contain;
+  height: 15px;
+  margin: 20px 0;
+}
+
+.description-value {
+    max-width: 900px;
+    margin: auto;
+    text-align: justify;
+    line-height: 1.9;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 30px;
+}
+.description-value p {
+    color: var(--primary-color);
+}
+.description-value span {
+    font-weight: 700;
+    /* color: coral; */
+    color: var(--secondary-color);
+}
+
+.description-value:last-child span:last-child {
+    display: block;
+    text-align: center;
+    font-size: 2.2rem;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+ 
+
+
+/* footer */
+footer {
+    /* background: linear-gradient(90deg, rgba(71,61,255,1) 100%, rgba(71,109,255,1) 100%); */
+    background: var(--secondary-color);
+    padding: 10px;
+    position: relative;
+}
+footer:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.1;
+}
+.content {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    color: var(--light-color);
+    width: 100%;
+    margin: auto;
+    line-height: 2.3;
+}
+
+footer .content h3, .content a {
+    color: var(--light-color);
+}
+footer .content i {
+    font-family: 'poppins';
+}
+footer .content h3, .content a:hover {
+    opacity: 0.7;
+}
+
+/* -------SCROLLBARRE------ */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--secondary-color);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-color);
+  }
+
