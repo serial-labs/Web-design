@@ -5,7 +5,8 @@
     line-height: 22px;
     text-align: center;
     margin: auto;
-    margin: 10rem;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
 }
 #genAnim {
     width: 29rem;

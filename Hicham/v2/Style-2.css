@@ -41,16 +41,29 @@ body:after {
 .btn-dark {
     color: var(--primary-color);
     border: 1px solid var(--secondary-color);
-    padding: 5px 3rem;
+    padding: 0.5rem 1rem;
     font-weight: 400;
+    min-width: 25%;
+    text-align: center;
     letter-spacing: 1px;
     transition: ease-out 0.3s;
+}
+.btn-dark-disabled {
+    color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
+    padding: 0.5rem 1rem;
+    font-weight: 400;
+    min-width: 25%;
+    letter-spacing: 1px;
+    transition: ease-out 0.3s;
+    opacity: 0.5;
 }
 .btn-light {
     color: var(--light-color);
     border: 1px solid var(--light-color);
-    padding: 5px 3rem;
+    padding: 0.5rem 1rem;
     font-weight: 400;
+    min-width: 25%;
     letter-spacing: 1px;
     transition: ease-out 0.3s;
 }
@@ -424,7 +437,24 @@ img {
 .gap8 {
     gap: 8rem;
 }
+.gap10 {
+    gap: 10rem;
+}
+.gap22 {
+    gap: 22rem;
+}
+/* --------------SEPARATORS------------- */
 
+.separator   {
+    background: url('/Images/SVG/separator.svg')  center center/contain;
+    height: 15px;
+}
+.separatorh {
+    background: url('/Images/sprites_4.0.png') no-repeat scroll center -425px;
+    height: 10px;
+    padding: 10px 0;
+    overflow: hidden;
+}
 /* --------------section POUR TOUTES LES PAGES------------- */
 .main-section {
     max-width: var(--max-width);
@@ -806,10 +836,7 @@ header .logo a {
     margin-bottom: 30px;
     font-weight: 500;
 }
-.separator   {
-    background: url('/Images/SVG/separator.svg')  center center/contain;
-    height: 15px;
-}
+
 .description-value {
     /* max-width: 90rem; */
     margin: auto;
@@ -1085,7 +1112,7 @@ header .logo a {
 }
 
 /* --------HOVER SECTION BUTTON CHOICES ---------- */
-.button-alternative a:hover i, .button-alternative a:hover {
+.btn-alternative:hover i, .button-alternative a:hover {
     opacity: 0.7;
     color: var(--green-color);
     transition: 0.5s;
@@ -1100,8 +1127,6 @@ header .logo a {
     transform: rotateZ(360deg);
     transition: 0.5;
 }
-
-
 /* ---------------------SHARE WITH YOUR FRIEND BOOSTYOURSELF */
 .message-box span {
     background: var(--light-color);
@@ -1116,8 +1141,8 @@ header .logo a {
     font-size: 2.2rem;
     margin: 2rem 0 ;
     padding: 1rem 2rem;
-    border-top: 1px solid var(--primary-color);
-    border-bottom: 1px solid var(--primary-color);
+    /* border-top: 1px solid var(--primary-color); */
+    /* border-bottom: 1px solid var(--primary-color); */
     color: var(--primary-color);
 }
 .socialnetwork .icons {
@@ -1142,13 +1167,175 @@ header .logo a {
 .socialnetwork .icons a:nth-child(3) {
     color: var(--green-color);
 }
+/* ---------------------Loadding ready animation ----------- */
+
+.box-recent-coa {
+    background: var(--light-color);
+    width: 70%;
+    box-shadow: 0 0 0.5rem var(--dark-color);
+}
+.box-recent-coa :hover {
+    background: var(--orange-color);
+}
+
+/* ---------------------Name your favorite character ----------- */
+.form-name-character input {
+    color: #0b3456;
+    background-color: #fff;
+    border: 1px solid #aaa0a3;
+    line-height: 1rem;
+    padding: 8px 5px;
+    margin: auto;
+}
+.form-name-character input:last-child{
+    width: 70%;
+}
+.skip-btn a, .skip-btn i {
+    transition: 0.5s;
+}
+.skip-btn:hover a {
+    color:var(--green-color) ;
+}
+.skip-btn a:hover i {
+    opacity: 0.7;
+    margin-left: 1rem;
+    color: var(--green-color);
+    transition: 0.5s;
+}
 
 
+/* ---------------------NOW THIS IS YOUR COAT OF ARMS ----------- */
+.container-resume {
+    border-bottom: 1px solid var(--dark-color);
+    line-height: 2;
+}
+.resume {
+    border-left: 1px solid var(--dark-color);
+    padding: 1rem 3rem;
+    margin-top: 2rem;
+}
+.resume p {
+    font-size: 1.8rem;
+    margin: 1rem 0;
+}
+
+/* ---------------------CUSTOMIZE YOUR SHIELD ----------- */
+.creation .palettes button, .glares button {
+    overflow: hidden;
+    padding: 7rem 0 0.5rem;
+    border: 1px solid black;
+    font-size: 13px;
+    text-align: center;
+    position: relative;
+    width: 7rem;
+    background: transparent url('/Images/sprite-ico-editor-3.1.png') no-repeat scroll 0 0;
+}
+.creation .glares button[class^=ico-]:hover, .creation .palettes button[class^=ico-]:hover {
+    background-color: #AFDB90;
+    cursor: pointer;
+}
+.creation .palettes button.ico-4 {
+    background-position: -210px -180px;
+}
+.creation .palettes button.ico-5 {
+    background-position: -280px -180px;
+}
+.creation .palettes button.ico-6 {
+    background-position: -350px -180px;
+}
+.creation .glares button.ico-1 {
+    background-position: 0 -90px;
+}
+.creation .glares button.ico-2 {
+    background-position: -70px -90px;
+}
+.creation .glares button.ico-3 {
+    background-position: -140px -90px;
+}
 
 
+/* ---------------------CUSTOMIZE YOUR SHIELD ----------- */
+.customize-coat {
+    border: 1px solid red;
+}
+.customize-coat div:nth-child(1) {
+    background: var(--secondary-color);
+    height: 40rem;
+    border: 1px solid black;
+}
+.set {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding-right: 1rem;
+    background: var(--light-color);
+    box-shadow: 0 0.2rem 0.8rem var(--primary-color);
+}
+.set img {
+    width: 30%;
+    height: 100%;
+    padding: 1rem;
+    background: rgb(170, 170, 170);
+    margin: 0;
+}
 
+/* ---------------------FROM SCRATCH ----------- */
+.grid-wrapper-scratch {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 
-
+}
+.grid-wrapper-scratch div {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 1rem;
+}
+.grid-wrapper-scratch div:hover {
+    background:var(--orange-color);
+}
+/* ---------------------FROM SCRATCH COLOR----------- */
+#colorpicker {
+    border: 1px solid rgba(0, 0, 0, 0.178);
+    width: 70%;
+    height: 5rem;
+    margin: auto;
+}
+#colorpicker div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 10%;
+}
+#colorpicker div:hover {
+    background: var(--blue-light-color);
+}
+#colorpicker button {
+    width: 3.5rem ;
+    height: 3.5rem;
+}
+button.gules {
+    background: red;
+}
+button.azur {
+    background: azure;
+}
+button.sinople {
+    background: green;
+}
+button.purepure {
+    background: purple;
+}
+button.or {
+    background: gold;
+}
+button.argent {
+    background: silver;
+}
+button.sable {
+    background: black;
+}
 
 
 
@@ -1237,6 +1424,7 @@ footer .content h3, .content a:hover {
         grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
         grid-template-rows: repeat(2, 1fr);
         grid-gap: 1rem;
+        margin-top: 1rem;
         margin: auto;
     }
     .titre-section-mobile {

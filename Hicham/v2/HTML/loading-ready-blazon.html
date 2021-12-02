@@ -10,17 +10,18 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Staatliches&display=swap"
       rel="stylesheet"/>
     <link rel="stylesheet" href="/Style-2.css" />
+    <link rel="stylesheet" href="/loading-animation.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
       crossorigin="anonymous"/>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-    <title>Blazon generated</title>
+    <title>Blazon ready in less then 8 seconds</title>
   </head>
 
 
 
   <body>
-    <header class="col-c txtc px2 py1 row-sa-mobile">
+    <header class="col-c txtc py1 row-sa-mobile">
       <h1 class="logo">
          <i class="fas fa-shield-alt"><span>MYBLAZON</span></i>
       </h1>
@@ -30,7 +31,6 @@
         </div>
       </nav>
     </header>
-
     <!-- ---------------------------------------- -->
     <section class="main-section">
       <div class="my1">
@@ -41,38 +41,37 @@
           <h3 class="proc04">Ornaments</h3>
         </div>
       </div>
-      <h1 class="titre-section">Your blazon has been generated!</h1>
-
-      <div class="txtc my2">A <span class="gras">blazon</span> is an explicit <span class="gras">description</span> of an heraldic shield.</div>
-
-      <div class="message-box col-c gap1 px3 my2 posr h20">
-        <p class="txtc">Per bend, Or and Lozengy Azur and Or, 
-          one mean cat of the sea Azur langued Azur 
-          armed Purpure and tailed Gules.</p>
+      <div>
+          <h1 class="titre-section">Generation in progress...</h1>
       </div>
-      <div class="row-sb my3">
-        <a href="#" class="btn-dark"> <i class="fas fa-arrow-left"></i> Values</a>
-        <div class="txtc my3"><span class="gras">The image it describes is waiting for you next</span></div>
-        <a href="#" class="btn-dark"> Shield <i class="fas fa-arrow-right"></i></a>
-      </div>
-      <div class="separator"></div>
-
-      <div class="txtc my2">
-        <p class="utility-text my1">This blazon has been generated from your qualities :</p>
-        <div class="col-fs gap0">
-         <p><small><span class="gras italic">Beauty</span> can be represented by <a href="#"><span>Double rose.</span></a></small></p>
-         <p><small><span class="gras italic">Power</span> can be represented by <a href="#"><span>Double rose.</span></a></small></p>
-         <p><small><span class="gras italic">Chivalry</span> can be represented by <a href="#"><span>Double rose.</span></a></small></p>
+      <div id="waiting">
+        <div id="genAnim">
+            <i class="step1"></i>
+            <i class="step2"></i>
+            <i class="step3"></i>
+            <i class="step4"></i>
+        </div>        
+    </div>
+     <div class="col-c gap1 txtc my1">
+       <p>You blazon should be ready in <span class="gras">less then 8 seconds</span></p>
+       <p>If this page does not update automatically, please <a href="#"><span class="utility-text">click here to refresh this page</span></a></p>
+       <small>Login or <a href="#"><span class="utility-text">create an account</span></a> to speed up the generation process</small>
+     </div>
+     <div class="box-recent-coa p1 col-c ma gap2">
+       <p><span class="utility-text">Recent Coat Of Arms</span></p>
+       <div class="row-c gap3 my1">
+         <div>
+           <a href="#"><img src="/Images/choice01.png" class="w15" alt=""></a>
+         </div>
+         <div>
+          <a href="#"></a> <img src="/Images/choice02.png" class="w15" alt=""></a>
         </div>
-      </div>
-      <p class="my5 txtc"> <small> My Blazon is written using the old traditional Anglo-Norman language. 
-        That's why it may sound like mixed with french or latin. Symbols have been
-         chosen according to the data you provided.
-        To learn more about symbols in heraldry, we may consult this french book:
-        <span class="utility-text">Le Simbol Armorial Des Armoiries De France, & d'Escoce, & de Lorraine - </span>
-        published 1555.</small></p>
-
-      
+         <div>
+          <a href="#"><img src="/Images/choice03.png" class="w15" alt=""></a>
+        </div>
+       </div>
+     </div>
+     
   </section>
 
 
