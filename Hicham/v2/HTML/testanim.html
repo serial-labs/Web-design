@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Test Anim</title>
   <style>
+    * {margin:0px;
+      padding: 0px;;}
     body
     {
       background: linear-gradient(#e6f4f5, #9198e5);
@@ -16,7 +18,7 @@
     background-attachment: fixed;
     }
     .anim {
-      background-size: cover; 
+      
       position: absolute;
       top: 0px;
       left: 0px;
@@ -24,7 +26,7 @@
       height:1200px;
       opacity: 0.0;
       background-size: cover;
-      animation: 26s linear 0s infinite alternate; 
+      animation: 20s linear 0s infinite alternate; 
       /* animation: 16s linear 0s infinite alternate-reverse;  */
       /* animation-iteration-count: infinite; */
     }
@@ -40,7 +42,7 @@
       animation-name: step2;
     }
     .animc {
-      background: url('/Images/anim-home/anim-ecu-r3b.png');
+      background: url('/Images/anim-home/anim-ecu-r3b-tram-trans.png');
       background-size: cover;
       animation-name: step3;
     }
@@ -105,22 +107,71 @@
     .objrose3 img { width: 200px;}
 
 
+    .objSharkUp {
+      top: 170px;
+      left: 160px;
+      animation-name: step8;
+    
+    }
+    .objSharkUp img { width: 200px;}
+
+
+    .objSharkDown {
+      top: 160px;
+      left: 630px;
+      animation-name: step9;
+    }
+    .objSharkDown img { width: 200px;}
+
+    .objCurseur_regle {
+      position: absolute;
+      
+      top: 100px;
+      left: -40px;
+      width:120px;
+      height: 511px;
+      background-image: url('/Images/anim-home/Règle\ plate\ 6x24cm\ [HOB-8734].jpg');
+      background-size: cover;
+      border: 2px solid #faf;
+      text-align: center;
+    }
+    .TT {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      width: 8px;
+      height: 8px;
+      background:chartreuse;
+    }
     .objCurseur {
-      opacity: 1;
+      position: absolute;
       top: 0px;
       left: 0px;
+      width:100%; 
+      height:100%;
       
-      border: 4px solid #9198e5;
-      width:130px;
-      height: 830px;
-      animation-name: stepScale;
-      transform: scale(20); 
+
+      display: inline-block;
+      opacity: 1;
+      /* margin-top:-50%; */
+      position: relative;
+      top: 0%;
+      left: -10px;
+      /* background-image: url('/Images/anim-home/Règle\ plate\ 6x24cm\ [HOB-8734].jpg'); */
+      /* background-size: cover; */
+      border: 0 px solid #9198e5;
+      
+      animation-name: stepScale2;
+      margin :auto;
+      
+      /* transform: translateY(50%);  */
     }
     .objCurseur img {
-      animation-name: stepScale;
-      width: 130px;
       
-      transform: translateY(50%); */
+      
+      width: 60px;
+      
+      /* transform: translateY(50%); */
     }
 
     @keyframes fadein { from { opacity:0; } to { opacity:1; }  }
@@ -163,38 +214,84 @@
     @keyframes step6 { 0%  { opacity:0; } 
                        25%  { opacity:0; }  
                        30% { opacity:1; }  
-
-                       95% { opacity:0.92; }
-                      100% { opacity:1; } }  
+                        60% { opacity:1; }  
+                        65% { opacity:0; }  
+                       95% { opacity:0; }
+                      100% { opacity:0; } }  
 
     @keyframes step7 { 0%  { opacity:0; } 
                        29%  { opacity:0; }  
                        34% { opacity:1; }  
 
-                       95% { opacity:0.92; 
-                      transform: scale(1.2);
-                    }
-                      100% { opacity:1; } }  
+                       95% { opacity:0.92; }
+                      100% { opacity:1; } 
+                    }  
+                      
+                    
+           
+
+
+    @keyframes step8 { 0%  { opacity:0; } 
+                       50%  { opacity:0; }  
+                       70% { opacity:1; }
+                       85% { opacity:1;transform:scale(1); }    
+                       88% { transform:scale(0.99);
+                             }  
+                       /* 95% { opacity:0.92; } */
+                      100% { opacity:1; 
+                        transform:scale(0.98);} }  
+
+                      
+    @keyframes step9 { 0%  { opacity:0; } 
+                       50%  { opacity:0; }  
+                       70% { opacity:1; }  
+                       85% { opacity:1; transform:scale(1); transform:translateX(0px);}    
+                        88% { transform:scale(0.99); 
+                          transform:translateX(-12px);}  
+                       /* 95% { opacity:0.92; } */
+                      100% { opacity:1;
+                            transform:translateX(-12px);
+                            transform:scale(0.98);}  
+                       }  
 
     @keyframes stepScale { 
           0%  { 
-            transform: translateY(0%);
+            top: 0%;
+            /* transform: translateY(0%);  */
             transform: scale(1); } 
 
-          25%  {transform: scale(3.2); 
-            transform: translateY(25%);
+          25%  {
+            top:25%;
+            transform: scale(1.2); 
+            /* transform: translateY(25%);  */
           }
-
-
-          50% { transform: scale(.8); 
-            transform: translateY(50%);  
+          50% {
+            top: 50%;
+            transform: scale(.9); 
+            /* transform: translateY(50%);   */
           }
-          75% { transform: scale(5.2); 
-            transform: translateY(75%);
+          75% { 
+            top: 75%;
+            transform: scale(1.1); 
+            /* transform: translateY(75%); */
           }
-          100% { transform: scale(1);
-            transform: translateY(100%); 
+          100% { 
+            top: 100%;
+            transform: scale(1);
+            /* transform: translateY(100%);  */
                 }  }
+
+          @keyframes stepScale2 { 
+            50% {
+            top: 43.5%;
+            width: 30%;
+            }
+            /* transform: translateY(50%);   */
+          100% { 
+            top: 87%;
+            /* transform: scale(2.1);  */
+              }  }
+
 
   </style>
 </head>
@@ -231,8 +328,20 @@ e
     <div class="anim objrose3">
       <img src="/Images/anim-home/Rose.png"/>
     </div>
-    <div class="anim objCurseur">
-      <img src="/Images/anim-home/CrossPatonce.png"/>
+
+    <div class="anim objSharkUp">
+      <img src="/Images/anim-home/Shark-up.png"/>
+    </div>
+    <div class="anim objSharkDown">
+      <img src="/Images/anim-home/Shark-Down.png"/>
+    </div>
+
+    <div class="objCurseur_regle">
+    
+      <div class="anim objCurseur">
+        <img  src="/Images/anim-home/CrossPatonce.png"/>
+      </div>
+      <!-- <div class="TT">X</div> -->
     </div>
   </div>
 </body>
