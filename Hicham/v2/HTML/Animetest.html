@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Test</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+    body {
+        background-color: #333;
+    }
+    .container {
+        position: relative;
+        border: 1px solid white;
+        height: 100vh;
+        width: 50%;
+        margin: auto;
+    }
+    .obj {
+            position: absolute;            
+            top: 50%;
+            left: 50%;  
+            width: 50%;
+            height: 100%;
+            transform: translate(-50%,-50%);
+            opacity: 0;
+            animation: 30s;
+        }   
+    .anima {
+        background: url('/Images/anime-image/shield.png') no-repeat center center/contain;
+        animation-name: step1;
+    }
+    .animb {
+        background: url('/Images/anime-image/red-01.png') no-repeat center center/contain;
+        animation-name: step2;
+    }
+    .animc {
+        background: url('/Images/anime-image/red-02.png') no-repeat center center/contain;
+        animation-name: step3;
+    }
+    .animd {
+        background: url('/Images/anime-image/red-03.png') no-repeat center center/contain;
+        animation-name: step4;
+    }
+    .anime {
+        background: url('/Images/anime-image/blue-01.png') no-repeat center center/contain;
+        animation-name: step5;
+    }
+    .animf {
+        background: url('/Images/anime-image/barre.png') no-repeat center center/contain;
+        animation-name: step6;
+    }
+    .sun-1 {
+        position: absolute;
+        background: url('/Images/anime-image/SunInSplendour.png') no-repeat center center/contain;
+        top: 22%;
+        left: 50%;
+        transform: translate(-50%);
+        width: 110px;
+        height: 110px;
+        animation-name: sun-1;
+    }
+    .sun-2 {
+        position: absolute;
+        background: url('/Images/anime-image/SunInSplendour.png') no-repeat center center/contain;
+        top: 42%;
+        left: 50%;
+        transform: translate(-50%);
+        width: 110px;
+        height: 110px;
+        animation-name: sun-2;
+    }
+    .sun-3 {
+        position: absolute;
+        background: url('/Images/anime-image/SunInSplendour.png') no-repeat center center/contain;
+        top: 62%;
+        left: 50%;
+        transform: translate(-50%);
+        width: 110px;
+        height: 110px;
+        animation-name: sun-3;
+    }
+    .clay-1 {
+        position: absolute;
+        background: url('/Images/anime-image/Claymore.png') no-repeat center center/contain;
+        top: 50%;
+        width: 121px;
+        /* opacity: 1; */
+        animation-name: clay-1;
+    }
+    /* .clay-2 {
+        position: absolute;
+        background: url('/Images/anime-image/Claymore.png') no-repeat center center/contain;
+        top: 45%;
+        left: 35%;
+        transform: translate(-50%, -50%);
+        width: 120px;
+        animation-name: sun-2;
+    } */
+
+
+
+    @keyframes step1 {
+        0% {opacity: 0;}
+        5% {opacity: 1;}
+    }
+    @keyframes step2 {
+        4% {opacity: 0;}
+        10% {opacity: 1;}
+    }
+    @keyframes step3 {
+        9% {opacity: 0;}
+        15% {opacity: 1;}
+    }
+    @keyframes step4 {
+        14% {opacity: 0;}
+        20% {opacity: 1;}
+    }
+    @keyframes step5 {
+        19% {opacity: 0;}
+        25% {opacity: 1;}
+        100% {opacity: 1;}
+    }
+    @keyframes step6 {
+        22% {opacity: 0;}
+        30% {opacity: 1;}
+        100% {opacity: 1;}
+    }
+    @keyframes sun-1 {
+        28%     {opacity: 0;}
+        34%     {opacity: 1;}
+        44%     {opacity: 1;}
+        50%    {opacity: 0;}
+    }
+    @keyframes sun-2 {
+        30%     {opacity: 0;}
+        36%     {opacity: 1;}
+        46%     {opacity: 1;}
+        52%    {opacity: 0;}
+    }
+    @keyframes sun-3 {
+        32%     {opacity: 0;}
+        38%     {opacity: 1;}
+        48%     {opacity: 1;}
+        54%    {opacity: 0;}
+    }
+    @keyframes clay-1 {
+        54%     {opacity: 0;}
+        60%     {opacity: 1;}
+        100%    {opacity: 1;}
+    }
+  
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="obj anima">
+        
+        </div>
+        <div class="obj animb">
+        
+        </div>
+        <div class="obj animc">
+        
+        </div>
+        <div class="obj animd">
+        
+        </div>
+        <div class="obj anime">
+        
+        </div>
+        <div class="obj animf">
+        
+        </div>
+        <div class="obj animj">
+        
+        </div>
+        <div class="obj animh">
+        
+        </div>
+        <div class="obj sun-1">
+        </div>
+        <div class="obj sun-2">
+        </div>
+        <div class="obj sun-3">
+        </div>
+        <div class="obj clay-1"></div>
+        <div class="obj clay-2"></div>
+
+    </div>
+
+
+
+
+
+
+</body>
+</html>
