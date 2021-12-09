@@ -1889,8 +1889,8 @@ input {
 }
 .frosted {
   min-width: 50%;
-
-  padding-bottom: 2rem;
+  background: var(--light-opacity);
+  padding: 2rem;
   
 }
 .frosted img {
