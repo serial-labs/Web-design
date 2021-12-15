@@ -2109,7 +2109,7 @@ transition: 0.5s;
 
 /* ____________________________ Choose your values  ____________________________ */
 
-#user, #friend, #team {
+#friend, #team {
   display: none;
   width: 30rem;
 }
@@ -2133,6 +2133,7 @@ transition: 0.5s;
   align-items: center;
   gap: 2rem;
 }
+
 .filter-icon i, .search-icon i {
   font-size: 2.5rem;
   color: var(--secondary-color);
@@ -2213,8 +2214,172 @@ transition: 0.5s;
   transform: scale( .97 );
 }
 
+/* _____ CARDS VALUE __________ */
 
+.container-value {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  flex-wrap: wrap;
+  gap: 1rem;
+  position: relative;
+  margin: 1rem;
+}
 
+.container-value .card-value {
+  position: relative;
+  border-radius: 10px;
+  height: 20rem;
+  
+}
+
+.container-value .card-value .icon {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.7s;
+  z-index: 1;
+}
+.card-value .icon img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  object-fit: contain;
+}
+.container-value .card-value .face {
+  width: 20rem;
+  height: 20rem;
+  transition: 0.5s;
+  overflow: hidden;
+}
+.container-value .card-value .face.face1 {
+  position: relative;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+
+}
+.card-value .face1::after {
+  display: block;
+  content: '';
+  position: absolute;
+  z-index: 2;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 160%;
+  transform: translateY(-30%);
+  background: linear-gradient(226deg, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.4) 35%, rgba(255,255,255,0.2) 42%, rgba(255,255,255,0) 60%);
+  transition: 0.5s;
+}
+.card-value:hover .face1::after {
+  transform: translateY(0%);
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.container-value .card-value:hover .face.face1{
+  background: #333;
+  transform: translateY(-10px);
+  z-index: 3;
+}
+
+.container-value .card-value .face.face1 .content {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.container-value .card-value:hover .face.face1 .content {
+  opacity: 1;
+}
+.container-value .card-value .face.face2 {
+  position: relative;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  transition: 0.5s;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+  transform: translateY(-100px);
+  z-index: 0;
+}
+.container-value .card-value:hover .face.face2{
+  transform: translateY(-1rem);
+  z-index: 2;
+}
+
+.container-value .card-value .face.face2 .content p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #333;
+}
+
+.container-value .card-value .face.face2 .content h3 {
+  text-align: center;
+} 
+
+.container-value a {
+  text-decoration: none;
+  color: #333;
+}
+.container-value a:hover {
+  text-decoration: underline;
+  color: #ff0057;
+}
+#heroic, #majesty, #moral {
+  display: none;
+}
+.values-shown {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid var(--secondary-color);
+  border-radius: 0.5rem;
+  background: var(--light-opacity);
+  max-width: 83rem;
+  padding: 1rem;
+  margin: 0.5rem auto 3rem;
+}
+.values-shown h3 {
+  color: var(--secondary-color);
+  width: 100%;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.values-shown .values-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+  gap: 1rem;
+}
+
+.values-shown a {
+  background: var(--secondary-color);
+  color: var(--light-color);
+  padding: 0.5rem 2rem;
+  border-radius: 10px;
+}
+.values-shown a:hover {
+  background: var(--primary-color);
+  color: var(--light-color);
+}
 
 
 
@@ -2335,4 +2500,7 @@ footer p:hover {
     transition: 0.5s;
   }
   /* ____________________________*/
+  .container-value .card-value {
+    margin: auto;
+  }
 }
