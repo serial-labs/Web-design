@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Test</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+    body {
+        background-color: #eea;
+    }
+    
+    .container {
+      /* la taille est la position du container dépendent de la fenêtre (layout responsif) */
+        position: relative;
+        width: 50%;
+        margin: auto;
+        min-width: 200px;
+        max-width: 700px;
+        
+        background-color: greenyellow;
+        border:4px  dashed forestgreen;
+        
+    }
+    .mainShield {
+      /* cette image fixe la hauteur de la div parente mais sa largeur est fixée par la parente  */
+        position: relative;
+        width:100%;
+    }
+    .shield {
+        position: absolute;
+        width:100%;
+        top:0%;
+        left: 0%;
+    } 
+    .obj {
+      position: absolute;
+      transform: translate(-50%,-50%); /*  chaque objet est positionné 
+      par son centre  */
+      border:2px  solid green;
+    }
+
+    .sun-1 { /* pour chaque objet, on définit, la taille relative, et la position relative */
+       width: 23%; 
+       top:25%;
+       left:25%;
+     }
+     .sun-2 {
+       width: 23%; 
+       top:50%;
+       left:50%;
+     }
+     .sun-3 {
+       width: 23%; 
+       top:75%;
+       left:75%;
+      }
+
+    </style>
+</head>
+
+<body>
+  
+    <div class="container">
+        <img src="/Images/anime-image-2/purepure-4.png" class="mainShield" border="1px">
+        <img src="/Images/anime-image-2/red-02.png" width="150px" class="shield">
+          
+        <img src="/Images/anime-image-2/SunInSplendour.png" class="obj sun-1"></img>
+        <img src="/Images/anime-image-2/SunInSplendour.png" class="obj sun-2"></img>
+        <img src="/Images/anime-image-2/SunInSplendour.png" class="obj sun-3"></img>
+
+    </div>
+</body>
+</html>
