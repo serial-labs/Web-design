@@ -1,0 +1,201 @@
+body {
+  background-color: powderblue;
+}
+
+@keyframes step1 {
+  0% {opacity: 0;}
+  2% {opacity: 1;}
+}
+@keyframes step2 {
+  0% {opacity: 0;}
+  3% {opacity: 1;}
+}
+
+@keyframes step16 {
+  5%     {opacity: 0;}
+  30%     {opacity: 1;}
+  60%     {opacity: 1;}
+  100%    {opacity: 1;}
+} 
+
+
+
+@keyframes sun-1 {
+  6%     {opacity: 0.8;}
+  21%     {opacity: 1;}
+  31%     {opacity: 1;}
+  37%    {opacity: 0.5;}
+}
+@keyframes sun-2 {
+  17%     {opacity: 0;}
+  23%     {opacity: 1;}
+  33%     {opacity: 1;}
+  39%    {opacity: 0;}
+}
+@keyframes sun-3 {
+  19%     {opacity: 0;}
+  25%     {opacity: 1;}
+  35%     {opacity: 1;}
+  41%    {opacity: 0;}
+}
+@keyframes trefle-1 {
+  31%     {opacity: 0;}
+  37%     {opacity: 0.9;}
+  47%     {opacity: 0.9;}
+  53%    {opacity: 1;}
+}
+@keyframes trefle-2 {
+  32%     {opacity: 0;}
+  39%     {opacity: 0.9;}
+  49%     {opacity: 0.9;}
+  55%    {opacity: 1;}
+}
+@keyframes trefle-3 {
+  34%     {opacity: 0;}
+  40%     {opacity: 0.9;}
+  50%     {opacity: 0.9;}
+  56%    {opacity: 1;}
+  100%    {opacity: 1;}
+}
+@keyframes Shark {
+  15%     {opacity: 0.5;}
+  21%     {opacity: 0.9;}
+  45%     {opacity: 0.9;}
+  50%    {opacity: 0.8;}
+}
+
+
+#OSD {
+  position: absolute ;
+  top:0px;
+  left:0px;
+  border: 2px dotted darkblue;
+  padding:5px;
+  color:black;
+  background-color: blanchedalmond;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes step3 {
+  1% {opacity: 0;}
+  5% {opacity: 1;}
+}
+@keyframes step4 {
+  2% {opacity: 0;}
+  6% {opacity: 1;}
+}
+@keyframes step5 {
+  3% {opacity: 0;}
+  7% {opacity: 1;}
+  10% {opacity: 0;}
+}
+@keyframes step6 {
+  5% {opacity: 0;}
+  9% {opacity: 1;}
+  100% {opacity: 1;}
+}
+@keyframes step7 {
+  7% {opacity: 0;}
+  15% {opacity: 1;}
+  100% {opacity: 1;}
+}
+@keyframes step8 {
+  7% {opacity: 0;}
+  13% {opacity: 0.8;}
+  16% {opacity: 0;}
+}
+@keyframes step9 {
+  10% {opacity: 0;}
+  15% {opacity: 1;}
+  38% {filter: invert(0%);}
+  40% {filter: invert(100%);}
+  55% {opacity: 0.8;}
+  100% {opacity: 0.8; filter: invert(100%);}
+}
+
+
+
+
+
+@keyframes step10 {
+  20%     {opacity: 0;}
+  25%     {opacity: 1;}
+  30%     {opacity: 1;}
+  35%    {opacity: 0;}
+} 
+@keyframes step11 {
+  22%     {opacity: 0;}
+  27%     {opacity: 1;}
+  32%     {opacity: 1;}
+  37%    {opacity: 0;}
+} 
+@keyframes step12 {
+  24%     {opacity: 0;}
+  29%     {opacity: 1;}
+  34%     {opacity: 1;}
+  39%    {opacity: 0;}
+} 
+@keyframes step13 {
+  26%     {opacity: 0;}
+  31%     {opacity: 1;}
+  36%     {opacity: 1;}
+  51%    {opacity: 0;}
+} 
+@keyframes transition {
+  35%     {opacity: 0;}
+  40%     {opacity: 1;}
+  100%    {opacity: 1;}
+} 
+@keyframes step14 {
+  38%     {opacity: 0;}
+  43%     {opacity: 1;}
+  100%    {opacity: 1;}
+} 
+@keyframes step15 {
+  52%     {opacity: 0;}
+  55%     {opacity: 0.5;}
+  58%    {opacity: 0;}
+} 
+
+@keyframes rose-1 {
+  56%     {opacity: 0;}
+  59%     {opacity: 1;}
+  100%    {opacity: 1;}
+} 
+@keyframes rose-2 {
+  58%     {opacity: 0;}
+  61%     {opacity: 1;}
+  100%    {opacity: 1;}
+} 
+@keyframes rose-3 {
+  60%     {opacity: 0;}
+  63%     {opacity: 1;}
+  100%    {opacity: 1;}
+} 
+@keyframes raisin {
+  0%     {opacity: 1}
+  62%     {opacity: 1;}
+  65%     {opacity: 1;}
+  100%    {opacity: 1;}
+} 
+
+    
+    

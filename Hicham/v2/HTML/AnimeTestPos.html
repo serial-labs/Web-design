@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Test</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+    body {
+        background-color: #333;
+    }
+    
+    .container {
+        position: relative;
+        
+        width: 50%;
+        margin: auto;
+        background-color: greenyellow;
+        border:4px  dashed forestgreen;
+        /* height: 810px; */ /*décalage entre bordure image bas et bordure div bas !!??*/
+        min-width: 200px;
+        max-width: 700px;
+        /* object-fit: contain; */
+        
+    }
+    .obj , .shield {
+            opacity: 0;
+            animation: 30s infinite;
+            background-repeat:no-repeat;
+        }  
+     .mainShield {
+      position: relative;
+      width:100%;
+      
+    }
+    .shield {
+      position: absolute;
+      background-size: 100% 100%;
+      /* height: 100%; */
+      /* transform: translate(-50%,-0%); */
+      border:1px  solid bisque;
+      width:100%
+    } 
+    .obj {
+      position: absolute;
+      transform: translate(-50%,-50%);
+      background-size: contain;
+      border:2px  solid green;
+    }
+
+    .obj {
+       width: 18%;
+      
+      }
+
+
+
+
+
+        /* TRY TO ADD ANOTHER ANIMATION TO THE FIRST ONE? / ROTATE LA BARRE POUR FAIRE UNE CROIX / CHANGER DE COULEUR */
+
+
+    </style>
+    <link rel="stylesheet" href="/css/AnimeTestPositions.css" />
+    <link rel="stylesheet" href="/css/AnimeTestKeyFrames.css" />
+</head>
+
+<body>
+  <div id="OSD">
+    <p>Resize the browser window to fire the <code>resize</code> event.</p>
+    <p>Window height: <span id="height"></span></p>
+    <p>Window width: <span id="width"></span></p>
+
+    <p>shield position: <span id="shieldinfo"></span> </p>
+    <p>sun 1 position: <span id="sun1info"></span> </p>
+    <img src="/Images/anime-image-2/shield.png" width="120px" border="1px">
+    <p style='white-space: pre;' id="shieldAllinfo"></p>
+  </div>
+
+    <div class="container">
+      
+        <!-- <div class="shield anima"></div>
+        <div class="shield animb"></div>
+   
+        <div class="shield animo"></div>
+        <div class="shield animp"></div>
+      
+        <div class="shield animq"></div> -->
+          <img src="/Images/anime-image-2/shield.png" class="anima mainShield" style="" border="1px">
+          <img src="/Images/anime-image-2/red-02.png" class="shield animb">
+          <img src="/Images/anime-image-2/or.png" class="shield animo">
+          <img src="/Images/anime-image-2/barre-grunge.png" class="shield animp">
+
+        <img src="/Images/anime-image-2/SunInSplendour.png" class="obj sun-1"></img>
+        <img src="/Images/anime-image-2/SunInSplendour.png" class="obj sun-2"></img>
+        <img src="/Images/anime-image-2/SunInSplendour.png" class="obj sun-3"></img>
+
+        <div class="obj trefle-1"></div>
+        <div class="obj trefle-2"></div>
+        <div class="obj trefle-3"></div>
+
+        <div class="obj SharkUp"></div>
+        <div class="obj SharkDown"></div>
+      
+    </div>
+
+
+
+
+
+
+</body>
+<script>
+const heightOutput = document.querySelector('#height');
+const widthOutput = document.querySelector('#width');
+const sun1 =  document.querySelector('.sun-1');
+const sun1info =  document.querySelector('#sun1info');
+const anima =  document.querySelector('.anima');
+const animainfo = document.querySelector('#shieldinfo');
+const p_shieldAllinfo = document.querySelector("#shieldAllinfo");
+//alert(anima);
+
+function reportWindowSize() {
+  heightOutput.textContent = window.innerHeight;
+  widthOutput.textContent = window.innerWidth;
+  p = getPosition(sun1);
+  panima=getPosition(anima);
+  console.log(panima);
+  sun1info.textContent = Math.round(p.x) + " x " + Math.round(p.y) +" X w:" +Math.round(p.w) + " x " + Math.round(p.h)+" -- cX:" +Math.round(p.centerX) + " cY:" + Math.round(p.centerY)+" -- " ;
+  animainfo.textContent = "x:"+ Math.round(panima.x) + " ; y:" + Math.round(panima.y) +" X w:" +Math.round(panima.w) + " x " + Math.round(panima.h)+" -- " ;
+  p_shieldAllinfo.textContent= "Anima\r\n"+listInfo (anima);
+}
+
+window.onresize = reportWindowSize;
+
+  function getPosition( element ) {
+    var rect = element.getBoundingClientRect();
+    return {
+        x: rect.left,
+        y: rect.top,
+        w: rect.right-rect.left+1,//rect.widthOutput,
+        h: rect.bottom-rect+top +1,// rect.heightOutput
+        centerX: rect.left + (rect.right-rect.left+1)/2,
+        centerY: rect.top  + (rect.bottom-rect.top+1)/2,
+    };
+  }
+
+  function listInfo (Lement) {
+    var rect = Lement.getBoundingClientRect();
+    //alert(Lement);
+      //let div = document.createElement('div');
+      let t="";
+      for (let key in rect) {
+        if(typeof rect[key] !== 'function') {
+          //let para = document.createElement('p');
+          //para.textContent  = `${ key } : ${ rect[key] }`;
+          t+=`${ key } : ${ rect[key] } \r\n`; //+'\r\n';
+        //whereToInsert.appendChild(para);
+        }
+      }
+      console.log(t);
+      return t;
+  }
+</script>
+</html>
