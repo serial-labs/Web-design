@@ -59,7 +59,7 @@
 
       <div class="row-c gap1 col-sb-mobile">
         <div class="shop-box col-fe gap5 my1 p2 w50p h50">
-          <a href="#"><img src="/Images/user01.png" class="w50" alt="" /></a>
+          <a href="#"><img src="/Images/user01.png" class="w100" alt="" /></a>
           <a href="#" class="gras">Your shield only</a>
         </div>
         <div class="shop-box col-c txtc my2 p2 w50p h50">
@@ -70,47 +70,20 @@
 
       <div class="optionsStore">
         <p>Customize your items:</p>
-        <div class="add-name">
-          <input
-            value="Show my name"
-            type="checkbox"
-            checked="checked"
-            name="cb_show_name"
-            onclick="StyleName(); RecalculateZazzleParamsJS();"
-          />
-          <label for="cb_show_name"> Add the name</label>
-          <input
-            type="text"
-            value=""
-            id="userfirstname"
-            name="userfirstname"
-            onkeyup="RecalculateZazzleParamsJS();"
-          />
-          <input
-            type="text"
-            value=""
-            id="userlastname"
-            name="userlastname"
-            onkeyup="RecalculateZazzleParamsJS();"
-            autocomplete="off"
-          />
+        <div class="add-name col-c-mobile">
+          <input type="checkbox" checked="checked" name="cb_show_name"/>
+          <label> Add the name</label>
+          <input type="text" id="userfirstname"    name="userfirstname"/>
+          <input type="text" id="userlastname" name="userlastname" autocomplete="off" />
         </div>
-        <div class="add-values">
-          <input
-            value="Show my values :"
-            type="checkbox"
-            checked="checked"
-            name="cb_show_values"
-            onclick="RecalculateZazzleParamsJS();"
-          />
-          <label for="cb_show_values">
-            Add the values: <i>obediance, parenthood, patience</i></label
-          >
+        <div class="add-values col-c-mobile">
+          <input type="checkbox"  checked="checked"/>
+          <label>Add the values: <i>obediance, parenthood, patience</i></label>
         </div>
       </div>
       <div class="separator my2"></div>
 
-      <div class="shop-zazzle row-sb gap1 my2">
+      <div class="shop-zazzle row-sb gap1 my2 col-c-mobile">
         <a
           href="http://www.zazzle.com/api/create/at-238959706861606916?rf=238959706861606916&ax=DesignBlast&sr=250308448676045211&ds=true&continueUrl=http%3A%2F%2Fwww.zazzle.com%2Fmyblazon&rut=Go%20back%20to%20myblazon%27s%20store&fwd=ProductPage&url1=$url1&qav1=obediance&qav2=parenthood&qav3=patience&allqav=obediance%20parenthood%20patience&allqavsep=obediance%0Aparenthood%0Apatience&allqavcs=obediance,%20parenthood,%20patience&2qav=patience%20%20%20%20obediance&rqav=parenthood&yn=Vincii%20design&fn=Vincii&ln=design&blazonbrut=$bbrut"
           target="_blank"

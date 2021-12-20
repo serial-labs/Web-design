@@ -598,6 +598,12 @@ header .logo a {
   transform: translate(0, -50%);
   transition: 0.5s;
 }
+.arrow-heraldry:hover {
+  color: var(--green-color);
+  margin-left: 1rem;
+  transition: 0.5s;
+}
+
 /* ------------------ ETIQUETTE troisième TITRE ----------------------*/
 .glossary-card {
   padding: 0 2rem 2rem 2rem;
@@ -1026,32 +1032,32 @@ header .logo a {
 
 /* ____________________________ OPTION STORE ____________________________ */
 .optionsStore {
-  background: rgba(247, 154, 10, 0.1);
-  max-width: var(--max-width);
-  padding: 10px 80px;
-  line-height: 2;
-  margin-top: 30px;
-  line-height: 2.5;
-}
-
-.optionsStore {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: flex-start;
   gap: 1rem;
+  background: rgba(247, 154, 10, 0.1);
+  max-width: var(--max-width);
+  padding: 1rem 5rem;
 }
-.add-name,
-.add-values {
+.add-name, .add-values {
   display: flex;
+  width: 100%;
   justify-content: flex-start;
   align-items: center;
-  gap: 2rem;
+  gap: 0;
+}
+.optionsStore input {
+  width: auto;
+}
+.optionsStore label {
+  width: 100%;
 }
 #userfirstname,
 #userlastname {
   height: 3.5rem;
-  max-width: 21rem;
+  /* max-width: 21rem; */
 }
 
 .shop-zazzle {
@@ -1664,6 +1670,8 @@ form {
   overflow: scroll;
   justify-content: flex-start;
   padding: 5rem;
+  overflow-x: hidden;
+
 }
 .gender {
   display: flex;
@@ -2194,33 +2202,12 @@ transition: 0.5s;
   position: relative;
   border-radius: 10px;
   height: 20rem;
-  width: 30%;  /*width à modifier*/  
-  border: 3px solid red;
-
-}
-
-.container-value .card-value .icon {
-  position: absolute;
-  display: flex;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transition: 0.7s;
-  z-index: 1;
-}
-.card-value img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  padding: 2rem;
-  object-fit: contain;
 }
 .container-value .card-value .face {
-  width: 100%;
+  width: 20rem;
   height: 100%;
   transition: 0.5s;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 .container-value .card-value .face.face1 {
   position: relative;
@@ -2229,7 +2216,6 @@ transition: 0.5s;
   justify-content: center;
   align-items: center;
   z-index: 1;
-
 }
 .card-value .face1::after {
   display: block;
@@ -2245,46 +2231,34 @@ transition: 0.5s;
   background: linear-gradient(226deg, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.4) 35%, rgba(255,255,255,0.2) 42%, rgba(255,255,255,0) 60%);
   transition: 0.5s;
 }
-.card-value:hover .face1::after {
-  transform: translateY(0%);
-  opacity: 1;
-  transition: 0.5s;
+.card-value img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  object-fit: contain;
 }
-
-.container-value .card-value:hover .face.face1{
-  background: #333;
-  transform: translateY(-10px);
-  z-index: 3;
-}
-
-
-
 .container-value .card-value .face.face2 {
   position: relative;
   background: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* height: 5rem; */
+  height: 5rem;
   padding: 1rem;
   transition: 0.5s;
-  /* box-shadow: 0 20px 50px rgba(0,0,0,0.8); */
-  /* transform: translateY(-100px); */
+  box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+  transform: translateY(-100px);
   z-index: 0;
 }
-.container-value .card-value:hover .face.face2{
-  /* transform: translateY(-1rem); */
-  z-index: 2;
-}
-
-.container-value .card-value .face.face2 .content p {
+.container-value .card-value .face.face2 p {
   margin: 0;
   padding: 0;
   text-align: center;
   color: #333;
 }
 
-.container-value .card-value .face.face2 .content h3 {
+.container-value .card-value .face.face2 h3 {
   text-align: center;
 } 
 
@@ -2292,10 +2266,30 @@ transition: 0.5s;
   text-decoration: none;
   color: #333;
 }
+/* _________ section hover _________________ */
+.card-value:hover .face1::after {
+  transform: translateY(0%);
+  opacity: 1;
+  transition: 0.5s;
+}
+.container-value .card-value:hover .face.face1{
+  background: #333;
+  transform: translateY(-10px);
+  z-index: 3;
+}
+.container-value .card-value:hover .face.face2{
+  transform: translateY(-1rem);
+  z-index: 2;
+}
 .container-value a:hover {
   text-decoration: underline;
   color: #ff0057;
 }
+
+
+
+/* _________ section values shown _________________ */
+
 #heroic, #majesty, #moral {
   display: none;
 }
@@ -2325,7 +2319,6 @@ transition: 0.5s;
   margin: auto;
   gap: 1rem;
 }
-
 .values-shown a {
   background: var(--secondary-color);
   color: var(--light-color);
@@ -2377,7 +2370,7 @@ footer i {
     flex-direction: column;
     align-items: center;
     gap: 3rem;
-    margin: 1rem 0;
+    margin: 2.5rem 0;
   }
   .col-c-mobile {
     display: flex;
