@@ -503,6 +503,7 @@ img {
 .wrap {
   flex-wrap: wrap;
 }
+
 /* ____________________________SEPARATORS____________________________ */
 
 .separator {
@@ -755,7 +756,7 @@ header .logo a {
 /* ____________________________PAGE ORDER VALUES AFTER TEST____________________________ */
 .after-test {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   grid-gap: 1.5rem;
   text-align: center;
   max-width: 90rem;
@@ -1168,19 +1169,7 @@ header .logo a {
 }
 
 /* ____________________________ PERSONALITY TEST ____________________________ */
-#number::after {
-  content: " / 12";
-}
-/* .choosing-container-personality-test {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    margin: auto;
-    grid-gap: 1.5rem;
-    text-align: center;
-    max-width: 900px;
-    margin: 0.9rem 0 2rem 0;
-    color: var(--primary-color);
-} */
+
 .choosing-container-personality-test i {
   font-size: 3rem;
   position: relative;
@@ -1196,16 +1185,12 @@ header .logo a {
   box-shadow: 0px 0px 5px rgb(46, 45, 45, 0.3);
   transition: 0.5s;
 }
-.choosing-container-personality-test.box img {
+.choosing-container-personality-test .box img {
   max-width: 60%;
   border: 1px solid black;
   position: relative;
 }
-.choosing-container-personality-test.box img {
-  max-width: 60%;
-  border: 1px solid black;
-  position: relative;
-}
+
 .btn-1 {
   padding: 5px 60px;
   border-radius: 30px;
@@ -1359,10 +1344,10 @@ header .logo a {
 }
 .skip-btn {
   text-align: right;
-  width: 100%;
-  transform: translate(0 , -100%);
 
+  padding: 0.5rem 1rem;
 }
+
 .skip-btn a,
 .skip-btn i {
   opacity: 0.5;
@@ -1714,7 +1699,6 @@ header .logo a {
 /*____________________________ FROM SCRATCH COLOR ____________________________ */
 #colorpicker {
   border: 1px solid rgba(0, 0, 0, 0.178);
-  width: 70%;
   height: 5rem;
   margin: auto;
 }
@@ -2465,10 +2449,7 @@ transition: 0.5s;
   background: var(--light-opacity);
 }
 .order-information h3 {
-color: var(--light-color);
-font-weight: 400;
-background: var(--secondary-color);
-padding: 0rem 0.2rem;
+color: var(--secondary-color);
 margin: auto;
 }
 .order-information .discount-link {
@@ -2581,6 +2562,15 @@ footer i {
 .button-save a{
   width: 100%;
 }
+/* _______ Coat of arms Test perso result */
+.after-test .box:first-child {
+  border-right: none;
+}
+.button-choices {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1rem;
+}
 }
 
 
@@ -2608,7 +2598,6 @@ footer i {
   .grid-wrapper-mobile {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    grid-template-rows: repeat(2, 1fr);
     grid-gap: 1rem;
     margin-top: 1rem;
     margin: auto;
@@ -2693,7 +2682,6 @@ footer i {
 .quick-poll {
   display: none;
 }
-  
 }
 
 
@@ -2717,6 +2705,7 @@ footer i {
 #DiscountBox label {
   width: auto;
 }
+
 }
 
 
