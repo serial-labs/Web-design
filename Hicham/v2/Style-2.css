@@ -621,7 +621,7 @@ header .logo a {
 }
 .arrow-heraldry:hover {
   color: var(--green-color);
-  margin-left: 1rem;
+  margin-left: 0.5rem;
   transition: 0.5s;
 }
 
@@ -688,7 +688,10 @@ header .logo a {
   pointer-events: none;
   opacity: 0.5;
 }
-
+.item-glossaire {
+  background: var(--orange-color);
+  margin: 1rem 0;
+}
 /* ____________________________PROCESS PROGRESSION BAR____________________________ */
 .process {
   margin: auto;
@@ -2002,6 +2005,7 @@ input {
   position: relative;
   color: var(--light-color);
   margin: auto;
+  width: 20%;
   line-height: 1;
   text-align: center;
   z-index: 5;
@@ -2626,7 +2630,9 @@ footer i {
 
   .glossary-card {
     height: fit-content;
+    margin-top: 3rem;
   }
+  
   .creation-card {
     height: fit-content;
   }
@@ -2659,7 +2665,6 @@ footer i {
 .purchase-paypal a {
   width: 100% ;
 }
-
 
 }
 
