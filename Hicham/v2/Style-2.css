@@ -62,6 +62,14 @@ body:after {
   background: var(--secondary-color);
 }
 /* ____________________________BUTTONS____________________________*/
+input {
+	background-color: rgb(252, 252, 252);
+	border: 1px solid rgba(51, 51, 51, 0.2);
+	padding: 12px 15px;
+	margin: 8px 5px;
+  line-height: 1rem;
+	width: 100%;
+}
 button {
   font-size: 1.8rem;
   line-height: 1.5;
@@ -134,7 +142,6 @@ button {
   margin: 0 1rem;
   color: var(--primary-color);
 }
-
 sup a {
   color: rgb(255, 0, 0, 0.8);
 }
@@ -1758,7 +1765,7 @@ button.sable {
 }
 /* ____________________________ SIGN IN SIGN UP ____________________________ */
 
-.form {
+.std-form {
 	background-color: var(--light-color);
 	display: flex;
 	align-items: center;
@@ -1768,7 +1775,7 @@ button.sable {
 	height: 100%;
 	text-align: center;
 }
-.sign-up-container .form {
+.sign-up-container .std-form {
   overflow: scroll;
   justify-content: flex-start;
   padding: 5rem;
@@ -1777,16 +1784,8 @@ button.sable {
 }
 .gender {
   display: flex;
-  
 }
-input {
-	background-color: rgb(252, 252, 252);
-	border: 1px solid rgba(51, 51, 51, 0.2);
-	padding: 12px 15px;
-	margin: 8px 5px;
-  line-height: 1rem;
-	width: 100%;
-}
+
 #container-sign select {
   background-color: #eee;
 	border: none;
@@ -2158,48 +2157,40 @@ transition: 0.5s;
   text-decoration: none;
   transition: 0.2s;
 }
-.form-account-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 2rem;
-  margin: 2rem 0;
-}
 
-.use-social-media, .change-username, .change-email, .update-information {
-  border: 3px solid var(--secondary-color);
-  color: var(--secondary-color);
-  width: 50%;
-  padding: 2rem;
-}
-.password-section{
-  display: flex;
-  flex-direction: column;
-  gap: 3;
-  justify-content: flex-start;
+
+
+.form-account-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   align-items: flex-start;
+  justify-content: flex-start;
+  grid-gap: 1rem;
+  padding: 0 1rem;
+}
+.form-account-container input {
+  font-size: 1.8rem;
+  margin: 0;
+  width: 100%;
+}
+.form-account-container .btn-dark {
+  /* width: 100%; */
+  margin: auto;
+}
+.use-social-media , .password-section , .change-username, .change-email, .update-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3.6rem;
+  padding: 1.5rem;
   border: 3px solid var(--secondary-color);
+  background: white;
   color: var(--secondary-color);
-  padding: 2rem;
   width: 100%;
 }
-.change-username {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+.use-social-media {
   align-items: center;
-  gap: 3rem;
-  padding: 2rem;
-  width: 100%;
-}
-.change-email {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 3rem;
-  width: 100%;
-  padding: 2rem;
 }
 .form-account-container h3 {
   font-weight: 500;
@@ -2218,21 +2209,7 @@ transition: 0.5s;
   transform: rotateZ(10deg);
   transition: 0.4s;
 }
-.form-account-container .current-name {
-  color: var(--primary-color);
-  letter-spacing: 2px;
-}
 
-.update-information {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: 2rem;
-}
-.update-information .btn-light {
-  width: 60%;
-  margin: auto;
-}
 .update-information select {
   background-color: #eee;
 	border: none;
@@ -2674,12 +2651,6 @@ footer i {
   .container-value .card-value {
     margin: auto;
   }
- /* _____________ Account settings _______________*/
-
- .use-social-media, .change-username, .change-email, .update-information, .password-section, .change-email {
-  gap: 1rem;
-  width: 100%;
-}
 /* _________ ORDER PAYMENT PAGE ________ */
 .purchase-paypal a {
   width: 100% ;
@@ -2701,6 +2672,9 @@ footer i {
 .quick-poll {
   display: none;
 }
+
+
+
 }
 
 
@@ -2728,6 +2702,10 @@ footer i {
 .download-container {
   gap: 0rem;
   margin: 0;
+}
+
+.use-social-media , .password-section , .change-username, .change-email, .update-information {
+
 }
 }
 
