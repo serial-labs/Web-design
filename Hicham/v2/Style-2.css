@@ -952,6 +952,7 @@ header .logo a {
   text-align: justify;
 }
 
+
 /* ____________________________ CHOOSE YOUR COAT OF ARM ____________________________ */
 .coat-choice-container {
   display: flex;
@@ -2531,8 +2532,8 @@ footer i {
   .col-sb-mobile {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    gap: 3rem;
     margin: 2.5rem 0;
   }
   .col-c-mobile {
@@ -2607,4 +2608,41 @@ footer i {
     gap: 1rem;
     width: 100%;
   }
+
 }
+
+
+@media screen and (max-width: 900px) {
+.col-c-mobile-900 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+  }
+/* _____________ Coat Download _______________*/
+.preview {
+      border-right: none;
+}
+.information-box-download {
+  margin: auto;
+  width: 100%;
+}
+}
+
+@media screen and (max-width: 620px) {
+.col-c-mobile-600 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+  }
+/* ________COAT Old shield _______ */
+.old-shield-container .fa-chevron-left, 
+.old-shield-container .fa-chevron-right {
+  display: none;
+}
+
+}
+
+
+
