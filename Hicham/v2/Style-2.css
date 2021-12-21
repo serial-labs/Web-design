@@ -14,6 +14,8 @@
 }
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
+
 }
 * {
   margin: 0;
@@ -23,7 +25,6 @@ html {
 body {
   font-family: "poppins", sans-serif;
   position: relative;
-  overflow-x: hidden;
   min-height: 100vh;
   font-size: 1.8rem;
 }
@@ -38,6 +39,7 @@ body:after {
   width: 100%;
   height: 100%;
   opacity: 0.8;
+
 }
 /* ________________SCROLL BAR_____________________________ */
 /* width */
@@ -1436,24 +1438,30 @@ header .logo a {
   gap: 2rem;
   margin-top: 2rem;
   max-width: 90rem;
+  background: var(--light-opacity);
+  padding: 2rem;
 }
 
-.set {
+.customize-coat .set {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  padding: 0.5rem;
-  width: 22rem;
+  padding: 1rem;
+  width: 21rem;
   background: var(--light-color);
   border: 1px solid var(--dark-opacity);
-  /* box-shadow: 0.1rem 0.1rem 0.5rem 0.1rem var(--dark-color); */
+}
+.customize-coat .edit-charges {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 .set img {
   width: 25%;
   margin: 0;
 }
-.customize-coat .edit-charges a:hover div{
+.customize-coat a:hover div{
     background: var(--green-color);
     color: var(--light-color);
 }
@@ -1463,10 +1471,9 @@ header .logo a {
   border: 1px solid var(--dark-opacity);
 }
 .quick-poll a{
-  /* background: var(--secondary-color); */
   color: var(--secondary-color);
   border: 1px solid var(--secondary-color);
-  padding: 0.5rem 3rem;
+  padding: 0.5rem 2rem;
 }
 .quick-poll a:hover {
   background:var(--green-color);
@@ -2567,9 +2574,14 @@ footer i {
   .mycoat-logged small a {
     width: 100%;
   }
-  
-   
-  }
+/* _________ COAT EDIT APPLICATION PAGE ________ */
+.button-save{
+  width: 100%;
+}
+.button-save a{
+  width: 100%;
+}
+}
 
 
 
@@ -2661,11 +2673,27 @@ footer i {
   width: 100%;
 }
 /* _________ ORDER PAYMENT PAGE ________ */
-
 .purchase-paypal a {
   width: 100% ;
 }
-
+/* _________ COAT EDIT APPLICATION PAGE ________ */
+.button-save{
+    width: 100%;
+  }
+.button-save a{
+    width: 50%;
+  }
+.customize-coat .edit-charges .set {
+    width: 50%;
+    margin: auto;
+  }
+.customize-coat .edit-charges div{
+  width: fit-content;
+  }
+.quick-poll {
+  display: none;
+}
+  
 }
 
 
@@ -2689,8 +2717,6 @@ footer i {
 #DiscountBox label {
   width: auto;
 }
-
-
 }
 
 
