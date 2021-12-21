@@ -1,0 +1,72 @@
+// main: ../main.less
+
+/* ____________________________ TEXT ALIGN ____________________________*/
+.txtc {
+  text-align: center;
+}
+.txtj {
+  text-align: justify;
+}
+.txtl {
+  text-align: left;
+}
+.txtr {
+  text-align: right;
+}
+
+/* ____________________________UTILITIES TEXT ____________________________ */
+
+a {
+  color: var(--dark-color);
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.utility-text {
+  color: var(--secondary-color);
+}
+
+.gras {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.italic {
+  font-style: italic;
+}
+
+/* ____________________________ H1 du HEADER (BLUE BANNER) TOUTES LES PAGES____________________________*/
+.titre-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  color: var(--light-color);
+  background: var(--secondary-color);
+  font-weight: 200;
+  letter-spacing: 0.3rem;
+  width: 100%;
+  padding: 2rem;
+  height: 6rem;
+
+  span {
+    font-weight: 500;
+    border-top: 1px solid white;
+    font-size: 2rem;
+    margin-left: 1rem;
+  }
+}
+
+.first-title {
+  color: var(--light-color);
+  border-bottom: 1px solid white;
+}
+
+@media screen and (max-width: 800px) {
+    .titre-section-mobile {
+        font-size: 1.8rem;
+    }
+}

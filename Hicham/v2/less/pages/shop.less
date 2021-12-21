@@ -1,0 +1,113 @@
+// main: ../main.less
+
+/* ____________________________ SHOP ____________________________ */
+.shop-introduction p {
+  text-align: center;
+  margin: auto;
+  background: var(--orange-color);
+  color: var(--primary-color);
+  padding: 1rem;
+  margin-top: 1rem;
+}
+.shop-box {
+  background: var(--orange-color);
+}
+
+/* __________________________ SHOP TEASER ____________________________ */
+.shopTeaser {
+  position: relative;
+  width: 100%;
+  height: 290px;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+  .shopTeaser > a {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      -moz-transition: 0.2s all linear;
+      -o-transition: 0.2s all linear;
+      -webkit-transition: 0.2s all linear;
+      transition: 0.2s all linear;
+      display: block;
+  }
+
+      .shopTeaser > a:hover {
+          height: 110%;
+          cursor: pointer;
+          top: -3%;
+      }
+
+      .shopTeaser > a:first-child {
+          left: 0;
+          max-width: 100%;
+          z-index: 4;
+      }
+
+          .shopTeaser > a:first-child:hover {
+              left: -2%;
+          }
+
+      .shopTeaser > a:nth-child(2) {
+          left: 18%;
+          z-index: 3;
+      }
+
+          .shopTeaser > a:nth-child(2):hover {
+              left: 15%;
+          }
+
+      .shopTeaser > a:last-child {
+          left: 50%;
+          z-index: 2;
+      }
+
+          .shopTeaser > a:last-child:hover {
+              left: 44%;
+          }
+
+      .shopTeaser > a > img {
+          max-height: 100%;
+      }
+/* ____________________________ OPTION STORE ____________________________ */
+.optionsStore {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+  background: rgba(247, 154, 10, 0.1);
+  max-width: var(--max-width);
+  padding: 1rem 5rem;
+}
+.add-name, .add-values {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0;
+}
+.optionsStore input {
+  width: auto;
+}
+.optionsStore label {
+  width: 100%;
+}
+#userfirstname,
+#userlastname {
+  height: 3.5rem;
+  /* max-width: 21rem; */
+}
+
+.shop-zazzle {
+  background: var(--orange-color);
+}
+
+.shop-zazzle img {
+  transition: 0.5s;
+}
+.shop-zazzle img:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
+}
