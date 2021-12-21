@@ -1421,7 +1421,6 @@ header .logo a {
   justify-content: center;
   align-items: flex-start;
   gap: 2rem;
-  margin-top: 2rem;
   max-width: 90rem;
   background: var(--light-opacity);
   padding: 2rem;
@@ -1512,9 +1511,22 @@ header .logo a {
 .add-ornaments .ico-6 {
   background-position: -350px  0;
 }
-/* ____________________________ SAVE YOUR SHIELD ____________________________ */
+/* ____________________________ DOWNLOAD SAVE YOUR SHIELD ____________________________ */
+.download-container {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 1.5rem;
+}
 .preview {
   border-right: 1px solid var(--dark-opacity);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.8rem;
 }
 
 .preview img {
@@ -1530,7 +1542,8 @@ header .logo a {
   justify-content: center;
   align-items: center; 
   max-width: 15rem;
-  margin-bottom: 5rem;
+  height: 100%;
+  margin-bottom: 6rem;
   position: relative;
 }
 .titre-pass {
@@ -1553,7 +1566,6 @@ header .logo a {
 /* -----------------BASIC PASS---------------- */
 .basic-pass {
   border: 3px solid var(--green-color);
-
 }
 .basic-pass:after {
   content: "";
@@ -1564,16 +1576,21 @@ header .logo a {
   border-top: 4rem solid var(--green-color);
   z-index: -5;
 }
-
+.basic-pass + small .btn-dark {
+  padding: 0.5rem 2rem;
+}
 .basic-pass .icon {
   display: flex;
   flex-direction: column;
   color: var(--green-color);
   width: 100%;
   text-align: center;
-  padding: 0.5rem;
-
+  padding:  0.5rem;
 }
+.basic-pass .icon img {
+  width: 55%;
+}
+.basic-pass 
 .basic-pass .icon i {
   font-size: 5rem;
 }
@@ -1595,7 +1612,8 @@ header .logo a {
 /* ---------------------STANDARD PASS------------------ */
 .standard-pass {
   border: 3px solid var(--secondary-color);
-
+  margin-right: 1rem;
+  margin-left: 0.5rem;
 }
 .standard-pass:after {
   content: "";
@@ -2571,6 +2589,8 @@ footer i {
   flex-direction: column-reverse;
   gap: 1rem;
 }
+
+
 }
 
 
@@ -2586,7 +2606,6 @@ footer i {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin: 2.5rem 0;
   }
   .col-c-mobile {
     display: flex;
@@ -2695,6 +2714,7 @@ footer i {
 /* _____________ Coat Download _______________*/
 .preview {
       border-right: none;
+      gap: 1rem;
 }
 .information-box-download {
   margin: auto;
@@ -2705,7 +2725,10 @@ footer i {
 #DiscountBox label {
   width: auto;
 }
-
+.download-container {
+  gap: 0rem;
+  margin: 0;
+}
 }
 
 
