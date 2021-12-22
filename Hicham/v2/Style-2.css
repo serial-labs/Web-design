@@ -316,17 +316,70 @@ header .logo a {
 } */
 /* ____________________________ FOOTER ____________________________ */
 footer {
-  background: #333;
-  padding: 3rem 6rem;
+  background: #282d32;
+  padding: 6rem 4rem 2rem 4rem;
+  position: sticky;
+  top: 100%;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 2rem;
+  font-size: 1.5rem;
+  margin: auto;
+}
+footer h3 {
+  font-weight: 550;
+  margin-bottom: 1rem;
+  color: var(--light-color);
 }
 footer a,
-footer h5,
-footer p,
-footer i {
+footer p {
+  color: #868d92;
+}
+footer a:hover {
+  color: white;
+  text-decoration: underline;
+}
+.footer-container div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+footer .social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
   color: white;
 }
-footer i {
+footer .social-media i {
   font-size: 3rem;
+  color: white;
+}
+footer .social-media .fa-facebook-f:hover {
+  color: #3b5998;
+}
+footer .social-media .fa-twitter:hover {
+  color: #00acee;
+}
+footer .social-media .fa-github-alt:hover {
+  color: #6e5494;
+}
+footer .social-media .fa-instagram:hover {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  border-radius: 15px;
+}
+footer .social-media .fa-discord:hover {
+  color: #5865F2;
+}
+footer p:last-child {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 1rem;
 }
 @media screen and (max-width: 800px) {
   .logo {
@@ -347,6 +400,20 @@ footer i {
   }
   .ornament a:before {
     display: none;
+  }
+}
+@media screen and (max-width: 620px) {
+  footer {
+    padding: 4rem 2rem 1rem 2rem;
+  }
+  footer .footer-container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4rem;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    width: 100%;
   }
 }
 /* ____________________________BUTTONS____________________________*/
