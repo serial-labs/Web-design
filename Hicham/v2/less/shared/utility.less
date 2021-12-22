@@ -1,0 +1,75 @@
+// main: ../main.less
+
+/* ____________________________ IMAGES ____________________________ */
+img {
+  margin: auto;
+}
+.img-shadow {
+  filter: drop-shadow(0.5rem 0.5rem 0.85rem rgb(110, 110, 110));
+}
+
+/* ____________________________UTILITIES STUFF ____________________________ */
+.posr {
+  position: relative;
+}
+
+.bg-w {
+  background: var(--light-opacity);
+}
+
+/* ____________________________SEPARATORS____________________________ */
+
+.separator {
+  background: url("/Images/SVG/separator.svg") center center/contain;
+  height: 15px;
+}
+
+.separatorh {
+  background: url("/Images/sprites_4.0.png") no-repeat scroll center -425px;
+  height: 10px;
+  padding: 10px 0;
+  overflow: hidden;
+}
+
+/*____________________________ SOCIAL NETWORK ____________________________ */
+.message-box span {
+  background: var(--light-color);
+  color: var(--secondary-color);
+  padding: 0.5rem 1rem;
+}
+.socialnetwork {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.2rem;
+  /* border-top: 1px solid var(--primary-color); */
+  /* border-bottom: 1px solid var(--primary-color); */
+  color: var(--primary-color);
+
+  .icons {
+    i {
+      font-size: 3.5rem;
+      transition: 0.5s;
+
+      &:hover {
+        transform: scale(1.2);
+        transition: 0.5s;
+      }
+    }
+
+    a {
+      &:nth-child(1) {
+        color: var(--secondary-color);
+      }
+  
+      &:nth-child(2) {
+        color: var(--blue-light-color);
+      }
+  
+      &:nth-child(3) {
+        color: var(--green-color);
+      }
+    }
+  }
+}

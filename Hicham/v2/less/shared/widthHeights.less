@@ -1,0 +1,83 @@
+// main: ../main.less
+
+/* ____________________________ WIDTH + HEIGHT____________________________*/
+
+@minwh: 10;
+.wh-loop (@i) when (@i <= 50) {
+    .w@{i} {
+        width: ~"@{i}rem";
+    }
+
+    .h@{i} {
+        height: ~"@{i}rem";
+    }
+
+    .wh-loop(@i + 5)
+}
+
+.wh-loop(@minwh);
+
+.w50p {
+    width: 50%;
+}
+
+.w100 {
+    width: 100%;
+}
+
+/*____________________________ PADDING + MARGIN ____________________________ */
+
+.p05 {
+    padding: 0.5rem;
+}
+.px05 {
+    padding: 0 0.5rem;
+}
+.py05 {
+    padding: 0.5rem 0;
+}
+
+.m05 {
+    margin: 0.5rem;
+}
+.mx05 {
+    margin: 0 0.5rem;
+}
+.my05 {
+    margin: 0.5rem 0;
+}
+
+@minpm: 1;
+.pm-loop (@i) when (@i <= 10) {
+    .p@{i} {
+        padding: ~"@{i}rem";
+    }
+
+    .px@{i} {
+        padding: ~"0 @{i}rem";
+    }
+
+    .py@{i} {
+        padding: ~"@{i}rem 0";
+    }
+
+    .m@{i} {
+        margin: ~"@{i}rem";
+    }
+
+    .mx@{i} {
+        margin: ~"0 @{i}rem";
+    }
+
+    .my@{i} {
+        margin: ~"@{i}rem 0";
+    }
+
+    .pm-loop(@i + 1)
+}
+
+.pm-loop(@minpm);
+
+.ma {
+    margin: auto;
+}
