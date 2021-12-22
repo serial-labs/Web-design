@@ -95,6 +95,10 @@ footer h3 {
 footer a, footer p {
   color: #868d92;
 }
+
+footer a {
+}
+
 footer a:hover {
   color: white;
   text-decoration: underline;
@@ -134,14 +138,11 @@ border-radius: 15px;
 footer .social-media .fa-discord:hover {
 color:  #5865F2;
 }
-footer p:last-child {
+footer > p:last-child {
   font-size: 1.5rem;
   text-align: center;
   margin-top: 1rem;
 }
-
-
-
 
 
 
@@ -192,10 +193,19 @@ footer p:last-child {
   footer .footer-container {
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     gap: 4rem;
     font-size: 1.5rem;
     margin-bottom: 3rem;
     width: 100%;
+  }
+
+  footer .footer-container div {
+    width: 50%;
+  }
+
+  footer .footer-container div * {
+    align-self: center;
+    text-align: center;
   }
 }
