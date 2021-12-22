@@ -120,15 +120,16 @@
   width: 100%;
   height: 40rem;
 }
+
 .learn-more-heraldry {
   color: var(--light-color);
   background: var(--secondary-color);
-}
-.learn-more-heraldry p {
-  font-size: 1.7rem;
-  text-align: justify;
-}
 
+  p {
+    font-size: 1.7rem;
+    text-align: justify;
+  }
+}
 
 /* ____________________________ CHOOSE YOUR COAT OF ARM ____________________________ */
 .coat-choice-container {
@@ -139,49 +140,54 @@
   gap: 1rem;
   padding: 1rem;
   background: #555;
-}
-/**.coat-choice-container a {
-    width: 80%;
-} */
-.coat-choice-container .values {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  line-height: 2;
-  font-size: 1.5rem;
-  border: 1px solid black;
-}
-.coat-choice-container img {
-  width: 60%;
-}
-.coat-choice-container a:hover {
-  background: rgb(0, 106, 198);
-  background: linear-gradient(
-    90deg,
-    rgba(0, 106, 198, 1) 0%,
-    rgba(4, 80, 145, 1) 120%
-  );
-  color: var(--light-color);
-}
-.coat-choice-container a:hover .gras {
-  color: var(--light-color);
+
+  a {
+    /**width: 80%;*/
+
+    &:hover {
+      background: rgb(0, 106, 198);
+      background: linear-gradient(
+        90deg,
+        rgba(0, 106, 198, 1) 0%,
+        rgba(4, 80, 145, 1) 120%
+      );
+      color: var(--light-color);
+
+      .gras {
+        color: var(--light-color);
+      }
+    }
+  }
+
+  .values {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    line-height: 2;
+    font-size: 1.5rem;
+    border: 1px solid black;
+  }
+
+  img {
+    width: 60%;
+  }
 }
 
 /* ____________________________ BLAZON GENERATED ____________________________ */
 .message-box {
-    max-width: 90rem;
-    background: rgb(0, 106, 198);
-    background: linear-gradient(
-        90deg,
-        rgba(0, 106, 198, 1) 0%,
-        rgba(0, 61, 115, 1) 100%
-    );
-    color: var(--light-color);
-    overflow: hidden;
-    z-index: +2;
-}
-.message-box:after {
+  max-width: 90rem;
+  background: rgb(0, 106, 198);
+  background: linear-gradient(
+      90deg,
+      rgba(0, 106, 198, 1) 0%,
+      rgba(0, 61, 115, 1) 100%
+  );
+  color: var(--light-color);
+  overflow: hidden;
+  z-index: +2;
+
+  &:after {
     content: "";
     background: url("/Images/SVG/corner-artdeco.svg") no-repeat;
     position: absolute;
@@ -191,8 +197,9 @@
     left: -3rem;
     opacity: 0.6;
     z-index: 1;
-}
-.message-box:before {
+  }
+
+  &:before {
     content: "";
     background: url("/Images/SVG/corner-artdeco.svg") no-repeat;
     position: absolute;
@@ -203,30 +210,37 @@
     opacity: 0.6;
     transform: rotate(180deg);
     z-index: 1;
-}
-.message-box p {
+  }
+
+  p {
     line-height: 3;
+  }
 }
+
 .value-choosen-flex {
-    margin-bottom: 5rem;
-}
-.value-choosen-flex .utility-text:hover {
+  margin-bottom: 5rem;
+
+  .utility-text:hover {
     color: var(--green-color);
     opacity: 0.8;
     font-weight: 400;
-}
-.value-choosen-flex .value {
+  }
+
+  .value {
     align-items: flex-start;
-}
-.value-choosen-flex .value p {
-    background: var(--blue-light-color);
-    color: var(--light-color);
-    width: 100%;
-    padding: 0 2rem;
-    text-align: center;
-}
-.value-choosen-flex a:hover {
+
+    p {
+      background: var(--blue-light-color);
+      color: var(--light-color);
+      width: 100%;
+      padding: 0 2rem;
+      text-align: center;
+    }
+  }
+
+  a:hover {
     color: var(--green-color);
+  }
 }
 
 /* ____________________________ NAME YOUR FAVORITE CHARACTER ____________________________ */
@@ -245,7 +259,7 @@
   text-align: right;
   width: 100%;
   transform: translate(0 , -100%);
-
+  padding: 0.5rem 1rem;
 }
 .skip-btn a,
 .skip-btn i {
@@ -322,24 +336,31 @@
   gap: 2rem;
   margin-top: 2rem;
   max-width: 90rem;
+  background: var(--light-opacity);
+  padding: 2rem;
 }
 
-.set {
+.customize-coat .set {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  padding: 0.5rem;
-  width: 22rem;
+  padding: 1rem;
+  width: 21rem;
   background: var(--light-color);
   border: 1px solid var(--dark-opacity);
   /* box-shadow: 0.1rem 0.1rem 0.5rem 0.1rem var(--dark-color); */
+}
+.customize-coat .edit-charges {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 .set img {
   width: 25%;
   margin: 0;
 }
-.customize-coat .edit-charges a:hover div{
+.customize-coat a:hover div{
     background: var(--green-color);
     color: var(--light-color);
 }
@@ -352,7 +373,7 @@
   /* background: var(--secondary-color); */
   color: var(--secondary-color);
   border: 1px solid var(--secondary-color);
-  padding: 0.5rem 3rem;
+  padding: 0.5rem 2rem;
 }
 .quick-poll a:hover {
   background:var(--green-color);
@@ -406,9 +427,22 @@
 .add-ornaments .ico-6 {
   background-position: -350px  0;
 }
-/* ____________________________ SAVE YOUR SHIELD ____________________________ */
+/* ____________________________ DOWNLOAD SAVE YOUR SHIELD ____________________________ */
+.download-container {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 1.5rem;
+}
 .preview {
   border-right: 1px solid var(--dark-opacity);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.8rem;
 }
 
 .preview img {
@@ -435,7 +469,6 @@
 /*____________________________ FROM SCRATCH COLOR ____________________________ */
 #colorpicker {
   border: 1px solid rgba(0, 0, 0, 0.178);
-  width: 70%;
   height: 5rem;
   margin: auto;
 }
@@ -508,6 +541,7 @@ button.sable {
   position: relative;
   color: var(--light-color);
   margin: auto;
+  width: 20%;
   line-height: 1;
   text-align: center;
   z-index: 5;
@@ -627,6 +661,18 @@ transition: 0.5s;
   filter: grayscale(0);
 }
 
+/* _________ COAT EDIT APPLICATION PAGE ________ */
+.customize-coat .edit-charges .set {
+  width: 50%;
+  margin: auto;
+}
+.customize-coat .edit-charges div{
+width: fit-content;
+}
+.quick-poll {
+display: none;
+}
+
 
 @media screen  and (max-width: 620px) {
   /* ________COAT Old shield _______ */
@@ -648,9 +694,14 @@ transition: 0.5s;
   /* _____________ Coat Download _______________*/
   .preview {
       border-right: none;
+      gap: 1rem;
   }
   .information-box-download {
-  margin: auto;
-  width: 100%;
+    margin: auto;
+    width: 100%;
+  }
+  .download-container {
+    gap: 0rem;
+    margin: 0;
   }
 }

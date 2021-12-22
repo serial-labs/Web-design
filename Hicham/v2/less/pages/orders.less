@@ -8,7 +8,8 @@
   justify-content: center;
   align-items: center; 
   max-width: 15rem;
-  margin-bottom: 5rem;
+  height: 100%;
+  margin-bottom: 6rem;
   position: relative;
 }
 .titre-pass {
@@ -43,6 +44,10 @@
   z-index: -5;
 }
 
+.basic-pass + small .btn-dark {
+  padding: 0.5rem 2rem;
+}
+
 .basic-pass .icon {
   display: flex;
   flex-direction: column;
@@ -50,7 +55,9 @@
   width: 100%;
   text-align: center;
   padding: 0.5rem;
-
+}
+.basic-pass .icon img {
+  width: 55%;
 }
 .basic-pass .icon i {
   font-size: 5rem;
@@ -73,7 +80,8 @@
 /* ---------------------STANDARD PASS------------------ */
 .standard-pass {
   border: 3px solid var(--secondary-color);
-
+  margin-right: 1rem;
+  margin-left: 0.5rem;
 }
 .standard-pass:after {
   content: "";
@@ -165,11 +173,8 @@
   background: var(--light-opacity);
 }
 .order-information h3 {
-color: var(--light-color);
-font-weight: 400;
-background: var(--secondary-color);
-padding: 0rem 0.2rem;
-margin: auto;
+  color: var(--secondary-color);
+  margin: auto;
 }
 .order-information .discount-link {
   color: var(--red-color);

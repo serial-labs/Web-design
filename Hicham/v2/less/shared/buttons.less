@@ -1,6 +1,15 @@
 // main : ../main.less
 
 /* ____________________________BUTTONS____________________________*/
+input {
+	background-color: rgb(252, 252, 252);
+	border: 1px solid rgba(51, 51, 51, 0.2);
+	padding: 12px 15px;
+	margin: 8px 5px;
+    line-height: 1rem;
+	width: 100%;
+}
+
 button {
     font-size: 1.8rem;
     line-height: 1.5;
@@ -110,5 +119,15 @@ sup a {
             transform: rotateZ(360deg);
             transition: 0.5s;
         }
+    }
+}
+
+@media screen  and (max-width: 620px) {
+    /* _________ COAT EDIT APPLICATION PAGE ________ */
+    .button-save{
+        width: 100%;
+    }
+    .button-save a{
+        width: 100%;
     }
 }
