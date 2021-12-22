@@ -475,13 +475,6 @@ sup a {
   transform: rotateZ(360deg);
   transition: 0.5s;
 }
-/* _________ COAT EDIT APPLICATION PAGE ________ */
-.button-save {
-  width: 100%;
-}
-.button-save a {
-  width: 50%;
-}
 @media screen and (max-width: 620px) {
   /* _________ COAT EDIT APPLICATION PAGE ________ */
   .button-save {
@@ -804,6 +797,9 @@ ul {
 .italic {
   font-style: italic;
 }
+.txt-underline {
+  text-decoration: underline;
+}
 /* ____________________________ H1 du HEADER (BLUE BANNER) TOUTES LES PAGES____________________________*/
 .titre-section {
   display: flex;
@@ -914,17 +910,74 @@ ul {
 .gap1 {
   gap: 1rem;
 }
+.gap2 {
+  gap: 2rem;
+}
+.gap3 {
+  gap: 3rem;
+}
+.gap4 {
+  gap: 4rem;
+}
+.gap5 {
+  gap: 5rem;
+}
 .gap6 {
   gap: 6rem;
+}
+.gap7 {
+  gap: 7rem;
+}
+.gap8 {
+  gap: 8rem;
+}
+.gap9 {
+  gap: 9rem;
+}
+.gap10 {
+  gap: 10rem;
 }
 .gap11 {
   gap: 11rem;
 }
+.gap12 {
+  gap: 12rem;
+}
+.gap13 {
+  gap: 13rem;
+}
+.gap14 {
+  gap: 14rem;
+}
+.gap15 {
+  gap: 15rem;
+}
 .gap16 {
   gap: 16rem;
 }
+.gap17 {
+  gap: 17rem;
+}
+.gap18 {
+  gap: 18rem;
+}
+.gap19 {
+  gap: 19rem;
+}
+.gap20 {
+  gap: 20rem;
+}
 .gap21 {
   gap: 21rem;
+}
+.gap22 {
+  gap: 22rem;
+}
+.gap23 {
+  gap: 23rem;
+}
+.gap24 {
+  gap: 24rem;
 }
 .wrap {
   flex-wrap: wrap;
@@ -1728,7 +1781,6 @@ ul {
 .skip-btn {
   text-align: right;
   width: 100%;
-  transform: translate(0, -100%);
   padding: 0.5rem 1rem;
 }
 .skip-btn a,
@@ -1741,6 +1793,7 @@ ul {
 }
 .skip-btn a:hover i {
   opacity: 1;
+  margin-left: 1rem;
   color: var(--green-color);
   transition: 0.5s;
 }
@@ -2475,7 +2528,8 @@ button.sable {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   position: relative;
   overflow: hidden;
-  width: 768px;
+  width: 100%;
+  margin: 2rem auto;
   max-width: 100%;
   min-height: 480px;
 }
@@ -2732,6 +2786,13 @@ button.sable {
     gap: 1rem;
     width: 100%;
   }
+  .overlay-container {
+    display: none;
+  }
+  .form-container-signin {
+    width: 100%;
+    margin: auto;
+  }
 }
 /* ____________________________ Choose your values  ____________________________ */
 #friend,
@@ -2943,5 +3004,78 @@ button.sable {
   /* ____________________________*/
   .container-value .card-value {
     margin: auto;
+  }
+}
+/* _______________________   AFTER LESS ____________________________ */
+/* _______________________   About Myblazon Page ____________________________ */
+.about-myblazon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+  padding: 2rem;
+  margin: auto;
+}
+.about-myblazon .col-sb p:nth-child(2) {
+  color: var(--red-color);
+}
+.about-myblazon img {
+  object-fit: contain;
+  width: 50%;
+}
+/* _______________________   Terms of use Page ____________________________ */
+.terms-of-use p {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+.terms-of-use div {
+  margin-bottom: 6rem;
+}
+/* _______________________   Privacy policy Page ____________________________ */
+.privacy-policy p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.privacy-policy div:nth-child(7) h3 {
+  width: 100%;
+}
+.titre-border {
+  border-top: 2px solid black;
+  position: relative;
+  margin-top: 4rem;
+}
+.titre-border h3 {
+  font-weight: 400;
+  background: var(--secondary-color);
+  color: var(--light-color);
+  border: 1px solid var(--primary-color);
+  padding: 0.5rem;
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  transform: translateY(-50%);
+}
+/* _______________________   FAQ Page ____________________________ */
+.faq p {
+  font-size: 1.5rem;
+}
+.faq ul {
+  list-style-type: disc;
+  color: var(--secondary-color);
+}
+.faq ul a {
+  color: var(--secondary-color);
+}
+.faq ul a:hover {
+  text-decoration: underline;
+}
+.answers div p:nth-child(1) {
+  color: var(--secondary-color);
+}
+@media screen and (max-width: 620px) {
+  /* % Y à changer pour que le H3 se colle au text du dessus */
+  .titre-border h3 {
+    transform: translateY(-25%);
   }
 }

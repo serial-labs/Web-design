@@ -1,0 +1,81 @@
+//main : ../main.less
+
+
+/* _______________________   AFTER LESS ____________________________ */
+
+
+
+/* _______________________   About Myblazon Page ____________________________ */
+.about-myblazon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+    padding: 2rem; 
+    margin: auto;
+  }
+  .about-myblazon .col-sb p:nth-child(2) {
+    color: var(--red-color);
+  }
+  .about-myblazon img {
+    object-fit:  contain;
+    width: 50%;
+  }
+  /* _______________________   Terms of use Page ____________________________ */
+  .terms-of-use p {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+  }
+  .terms-of-use div {
+    margin-bottom: 6rem;
+  }
+  /* _______________________   Privacy policy Page ____________________________ */
+  .privacy-policy p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .privacy-policy div:nth-child(7) h3 {
+    width: 100%;
+  }
+  
+  .titre-border {
+    border-top: 2px solid black;
+    position: relative;
+    margin-top: 4rem;
+  }
+  .titre-border  h3 {
+    font-weight: 400;
+    background: var(--secondary-color);
+    color: var(--light-color);
+    border: 1px solid var(--primary-color);
+    padding: 0.5rem;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    transform: translateY(-50%);
+  }
+
+/* _______________________   FAQ Page ____________________________ */
+.faq p {
+font-size: 1.5rem;
+    }
+.faq ul {
+  list-style-type: disc;
+  color: var(--secondary-color);
+}
+.faq ul a {
+  color: var(--secondary-color);
+}
+.faq ul a:hover {
+  text-decoration: underline;
+}
+.answers div p:nth-child(1) {
+ color: var(--secondary-color);
+}
+
+@media screen and (max-width: 620px) {   /* % Y à changer pour que le H3 se colle au text du dessus */
+  .titre-border h3 {
+    transform:  translateY(-25%);
+  }
+}
