@@ -2017,27 +2017,6 @@ ul {
 .add-ornaments .ico-6 {
   background-position: -350px 0;
 }
-/* ____________________________ DOWNLOAD SAVE YOUR SHIELD ____________________________ */
-.download-container {
-  display: flex;
-  gap: 1.5rem;
-  justify-content: center;
-  align-items: flex-start;
-  margin: 1.5rem;
-}
-.preview {
-  border-right: 1px solid var(--dark-opacity);
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  gap: 2.8rem;
-}
-.preview img {
-  border: 2px solid var(--dark-opacity);
-  padding: 3rem;
-}
 /* ____________________________ FROM SCRATCH ____________________________ */
 .grid-wrapper-scratch {
   display: grid;
@@ -2345,6 +2324,35 @@ button.sable {
 .box-recent-coa img:hover {
   background: var(--orange-color);
   padding: 2rem;
+}
+/* ____________________________ DOWNLOAD SAVE YOUR SHIELD ____________________________ */
+.download-container {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 1.5rem;
+}
+.preview {
+  border-right: 1px solid var(--dark-opacity);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.8rem;
+}
+.preview img {
+  border: 2px solid var(--dark-opacity);
+  padding: 3rem;
+}
+@media screen and (max-width: 900px) {
+  .download-container {
+    align-items: center;
+  }
+  .download-container .preview {
+    border-right: none;
+  }
 }
 /* -----------------PASS CONTAINER---------------- */
 .basic-pass,
