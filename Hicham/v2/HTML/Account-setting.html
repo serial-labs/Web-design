@@ -1,58 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Staatliches&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/Style-2.css" />
-    <link rel="stylesheet" href="/loading-animation.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-      crossorigin="anonymous"
-    />
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-    <title>Account settings</title>
-  </head>
 
-  <body>
-    <header class="col-c txtc px2 py1 row-sa-mobile">
-      <h1 class="logo">
-        <i class="fas fa-shield-alt"><span>MYBLAZON</span></i>
-      </h1>
-      <nav id="navbar" class="row-c px1 my1 w100">
-        <ul class="row-se gap3">
-          <a href="/heraldry.html"><li>Heraldry</li></a>
-          <a href="/create.html"><li>Create a shield</li></a>
-          <a href="#"><li>My coat of arms</li></a>
-          <a href="#"><li>Roll of arms</li></a>
-          <a href="#"><li>Shop</li></a>
-        </ul>
-        <div class="hamburger">
-          <i class="fas fa-bars"></i>
-        </div>
-      </nav>
-    </header>
-    <!-- ---------------------------------------- -->
-    <section class="main-section">
-      <div>
-        <h1 class="titre-section">Account settings </h1> 
-        <h3 class="etiquette w50p p05 txtc">Manage your Myblazon account</h3>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Staatliches&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="/Style-2.css" />
+  <link rel="stylesheet" href="/loading-animation.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <title>Account settings</title>
+</head>
+
+<body>
+  <header class="col-c txtc px2 py1 row-sa-mobile">
+    <h1 class="logo">
+      <i class="fas fa-shield-alt"><span>MYBLAZON</span></i>
+    </h1>
+    <nav id="navbar" class="row-c px1 my1 w100">
+      <ul class="row-se gap3">
+        <a href="/heraldry.html">
+          <li>Heraldry</li>
+        </a>
+        <a href="/create.html">
+          <li>Create a shield</li>
+        </a>
+        <a href="#">
+          <li>My coat of arms</li>
+        </a>
+        <a href="#">
+          <li>Roll of arms</li>
+        </a>
+        <a href="#">
+          <li>Shop</li>
+        </a>
+      </ul>
+      <div class="hamburger">
+        <i class="fas fa-bars"></i>
       </div>
-      <p class="logged-message">You're logged as <span class="gras">Hannibal</span></p>
-      <div class="confirm-email row-c gap2 p1">
-        <i class="fas fa-info-circle fa-2x"></i> 
-        <p>Your email address has not been confirmed yet : <a href="#">Resend confirmation email</a></p>
-      </div>
-      <div class="form-account-container col-c-mobile">
-        <div class="use-social-media col-c gap2">
+    </nav>
+  </header>
+  <!-- ---------------------------------------- -->
+  <section class="main-section">
+    <div>
+      <h1 class="titre-section">Account settings </h1>
+      <h3 class="etiquette w50p p05 txtc">Manage your Myblazon account</h3>
+    </div>
+    <p class="logged-message">You're logged as <span class="gras"> Hannibal</span></p>
+    <div class="confirm-email row-c gap2 p1">
+      <i class="fas fa-info-circle fa-2x"></i>
+      <p>Your email address has not been confirmed yet : <a href="#">Resend confirmation email</a></p>
+    </div>
+
+    <div class="form-account-container">
+      <div class="col-c gap2">
+        <div class="use-social-media">
           <h3 class="txtc">Use a social media</h3>
           <div class="col-c gap4 my1">
             <div class="row-c gap5">
@@ -65,61 +73,58 @@
             </div>
           </div>
         </div>
+        <div class="password-section">
+          <h3>Set Password</h3>
+          <div>
+            <label>Your username :<span class="current-name mx2">Hannibal</span> </label>
+          </div>
+          <div>
+            <label for="password">New password</label>
+            <input type="password" id="password">
+          </div>
+          <div>
+            <label for="confirm-password">Confirm new password</label>
+            <input type="password" id="confirm-password">
+          </div>
+          <a href="#" class="btn-dark">Set password</a>
+        </div>
+        <div class="change-email">
+          <h3>Change email adress</h3>
+          <div>
+            <label for="Email">Email adress</label>
+            <input type="email" id="Email" placeholder="blabla@gmail.com">
+          </div>
+          <a href="#" class="btn-dark">Change email</a>
+        </div>
+      </div>
+
+      <div class="col-c gap2">
         <div class="change-username">
           <h3>Change username</h3>
-
-          <div class="w100 row-sb col-c-mobile">
-            <label>Current username :</label>
-            <p class="current-name">Hannibal</p>
+          <div class=" row-sb col-c-mobile">
+            <label>Current username : </label>
+            <p class="current-name"> Hannibal</p>
           </div>
 
-          <div class="w100  col-c-mobile">
+          <div class="  col-c-mobile">
             <label for="username">New username :</label>
             <input type="text" id="username" placeholder="Hannibal">
           </div>
-
           <a href="#" class="btn-dark">Change username</a>
-        </div>
-      </div>
-      <div class="grid-wrapper form-account-container col-c-mobile">
-        <div class="w100">
-          <div class="password-section">
-              <h3>Set Password</h3>
-              <div>
-                <label>Your username :<span class="current-name mx2">Hannibal</span> </label>
-              </div>
-              <div>
-                <label for="password">New password</label>
-                <input type="password" id="password">
-              </div>
-              <div>
-                <label for="confirm-password">Confirm new password</label>
-                <input type="password" id="confirm-password">
-              </div>
-              <a href="#" class="btn-dark">Set password</a>
-          </div>
-          <div class="change-email col-c gap5  my2">
-            <h3>Change email adress</h3>
-            <div>
-              <label for="Email">Email adress</label>
-              <input type="email" id="Email" placeholder="blabla@gmail.com">
-            </div>
-            <a href="#" class="btn-dark">Change email</a>
-          </div>
         </div>
         <div class="update-information">
           <h3>Update profile informations</h3>
           <div>
             <label for="Firstname">First name</label>
-            <input type="text" id="Firstname" class="w100" placeholder="Hannibal">
+            <input type="text" id="Firstname" placeholder="Hannibal">
           </div>
           <div>
             <label for="Middlename">Middle name</label>
-            <input type="text" id="Middlename" class="w100" placeholder="Hannibal">
+            <input type="text" id="Middlename" placeholder="Hannibal">
           </div>
           <div>
             <label for="Lastname">Lastname name</label>
-            <input type="text" id="Lastname" class="w100" placeholder="Hannibal">
+            <input type="text" id="Lastname" placeholder="Hannibal">
           </div>
           <div class="container-gender">
             <input type='radio' id='male' name='radio'>
@@ -260,7 +265,8 @@
             <option value="Lithuania">Lithuania</option>
             <option value="Luxembourg">Luxembourg</option>
             <option value="Macao">Macao</option>
-            <option value="Macedonia, The Former Yugoslav Republic of">Macedonia, The Former Yugoslav Republic of</option>
+            <option value="Macedonia, The Former Yugoslav Republic of">Macedonia, The Former Yugoslav Republic of
+            </option>
             <option value="Madagascar">Madagascar</option>
             <option value="Malawi">Malawi</option>
             <option value="Malaysia">Malaysia</option>
@@ -333,7 +339,8 @@
             <option value="Solomon Islands">Solomon Islands</option>
             <option value="Somalia">Somalia</option>
             <option value="South Africa">South Africa</option>
-            <option value="South Georgia and The South Sandwich Islands">South Georgia and The South Sandwich Islands</option>
+            <option value="South Georgia and The South Sandwich Islands">South Georgia and The South Sandwich Islands
+            </option>
             <option value="Spain">Spain</option>
             <option value="Sri Lanka">Sri Lanka</option>
             <option value="Sudan">Sudan</option>
@@ -376,10 +383,10 @@
             <option value="Zambia">Zambia</option>
             <option value="Zimbabwe">Zimbabwe</option>
           </select>
-          <input type="text"id="City" name="City" placeholder="City" />
+          <input type="text" id="City" name="City" placeholder="City" />
 
           <label for="Birthday">Birthday</label>
-			    <select for="Birthday">
+          <select for="Birthday">
             <option>2</option>
             <option>3</option>
             <option>4</option>
@@ -411,7 +418,7 @@
             <option>30</option>
             <option>31</option>
           </select>
-			    <select>
+          <select>
             <option>January</option>
             <option>February</option>
             <option>March</option>
@@ -429,31 +436,44 @@
           <a href="#" class="btn-dark txtc">Update profile</a>
         </div>
       </div>
-      
-    </section>
+    </div>
+  </section>
 
-    <!-- footer -->
-    <footer>
-      <div class="footer-content row-c w50p ma">
-        <div>
-          <a href="/HTML/index.html"><p>Home</p></a>
-        </div>
-        <div>
-          <a href="#"><p>About Myblazon</p></a>
-        </div>
-        <div>
-          <a href="#"><p>Terms of use</p></a>
-        </div>
-        <div>
-          <a href="#"><p>Privacy policy</p></a>
-        </div>
-        <div>
-          <a href="#"><p>Contact us</p></a>
-        </div>
-        <div>
-          <a href="#"><p>FAQ</p></a>
-        </div>
+  <!-- footer -->
+  <footer>
+    <div class="footer-content row-c w50p ma">
+      <div>
+        <a href="/HTML/index.html">
+          <p>Home</p>
+        </a>
       </div>
-    </footer>
-  </body>
+      <div>
+        <a href="#">
+          <p>About Myblazon</p>
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <p>Terms of use</p>
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <p>Privacy policy</p>
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <p>Contact us</p>
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <p>FAQ</p>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>

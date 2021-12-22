@@ -153,6 +153,8 @@
 }
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
+
 }
 * {
   margin: 0;
@@ -162,7 +164,6 @@ html {
 body {
   font-family: "poppins", sans-serif;
   position: relative;
-  overflow-x: hidden;
   min-height: 100vh;
   font-size: 1.8rem;
 }
@@ -177,6 +178,7 @@ body:after {
   width: 100%;
   height: 100%;
   opacity: 0.8;
+
 }
 /* ________________SCROLL BAR_____________________________ */
 /* width */
@@ -350,6 +352,14 @@ footer i {
   }
 }
 /* ____________________________BUTTONS____________________________*/
+input {
+	background-color: rgb(252, 252, 252);
+	border: 1px solid rgba(51, 51, 51, 0.2);
+	padding: 12px 15px;
+	margin: 8px 5px;
+  line-height: 1rem;
+	width: 100%;
+}
 button {
   font-size: 1.8rem;
   line-height: 1.5;
@@ -905,73 +915,12 @@ ul {
 .wrap {
   flex-wrap: wrap;
 }
-@media screen and (max-width: 620px) {
-  .row-c-mobile-600 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .col-c-mobile-600 {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .row-sb-mobile-600 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .col-sb-mobile-600 {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .row-sa-mobile-600 {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-  .col-sa-mobile-600 {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-  .row-se-mobile-600 {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-  .col-se-mobile-600 {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-evenly;
-  }
-  .row-fs-mobile-600 {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  .col-fs-mobile-600 {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-  .row-fe-mobile-600 {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
-  .col-fe-mobile-600 {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: flex-end;
-  }
+
+/* ____________________________SEPARATORS____________________________ */
+
+.separator {
+  background: url("/Images/SVG/separator.svg") center center/contain;
+  height: 15px;
 }
 @media screen and (max-width: 800px) {
   .row-c-mobile {
@@ -1313,7 +1262,7 @@ ul {
 }
 .arrow-heraldry:hover {
   color: var(--green-color);
-  margin-left: 1rem;
+  margin-left: 0.5rem;
   transition: 0.5s;
 }
 /* ------------------ ETIQUETTE troisième TITRE ----------------------*/
@@ -1379,32 +1328,12 @@ ul {
   pointer-events: none;
   opacity: 0.5;
 }
-@media screen and (max-width: 800px) {
-  /* ____________________________ */
-  .glossary-card {
-    height: fit-content;
-  }
-  .creation-card {
-    height: fit-content;
-  }
-  .etiquette-link {
-    transform: translate(0%);
-    width: 100%;
-    background: var(--light-color);
-    color: var(--secondary-color);
-    transition: 0.5s;
-  }
-  .etiquette {
-    transform: translate(0%);
-    width: 100%;
-    background: var(--light-color);
-    color: var(--secondary-color);
-    transition: 0.5s;
-  }
+.item-glossaire {
+  background: var(--orange-color);
+  margin: 1rem 0;
 }
-/* ____________________________ SHOP ____________________________ */
-.shop-introduction p {
-  text-align: center;
+/* ____________________________PROCESS PROGRESSION BAR____________________________ */
+.process {
   margin: auto;
   background: var(--orange-color);
   color: var(--primary-color);
@@ -1442,8 +1371,16 @@ ul {
   max-width: 100%;
   z-index: 4;
 }
-.shopTeaser > a:first-child:hover {
-  left: -2%;
+/* ____________________________PAGE ORDER VALUES AFTER TEST____________________________ */
+.after-test {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 1.5rem;
+  text-align: center;
+  max-width: 90rem;
+  margin: auto;
+  margin-top: 5rem;
+  border-top: 1px solid black;
 }
 .shopTeaser > a:nth-child(2) {
   left: 18%;
@@ -1675,6 +1612,284 @@ ul {
 }
 .value-choosen-flex {
   margin-bottom: 5rem;
+
+}
+.value-choosen-flex .utility-text:hover {
+  color: var(--green-color);
+  opacity: 0.8;
+  font-weight: 400;
+}
+.value-choosen-flex .value {
+  align-items: flex-start;
+}
+.value-choosen-flex .value p {
+  background: var(--blue-light-color);
+  color: var(--light-color);
+  width: 100%;
+  padding: 0 2rem;
+  text-align: center;
+}
+.value-choosen-flex a:hover {
+  color: var(--green-color);
+}
+/* ____________________________ SHOP ____________________________ */
+.shop-introduction p {
+  text-align: center;
+  margin: auto;
+  background: var(--orange-color);
+  color: var(--primary-color);
+  padding: 1rem;
+  margin-top: 1rem;
+}
+.shop-box {
+  background: var(--orange-color);
+}
+/* __________________________ SHOP TEASER ____________________________ */
+.shopTeaser {
+  position: relative;
+  width: 100%;
+  height: 290px;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+  .shopTeaser > a {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      -moz-transition: 0.2s all linear;
+      -o-transition: 0.2s all linear;
+      -webkit-transition: 0.2s all linear;
+      transition: 0.2s all linear;
+      display: block;
+  }
+
+      .shopTeaser > a:hover {
+          height: 110%;
+          cursor: pointer;
+          top: -3%;
+      }
+
+      .shopTeaser > a:first-child {
+          left: 0;
+          max-width: 100%;
+          z-index: 4;
+      }
+
+          .shopTeaser > a:first-child:hover {
+              left: -2%;
+          }
+
+      .shopTeaser > a:nth-child(2) {
+          left: 18%;
+          z-index: 3;
+      }
+
+          .shopTeaser > a:nth-child(2):hover {
+              left: 15%;
+          }
+
+      .shopTeaser > a:last-child {
+          left: 50%;
+          z-index: 2;
+      }
+
+          .shopTeaser > a:last-child:hover {
+              left: 44%;
+          }
+
+      .shopTeaser > a > img {
+          max-height: 100%;
+      }
+/* ____________________________ OPTION STORE ____________________________ */
+.optionsStore {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+  background: rgba(247, 154, 10, 0.1);
+  max-width: var(--max-width);
+  padding: 1rem 5rem;
+}
+.add-name, .add-values {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0;
+}
+.optionsStore input {
+  width: auto;
+}
+.optionsStore label {
+  width: 100%;
+}
+#userfirstname,
+#userlastname {
+  height: 3.5rem;
+  /* max-width: 21rem; */
+}
+
+.shop-zazzle {
+  background: var(--orange-color);
+}
+
+.shop-zazzle img {
+  transition: 0.5s;
+}
+.shop-zazzle img:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
+}
+
+/* ____________________________ PERSONALITY TEST ____________________________ */
+
+.choosing-container-personality-test i {
+  font-size: 3rem;
+  position: relative;
+}
+.choosing-container-personality-test .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 0;
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0px 0px 5px rgb(46, 45, 45, 0.3);
+  transition: 0.5s;
+}
+.choosing-container-personality-test .box img {
+  max-width: 60%;
+  border: 1px solid black;
+  position: relative;
+}
+
+.btn-1 {
+  padding: 5px 60px;
+  border-radius: 30px;
+  background: var(--secondary-color);
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.last-choice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  background: var(--light-color);
+  color: var(--primary-color);
+  height: 6rem;
+  margin-bottom: 3rem;
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0px 0px 5px rgb(46, 45, 45, 0.3);
+  padding: 0 10px;
+  transition: 0.3s;
+}
+.last-choice h3 {
+  font-weight: 400;
+}
+.last-choice i {
+  font-size: 2rem;
+}
+.choosing-container-personality-test .box:hover {
+  background: var(--green-color);
+  color: white;
+  transform: scale(1.01);
+  transition: 0.5s;
+}
+.choosing-container-personality-test .box:hover::after {
+  content: "";
+  background: url("/Images/SVG/check-solid.svg") no-repeat;
+  position: absolute;
+  width: 12%;
+  height: 12%;
+  top: 0;
+  right: 5%;
+  opacity: 0.5;
+  z-index: 55;
+}
+.last-choice:hover {
+  background: rgba(220, 30, 10, 0.7);
+  color: white;
+  transition: 0.2s;
+}
+.last-choice i {
+  position: relative;
+}
+.last-choice:hover i::after {
+  content: "";
+  background: url("/Images/SVG/check-solid.svg") no-repeat;
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+}
+
+/* ____________________________ BUTTON ALTERNATIVE CHOICES ____________________________ */
+.button-alternative {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+.button-alternative a,
+.button-alternative i {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  transition: 0.5s;
+}
+
+/* ____________________________ HOVER SECTION BUTTON CHOICES ____________________________ */
+.btn-alternative:hover i,
+.button-alternative a:hover {
+  color: var(--green-color);
+  transition: 0.5s;
+}
+
+.button-alternative a:hover i {
+  margin: 0 0.5rem;
+  color: var(--green-color);
+  transition: 0.5;
+}
+.button-alternative a:hover:last-child i:last-child {
+  margin: 0 5px;
+  transform: rotateZ(360deg);
+  transition: 0.5;
+}
+/*____________________________ SOCIAL NETWORK ____________________________ */
+.message-box span {
+  background: var(--light-color);
+  color: var(--secondary-color);
+  padding: 0.5rem 1rem;
+}
+.socialnetwork {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.2rem;
+  /* border-top: 1px solid var(--primary-color); */
+  /* border-bottom: 1px solid var(--primary-color); */
+  color: var(--primary-color);
+}
+.socialnetwork .icons i {
+  font-size: 3.5rem;
+  transition: 0.5s;
+}
+.socialnetwork .icons i:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
+}
+.message-box p {
+  line-height: 3;
+}
+.value-choosen-flex {
+  margin-bottom: 5rem;
 }
 .value-choosen-flex .utility-text:hover {
   color: var(--green-color);
@@ -1708,9 +1923,10 @@ ul {
 }
 .skip-btn {
   text-align: right;
-  width: 100%;
-  transform: translate(0, -100%);
+
+  padding: 0.5rem 1rem;
 }
+
 .skip-btn a,
 .skip-btn i {
   opacity: 0.5;
@@ -2021,20 +2237,39 @@ button.sable {
   font-size: 2.5rem;
   color: var(--primary-color);
 }
-.old-shield-container a:hover i {
-  color: var(--secondary-color);
+
+/* ____________________________ EDIT YOUR SHIELD ____________________________ */
+.customize-coat {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  max-width: 90rem;
+  background: var(--light-opacity);
+  padding: 2rem;
 }
-.old-shield-container img {
-  filter: grayscale(1);
+
+.customize-coat .set {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+  width: 21rem;
+  background: var(--light-color);
+  border: 1px solid var(--dark-opacity);
+}
+.customize-coat .edit-charges {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 .old-shield-container a:hover img {
   filter: grayscale(0);
 }
-.friend-card {
-  padding: 0.5rem 0;
-  background: var(--secondary-color);
-  color: var(--light-color);
-  /* height: 40rem; */
+.customize-coat a:hover div{
+    background: var(--green-color);
+    color: var(--light-color);
 }
 .friend-card h3,
 .other-card h3 {
@@ -2043,8 +2278,10 @@ button.sable {
   border-top: 2px solid white;
   width: 100%;
 }
-.friend-card i {
-  font-size: 10rem;
+.quick-poll a{
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  padding: 0.5rem 2rem;
 }
 .friend-card a {
   color: var(--light-color);
@@ -2110,13 +2347,22 @@ button.sable {
   text-align: center;
   color: var(--light-color);
 }
-.proc01,
-.proc02,
-.proc03,
-.proc04 {
-  position: relative;
-  opacity: 0.5;
-  width: 100%;
+/* ____________________________ DOWNLOAD SAVE YOUR SHIELD ____________________________ */
+.download-container {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 1.5rem;
+}
+.preview {
+  border-right: 1px solid var(--dark-opacity);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.8rem;
 }
 .proc01::after,
 .proc02::after,
@@ -2172,7 +2418,8 @@ button.sable {
   justify-content: center;
   align-items: center;
   max-width: 15rem;
-  margin-bottom: 5rem;
+  height: 100%;
+  margin-bottom: 6rem;
   position: relative;
 }
 .titre-pass {
@@ -2204,14 +2451,21 @@ button.sable {
   border-top: 4rem solid var(--green-color);
   z-index: -5;
 }
+.basic-pass + small .btn-dark {
+  padding: 0.5rem 2rem;
+}
 .basic-pass .icon {
   display: flex;
   flex-direction: column;
   color: var(--green-color);
   width: 100%;
   text-align: center;
-  padding: 0.5rem;
+  padding:  0.5rem;
 }
+.basic-pass .icon img {
+  width: 55%;
+}
+.basic-pass 
 .basic-pass .icon i {
   font-size: 5rem;
 }
@@ -2232,6 +2486,8 @@ button.sable {
 /* ---------------------STANDARD PASS------------------ */
 .standard-pass {
   border: 3px solid var(--secondary-color);
+  margin-right: 1rem;
+  margin-left: 0.5rem;
 }
 .standard-pass:after {
   content: "";
@@ -2327,9 +2583,11 @@ button.sable {
   color: var(--red-color);
   font-family: 'poppins';
 }
-.order-information .discount-link:hover {
-  text-decoration: underline;
-  color: var(--green-color);
+/*____________________________ FROM SCRATCH COLOR ____________________________ */
+#colorpicker {
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  height: 5rem;
+  margin: auto;
 }
 .order-information i {
   transform: rotateX(360deg);
@@ -2384,27 +2642,28 @@ button.sable {
   }
 }
 /* ____________________________ SIGN IN SIGN UP ____________________________ */
-.form {
-  background-color: var(--light-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 0 5rem;
-  height: 100%;
-  text-align: center;
+
+.std-form {
+	background-color: var(--light-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 5rem;
+	height: 100%;
+	text-align: center;
+}
+.sign-up-container .std-form {
+  overflow: scroll;
+  justify-content: flex-start;
+  padding: 5rem;
+  overflow-x: hidden;
+
 }
 .gender {
   display: flex;
 }
-input {
-  background-color: #fcfcfc;
-  border: 1px solid rgba(51, 51, 51, 0.2);
-  padding: 12px 15px;
-  margin: 8px 5px;
-  line-height: 1rem;
-  width: 100%;
-}
+
 #container-sign select {
   background-color: #eee;
   border: none;
@@ -2506,13 +2765,12 @@ input {
   transition: transform 0.6s ease-in-out;
   z-index: 100;
 }
-.overlay-panel {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 0 40px;
+.frosted p {
+  position: relative;
+  color: var(--light-color);
+  margin: auto;
+  width: 20%;
+  line-height: 1;
   text-align: center;
   top: 0;
   height: 100%;
@@ -2608,69 +2866,46 @@ input {
   text-decoration: none;
   transition: 0.2s;
 }
+
+
+
 .form-account-container {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   align-items: flex-start;
-  gap: 2rem;
-  margin: 2rem 0;
+  justify-content: flex-start;
+  grid-gap: 1rem;
+  padding: 0 1rem;
+}
+.form-account-container input {
+  font-size: 1.8rem;
+  margin: 0;
+  width: 100%;
+}
+.form-account-container .btn-dark {
+  /* width: 100%; */
+  margin: auto;
+}
+.use-social-media , .password-section , .change-username, .change-email, .update-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3.6rem;
+  padding: 1.5rem;
+  border: 3px solid var(--secondary-color);
+  background: white;
+  color: var(--secondary-color);
+  width: 100%;
+}
+.use-social-media {
+  align-items: center;
 }
 .form-account-container h3 {
   font-weight: 500;
   border-bottom: 1px solid var(--secondary-color);
   padding-bottom: 0.5rem;
   margin: auto;
-}
-.form-account-container .current-name {
-  color: var(--primary-color);
-  letter-spacing: 2px;
-}
-.use-social-media,
-.change-username,
-.change-email,
-.update-information {
-  border: 3px solid var(--secondary-color);
-  color: var(--secondary-color);
-  width: 50%;
-  padding: 2rem;
-}
-.password-section {
-  display: flex;
-  flex-direction: column;
-  gap: 3;
-  justify-content: flex-start;
-  align-items: flex-start;
-  border: 3px solid var(--secondary-color);
-  color: var(--secondary-color);
-  padding: 2rem;
-  width: 100%;
-}
-.change-base {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 3rem;
-  padding: 2rem;
-  width: 100%;
-}
-.change-username {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 3rem;
-  padding: 2rem;
-  width: 100%;
-}
-.change-email {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 3rem;
-  padding: 2rem;
-  width: 100%;
 }
 .use-social-media a {
   color: var(--secondary-color);
@@ -2682,16 +2917,6 @@ input {
   transform: rotateY(50deg);
   transform: rotateZ(10deg);
   transition: 0.4s;
-}
-.update-information {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: 2rem;
-}
-.update-information .btn-light {
-  width: 60%;
-  margin: auto;
 }
 .update-information select {
   background-color: #eee;
@@ -2917,9 +3142,286 @@ input {
   background: var(--primary-color);
   color: var(--light-color);
 }
+
+
+/* _____________________ ORDER payment PAGE _____________________ */
+.order-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 5rem 2rem;
+  width: 100%;
+  background: var(--light-opacity);
+}
+.order-information h3 {
+color: var(--secondary-color);
+margin: auto;
+}
+.order-information .discount-link {
+  color: var(--red-color);
+  font-family: 'poppins';
+}
+.order-information .discount-link:hover {
+  text-decoration: underline;
+  color: var(--green-color);
+}
+.order-information i {
+  transform: rotateX(360deg);
+  transform: rotateY(180deg);
+}
+.order-information i.fa-tag {
+  transform: rotateX(360deg);
+  transform: rotateY(180deg);
+}
+.order-information i.fa-check {
+  transform: rotateX(0);
+  transform: rotateY(0);
+}
+#DiscountBox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background: var(--orange-color);
+  padding: 1rem;
+}
+#DiscountBox label {
+  width: 60%;
+}
+.order-information .price-order {
+  background: var(--light-opacity-color);
+  width: 100%;
+  text-align: right;
+  color: #333;
+}
+.price-order p {
+  padding: 0.5rem 1rem;
+  border-top: 1px dotted #333;
+}
+.purchase-paypal {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ____________________________ FOOTER ____________________________ */
+footer {
+  background: #333;
+  padding: 3rem 6rem;
+}
+footer a, footer h5, footer p  {
+  color: white;
+}
+footer i {
+  color: white;
+  font-size: 3rem;
+}
+
+
+
+
+
+
+
+
+/* ____________________________ MEDIA QUERIES ____________________________ */
+@media screen  and (max-width: 620px) {
+  .col-c-mobile-600 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    }
+  /* ________COAT Old shield _______ */
+  .old-shield-container .fa-chevron-left, 
+  .old-shield-container .fa-chevron-right {
+    display: none;
+  }
+  /* ________COAT of arms MY _______ */
+  .mycoat-logged small {
+    gap: 0;
+    margin: 1rem;
+  }
+  .mycoat-logged small a {
+    width: 100%;
+  }
+/* _________ COAT EDIT APPLICATION PAGE ________ */
+.button-save{
+  width: 100%;
+}
+.button-save a{
+  width: 100%;
+}
+/* _______ Coat of arms Test perso result */
+.after-test .box:first-child {
+  border-right: none;
+}
+.button-choices {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1rem;
+}
+
+
+}
+
+
+
 @media screen and (max-width: 800px) {
+  .row-sa-mobile {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .col-sb-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .col-c-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem ;
+  }
+  .grid-wrapper-mobile {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 1rem;
+    margin-top: 1rem;
+    margin: auto;
+  }
+  .titre-section-mobile {
+    font-size: 1.8rem;
+  }
+  /* ____________________________ */
+  .logo {
+    align-items: center;
+  }
+
+  #navbar {
+    justify-content: flex-end;
+  }
+
+  #navbar ul {
+    display: none;
+  }
+  #navbar .fa-bars {
+    display: block;
+    font-size: 3rem;
+  }
+  .ornament a:after {
+    display: none;
+  }
+  .ornament a:before {
+    display: none;
+  }
+  /* ____________________________ */
+
+  .glossary-card {
+    height: fit-content;
+    margin-top: 3rem;
+  }
+  
+  .creation-card {
+    height: fit-content;
+  }
+  .etiquette-link {
+    transform: translate(0%);
+    width: 100%;
+    background: var(--light-color);
+    color: var(--secondary-color);
+    transition: 0.5s;
+  }
+  .etiquette {
+    transform: translate(0%);
+    width: 100%;
+    background: var(--light-color);
+    color: var(--secondary-color);
+    transition: 0.5s;
+  }
   /* ____________________________*/
   .container-value .card-value {
     margin: auto;
   }
+/* _________ ORDER PAYMENT PAGE ________ */
+.purchase-paypal a {
+  width: 100% ;
 }
+/* _________ COAT EDIT APPLICATION PAGE ________ */
+.button-save{
+    width: 100%;
+  }
+.button-save a{
+    width: 50%;
+  }
+.customize-coat .edit-charges .set {
+    width: 50%;
+    margin: auto;
+  }
+.customize-coat .edit-charges div{
+  width: fit-content;
+  }
+.quick-poll {
+  display: none;
+}
+
+
+
+}
+
+
+@media screen and (max-width: 900px) {
+.col-c-mobile-900 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+  }
+/* _____________ Coat Download _______________*/
+.preview {
+      border-right: none;
+      gap: 1rem;
+}
+.information-box-download {
+  margin: auto;
+  width: 100%;
+}
+
+/* _________ ORDER PAYMENT PAGE ________ */
+#DiscountBox label {
+  width: auto;
+}
+.download-container {
+  gap: 0rem;
+  margin: 0;
+}
+
+.use-social-media , .password-section , .change-username, .change-email, .update-information {
+
+}
+}
+
+
+
+
+
