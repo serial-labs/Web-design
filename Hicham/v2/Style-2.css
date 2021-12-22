@@ -1979,22 +1979,22 @@ ul {
   background: var(--orange-color);
 }
 /*____________________________ FROM SCRATCH COLOR ____________________________ */
-#colorpicker {
+.colorpicker {
   border: 1px solid rgba(0, 0, 0, 0.178);
   height: 5rem;
   margin: auto;
 }
-#colorpicker div {
+.colorpicker div {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
   width: 10%;
 }
-#colorpicker div:hover {
+.colorpicker div:hover {
   background: var(--green-color);
 }
-#colorpicker button {
+.colorpicker button {
   width: 3.5rem;
   height: 3.5rem;
   border: none;
@@ -3078,4 +3078,35 @@ button.sable {
   .titre-border h3 {
     transform: translateY(-25%);
   }
+}
+/* _______________________ Contact us ____________________________ */
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 3rem;
+}
+.contact-us form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  margin: 1rem;
+}
+.contact-us input {
+  margin: 0.5rem 0;
+}
+#IsRobot {
+  width: fit-content;
+}
+.contact-us .btn-dark {
+  width: 30%;
+  align-self: flex-end;
+  margin-top: 1rem;
+}
+.contact-us img {
+  object-fit: cover;
+  width: 100%;
 }
