@@ -150,6 +150,7 @@
   --orange-color: rgba(247, 154, 10, 0.1);
   --red-color: #df4571;
   --max-width: 90rem;
+  --max-width-home: 1280px;
 }
 html {
   font-size: 62.5%;
@@ -436,6 +437,7 @@ input {
 button {
   font-size: 1.8rem;
   line-height: 1.5;
+  font-family: "poppins", sans-serif;
 }
 .btn {
   padding: 0.5rem 3rem;
@@ -2477,9 +2479,9 @@ button.sable {
   }
 }
 /* -----------------PASS CONTAINER---------------- */
-.basic-pass,
-.standard-pass,
-.premium-pass {
+.download-basic,
+.download-standard,
+.download-premium {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2510,10 +2512,10 @@ button.sable {
   font-size: 5rem;
 }
 /* -----------------BASIC PASS---------------- */
-.basic-pass {
+.download-basic {
   border: 3px solid var(--green-color);
 }
-.basic-pass:after {
+.download-basic:after {
   content: "";
   position: absolute;
   top: 101.1%;
@@ -2522,10 +2524,10 @@ button.sable {
   border-top: 4rem solid var(--green-color);
   z-index: -5;
 }
-.basic-pass + small .btn-dark {
+.download-basic + small .btn-dark {
   padding: 0.5rem 2rem;
 }
-.basic-pass .icon {
+.download-basic .icon {
   display: flex;
   flex-direction: column;
   color: var(--green-color);
@@ -2533,20 +2535,20 @@ button.sable {
   text-align: center;
   padding: 0.5rem;
 }
-.basic-pass .icon img {
+.download-basic .icon img {
   width: 55%;
 }
-.basic-pass .icon i {
+.download-basic .icon i {
   font-size: 5rem;
 }
-.basic-pass h4 {
+.download-basic h4 {
   width: 100%;
   font-weight: 500;
   text-align: center;
   background: var(--green-color);
   color: var(--light-color);
 }
-.basic-pass small {
+.download-basic small {
   width: 100%;
   text-align: center;
   padding: 1rem;
@@ -2554,12 +2556,12 @@ button.sable {
   color: var(--green-color);
 }
 /* ---------------------STANDARD PASS------------------ */
-.standard-pass {
+.download-standard {
   border: 3px solid var(--secondary-color);
   margin-right: 1rem;
   margin-left: 0.5rem;
 }
-.standard-pass:after {
+.download-standard:after {
   content: "";
   position: absolute;
   top: 101.1%;
@@ -2568,7 +2570,7 @@ button.sable {
   border-top: 4rem solid var(--secondary-color);
   z-index: -5;
 }
-.standard-pass .icon {
+.download-standard .icon {
   padding: 0.5rem;
   display: flex;
   flex-direction: column;
@@ -2576,17 +2578,17 @@ button.sable {
   width: 100%;
   text-align: center;
 }
-.standard-pass .icon i {
+.download-standard .icon i {
   font-size: 5rem;
 }
-.standard-pass h4 {
+.download-standard h4 {
   width: 100%;
   text-align: center;
   font-weight: 500;
   background: var(--secondary-color);
   color: var(--light-color);
 }
-.standard-pass small {
+.download-standard small {
   width: 100%;
   text-align: center;
   padding: 1rem;
@@ -2594,10 +2596,10 @@ button.sable {
   color: var(--secondary-color);
 }
 /* ---------------------PREMIUM PASS------------------ */
-.premium-pass {
+.download-premium {
   border: 3px solid #df4571;
 }
-.premium-pass:after {
+.download-premium:after {
   content: "";
   position: absolute;
   top: 101.1%;
@@ -2606,7 +2608,7 @@ button.sable {
   border-top: 4rem solid #df4571;
   z-index: -5;
 }
-.premium-pass .icon {
+.download-premium .icon {
   padding: 0.5rem;
   display: flex;
   flex-direction: column;
@@ -2614,17 +2616,17 @@ button.sable {
   width: 100%;
   text-align: center;
 }
-.premium-pass .icon i {
+.download-premium .icon i {
   font-size: 5rem;
 }
-.premium-pass h4 {
+.download-premium h4 {
   width: 100%;
   font-weight: 500;
   text-align: center;
   background: #df4571;
   color: var(--light-color);
 }
-.premium-pass small {
+.download-premium small {
   width: 100%;
   text-align: center;
   padding: 1rem;
@@ -3319,85 +3321,85 @@ button.sable {
   width: 100%;
 }
 #main-page {
-  /* about */
-  /* .img-about img {
-        width: 400px;
-        margin: 0 auto;
-    
-      } */
-  /*  charges */
-  /* value */
-  /* monthly blazon */
-  /*  carousel image */
-}
-#main-page:before {
-  content: '';
-  background: url('/Images/SVG/new_wave.svg') no-repeat center center / cover;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: -5;
+  /* _________________________ ABOUT SECTION ___________________________ */
+  /* _________________________ CHARGES SECTION  ___________________________ */
+  /* _________________________ VALUE SECTION CAROUSEL ___________________________ */
+  /* _________________________ MONTHLY BLAZON SECTION ___________________________ */
+  /* _________________________ MOCKUP IMAGES CAROUSEL ___________________________ */
 }
 #main-page img {
   width: 100%;
 }
 #main-page .banner-container {
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 91vh;
-  max-width: 1280px;
   margin: auto;
+  margin-top: 2rem;
   padding: 3rem;
+  max-width: 120rem;
+}
+#main-page .banner-container .lion {
+  width: 100%;
+}
+#main-page .banner-container .grid-home {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+  margin: auto;
+  gap: 3rem;
 }
 #main-page .banner-container .call-action {
-  text-align: left;
-  justify-self: center;
-  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
   color: var(--primary-color);
-}
-#main-page .banner-container .call-action p {
-  text-align: justify;
+  font-size: 2.2rem;
   width: 100%;
-  font-size: 2.5rem;
 }
-#main-page .banner-container .call-action h1 {
-  font-weight: 800;
+#main-page .banner-container .call-action .btn-dark {
+  font-size: 1.8rem;
 }
-#main-page .banner-container .call-action .btn {
-  margin-top: 20px;
-  display: inline-block;
-  font-weight: 500;
-  letter-spacing: 5px;
-  transition: 0.5s;
-}
-#main-page .banner-container .grid-columns {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
-  grid-gap: 10rem;
-  grid-template-rows: 1fr;
-  margin: auto;
+@media screen and (max-width: 999px) {
+  #main-page .grid-home {
+    gap: 5rem;
+  }
+  #main-page .banner-container .lion {
+    width: 80%;
+    margin: auto;
+  }
+  #main-page .call-action p,
+  #main-page .call-action h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin: auto;
+  }
+  #main-page .call-action .btn-dark {
+    margin: auto;
+    width: 50%;
+    font-size: 2rem;
+  }
 }
 #main-page .about {
   margin: auto;
-  padding: 80px;
+  padding: 3rem;
+  max-width: var(--max-width-home);
 }
-#main-page .about-container {
+#main-page .grid-about {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
-  align-items: center;
-  height: 100%;
+  grid-template-columns: 1fr 2fr;
   grid-gap: 4rem;
-  max-width: var(--max-width);
+  justify-content: center;
+  align-items: center;
   margin: auto;
+  height: 100%;
 }
-#main-page .img-about {
-  margin: auto;
+#main-page .grid-about img {
+  width: 90%;
+  transition: 0.5s;
 }
 #main-page .text-about {
-  line-height: 1.8;
+  line-height: 2;
 }
 #main-page .text-about h1 {
   text-align: center;
@@ -3413,11 +3415,20 @@ button.sable {
   width: 100%;
   text-align: center;
 }
-#main-page .section-charge {
-  padding: 40px 150px;
+@media screen and (max-width: 981px) {
+  #main-page .about .grid-about {
+    display: flex;
+    flex-direction: column;
+  }
+  #main-page .about .grid-about img {
+    width: 50%;
+  }
+}
+#main-page .section-charge-container {
+  padding: 4rem 15rem;
   position: relative;
 }
-#main-page .section-charge::after {
+#main-page .section-charge-container::after {
   content: '';
   position: absolute;
   top: 0;
@@ -3428,7 +3439,7 @@ button.sable {
   z-index: -2;
   clip-path: polygon(0 0, 100% 3.5%, 100% 100%, 0 100.5%);
 }
-#main-page .section-charge::before {
+#main-page .section-charge-container::before {
   content: '';
   position: absolute;
   top: 0;
@@ -3450,37 +3461,36 @@ button.sable {
   text-align: center;
   margin-bottom: 60px;
 }
+#main-page .charge-section .button-container {
+  text-align: center;
+  margin-top: 60px;
+  width: 100%;
+}
 #main-page .charge-wrapper {
   display: grid;
   /*disposition icones charges*/
-  grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 4rem;
-  border: 1px solid black;
 }
-#main-page .charge-section .title,
-#main-page .charge-wrapper {
-  color: var(--light-color);
-  /*color of Charges font*/
-}
-#main-page .charge-wrapper p {
-  text-align: center;
-  font-size: 1.5rem;
-}
-#main-page .charges {
+#main-page .charge-wrapper .charges {
   width: auto;
   height: auto;
   text-align: center;
   object-fit: cover;
 }
-#main-page .charges img {
+#main-page .charge-wrapper .charges img {
   width: auto;
   height: 150px;
 }
-#main-page .charge-section .button-container {
+#main-page .charge-wrapper p {
   text-align: center;
-  margin-top: 60px;
-  width: 100%;
+  font-size: 1.5rem;
+}
+#main-page .charge-section .title,
+#main-page .charge-wrapper {
+  color: var(--light-color);
+  /*color of Charges font*/
 }
 #main-page #value {
   text-align: center;
@@ -3518,14 +3528,13 @@ button.sable {
 #main-page .carousel img {
   opacity: 0.5;
 }
-#main-page .random-blazon {
-  height: 100%;
+#main-page .random-blazon-section {
   padding: 50px;
   margin: auto;
   background: white;
   position: relative;
 }
-#main-page .random-blazon:after {
+#main-page .random-blazon-section:after {
   background: white;
   opacity: 0.5;
   position: absolute;
@@ -3536,29 +3545,27 @@ button.sable {
   z-index: -1;
 }
 #main-page .blazon-container {
-  max-width: var(--max-width);
+  max-width: var(--max-width-home);
   margin: auto;
 }
-#main-page .title {
+#main-page .blazon-container .title {
   text-align: center;
-  color: var(--dark-color);
+  color: var(--primary-color);
 }
-#main-page .blazon-wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-template-rows: 1fr;
+#main-page .blazon-container .blazon-wrapper {
   text-align: center;
-  grid-gap: 1.5rem;
-  margin: 95px 0px;
+  margin: 4rem auto;
+  border: 1px solid black;
 }
-#main-page .blazon {
-  border-radius: 30px;
+#main-page .blazon-container .blazon-wrapper .blazon {
+  min-width: 30%;
+  max-width: 35%;
+  border-radius: 20px;
   padding: 30px;
   box-shadow: 0 5px 10px  grey;
 }
-#main-page .blazon img {
-  height: 250px;
-  width: auto;
+#main-page .blazon-container .blazon-wrapper .blazon img {
+  height: 10%;
   margin-bottom: 20px;
 }
 #main-page .carousel-section {

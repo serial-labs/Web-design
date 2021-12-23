@@ -2,97 +2,101 @@
 
 #main-page {
     
-    &:before {
-        content: '';
-        background: url('/Images/SVG/new_wave.svg') no-repeat center center/cover;
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100vw;
-        height: 100vh;
-        z-index: -5;
-    }
+    // &:before {
+    //     content: '';
+    //     background: url('/Images/SVG/new_wave.svg') no-repeat center center/contain;
+    //     position: absolute;
+    //     top: 0;
+    //     right: 0;
+    //     width: 100vw;
+    //     height: 100vh;
+    //     z-index: -5;
+    // }
     img {
         width: 100%;
     }
     .banner-container {
         display: flex;
-        justify-content: center;
         align-items: center;
-        height: 91vh;
-        max-width: 1280px;
+        // height: 91vh;
         margin: auto;
+        margin-top: 2rem;
         padding: 3rem;
-      
-        .call-action {
-            text-align: left;
-            justify-self: center;
-            align-self: center;
-            color:var(--primary-color);
-        }
+        max-width: 120rem;
 
-        .call-action p {
-            text-align: justify;
+        .lion {
             width: 100%;
-            font-size: 2.5rem;
         }
-        
-        .call-action h1 {
-            font-weight: 800;
-        }
-        
-        .call-action .btn {
-            margin-top: 20px;
-            display: inline-block;
-            font-weight: 500;
-            letter-spacing: 5px;  
-            transition: 0.5s;
-        }
-
-        .grid-columns {
+        .grid-home {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
-            grid-gap: 10rem;
-            grid-template-rows: 1fr;
+            grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
             margin: auto;
+            gap: 3rem;
+        }
+        .call-action {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 1rem;
+            color:var(--primary-color);
+            font-size: 2.2rem;
+            width: 100%;
+            .btn-dark {
+                font-size: 1.8rem;
+            }
         }
     }
+    @media screen and (max-width: 999px) {
+        .grid-home {
+            gap: 5rem;
+        }
+        .banner-container .lion {
+            width: 80%;
+            margin: auto;
+        }
+        .call-action {
+            p, h1 {
+                text-align: center;
+                font-size: 2rem;
+                margin: auto;
+            }
+            .btn-dark {
+                margin: auto;
+                width: 50%;
+                font-size: 2rem;
+            }
+        }        
+    }
+
+
+
     
-    
-    
-    
-    
-    
-    
-    
-    /* about */
-    .about {
-        margin: auto;
-        padding: 80px;    
+/* _________________________ ABOUT SECTION ___________________________ */
+.about {
+        margin: auto;  
+        padding: 3rem;
+        max-width: var(--max-width-home);
       }
       
-      .about-container {
+      .grid-about {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
-        align-items: center;
-        height: 100%;
+        grid-template-columns: 1fr 2fr;
         grid-gap: 4rem; 
-        max-width: var(--max-width);
+        justify-content: center;
+        align-items: center;
         margin: auto;
+        height: 100%;
+
+        img {
+            width: 90%;
+            transition: 0.5s;
+        }
       }
-      
-      .img-about {
-        margin: auto;
-      }
-      
-      /* .img-about img {
-        width: 400px;
-        margin: 0 auto;
-    
-      } */
       
       .text-about {
-        line-height: 1.8;
+        line-height: 2;
+  
     }
       
       .text-about h1 {
@@ -112,91 +116,96 @@
         width: 100%;
         text-align: center;
       }
+    @media screen and (max-width: 981px) {
+        .about .grid-about {
+           display: flex;
+           flex-direction: column;
+           img {
+               width: 50%;
+           }
+        }
+    }
     
     
-    
-      /*  charges */
-    .section-charge {
-        padding: 40px 150px;
+/* _________________________ CHARGES SECTION  ___________________________ */
+.section-charge-container {
+        padding: 4rem 15rem;
         position: relative;
+
+        &::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, rgba(71,161,251,1) 100%, rgba(71,109,255,1) 100%);
+            z-index: -2;
+            clip-path: polygon(0 0, 100% 3.5%, 100% 100%, 0 100.5%);
+        
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #0011c7;
+            background-image: url("https://www.transparenttextures.com/patterns/subtle-white-feathers.png");
+            z-index: -1;
+            opacity: 0.3;
+            clip-path: polygon(0 0, 100% 3.5%, 100% 100%, 0 100.5%);
+        }
     }
     
-    .section-charge::after{
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(90deg, rgba(71,161,251,1) 100%, rgba(71,109,255,1) 100%);
-        z-index: -2;
-        clip-path: polygon(0 0, 100% 3.5%, 100% 100%, 0 100.5%);
-    
-    }
-    .section-charge::before{
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #0011c7;
-        background-image: url("https://www.transparenttextures.com/patterns/subtle-white-feathers.png");
-        z-index: -1;
-        opacity: 0.3;
-        clip-path: polygon(0 0, 100% 3.5%, 100% 100%, 0 100.5%);
-    }
-    
+   
     
     .charge-section {
         position: relative;
         max-width: var(--max-width);
         margin: auto;
+
+        .title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 60px;
+            width: 100%;      
+        }
     }
-    
-    .charge-section .title {
-        text-align: center;
-        margin-bottom: 60px;
-    }
-    
+        
     .charge-wrapper  {
           display: grid; /*disposition icones charges*/
-          grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+          grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
           grid-template-rows: repeat(2, 1fr);
           grid-gap: 4rem;
-          border: 1px solid black;
+         
+          .charges {
+            width: auto;
+            height: auto;
+            text-align: center;
+            object-fit: cover;
+            img {
+                width: auto;
+                height: 150px;
+            }
+        }
+            p {
+            text-align: center;
+            font-size: 1.5rem;
+        }
       }
     
       .charge-section .title, .charge-wrapper {
           color: var(--light-color); /*color of Charges font*/
       }
-    
-    .charge-wrapper p {
-          text-align: center;
-          font-size: 1.5rem;
-      }
-    
-    .charges {
-          width: auto;
-          height: auto;
-          text-align: center;
-          object-fit: cover;
-      }
-    
-    .charges img {
-          width: auto;
-          height: 150px;
-      }
-    
-    .charge-section .button-container {
-          text-align: center;
-          margin-top: 60px;
-          width: 100%;      
-      }
+        
     
     
-    
-      /* value */
+/* _________________________ VALUE SECTION CAROUSEL ___________________________ */
       #value {
         text-align: center;
         height: 100%;
@@ -238,76 +247,71 @@
         font-weight: 400;
         color: var(--dark-color);
     }
-    
     .carousel img {
         opacity: 0.5;
-    }
+    }    
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    /* monthly blazon */
-    .random-blazon {
-        height: 100%;
+/* _________________________ MONTHLY BLAZON SECTION ___________________________ */
+.random-blazon-section {
         padding: 50px;
         margin: auto;   
         background: white;
         position: relative;
-    
-    }
-    
-    .random-blazon:after {
-        background: white;
-        opacity: 0.5;
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        z-index: -1;
+
+        &:after {
+            background: white;
+            opacity: 0.5;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+        }
     }
     
     .blazon-container {
-        max-width: var(--max-width);
+        max-width: var(--max-width-home);
         margin: auto;
+
+        .title {
+            text-align: center;
+            color: var(--primary-color);
+        }
+
+        .blazon-wrapper {
+            // display: grid;
+            // grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+            // text-align: center;
+            // grid-gap: 1.5rem;
+            // margin: 4rem auto;
+            // border: 1px solid black;
+            text-align: center;
+            margin: 4rem auto;
+            border: 1px solid black;
+
+            .blazon {
+                min-width: 30%;
+                max-width: 35%;
+                border-radius: 20px;
+                padding: 30px;
+                box-shadow: 0 5px 10px  grey;
+
+                img {
+                    height: 10%;
+                    // width: auto;
+                    margin-bottom: 20px;
+                }
+            }
+            
+        
+        }
     }
-    .title {
-        text-align: center;
-        color: var(--dark-color);
-    }
     
-    .blazon-wrapper {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        grid-template-rows: 1fr;
-        text-align: center;
-        grid-gap: 1.5rem;
-        margin: 95px 0px;
+
     
-    }
-    
-    .blazon {
-        border-radius: 30px;
-        padding: 30px;
-        box-shadow: 0 5px 10px  grey;
-    }
-    
-    .blazon img {
-        height: 250px;
-        width: auto;
-        margin-bottom: 20px;
-    }
-    
-    
-    
-    /*  carousel image */
-    .carousel-section {
+/* _________________________ MOCKUP IMAGES CAROUSEL ___________________________ */
+.carousel-section {
         width: 100%;
         padding-top: 100px;
         background: white;

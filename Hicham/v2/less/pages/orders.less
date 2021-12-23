@@ -35,7 +35,7 @@
 
 /* -----------------PASS CONTAINER---------------- */
 
-.basic-pass, .standard-pass, .premium-pass {
+.download-basic, .download-standard, .download-premium {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -67,11 +67,11 @@
 }
 
 /* -----------------BASIC PASS---------------- */
-.basic-pass {
+.download-basic {
   border: 3px solid var(--green-color);
 
 }
-.basic-pass:after {
+.download-basic:after {
   content: "";
   position: absolute;
   top: 101.1% ;
@@ -81,11 +81,11 @@
   z-index: -5;
 }
 
-.basic-pass + small .btn-dark {
+.download-basic + small .btn-dark {
   padding: 0.5rem 2rem;
 }
 
-.basic-pass .icon {
+.download-basic .icon {
   display: flex;
   flex-direction: column;
   color: var(--green-color);
@@ -93,20 +93,20 @@
   text-align: center;
   padding: 0.5rem;
 }
-.basic-pass .icon img {
+.download-basic .icon img {
   width: 55%;
 }
-.basic-pass .icon i {
+.download-basic .icon i {
   font-size: 5rem;
 }
-.basic-pass h4 {
+.download-basic h4 {
   width: 100%;
   font-weight: 500;
   text-align: center;
   background: var(--green-color);
   color: var(--light-color);
 }
-.basic-pass small {
+.download-basic small {
   width: 100%;
   text-align: center;
   padding: 1rem;
@@ -115,12 +115,12 @@
 }
 
 /* ---------------------STANDARD PASS------------------ */
-.standard-pass {
+.download-standard {
   border: 3px solid var(--secondary-color);
   margin-right: 1rem;
   margin-left: 0.5rem;
 }
-.standard-pass:after {
+.download-standard:after {
   content: "";
   position: absolute;
   top: 101.1% ;
@@ -130,7 +130,7 @@
   z-index: -5;
 }
 
-.standard-pass .icon {
+.download-standard .icon {
   padding: 0.5rem;
 
   display: flex;
@@ -140,10 +140,10 @@
 
   text-align: center;
 }
-.standard-pass .icon i {
+.download-standard .icon i {
   font-size: 5rem;
 }
-.standard-pass h4 {
+.download-standard h4 {
   width: 100%;
   text-align: center;
   font-weight: 500;
@@ -151,7 +151,7 @@
   color: var(--light-color);
 }
 
-.standard-pass small {
+.download-standard small {
   width: 100%;
   text-align: center;
   padding: 1rem;
@@ -160,10 +160,10 @@
 }
 
 /* ---------------------PREMIUM PASS------------------ */
-.premium-pass {
+.download-premium {
   border: 3px solid #df4571;
 }
-.premium-pass:after {
+.download-premium:after {
   content: "";
   position: absolute;
   top: 101.1% ;
@@ -172,7 +172,7 @@
   border-top: 4rem solid #df4571;
   z-index: -5;
 }
-.premium-pass .icon {
+.download-premium .icon {
   padding: 0.5rem;
   display: flex;
   flex-direction: column;
@@ -180,17 +180,17 @@
   width: 100%;
   text-align: center;
 }
-.premium-pass .icon i {
+.download-premium .icon i {
   font-size: 5rem;
 }
-.premium-pass h4 {
+.download-premium h4 {
   width: 100%;
   font-weight: 500;
   text-align: center;
   background: #df4571;
   color: var(--light-color);
 }
-.premium-pass small {
+.download-premium small {
     width: 100%;
     text-align: center;
     padding: 1rem;
