@@ -2215,13 +2215,10 @@ button.sable {
   background: url("/Images/SVG/banner-3.svg") no-repeat center center / cover;
   margin: auto;
   height: 10rem;
-  border: 1px solid red;
 }
 .mycoat-logged .resume > div p {
   width: fit-content;
-  letter-spacing: 7px;
   transform: translateY(-50%);
-  border: 1px solid red;
 }
 /* ______________________HISTORY COAT OF ARMS________________ */
 .history-coats {
@@ -2351,6 +2348,10 @@ button.sable {
   }
   .mycoat-logged small a {
     width: 100%;
+  }
+  .mycoat-logged .resume > div p {
+    font-size: 1.3rem;
+    font-weight: 300;
   }
 }
 @media screen and (max-width: 900px) {
