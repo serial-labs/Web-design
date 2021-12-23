@@ -1,28 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Staatliches&display=swap');
-:root {
-    --primary-color: #141850;
-    --secondary-color: #006AC6;
-    --light-color: white;
-    --dark-color: black;
-    --max-width: 1280px;
-}
-html {
-    font-size: 62.5%;
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body {
-    font-family: 'poppins', sans-serif;
-    /* line-height: 1.5; */
-    font-size: 1.8rem;
-    position: relative;
-    overflow-x: hidden;
-
-}
 body::before {
     content: '';
     background: url('/Images/SVG/new_wave.svg') no-repeat center center/cover;
@@ -180,7 +156,7 @@ header::after {
 /* -------------------- LANDINGPAGE ----------------------- */
 
 
-#main-page {
+#main-page .banner-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -199,7 +175,7 @@ header::after {
 }
 
 
-#main-page .call-action {
+.banner-container .call-action {
     text-align: left;
     justify-self: center;
     align-self: center;
