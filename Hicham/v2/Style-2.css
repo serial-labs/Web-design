@@ -1934,22 +1934,32 @@ ul {
   line-height: 3;
 }
 .value-choosen-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
   margin-bottom: 5rem;
+  background: var(--light-opacity);
+  padding: 2rem;
 }
 .value-choosen-flex .utility-text:hover {
   color: var(--green-color);
   opacity: 0.8;
   font-weight: 400;
 }
-.value-choosen-flex .value {
-  align-items: flex-start;
-}
-.value-choosen-flex .value p {
-  background: var(--blue-light-color);
+.value-choosen-flex span {
+  background: var(--secondary-color);
   color: var(--light-color);
-  width: 100%;
-  padding: 0 2rem;
+  padding: 0.5rem 0;
+  min-width: 15rem;
   text-align: center;
+}
+.value-choosen-flex p {
+  width: 80%;
+  text-align: left;
+}
+.value-choosen-flex a {
+  color: var(--secondary-color);
 }
 .value-choosen-flex a:hover {
   color: var(--green-color);
@@ -2486,6 +2496,10 @@ button.sable {
   padding: 1rem 2rem;
   background: var(--secondary-color);
   color: var(--light-color);
+}
+.information-box.information-box-contact {
+  width: 100%;
+  justify-content: center;
 }
 .information-box i {
   font-size: 5rem;
