@@ -503,37 +503,29 @@ button.sable {
   margin-top: 2rem;
   max-width: var(--max-width);
 }
-.frosted {
+.mycoat-logged .resume {
   min-width: 50%;
-  background: var(--light-opacity);
+  background: radial-gradient(circle, rgba(31,33,34,1) 22%, rgba(0,0,0,1) 100%);
   padding: 2rem;
-  position: relative;
-  
+  color: white;
 }
-.frosted img {
-  box-shadow: 0 14px 28px rgba(0,0,0,0.1), 
-  0 10px 10px rgba(0,0,0,0.1);    
-  padding: 2rem 6rem;
-}
-.frosted p {
-  position: relative;
-  color: var(--light-color);
+.mycoat-logged .resume > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("/Images/SVG/banner-3.svg") no-repeat center center/cover;
   margin: auto;
-  width: 20%;
-  line-height: 1;
-  text-align: center;
-  z-index: 5;
+  height: 10rem;
+  border: 1px solid red;
 }
-.frosted:after {
-content: "";
-position: absolute;
-top: 72%;
-left: 0;
-min-width: 100%;
-height: 20rem;
-background: url('/Images/SVG/banner-3.svg') no-repeat center center/cover;
-z-index: 1;
+.mycoat-logged .resume > div p {
+  width: fit-content;
+  letter-spacing: 7px;
+  transform: translateY(-50%);
+  border: 1px solid red;
 }
+
+
 
 /* ______________________HISTORY COAT OF ARMS________________ */
 .history-coats {

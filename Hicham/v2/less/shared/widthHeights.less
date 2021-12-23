@@ -2,7 +2,7 @@
 
 /* ____________________________ WIDTH + HEIGHT____________________________*/
 
-@minwh: 10;
+@minwh: 5;
 .wh-loop (@i) when (@i <= 50) {
     .w@{i} {
         width: ~"@{i}rem";
@@ -17,13 +17,20 @@
 
 .wh-loop(@minwh);
 
-.w50p {
-    width: 50%;
+@minwhp: 10;
+.whp-loop (@i) when (@i <= 100) {
+    .w@{i}p {
+        width: ~"@{i}%";
+    }
+
+    .h@{i}p {
+        height: ~"@{i}%";
+    }
+
+    .whp-loop(@i + 5)
 }
 
-.w100 {
-    width: 100%;
-}
+.whp-loop(@minwhp);
 
 /*____________________________ PADDING + MARGIN ____________________________ */
 

@@ -559,6 +559,12 @@ sup a {
   }
 }
 /* ____________________________ WIDTH + HEIGHT____________________________*/
+.w5 {
+  width: 5rem;
+}
+.h5 {
+  height: 5rem;
+}
 .w10 {
   width: 10rem;
 }
@@ -613,11 +619,119 @@ sup a {
 .h50 {
   height: 50rem;
 }
+.w10p {
+  width: 10%;
+}
+.h10p {
+  height: 10%;
+}
+.w15p {
+  width: 15%;
+}
+.h15p {
+  height: 15%;
+}
+.w20p {
+  width: 20%;
+}
+.h20p {
+  height: 20%;
+}
+.w25p {
+  width: 25%;
+}
+.h25p {
+  height: 25%;
+}
+.w30p {
+  width: 30%;
+}
+.h30p {
+  height: 30%;
+}
+.w35p {
+  width: 35%;
+}
+.h35p {
+  height: 35%;
+}
+.w40p {
+  width: 40%;
+}
+.h40p {
+  height: 40%;
+}
+.w45p {
+  width: 45%;
+}
+.h45p {
+  height: 45%;
+}
 .w50p {
   width: 50%;
 }
-.w100 {
+.h50p {
+  height: 50%;
+}
+.w55p {
+  width: 55%;
+}
+.h55p {
+  height: 55%;
+}
+.w60p {
+  width: 60%;
+}
+.h60p {
+  height: 60%;
+}
+.w65p {
+  width: 65%;
+}
+.h65p {
+  height: 65%;
+}
+.w70p {
+  width: 70%;
+}
+.h70p {
+  height: 70%;
+}
+.w75p {
+  width: 75%;
+}
+.h75p {
+  height: 75%;
+}
+.w80p {
+  width: 80%;
+}
+.h80p {
+  height: 80%;
+}
+.w85p {
+  width: 85%;
+}
+.h85p {
+  height: 85%;
+}
+.w90p {
+  width: 90%;
+}
+.h90p {
+  height: 90%;
+}
+.w95p {
+  width: 95%;
+}
+.h95p {
+  height: 95%;
+}
+.w100p {
   width: 100%;
+}
+.h100p {
+  height: 100%;
 }
 /*____________________________ PADDING + MARGIN ____________________________ */
 .p05 {
@@ -2088,34 +2202,26 @@ button.sable {
   margin-top: 2rem;
   max-width: var(--max-width);
 }
-.frosted {
+.mycoat-logged .resume {
   min-width: 50%;
-  background: var(--light-opacity);
+  background: radial-gradient(circle, #1f2122 22%, #000000 100%);
   padding: 2rem;
-  position: relative;
+  color: white;
 }
-.frosted img {
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.1);
-  padding: 2rem 6rem;
-}
-.frosted p {
-  position: relative;
-  color: var(--light-color);
+.mycoat-logged .resume > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("/Images/SVG/banner-3.svg") no-repeat center center / cover;
   margin: auto;
-  width: 20%;
-  line-height: 1;
-  text-align: center;
-  z-index: 5;
+  height: 10rem;
+  border: 1px solid red;
 }
-.frosted:after {
-  content: "";
-  position: absolute;
-  top: 72%;
-  left: 0;
-  min-width: 100%;
-  height: 20rem;
-  background: url('/Images/SVG/banner-3.svg') no-repeat center center / cover;
-  z-index: 1;
+.mycoat-logged .resume > div p {
+  width: fit-content;
+  letter-spacing: 7px;
+  transform: translateY(-50%);
+  border: 1px solid red;
 }
 /* ______________________HISTORY COAT OF ARMS________________ */
 .history-coats {
