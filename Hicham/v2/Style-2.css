@@ -317,9 +317,10 @@ header .logo a {
 /* ____________________________ FOOTER ____________________________ */
 footer {
   background: #282d32;
-  padding: 6rem 4rem 2rem 4rem;
+  padding: 4rem 4rem 2rem 4rem;
   position: sticky;
   top: 100%;
+  margin-top: 5rem;
 }
 .footer-container {
   display: flex;
@@ -1870,33 +1871,36 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   gap: 1rem;
-  padding: 1rem;
-  background: #555;
+  background: var(--light-opacity);
+}
+.coat-choice-container span {
+  color: var(--red-color);
 }
 .coat-choice-container a {
-  /**width: 80%;*/
+  width: 100%;
+  padding: 2rem;
 }
 .coat-choice-container a:hover {
-  background: #006ac6;
+  background: var(--light-opacity);
   background: linear-gradient(90deg, #006ac6 0%, #045091 120%);
   color: var(--light-color);
 }
-.coat-choice-container a:hover .gras {
-  color: var(--light-color);
+.coat-choice-container a:hover span {
+  color: var(--primary-color);
+  font-weight: 500;
 }
 .coat-choice-container .values {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  line-height: 2;
+  width: 100%;
   font-size: 1.5rem;
-  border: 1px solid black;
 }
 .coat-choice-container img {
-  width: 60%;
+  width: 8rem;
 }
 /* ____________________________ BLAZON GENERATED ____________________________ */
 .message-box {
@@ -1936,9 +1940,10 @@ ul {
 .value-choosen-flex {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  justify-content: center;
   text-align: center;
-  margin-bottom: 5rem;
+  gap: 1rem;
+  margin-bottom: 3rem;
   background: var(--light-opacity);
   padding: 2rem;
 }
