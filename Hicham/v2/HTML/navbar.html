@@ -1,59 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <title>Document</title>
     <style>
         * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
         }
-        ul {
-            list-style: none;
+
+        body {
+            font-family: "poppins", "comforter";
+        }
+
+        header {
             display: flex;
-            justify-content: flex-end;
             align-items: center;
-            width: 80%;
-            height: 50px;
-            font-size: 20px;
-            border: 1px solid blue;
+            justify-content: space-between;
+            background: #333;
+            padding: 0 50px 10px;
         }
-        nav a {
+
+        .logo {
+            font-family: "comforter";
+            font-size: 60px;
+            color: white;
+            /* color: #006ac6; */
+            padding: 0 0 15px 30px;
+        }
+
+
+        ul {
+            display: flex;
+            list-style-type: none;
+            font-size: 18px;
+        }
+
+        a {
             text-decoration: none;
             color: white;
-            padding: 0 15px;
+            margin: 0 15px;
         }
-        nav {
-            display: flex;
-            justify-content: space-between;
-            gap: 5px;
-            align-items: center;
-            padding: 0 20px;
-            border: 1px solid black;
-            background: #333;
-        }
-        nav h3 {
+
+        /* 
+        .hamburger {
+            display: none;
             color: white;
-            font-size: 30px;
+            font-size: 25px;
+            border: 1px solid red;
+            width: fit-content;
+            width: 80px;
+            height: 80px;
+        } */
+        .sign-button-container {
+            display: flex;
+            justify-content: flex-end;
+            background: #333;
+            padding: 10px 50px 0;
         }
-        
+
+        .sign-button-container .btn-signin,
+        .sign-button-container .btn-signup {
+            color: white;
+        }
+
+        /* ________________________test________________________________ */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            height: 25px;
+            justify-content: space-between;
+            margin: 1em 1em;
+            z-index: 30;
+        }
+
+        .hamburger:hover {
+            cursor: pointer;
+        }
+
+        .nav-bar {
+            width: 32px;
+            height: 3px;
+            background-color: white;
+            transition: 500ms ease-in-out all;
+        }
+
+        .nav-container {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .dropdown {
+            top: -300px;
+            left: 0;
+            position: absolute;
+            height: 240px;
+            width: 100%;
+            background-color: #6f63ff;
+            transition: 500ms ease-in-out all;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid white;
+        }
+
+        .dropdown p {
+            font-size: 1.6em;
+            font-family: "Urbanist", sans-serif;
+            color: white;
+            margin: 0.6em 0;
+            border-bottom: 1px solid transparent;
+            padding: 0 1.2em;
+            /* adjust padding to make the underline longer or shorter */
+            padding-bottom: 4px;
+            /* this padding can be used to adjust the distance from text to underlink */
+            transition: 200ms ease all;
+        }
+
+        .dropdown p:hover {
+            cursor: pointer;
+            border-bottom: 1px solid white;
+        }
+
+        .dropdown-active {
+            top: 0;
+            left: 0;
+        }
+
+        .one-active {
+            background-color: white;
+            transform: translateY(13px) rotate(45deg);
+        }
+
+        .two-active {
+            display: none;
+        }
+
+        .three-active {
+            background-color: white;
+            transform: translateY(-9px) rotate(135deg);
+        }
+
+
+        @media screen and (max-width: 1030px) {
+            header {
+                padding: 0 50px 10px;
+            }
+
+            .logo {
+                padding: 10px 0 10px 30px;
+            }
+
+            #navbar ul {
+                display: none;
+            }
+
+            header .hamburger {
+                display: flex;
+                z-index: 5;
+            }
+
+            .sign-button-container {
+                display: none;
+            }
+        }
     </style>
 </head>
+
 <body>
-        <nav>
-            <h3>MYBLAZON</h3>
+    <div class="sign-button-container">
+        <a href="#" class="btn-signin">Sign in</a>
+        <a href="#" class="btn-signup">Sign up</a>
+    </div>
+    <header>
+        <h1 class="logo">Myblazon</h1>
+        <nav id="navbar">
             <ul>
-               <li><a href="#">Home</a></li>
-               <li><a href="#">Heraldry</a></li>
-               <li><a href="#">My coat of arms</a></li>
-               <li><a href="#">Create a shield</a></li>
-               <li><a href="#">Roll of arms</a></li>
-               <li><a href="#">Shop</a></li>
-               <li><a href="#">Sign in</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Heraldry</a></li>
+                <li><a href="#">Create a shield </a></li>
+                <li><a href="#">Coat of arms</a></li>
+                <li><a href="#">Roll of arms</a></li>
+                <li><a href="#">Shop</a></li>
             </ul>
         </nav>
+        <div class="hamburger">
+            <div class="nav-bar one"></div>
+            <div class="nav-bar two"></div>
+            <div class="nav-bar three"></div>
+        </div>
+        <div class="dropdown">
+            <a href="#">
+                <p class="drop-item">Link</p>
+            </a>
+            <a href="#">
+                <p class="drop-item">Link</p>
+            </a>
+            <a href="#">
+                <p class="drop-item">Link</p>
+            </a>
+        </div>
+    </header>
 </body>
+<script>
+    const hamburger = document.querySelector(".hamburger");
+
+    function onDropClick(e) {
+        const dropdown = e.currentTarget.nextElementSibling;
+        const burgerBars = [].slice.call(e.currentTarget.children);
+
+        if (!dropdown.classList.contains("dropdown-active")) {
+            //If dropdown isn't active give it and the bars their active classes
+            dropdown.classList.add("dropdown-active");
+            burgerBars[0].classList.add("one-active");
+            burgerBars[1].classList.add("two-active");
+            burgerBars[2].classList.add("three-active");
+        } else if (dropdown.classList.contains("dropdown-active")) {
+            //else remove them
+            dropdown.classList.remove("dropdown-active");
+            burgerBars[0].classList.remove("one-active");
+            burgerBars[1].classList.remove("two-active");
+            burgerBars[2].classList.remove("three-active");
+        }
+    }
+
+    hamburger.addEventListener("click", onDropClick);
+
+</script>
+
 </html>
