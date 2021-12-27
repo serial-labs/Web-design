@@ -138,6 +138,13 @@
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/staatliches/v6/HI_OiY8KO6hCsQSoAPmtMbec.ttf) format('truetype');
 }
+@font-face {
+  font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dancingscript/v19/If2cXTr6YS-zF4S-kcSWSVi_sxjsohD9F50Ruu7B7y0HTQ.ttf) format('truetype');
+}
 :root {
   --primary-color: #141850;
   --secondary-color: #006ac6;
@@ -260,170 +267,6 @@ img {
 }
 .socialnetwork .icons a:nth-child(3) {
   color: var(--green-color);
-}
-/*____________________________NAVIGATION WITH MENU____________________________ */
-#navbar ul {
-  width: 100%;
-  font-size: 2rem;
-  flex-grow: 1;
-  margin: 1rem;
-}
-#navbar .fa-bars {
-  display: none;
-}
-header {
-  margin: auto;
-  padding: 1rem;
-}
-header .logo {
-  color: var(--secondary-color);
-  font-family: "poppins";
-  font-size: 5rem;
-}
-header .logo span {
-  font-family: "poppins";
-  margin-left: 1rem;
-  font-size: 5rem;
-}
-header .logo .fa-shield-alt {
-  font-size: 5rem;
-}
-header .logo a {
-  color: var(--secondary-color);
-}
-/* -____________________________ NAVBAR ORNAMENT WITHOUT UL ____________________________ */
-/* .ornament {
-    position: relative;
-}
-.ornament:after {
-    content: '';
-    position: absolute;
-    width: 28rem;
-    height: 25%;
-    top: 50%;
-    transform: translate(0,-50%);   
-    right: 2%;
-    background: url('/Images/SVG/separator.svg') no-repeat;
-}
-.ornament:before {
-    content: '';
-    position: absolute;
-    width: 28rem;
-    height: 25%;
-    top: 50%;
-    transform: translate(0,-50%);
-    left: 2%;
-    background: url('/Images/SVG/separator.svg') no-repeat;
-} */
-/* ____________________________ FOOTER ____________________________ */
-footer {
-  background: #282d32;
-  padding: 4rem 4rem 2rem 4rem;
-  position: sticky;
-  top: 100%;
-  margin-top: 5rem;
-}
-.footer-container {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  gap: 2rem;
-  font-size: 1.5rem;
-  margin: auto;
-}
-footer h3 {
-  font-weight: 550;
-  margin-bottom: 1rem;
-  color: var(--light-color);
-}
-footer a,
-footer p {
-  color: #868d92;
-}
-footer a:hover {
-  color: white;
-  text-decoration: underline;
-}
-.footer-container div {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-footer .social-media {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  margin-top: 2rem;
-  color: white;
-}
-footer .social-media i {
-  font-size: 3rem;
-  color: white;
-}
-footer .social-media .fa-facebook-f:hover {
-  color: #3b5998;
-}
-footer .social-media .fa-twitter:hover {
-  color: #00acee;
-}
-footer .social-media .fa-github-alt:hover {
-  color: #6e5494;
-}
-footer .social-media .fa-instagram:hover {
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-  border-radius: 15px;
-}
-footer .social-media .fa-discord:hover {
-  color: #5865F2;
-}
-footer > p:last-child {
-  font-size: 1.5rem;
-  text-align: center;
-  margin-top: 1rem;
-}
-@media screen and (max-width: 800px) {
-  .logo {
-    align-items: center;
-  }
-  #navbar {
-    justify-content: flex-end;
-  }
-  #navbar ul {
-    display: none;
-  }
-  #navbar .fa-bars {
-    display: block;
-    font-size: 3rem;
-  }
-  .ornament a:after {
-    display: none;
-  }
-  .ornament a:before {
-    display: none;
-  }
-}
-@media screen and (max-width: 620px) {
-  footer {
-    padding: 4rem 2rem 1rem 2rem;
-  }
-  footer .footer-container {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 4rem;
-    font-size: 1.5rem;
-    margin-bottom: 3rem;
-    width: 100%;
-  }
-  footer .footer-container div {
-    width: 50%;
-  }
-  footer .footer-container div * {
-    align-self: center;
-    text-align: center;
-  }
 }
 /* ____________________________BUTTONS____________________________*/
 input {
@@ -3593,4 +3436,246 @@ button.sable {
 #main-page .image-carousel img:hover {
   opacity: 0.7;
   transition: 0.5s;
+}
+/* ____________________________ FOOTER ____________________________ */
+footer {
+  background: #333;
+  padding: 4rem 4rem 2rem 4rem;
+  position: sticky;
+  top: 100%;
+  margin-top: 5rem;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 2rem;
+  font-size: 1.5rem;
+  margin: auto;
+}
+footer h3 {
+  font-weight: 550;
+  margin-bottom: 1rem;
+  color: var(--light-color);
+}
+footer a,
+footer p {
+  color: #868d92;
+}
+footer a:hover {
+  color: white;
+  text-decoration: underline;
+}
+.footer-container div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+footer .social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  color: white;
+}
+footer .social-media i {
+  font-size: 3rem;
+  color: white;
+}
+footer .social-media .fa-facebook-f:hover {
+  color: #3b5998;
+}
+footer .social-media .fa-twitter:hover {
+  color: #00acee;
+}
+footer .social-media .fa-github-alt:hover {
+  color: #6e5494;
+}
+footer .social-media .fa-instagram:hover {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  border-radius: 15px;
+}
+footer .social-media .fa-discord:hover {
+  color: #5865F2;
+}
+footer > p:last-child {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+@media screen and (max-width: 620px) {
+  footer {
+    padding: 4rem 2rem 1rem 2rem;
+  }
+  footer .footer-container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4rem;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    width: 100%;
+  }
+  footer .footer-container div {
+    width: 50%;
+  }
+  footer .footer-container div {
+    align-self: center;
+    text-align: center;
+  }
+}
+/*____________________________NAVIGATION WITH MENU____________________________ */
+.nav-noscroll {
+  overflow: initial;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--secondary-color);
+  padding: 0 4rem 1.5rem;
+}
+header a {
+  text-decoration: none;
+  color: white;
+  margin: 0 1.5rem;
+}
+header .logo {
+  font-family: "comforter", "poppins";
+  font-size: 60px;
+}
+header .logo a {
+  color: white;
+}
+header .logo:hover a {
+  background: linear-gradient(90deg, #0070d1 0%, #145e9d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+header nav ul li a:after,
+header nav ul li a:before {
+  transition: all 0.5s;
+}
+header nav ul li a {
+  position: relative;
+}
+header nav ul li a:after {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: white;
+  height: 1px;
+}
+header ul li a:hover:after {
+  width: 100%;
+}
+header ul {
+  display: flex;
+  list-style-type: none;
+}
+header .hamburger {
+  display: none;
+  flex-direction: column;
+  height: 25px;
+  justify-content: space-between;
+  margin: 1em 1em;
+  z-index: 60;
+}
+header .hamburger:hover {
+  cursor: pointer;
+}
+header .line-ham {
+  width: 32px;
+  height: 3px;
+  background-color: white;
+  transition: 500ms ease-in-out all;
+  z-index: 60;
+}
+header .nav-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+header .dropdown {
+  top: 0;
+  left: -100%;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--secondary-color);
+  transition: 800ms ease-in-out all;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid white;
+  z-index: 50;
+}
+header .dropdown p {
+  color: white;
+  margin: 0.6em 0;
+  border-bottom: 1px solid transparent;
+  padding: 0 1.2em;
+  /* adjust padding to make the underline longer or shorter */
+  padding-bottom: 4px;
+  /* this padding can be used to adjust the distance from text to underlink */
+  transition: 200ms ease all;
+}
+header .dropdown p:hover {
+  cursor: pointer;
+  border-bottom: 1px solid white;
+}
+header .dropdown-active {
+  top: 0;
+  left: 0;
+  display: none;
+}
+header .one-active {
+  background-color: white;
+  transform: translateY(13px) rotate(45deg);
+}
+header .two-active {
+  display: none;
+}
+header .three-active {
+  background-color: white;
+  transform: translateY(-9px) rotate(135deg);
+}
+.sign-button-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  background: var(--secondary-color);
+  padding: 1rem 5rem 0;
+}
+.sign-button-container .btn-light {
+  min-width: 10rem;
+}
+@media screen and (max-width: 1050px) {
+  header {
+    padding: 1.5rem 4rem;
+  }
+  #navbar ul {
+    display: none;
+  }
+  header .hamburger {
+    display: flex;
+    z-index: 60;
+  }
+  .sign-button-container {
+    display: none;
+  }
+  header .dropdown-active {
+    display: flex;
+  }
+  .nav-noscroll {
+    overflow: hidden;
+  }
 }

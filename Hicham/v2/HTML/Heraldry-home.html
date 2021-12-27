@@ -18,7 +18,54 @@
 </head>
 
 <body>
-
+  <div class="sign-button-container">
+    <a href="#" class="btn-light">Sign in</a>
+    <a href="#" class="btn-light">Sign up</a>
+  </div>
+  <header>
+    <h1 class="logo"><a href="/HTML/index.html"> Myblazon</a></h1>
+    <nav id="navbar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Heraldry</a></li>
+        <li><a href="#">Create a shield </a></li>
+        <li><a href="#">Coat of arms</a></li>
+        <li><a href="#">Roll of arms</a></li>
+        <li><a href="#">Shop</a></li>
+      </ul>
+    </nav>
+    <div class="hamburger">
+      <div class="line-ham one"></div>
+      <div class="line-ham two"></div>
+      <div class="line-ham three"></div>
+    </div>
+    <div class="dropdown">
+      <a href="/HTML/index.html">
+        <p class="drop-item">Home</p>
+      </a>
+      <a href="#">
+        <p class="drop-item">Heraldry</p>
+      </a>
+      <a href="#">
+        <p class="drop-item">Create a shield</p>
+      </a>
+      <a href="#">
+        <p class="drop-item">Coat of arms</p>
+      </a>
+      <a href="#">
+        <p class="drop-item">Roll of arms</p>
+      </a>
+      <a href="#">
+        <p class="drop-item">Shop</p>
+      </a>
+      <a href="#">
+        <p class="drop-item">Sign in</p>
+      </a>
+      <a href="#">
+        <p class="drop-item">Sign up</p>
+      </a>
+    </div>
+  </header>
   <!-- landingpage -->
   <section class="main-section">
     <div>
@@ -129,5 +176,31 @@
     </div>
   </footer>
 </body>
+<script>
+  const hamburger = document.querySelector(".hamburger");
+
+  function onDropClick(e) {
+    const dropdown = e.currentTarget.nextElementSibling;
+    const burgerBars = [].slice.call(e.currentTarget.children);
+
+    if (!dropdown.classList.contains("dropdown-active")) {
+      //If dropdown isn't active give it and the bars their active classes
+      dropdown.classList.add("dropdown-active");
+      burgerBars[0].classList.add("one-active");
+      burgerBars[1].classList.add("two-active");
+      burgerBars[2].classList.add("three-active");
+      document.getElementsByTagName("html")[0].classList.add("nav-noscroll");
+    } else if (dropdown.classList.contains("dropdown-active")) {
+      //else remove them
+      dropdown.classList.remove("dropdown-active");
+      burgerBars[0].classList.remove("one-active");
+      burgerBars[1].classList.remove("two-active");
+      burgerBars[2].classList.remove("three-active");
+      document.getElementsByTagName("html")[0].classList.remove("nav-noscroll");
+    }
+  }
+
+  hamburger.addEventListener("click", onDropClick);
+</script>
 
 </html>
