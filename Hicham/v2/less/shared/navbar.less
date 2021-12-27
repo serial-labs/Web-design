@@ -12,7 +12,10 @@ header {
   justify-content: space-between;
   background: var(--secondary-color);
   // background: #333;
-  padding: 0 4rem 1.5rem;
+  padding: 1rem 4rem ;
+  position: sticky;
+  top: 0;
+  z-index: 70;
  
   a {
     text-decoration: none;
@@ -22,15 +25,12 @@ header {
   .logo {
     font-family: "comforter", "poppins";
     font-size: 60px;
+    // transform: translateY(-20%);
       a {
         color: white;
       }
   }
-  .logo:hover a {
-    background: linear-gradient(90deg, rgba(0,112,209,1) 0%, rgba(20,94,157,1) 100%);
-    -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;      
-  }
+
   nav ul li a:after,
   nav ul li a:before {
   transition: all .5s;

@@ -268,6 +268,9 @@ img {
 .socialnetwork .icons a:nth-child(3) {
   color: var(--green-color);
 }
+.selected {
+  background: var(--green-color);
+}
 /* ____________________________BUTTONS____________________________*/
 input {
   background-color: #fcfcfc;
@@ -2649,7 +2652,7 @@ button.sable {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;
-  color: #FFFFFF;
+  color: #ffffff;
   position: relative;
   left: -100%;
   height: 100%;
@@ -2739,7 +2742,7 @@ button.sable {
   color: #00acee;
 }
 .social-container a:nth-child(3):hover {
-  color: #DB4437;
+  color: #db4437;
 }
 .social-container a:nth-child(4):hover {
   color: #0e76a8;
@@ -2815,7 +2818,7 @@ button.sable {
   color: var(--secondary-color);
   font-size: 5rem;
 }
-.use-social-media:hover {
+.use-social-media a:hover {
   filter: drop-shadow(0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.459));
   color: var(--primary-color);
   transform: rotateY(50deg);
@@ -3164,11 +3167,11 @@ button.sable {
   width: 100%;
 }
 #main-page {
+  color: var(--primary-color);
   /* _________________________ ABOUT SECTION ___________________________ */
   /* _________________________ CHARGES SECTION  ___________________________ */
   /* _________________________ VALUE SECTION CAROUSEL ___________________________ */
   /* _________________________ MONTHLY BLAZON SECTION ___________________________ */
-  /* _________________________ MOCKUP IMAGES CAROUSEL ___________________________ */
 }
 #main-page img {
   width: 100%;
@@ -3180,6 +3183,7 @@ button.sable {
   margin-top: 2rem;
   padding: 3rem;
   max-width: 120rem;
+  height: 80vh;
 }
 #main-page .banner-container .lion {
   width: 100%;
@@ -3268,11 +3272,12 @@ button.sable {
   }
 }
 #main-page .section-charge-container {
-  padding: 4rem 15rem;
+  padding: 4rem;
   position: relative;
+  margin: auto;
 }
 #main-page .section-charge-container::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -3283,7 +3288,7 @@ button.sable {
   clip-path: polygon(0 0, 100% 3.5%, 100% 100%, 0 100.5%);
 }
 #main-page .section-charge-container::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -3297,7 +3302,7 @@ button.sable {
 }
 #main-page .charge-section {
   position: relative;
-  max-width: var(--max-width);
+  max-width: var(--max-width-home);
   margin: auto;
 }
 #main-page .charge-section .title {
@@ -3312,19 +3317,17 @@ button.sable {
 #main-page .charge-wrapper {
   display: grid;
   /*disposition icones charges*/
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   grid-template-rows: repeat(2, 1fr);
-  grid-gap: 4rem;
+  grid-gap: 6rem;
 }
 #main-page .charge-wrapper .charges {
-  width: auto;
-  height: auto;
   text-align: center;
   object-fit: cover;
 }
 #main-page .charge-wrapper .charges img {
   width: auto;
-  height: 150px;
+  height: 15rem;
 }
 #main-page .charge-wrapper p {
   text-align: center;
@@ -3335,18 +3338,17 @@ button.sable {
   color: var(--light-color);
   /*color of Charges font*/
 }
-#main-page #value {
+#main-page #value-section {
   text-align: center;
   height: 100%;
   width: 100%;
   position: relative;
-  padding: 30px 0;
+  padding-top: 2rem;
   max-width: var(--max-width);
   margin: auto;
   z-index: 3;
 }
 #main-page .value-title {
-  color: var(--dark-color);
   text-align: center;
   justify-self: center;
   align-self: center;
@@ -3354,25 +3356,8 @@ button.sable {
   margin: auto;
   margin-bottom: 50px;
 }
-#main-page .carousel .button-container {
-  margin-top: 10rem;
-}
-#main-page .carousel h3 {
-  font-size: 50px;
-  font-weight: bold;
-  color: var(--dark-color);
-  text-transform: uppercase;
-}
-#main-page .carousel p {
-  font-size: 25px;
-  font-weight: 400;
-  color: var(--dark-color);
-}
-#main-page .carousel img {
-  opacity: 0.5;
-}
 #main-page .random-blazon-section {
-  padding: 50px;
+  padding: 5rem;
   margin: auto;
   background: white;
   position: relative;
@@ -3387,55 +3372,30 @@ button.sable {
   width: 100%;
   z-index: -1;
 }
-#main-page .blazon-container {
+#main-page .random-blazon-section .blazon-container {
   max-width: var(--max-width-home);
   margin: auto;
 }
-#main-page .blazon-container .title {
+#main-page .random-blazon-section .blazon-container .title {
   text-align: center;
-  color: var(--primary-color);
+  max-width: 80%;
+  margin: auto;
 }
-#main-page .blazon-container .blazon-wrapper {
+#main-page .random-blazon-section .blazon-container .blazon-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   text-align: center;
+  grid-gap: 1rem;
   margin: 4rem auto;
-  border: 1px solid black;
 }
-#main-page .blazon-container .blazon-wrapper .blazon {
-  min-width: 30%;
-  max-width: 35%;
+#main-page .random-blazon-section .blazon-container .blazon-wrapper .blazon {
   border-radius: 20px;
   padding: 30px;
-  box-shadow: 0 5px 10px  grey;
+  box-shadow: 0 5px 10px grey;
 }
-#main-page .blazon-container .blazon-wrapper .blazon img {
-  height: 10%;
-  margin-bottom: 20px;
-}
-#main-page .carousel-section {
-  width: 100%;
-  padding-top: 100px;
-  background: white;
-}
-#main-page .carousel-section h1 {
-  text-align: center;
-}
-#main-page .carousel_wrapper {
-  width: 100%;
+#main-page .random-blazon-section .blazon-container .blazon-wrapper .blazon img {
   height: 100%;
-}
-#main-page .image-carousel {
-  width: 100%;
-  height: auto;
-}
-#main-page .image-carousel img {
-  height: 80vh;
-  object-fit: cover;
-  object-position: center;
-  transition: 0.5s;
-}
-#main-page .image-carousel img:hover {
-  opacity: 0.7;
-  transition: 0.5s;
+  margin-bottom: 20px;
 }
 /* ____________________________ FOOTER ____________________________ */
 footer {
@@ -3535,7 +3495,10 @@ header {
   align-items: center;
   justify-content: space-between;
   background: var(--secondary-color);
-  padding: 0 4rem 1.5rem;
+  padding: 1rem 4rem ;
+  position: sticky;
+  top: 0;
+  z-index: 70;
 }
 header a {
   text-decoration: none;
@@ -3548,11 +3511,6 @@ header .logo {
 }
 header .logo a {
   color: white;
-}
-header .logo:hover a {
-  background: linear-gradient(90deg, #0070d1 0%, #145e9d 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 header nav ul li a:after,
 header nav ul li a:before {

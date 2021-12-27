@@ -14,8 +14,8 @@
 
 <body>
     <div class="sign-button-container">
-        <a href="#" class="btn--light">Sign in</a>
-        <a href="#" class="btn--light">Sign up</a>
+        <a href="#" class="btn-light">Sign in</a>
+        <a href="#" class="btn-light">Sign up</a>
     </div>
     <header>
         <h1 class="logo"><a href="/HTML/index.html"> Myblazon</a></h1>
@@ -86,31 +86,6 @@
 
     hamburger.addEventListener("click", onDropClick);
 
-</script>
-<script>
-
-    const hamburger = document.querySelector(".hamburger");
-
-    function onDropClick(e) {
-        const dropdown = e.currentTarget.nextElementSibling;
-        const burgerBars = [].slice.call(e.currentTarget.children);
-
-        if (!dropdown.classList.contains("dropdown-active")) {
-            //If dropdown isn't active give it and the bars their active classes
-            dropdown.classList.add("dropdown-active");
-            burgerBars[0].classList.add("one-active");
-            burgerBars[1].classList.add("two-active");
-            burgerBars[2].classList.add("three-active");
-        } else if (dropdown.classList.contains("dropdown-active")) {
-            //else remove them
-            dropdown.classList.remove("dropdown-active");
-            burgerBars[0].classList.remove("one-active");
-            burgerBars[1].classList.remove("two-active");
-            burgerBars[2].classList.remove("three-active");
-        }
-    }
-
-    hamburger.addEventListener("click", onDropClick);
 </script>
 
 </html>
