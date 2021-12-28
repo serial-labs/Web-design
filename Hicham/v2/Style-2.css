@@ -2855,6 +2855,36 @@ button.sable {
     margin: auto;
   }
 }
+.reset-password {
+  width: 80%;
+  margin: 8rem auto;
+}
+.reset-password .titre-border {
+  background: var(--light-color);
+  border: 2px solid var(--secondary-color);
+}
+.reset-password form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 2rem;
+  width: 90%;
+  padding: 3rem;
+  transform: translateY(-10%);
+}
+.reset-password form input {
+  width: 100%;
+  margin: 0;
+}
+.reset-password form .btn-dark .fas {
+  transition: 0.5s;
+}
+.reset-password form .btn-dark:hover .fas {
+  transform: rotateZ(360deg);
+  transition: 0.8s ease-in-out;
+}
 /* ____________________________ Choose your values  ____________________________ */
 #friend,
 #team {
