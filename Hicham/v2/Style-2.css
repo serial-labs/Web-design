@@ -139,11 +139,10 @@
   src: url(https://fonts.gstatic.com/s/staatliches/v6/HI_OiY8KO6hCsQSoAPmtMbec.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Dancing Script';
+  font-family: 'Comforter';
   font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/dancingscript/v19/If2cXTr6YS-zF4S-kcSWSVi_sxjsohD9F50Ruu7B7y0HTQ.ttf) format('truetype');
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/comforter/v3/H4clBXOCl8nQnlaql3Qa6A.ttf) format('truetype');
 }
 :root {
   --primary-color: #141850;
@@ -209,6 +208,10 @@ body:after {
   position: relative;
   margin: 2rem auto;
   padding: 0 1rem;
+}
+.at4-follow-outer,
+.at4-thankyou {
+  display: none;
 }
 /* ____________________________ IMAGES ____________________________ */
 img {
@@ -3503,13 +3506,12 @@ header {
   z-index: 70;
 }
 header a {
-  text-decoration: none;
   color: white;
   margin: 0 1.5rem;
 }
 header .logo {
   font-family: "comforter", "poppins";
-  font-size: 60px;
+  font-size: 6rem;
 }
 header .logo a {
   color: white;
