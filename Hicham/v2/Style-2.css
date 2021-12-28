@@ -2266,6 +2266,8 @@ button.sable {
 /* ____________________________PROCESS PROGRESSION BAR____________________________ */
 .process {
   margin: auto;
+  display: flex;
+  gap: 1rem;
 }
 .process h3 {
   padding: 1rem 3rem;
@@ -2325,6 +2327,49 @@ button.sable {
 .box-recent-coa img:hover {
   background: var(--orange-color);
   padding: 2rem;
+}
+@media screen and (max-width: 620px) {
+  .process {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+  .process .current {
+    opacity: 1;
+  }
+  .process .proc01,
+  .process .proc02,
+  .process .proc03,
+  .process .proc04 {
+    position: relative;
+    width: 100%;
+  }
+  .process .proc01::after,
+  .process .proc02::after,
+  .process .proc03::after,
+  .process .proc04::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: var(--green-color);
+    z-index: -1;
+    transform: skewx(0deg);
+  }
+  .process .proc01:before,
+  .process .proc04:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: var(--green-color);
+  }
+  .process .proc01:before,
+  .process .proc04:before {
+    display: none;
+  }
 }
 /* ____________________________ DOWNLOAD SAVE YOUR SHIELD ____________________________ */
 .download-container {
