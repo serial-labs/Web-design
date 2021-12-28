@@ -357,11 +357,10 @@
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  height: fit-content;
   padding: 1rem;
-  width: 21rem;
   background: var(--light-color);
   border: 1px solid var(--dark-opacity);
-  /* box-shadow: 0.1rem 0.1rem 0.5rem 0.1rem var(--dark-color); */
 }
 .customize-coat .edit-charges {
   display: flex;
@@ -369,7 +368,7 @@
   gap: 2rem;
 }
 .set img {
-  width: 25%;
+  width: 20%;
   margin: 0;
 }
 .customize-coat a:hover div{
@@ -381,64 +380,72 @@
   padding: 8rem;
   border: 1px solid var(--dark-opacity);
 }
-.quick-poll a{
-  /* background: var(--secondary-color); */
-  color: var(--secondary-color);
-  border: 1px solid var(--secondary-color);
-  padding: 0.5rem 2rem;
-}
-.quick-poll a:hover {
-  background:var(--green-color);
-  color: var(--light-color);
-}
-.quick-poll {
-  margin-top: 5rem;
-  margin-right: 2rem;
-}
-.quick-poll i {
-  margin-right: 0.5rem;
-}
-.add-ornaments button {
-  border: 1;
-}
-.add-ornaments button[class^=ico-] {
-  padding: 61px 0 2px;
-  font-size: 13px;
-  line-height: 17px;
-  text-align: center;
-  width: 67px;
- }
- .add-ornaments [class^=ico-] {
-  position: relative;
-  border: 0.5px solid grey;
-  overflow: hidden;
-  background: url('/Images/sprite-ico-editor-3.1.png') no-repeat;
-  background-color: white;
-}
- .add-ornaments [class^=ico-]:hover {
-  background-color: var(--green-color);
-  color: white;
-  cursor: pointer;
+
+.ornaments-poll {
+    background: var(--light-opacity);
+    padding: 2rem;
+    .quick-poll a{
+      color: var(--secondary-color);
+      border: 1px solid var(--secondary-color);
+      padding: 0.5rem 2rem;
+    }
+    .quick-poll a:hover {
+      background:var(--green-color);
+      color: var(--light-color);
+    }
+    .quick-poll {
+      margin-top: 5rem;
+      margin-right: 2rem;
+    }
+    .quick-poll i {
+      margin-right: 0.5rem;
+    }
+    .add-ornaments button {
+      border: 1;
+    }
+    .add-ornaments button[class^=ico-] {
+      padding: 61px 0 2px;
+      font-size: 13px;
+      line-height: 17px;
+      text-align: center;
+      width: 67px;
+    }
+    .add-ornaments [class^=ico-] {
+      position: relative;
+      border: 0.5px solid grey;
+      overflow: hidden;
+      background: url('/Images/sprite-ico-editor-3.1.png') no-repeat;
+      background-color: white;
+    }
+    .add-ornaments [class^=ico-]:hover {
+      background-color: var(--green-color);
+      color: white;
+      cursor: pointer;
+    }
+
+    .add-ornaments .ico-2 {
+      background-position: -70px  0;
+    }
+    .add-ornaments .ico-4 {
+      background-position: -140px  0;
+    }
+    .add-ornaments .ico-3 {
+      background-position: -210px  0;
+    }
+    .add-ornaments .ico-4 {
+      background-position: -70px  0;
+    }
+    .add-ornaments .ico-5 {
+      background-position: -280px  0;
+    }
+    .add-ornaments .ico-6 {
+      background-position: -350px  0;
+    }
+
 }
 
-.add-ornaments .ico-2 {
-  background-position: -70px  0;
-}
-.add-ornaments .ico-4 {
-  background-position: -140px  0;
-}
-.add-ornaments .ico-3 {
-  background-position: -210px  0;
-}
-.add-ornaments .ico-4 {
-  background-position: -70px  0;
-}
-.add-ornaments .ico-5 {
-  background-position: -280px  0;
-}
-.add-ornaments .ico-6 {
-  background-position: -350px  0;
-}
+
+
 
 /* ____________________________ FROM SCRATCH ____________________________ */
 
@@ -642,7 +649,7 @@ transition: 0.5s;
 
 /* _________ COAT EDIT APPLICATION PAGE ________ */
 .customize-coat .edit-charges .set {
-  width: 50%;
+  height: 8rem;
   margin: auto;
 }
 .customize-coat .edit-charges div{
@@ -687,5 +694,32 @@ display: none;
   .download-container {
     gap: 0rem;
     margin: 0;
+  }
+
+    /* _____________ Coat application _______________*/
+
+  .customize-coat  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .edit-charges .set {
+      height: 100%;
+      width: auto;
+
+        .blazon-apercu {
+        display: flex;
+        margin: auto;
+        }
+        img {
+          width: 10%;
+        }
+    }
+  }
+  .button-save {
+    width: 50%;
+    .btn-dark {
+      width: 100%;
+    }
   }
 }

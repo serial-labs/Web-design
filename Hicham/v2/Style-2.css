@@ -1918,11 +1918,10 @@ ul {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  height: fit-content;
   padding: 1rem;
-  width: 21rem;
   background: var(--light-color);
   border: 1px solid var(--dark-opacity);
-  /* box-shadow: 0.1rem 0.1rem 0.5rem 0.1rem var(--dark-color); */
 }
 .customize-coat .edit-charges {
   display: flex;
@@ -1930,7 +1929,7 @@ ul {
   gap: 2rem;
 }
 .set img {
-  width: 25%;
+  width: 20%;
   margin: 0;
 }
 .customize-coat a:hover div {
@@ -1942,61 +1941,64 @@ ul {
   padding: 8rem;
   border: 1px solid var(--dark-opacity);
 }
-.quick-poll a {
-  /* background: var(--secondary-color); */
+.ornaments-poll {
+  background: var(--light-opacity);
+  padding: 2rem;
+}
+.ornaments-poll .quick-poll a {
   color: var(--secondary-color);
   border: 1px solid var(--secondary-color);
   padding: 0.5rem 2rem;
 }
-.quick-poll a:hover {
+.ornaments-poll .quick-poll a:hover {
   background: var(--green-color);
   color: var(--light-color);
 }
-.quick-poll {
+.ornaments-poll .quick-poll {
   margin-top: 5rem;
   margin-right: 2rem;
 }
-.quick-poll i {
+.ornaments-poll .quick-poll i {
   margin-right: 0.5rem;
 }
-.add-ornaments button {
+.ornaments-poll .add-ornaments button {
   border: 1;
 }
-.add-ornaments button[class^=ico-] {
+.ornaments-poll .add-ornaments button[class^=ico-] {
   padding: 61px 0 2px;
   font-size: 13px;
   line-height: 17px;
   text-align: center;
   width: 67px;
 }
-.add-ornaments [class^=ico-] {
+.ornaments-poll .add-ornaments [class^=ico-] {
   position: relative;
   border: 0.5px solid grey;
   overflow: hidden;
   background: url('/Images/sprite-ico-editor-3.1.png') no-repeat;
   background-color: white;
 }
-.add-ornaments [class^=ico-]:hover {
+.ornaments-poll .add-ornaments [class^=ico-]:hover {
   background-color: var(--green-color);
   color: white;
   cursor: pointer;
 }
-.add-ornaments .ico-2 {
+.ornaments-poll .add-ornaments .ico-2 {
   background-position: -70px 0;
 }
-.add-ornaments .ico-4 {
+.ornaments-poll .add-ornaments .ico-4 {
   background-position: -140px 0;
 }
-.add-ornaments .ico-3 {
+.ornaments-poll .add-ornaments .ico-3 {
   background-position: -210px 0;
 }
-.add-ornaments .ico-4 {
+.ornaments-poll .add-ornaments .ico-4 {
   background-position: -70px 0;
 }
-.add-ornaments .ico-5 {
+.ornaments-poll .add-ornaments .ico-5 {
   background-position: -280px 0;
 }
-.add-ornaments .ico-6 {
+.ornaments-poll .add-ornaments .ico-6 {
   background-position: -350px 0;
 }
 /* ____________________________ FROM SCRATCH ____________________________ */
@@ -2194,7 +2196,7 @@ button.sable {
 }
 /* _________ COAT EDIT APPLICATION PAGE ________ */
 .customize-coat .edit-charges .set {
-  width: 50%;
+  height: 8rem;
   margin: auto;
 }
 .customize-coat .edit-charges div {
@@ -2235,6 +2237,30 @@ button.sable {
   .download-container {
     gap: 0rem;
     margin: 0;
+  }
+  /* _____________ Coat application _______________*/
+  .customize-coat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .customize-coat .edit-charges .set {
+    height: 100%;
+    width: auto;
+  }
+  .customize-coat .edit-charges .set .blazon-apercu {
+    display: flex;
+    margin: auto;
+  }
+  .customize-coat .edit-charges .set img {
+    width: 10%;
+  }
+  .button-save {
+    width: 50%;
+  }
+  .button-save .btn-dark {
+    width: 100%;
   }
 }
 /* ____________________________PROCESS PROGRESSION BAR____________________________ */
