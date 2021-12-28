@@ -554,9 +554,24 @@ button.sable {
   align-items: center;
   gap: 0.5rem;
   background: var(--secondary-color);
-  width: 25%;
-  padding: 2rem;
+  border: 1px solid var(--dark-color);
+  width: 20rem;
+  margin: auto;
+  padding: 2rem 1rem;
   color: white;
+  position: absolute;
+  // left: 59.5%;
+  transform: translate(263%, 1%);
+  transition: 0.5s;
+  &::before{
+    content: '';
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid var(--secondary-color);
+    position: absolute;
+    bottom: 100%;
+    left: 85%;
+  }
   p {
     margin-bottom: 1rem;
   }
@@ -751,7 +766,7 @@ display: none;
     font-size: 1.3rem;
     font-weight: 300;
   }
-  
+ 
 }
 
 @media screen and (max-width: 900px) {
@@ -768,6 +783,10 @@ display: none;
     gap: 0rem;
     margin: 0;
   }
+  #share-popup {
+    transform: translate(50%, 1%);
+    transition: 0.5s;
+    }
 
     /* _____________ Coat application _______________*/
 

@@ -2105,9 +2105,23 @@ button.sable {
   align-items: center;
   gap: 0.5rem;
   background: var(--secondary-color);
-  width: 25%;
-  padding: 2rem;
+  border: 1px solid var(--dark-color);
+  width: 20rem;
+  margin: auto;
+  padding: 2rem 1rem;
   color: white;
+  position: absolute;
+  transform: translate(263%, 1%);
+  transition: 0.5s;
+}
+#share-popup::before {
+  content: '';
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid var(--secondary-color);
+  position: absolute;
+  bottom: 100%;
+  left: 85%;
 }
 #share-popup p {
   margin-bottom: 1rem;
@@ -2311,6 +2325,10 @@ button.sable {
   .download-container {
     gap: 0rem;
     margin: 0;
+  }
+  #share-popup {
+    transform: translate(50%, 1%);
+    transition: 0.5s;
   }
   /* _____________ Coat application _______________*/
   .customize-coat {
@@ -3365,8 +3383,8 @@ button.sable {
   margin: auto;
   margin-top: 2rem;
   padding: 3rem;
-  max-width: 120rem;
-  height: 80vh;
+  max-width: 130rem;
+  height: 65vh;
 }
 #main-page .banner-container .lion {
   width: 100%;
@@ -3413,9 +3431,10 @@ button.sable {
 #main-page .about {
   margin: auto;
   padding: 3rem;
-  max-width: var(--max-width-home);
+  position: relative;
 }
 #main-page .grid-about {
+  max-width: var(--max-width-home);
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-gap: 4rem;
