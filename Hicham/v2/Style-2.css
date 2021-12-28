@@ -1722,6 +1722,8 @@ ul {
   align-items: flex-start;
   gap: 1rem;
   background: var(--light-opacity);
+  width: fit-content;
+  margin: auto;
 }
 .coat-choice-container span {
   color: var(--red-color);
