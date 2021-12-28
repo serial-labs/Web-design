@@ -272,7 +272,8 @@ img {
   color: var(--green-color);
 }
 .selected {
-  background: var(--green-color);
+  background-color: var(--green-color);
+  color: var(--light-color);
 }
 /* ____________________________BUTTONS____________________________*/
 input {
@@ -1325,7 +1326,7 @@ ul {
   gap: 2rem;
   padding: 2rem 0;
   background: rgba(255, 255, 255, 0.35);
-  box-shadow: 0px 0px 5px #2e2d2d;
+  box-shadow: 0px 0px 2px #2e2d2d;
   transition: 0.5s;
 }
 .choosing-container-personality-test .box img {
@@ -1351,7 +1352,7 @@ ul {
   height: 6rem;
   margin-bottom: 3rem;
   background: rgba(255, 255, 255, 0.35);
-  box-shadow: 0px 0px 5px #2e2d2d;
+  box-shadow: 0px 0px 2px #2e2d2d;
   padding: 0 10px;
   transition: 0.3s;
 }
@@ -1877,7 +1878,10 @@ ul {
   text-align: center;
   position: relative;
   width: 7rem;
-  background: transparent url("/Images/sprite-ico-editor-3.1.png") no-repeat scroll 0 0;
+  background-image: url("/Images/sprite-ico-editor-3.1.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: 0 0;
 }
 .creation .glares button[class^="ico-"]:hover,
 .creation .palettes button[class^="ico-"]:hover {
@@ -2074,7 +2078,8 @@ button.sable {
 }
 .mycoat-logged .resume {
   min-width: 50%;
-  background: radial-gradient(circle, #1f2122 22%, #000000 100%);
+  background: radial-gradient(circle, #ffffff 58%, #ececec 100%);
+  border: 1px solid rgba(114, 114, 114, 0.3);
   padding: 2rem;
   color: white;
 }
@@ -2089,6 +2094,75 @@ button.sable {
 .mycoat-logged .resume > div p {
   width: fit-content;
   transform: translateY(-50%);
+}
+.mycoat-logged .resume div + p {
+  color: var(--secondary-color);
+}
+#share-popup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--secondary-color);
+  width: 25%;
+  padding: 2rem;
+  color: white;
+}
+#share-popup p {
+  margin-bottom: 1rem;
+}
+#share-popup .btn-dark {
+  margin-top: 2rem;
+  width: 50%;
+}
+#share-popup .btn-dark:hover {
+  color: var(--light-color);
+  border: 1px solid white;
+}
+#share-popup input {
+  margin: 0;
+  padding: 1rem;
+  outline: 1px solid var(--dark-opacity);
+}
+#share-popup a {
+  background: white;
+  color: var(--primary-color);
+  text-align: center;
+  width: 100%;
+  padding: 0.3rem;
+}
+#share-popup a:hover {
+  background: var(--primary-color);
+  color: white;
+}
+#share-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem;
+  background: var(--light-opacity);
+  border: 1px solid rgba(167, 163, 163, 0.466);
+}
+#share-link label,
+#share-link i {
+  color: var(--secondary-color);
+  margin: 0 0.5rem;
+}
+#share-link .titre-border {
+  border: none;
+  width: 100%;
+  margin: 0;
+}
+#share-link .titre-border h3 {
+  width: 100%;
+  transform: translateY(0%);
+}
+#share-link input {
+  width: 100%;
+  margin: 0;
 }
 /* ______________________HISTORY COAT OF ARMS________________ */
 .history-coats {
@@ -2432,6 +2506,9 @@ button.sable {
 }
 .information-box i {
   font-size: 5rem;
+}
+.information-box a {
+  color: var(--light-color);
 }
 /* -----------------BASIC PASS---------------- */
 .download-basic {

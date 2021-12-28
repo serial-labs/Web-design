@@ -37,7 +37,7 @@
 }
 .slider-wrapper-value .slide {
   position: absolute;
-  top: 0;
+  top: 25%;
   left: 25%;
   width: 50%;
   height: 100%;
@@ -46,10 +46,10 @@
   transition: 1000ms cubic-bezier(0.68, -0.57, 0.33, 1.67);
 }
 .slider-wrapper-value .slide img {
-  width: 50%;
-  height: 50%;
+  width: 30%;
+  height: 30%;
   object-fit: contain;
-  opacity: 0.8;
+  opacity: 0.6;
 }
 .slider-wrapper-value .slider-nav {
   position: absolute;

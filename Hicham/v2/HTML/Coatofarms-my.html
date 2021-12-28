@@ -23,7 +23,7 @@
   <section class="main-section">
     <div>
       <h1 class="titre-section">My coat of arms </h1>
-      <h3 class="etiquette w50p p05 txtc">Hannibal <a href="#"><i class="fas fa-cog mx05 "></i></a></h3>
+      <h3 class="etiquette w50p p05 txtc">Hannibal <a href="#" onclick="showPopUp();"><i class="fas fa-cog mx05 "></i></a></h3>
     </div>
 
     <div>
@@ -38,11 +38,28 @@
             armed Argent in senester three stags sejant Or.
           </p>
         </div>
+        <div id="share-popup">
+          <p>This blazon is for:</p>
+          <a href="#">Me</a>
+          <a href="#">A friend</a>
+          <input type="text" placeholder="A friend" >
+          <a href="#">A team</a>
+          <a href="#" class="btn-dark">Ok !</a>
+        </div>
+        <div id="share-link">
+          <div class="titre-border">
+            <h3>Give this blazon to someone</h3>
+          </div>
+            <label for="direct-link"><i class="fas fa-link"></i> Use the following link</label>
+            <input type="text" id="direct-link" placeholder="HTTP://MYBLAZON.COM/COATOFARMS/DISPLAY/COLLECTIT/3D12C1A8/7303">
+            <label for="mail-link"><i class="fas fa-envelope"></i> Or send an email</label>
+            <input type="text" id="mail-link" placeholder="Example@email.com">
+            <a href="#" class="btn-dark"><small> Send mail</small></a>
+        </div>
         <div class="separatorh my3"></div>
         <div class="information-box w100pp ma">
-          <i class="fas fa-info-circle fa-lg"></i>
-          <p>This is your official coat of arms, this is what your friends will see
-          </p>
+          <i class="fas fa-info-circle fa-lg" ></i>
+          <p>This is your official coat of arms, this is what your friends will see</p>
         </div>
         <div class="row-c col-c-mobile-600 my3">
           <small class="col-c gap1 txtc w50p">
@@ -111,6 +128,22 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    let isPopupShown = false;
+
+    function showPopUp() {
+      let popup = document.getElementById("share-popup");
+
+      if (isPopupShown) {
+        popup.style.display = "none";
+      } else {
+        popup.style.display = "flex";
+      }
+
+      isPopupShown = !isPopupShown;
+    }
+  </script>
 </body>
 
 </html>
