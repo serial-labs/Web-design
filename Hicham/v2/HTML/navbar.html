@@ -65,26 +65,54 @@
 <script>
     const hamburger = document.querySelector(".hamburger");
 
-    function onDropClick(e) {
-        const dropdown = e.currentTarget.nextElementSibling;
-        const burgerBars = [].slice.call(e.currentTarget.children);
+function onDropClick(e) {
+  const dropdown = e.currentTarget.nextElementSibling;
+  const burgerBars = [].slice.call(e.currentTarget.children);
 
-        if (!dropdown.classList.contains("dropdown-active")) {
-            //If dropdown isn't active give it and the bars their active classes
-            dropdown.classList.add("dropdown-active");
-            burgerBars[0].classList.add("one-active");
-            burgerBars[1].classList.add("two-active");
-            burgerBars[2].classList.add("three-active");
-        } else if (dropdown.classList.contains("dropdown-active")) {
-            //else remove them
-            dropdown.classList.remove("dropdown-active");
-            burgerBars[0].classList.remove("one-active");
-            burgerBars[1].classList.remove("two-active");
-            burgerBars[2].classList.remove("three-active");
-        }
-    }
+  if (!dropdown.classList.contains("dropdown-active")) {
+    //If dropdown isn't active give it and the bars their active classes
+    dropdown.classList.add("dropdown-active");
+    burgerBars[0].classList.add("one-active");
+    burgerBars[1].classList.add("two-active");
+    burgerBars[2].classList.add("three-active");
+    document.getElementsByTagName("html")[0].classList.add("nav-noscroll");
+  } else if (dropdown.classList.contains("dropdown-active")) {
+    //else remove them
+    dropdown.classList.remove("dropdown-active");
+    burgerBars[0].classList.remove("one-active");
+    burgerBars[1].classList.remove("two-active");
+    burgerBars[2].classList.remove("three-active");
+    document.getElementsByTagName("html")[0].classList.remove("nav-noscroll");
+  }
+}
 
-    hamburger.addEventListener("click", onDropClick);
+hamburger.addEventListener("click", onDropClick);
+
+
+let isMobileSize = window.innerWidth < 1050;
+function onWindowResize() {
+  if (window.innerWidth <= 1050 && !isMobileSize) {
+    document.getElementsByClassName("dropdown")[0].classList.remove("dropdown-active");
+    let burgerBars = document.getElementsByClassName("hamburger")[0].children;
+    burgerBars[0].classList.remove("one-active");
+    burgerBars[1].classList.remove("two-active");
+    burgerBars[2].classList.remove("three-active");
+    document.getElementsByTagName("html")[0].classList.remove("nav-noscroll");
+
+    isMobileSize = true;
+  } else if (window.innerWidth > 1050 && isMobileSize) {
+    document.getElementsByClassName("dropdown")[0].classList.remove("dropdown-active");
+    let burgerBars = document.getElementsByClassName("hamburger")[0].children;
+    burgerBars[0].classList.remove("one-active");
+    burgerBars[1].classList.remove("two-active");
+    burgerBars[2].classList.remove("three-active");
+    document.getElementsByTagName("html")[0].classList.remove("nav-noscroll");
+
+    isMobileSize = false;
+  }
+}
+
+window.addEventListener('resize', onWindowResize, true);
 
 </script>
 

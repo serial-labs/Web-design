@@ -2269,6 +2269,9 @@ button.sable {
   display: flex;
   gap: 1rem;
 }
+.process .current {
+  opacity: 1;
+}
 .process h3 {
   padding: 1rem 3rem;
   font-weight: 300;
@@ -2297,8 +2300,23 @@ button.sable {
   z-index: -1;
   transform: skewx(-25deg);
 }
-.current {
-  opacity: 1;
+.proc-mobile {
+  /* Text à modifier dans le HTML pour définir le bon nom du process en version mobile */
+  display: none;
+  position: relative;
+  opacity: 0.5;
+  width: 100%;
+}
+.proc-mobile::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: var(--green-color);
+  z-index: -1;
+  transform: skewx(-25deg);
 }
 /*____________________________- COMPLEMENTAIRE SKEW ____________________________*/
 .proc01:before,
@@ -2329,11 +2347,6 @@ button.sable {
   padding: 2rem;
 }
 @media screen and (max-width: 620px) {
-  .process {
-    display: flex;
-    flex-direction: column;
-    gap: 0.2rem;
-  }
   .process .current {
     opacity: 1;
   }
@@ -2341,13 +2354,12 @@ button.sable {
   .process .proc02,
   .process .proc03,
   .process .proc04 {
-    position: relative;
-    width: 100%;
+    display: none;
   }
-  .process .proc01::after,
-  .process .proc02::after,
-  .process .proc03::after,
-  .process .proc04::after {
+  .process .proc-mobile {
+    display: block;
+  }
+  .process .proc-mobile::after {
     content: "";
     position: absolute;
     top: 0;
@@ -2356,19 +2368,7 @@ button.sable {
     width: 100%;
     background: var(--green-color);
     z-index: -1;
-    transform: skewx(0deg);
-  }
-  .process .proc01:before,
-  .process .proc04:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    background: var(--green-color);
-  }
-  .process .proc01:before,
-  .process .proc04:before {
-    display: none;
+    transform: skewx(0);
   }
 }
 /* ____________________________ DOWNLOAD SAVE YOUR SHIELD ____________________________ */
