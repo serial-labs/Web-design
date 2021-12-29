@@ -40,7 +40,6 @@
   margin: auto;
   display: flex;
   gap: 0.5rem;
-  transition: 0.9s ease-out;
   .current {
     opacity: 1;
   }
@@ -55,7 +54,6 @@
     position: relative;
     opacity: 0.5;
     width: 100%;
-    transition: 1s ease-in-out;
       &::after {
           content: "";
           position: absolute;
@@ -66,6 +64,8 @@
           background: var(--green-color);
           z-index: -1;
           transform: skewx(-25deg);
+          transition: 0.4s  ease-out;
+
     }
 }
 
@@ -75,19 +75,25 @@
 
   .process {
     display: flex;
-    transition: 1.5s ease;
-      h3 {
-        font-weight: 400;
-        letter-spacing: 5px;
-      }
+      // h3 {
+      //   font-weight: 400;
+      //   letter-spacing: 5px;
+      // }
       .current {
         opacity: 1;
       }
+      .proc01, .proc02, .proc03, .proc04 {
+        &::after{
+          transform: skewx(0);
+          transition: 0.5s ease;
+
+        }
+      }
       .shrink{
-        width: 0%;
+        width: 1rem;
         color: transparent;
         display: flex;
-        transition: 1s all ease-out;
+        transition: 0.4s  ease-out;
       }
     }
    

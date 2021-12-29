@@ -253,3 +253,10 @@
 .slider-wrapper #slide11:checked ~ .slider-arrow-nav .nav-arrow.prev[for=slide11] ~ .nav-arrow.prev {
   z-index: 2;
 }
+
+
+@media screen and (max-width:600px) {
+  .slider-wrapper .slide img {
+    object-fit: contain;
+  }
+}

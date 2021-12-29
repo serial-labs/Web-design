@@ -2402,7 +2402,6 @@ button.sable {
   margin: auto;
   display: flex;
   gap: 0.5rem;
-  transition: 0.9s ease-out;
 }
 .process .current {
   opacity: 1;
@@ -2420,7 +2419,6 @@ button.sable {
   position: relative;
   opacity: 0.5;
   width: 100%;
-  transition: 1s ease-in-out;
 }
 .proc01::after,
 .proc02::after,
@@ -2435,24 +2433,27 @@ button.sable {
   background: var(--green-color);
   z-index: -1;
   transform: skewx(-25deg);
+  transition: 0.4s ease-out;
 }
 @media screen and (max-width: 850px) {
   .process {
     display: flex;
-    transition: 1.5s ease;
-  }
-  .process h3 {
-    font-weight: 400;
-    letter-spacing: 5px;
   }
   .process .current {
     opacity: 1;
   }
+  .process .proc01::after,
+  .process .proc02::after,
+  .process .proc03::after,
+  .process .proc04::after {
+    transform: skewx(0);
+    transition: 0.5s ease;
+  }
   .process .shrink {
-    width: 0%;
+    width: 1rem;
     color: transparent;
     display: flex;
-    transition: 1s all ease-out;
+    transition: 0.4s ease-out;
   }
 }
 /* ____________________________ DOWNLOAD SAVE YOUR SHIELD ____________________________ */
@@ -3591,6 +3592,13 @@ button.sable {
   grid-gap: 1rem;
   margin: 4rem auto;
 }
+#main-page .random-blazon-section .blazon-container .blazon-wrapper a {
+  transition: 0.5s ease-in;
+}
+#main-page .random-blazon-section .blazon-container .blazon-wrapper a:hover {
+  transform: scale(1.02);
+  transition: 0.6s ease-out;
+}
 #main-page .random-blazon-section .blazon-container .blazon-wrapper .blazon {
   border-radius: 20px;
   padding: 30px;
@@ -3890,7 +3898,7 @@ header .three-active {
   width: 10rem;
   height: 10rem;
 }
-#popup-charge {
+.popup-charge {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -3903,24 +3911,24 @@ header .three-active {
   background: var(--light-color);
   border: 1px solid rgba(51, 51, 51, 0.63);
 }
-#popup-charge a {
+.popup-charge a {
   width: 100%;
 }
-#popup-charge a .fas {
+.popup-charge a .fas {
   width: 100%;
   font-size: 2.8rem;
   text-align: right;
   color: var(--red-color);
 }
-#popup-charge a .fas:hover {
+.popup-charge a .fas:hover {
   color: var(--red-color);
   opacity: 0.8;
 }
-#popup-charge h2 {
+.popup-charge h2 {
   color: var(--secondary-color);
   text-decoration: underline;
 }
-#popup-charge .charge {
+.popup-charge .charge {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -3932,28 +3940,28 @@ header .three-active {
   border: 1px solid var(--secondary-color);
   background: var(--light-opacity);
 }
-#popup-charge .charge:hover {
+.popup-charge .charge:hover {
   background: var(--secondary-color);
 }
-#popup-charge .charge:hover .main-values {
+.popup-charge .charge:hover .main-values {
   color: var(--light-color);
 }
-#popup-charge .charge:hover .main-values p:first-child {
+.popup-charge .charge:hover .main-values p:first-child {
   color: var(--light-color);
   font-weight: 500;
 }
-#popup-charge .charge:hover .other-values {
+.popup-charge .charge:hover .other-values {
   color: var(--light-opacity);
 }
-#popup-charge .charge:hover h4 {
+.popup-charge .charge:hover h4 {
   background: var(--light-color);
   color: var(--secondary-color);
 }
-#popup-charge .charge img {
+.popup-charge .charge img {
   padding: 0.5rem;
   width: 50%;
 }
-#popup-charge .charge h4 {
+.popup-charge .charge h4 {
   background: var(--secondary-color);
   width: 100%;
   padding: 0.5rem 0;
@@ -3961,13 +3969,13 @@ header .three-active {
   text-align: center;
   color: var(--light-color);
 }
-#popup-charge .charge .main-values {
+.popup-charge .charge .main-values {
   padding: 0 0.5rem;
 }
-#popup-charge .charge .main-values p:first-child {
+.popup-charge .charge .main-values p:first-child {
   color: var(--red-color);
 }
-#popup-charge .charge .other-values {
+.popup-charge .charge .other-values {
   color: #333;
   opacity: 0.8;
 }
