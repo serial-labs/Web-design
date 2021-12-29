@@ -2454,14 +2454,6 @@ button.sable {
     display: flex;
     transition: 1s all ease-out;
   }
-  .process .proc04:before {
-    visibility: hidden;
-    transition: 0.3s ease;
-  }
-  .process .proc01:before {
-    visibility: hidden;
-    transition: 0.3s ease;
-  }
 }
 /* ____________________________ DOWNLOAD SAVE YOUR SHIELD ____________________________ */
 .download-container {
@@ -3900,15 +3892,29 @@ header .three-active {
 }
 #popup-charge {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
   gap: 1rem;
   padding: 1rem;
-  width: 50%;
-  flex-wrap: wrap;
+  max-width: 50%;
+  margin: auto;
   background: var(--light-color);
   border: 1px solid rgba(51, 51, 51, 0.63);
-  margin: auto;
+}
+#popup-charge a {
+  width: 100%;
+}
+#popup-charge a .fas {
+  width: 100%;
+  font-size: 2.8rem;
+  text-align: right;
+  color: var(--red-color);
+}
+#popup-charge a .fas:hover {
+  color: var(--red-color);
+  opacity: 0.8;
 }
 #popup-charge h2 {
   color: var(--secondary-color);
@@ -3919,25 +3925,29 @@ header .three-active {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 5rem;
   padding: 1rem 0;
   text-align: center;
-  width: 24%;
+  width: 15rem;
   margin: 1rem 0;
   border: 1px solid var(--secondary-color);
   background: var(--light-opacity);
 }
 #popup-charge .charge:hover {
-  background: #afdb90;
+  background: var(--secondary-color);
 }
 #popup-charge .charge:hover .main-values {
-  color: white;
+  color: var(--light-color);
 }
 #popup-charge .charge:hover .main-values p:first-child {
-  font-weight: 600;
+  color: var(--light-color);
+  font-weight: 500;
 }
 #popup-charge .charge:hover .other-values {
-  color: white;
+  color: var(--light-opacity);
+}
+#popup-charge .charge:hover h4 {
+  background: var(--light-color);
+  color: var(--secondary-color);
 }
 #popup-charge .charge img {
   padding: 0.5rem;

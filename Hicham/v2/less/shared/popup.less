@@ -55,16 +55,30 @@
 
 #popup-charge {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
   gap: 1rem;
   padding: 1rem;
-  width: 50%;
-  flex-wrap: wrap;
+  max-width: 50%;
+  margin: auto;
   background: var(--light-color);
   border: 1px solid rgba(51, 51, 51, 0.63);
-  margin: auto;
 
+  a {
+    width: 100%;
+    .fas {
+      width: 100%;
+      font-size: 2.8rem;
+      text-align: right;
+      color: var(--red-color);
+      &:hover {
+        color: var(--red-color);
+        opacity: 0.8;
+      }
+    }
+  }
     h2 {
       color: var(--secondary-color);
       text-decoration: underline;
@@ -74,24 +88,27 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      gap: 5rem;
       padding: 1rem 0;
       text-align: center;
-      width: 24%;
+      width: 15rem;
       margin: 1rem 0;
       border: 1px solid var(--secondary-color);
       background: var(--light-opacity);
         &:hover {
-          background: #afdb90;
+          background: var(--secondary-color);
           .main-values {
-            color: white;
+            color: var(--light-color);
             & p:first-child {
-              // color: white;
-              font-weight: 600;
+              color: var(--light-color);
+              font-weight: 500;
             }
           }
           .other-values {
-            color: white;
+            color: var(--light-opacity);
+          }
+          h4 {
+            background: var(--light-color);
+            color: var(--secondary-color);
           }
         }
       img {
