@@ -3898,3 +3898,66 @@ header .three-active {
   width: 10rem;
   height: 10rem;
 }
+#popup-charge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  width: 50%;
+  flex-wrap: wrap;
+  background: var(--light-color);
+  border: 1px solid rgba(51, 51, 51, 0.63);
+  margin: auto;
+}
+#popup-charge h2 {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+#popup-charge .charge {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  padding: 1rem 0;
+  text-align: center;
+  width: 24%;
+  margin: 1rem 0;
+  border: 1px solid var(--secondary-color);
+  background: var(--light-opacity);
+}
+#popup-charge .charge:hover {
+  background: #afdb90;
+}
+#popup-charge .charge:hover .main-values {
+  color: white;
+}
+#popup-charge .charge:hover .main-values p:first-child {
+  font-weight: 600;
+}
+#popup-charge .charge:hover .other-values {
+  color: white;
+}
+#popup-charge .charge img {
+  padding: 0.5rem;
+  width: 50%;
+}
+#popup-charge .charge h4 {
+  background: var(--secondary-color);
+  width: 100%;
+  padding: 0.5rem 0;
+  font-weight: 500;
+  text-align: center;
+  color: var(--light-color);
+}
+#popup-charge .charge .main-values {
+  padding: 0 0.5rem;
+}
+#popup-charge .charge .main-values p:first-child {
+  color: var(--red-color);
+}
+#popup-charge .charge .other-values {
+  color: #333;
+  opacity: 0.8;
+}
