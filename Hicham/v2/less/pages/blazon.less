@@ -368,6 +368,7 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  flex: 1;
 }
 .set img {
   width: 20%;
@@ -589,12 +590,13 @@ button.sable {
     outline: 1px solid var(--dark-opacity);
   }
 
-    a {
+    a, button {
       background: white;
       color: var(--primary-color);
       text-align: center;
       width: 100%;
       padding: 0.3rem;
+      border: none;
         &:hover {
           background: var(--primary-color);
           color: white;
@@ -628,6 +630,11 @@ button.sable {
   input {
     width: 100%;
     margin: 0;
+  }
+  .information-box {
+    i {
+      color: var(--light-color);
+    }
   }
 }
 
@@ -718,8 +725,13 @@ transition: 0.5s;
   color: var(--light-color);
 }
 .other-card i {
-  font-size: 3rem;
+  font-size: 10rem;
 }
+
+.other-card p {
+  color: var(--light-color);
+}
+
 .other-card a i{
   color: white;
 }

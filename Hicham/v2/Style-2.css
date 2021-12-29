@@ -276,6 +276,11 @@ img {
   color: var(--light-color);
 }
 /* ____________________________BUTTONS____________________________*/
+textarea {
+  font-size: 1.3rem;
+  font-family: "poppins", sans-serif;
+  max-width: 100%;
+}
 input {
   background-color: #fcfcfc;
   border: 1px solid rgba(51, 51, 51, 0.2);
@@ -1931,6 +1936,7 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  flex: 1;
 }
 .set img {
   width: 20%;
@@ -2139,14 +2145,17 @@ button.sable {
   padding: 1rem;
   outline: 1px solid var(--dark-opacity);
 }
-#share-popup a {
+#share-popup a,
+#share-popup button {
   background: white;
   color: var(--primary-color);
   text-align: center;
   width: 100%;
   padding: 0.3rem;
+  border: none;
 }
-#share-popup a:hover {
+#share-popup a:hover,
+#share-popup button:hover {
   background: var(--primary-color);
   color: white;
 }
@@ -2177,6 +2186,9 @@ button.sable {
 #share-link input {
   width: 100%;
   margin: 0;
+}
+#share-link .information-box i {
+  color: var(--light-color);
 }
 /* ______________________HISTORY COAT OF ARMS________________ */
 .history-coats {
@@ -2266,7 +2278,10 @@ button.sable {
   color: var(--light-color);
 }
 .other-card i {
-  font-size: 3rem;
+  font-size: 10rem;
+}
+.other-card p {
+  color: var(--light-color);
 }
 .other-card a i {
   color: white;
@@ -2355,61 +2370,6 @@ button.sable {
     width: 100%;
   }
 }
-/* ____________________________PROCESS PROGRESSION BAR____________________________ */
-.process {
-  margin: auto;
-  display: flex;
-  gap: 1rem;
-}
-.process .current {
-  opacity: 1;
-}
-.process h3 {
-  padding: 1rem 3rem;
-  font-weight: 300;
-  text-align: center;
-  color: var(--light-color);
-}
-.proc01,
-.proc02,
-.proc03,
-.proc04 {
-  position: relative;
-  opacity: 0.5;
-  width: 100%;
-}
-.proc01::after,
-.proc02::after,
-.proc03::after,
-.proc04::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background: var(--green-color);
-  z-index: -1;
-  transform: skewx(-25deg);
-}
-.proc-mobile {
-  /* Text à modifier dans le HTML pour définir le bon nom du process en version mobile */
-  display: none;
-  position: relative;
-  opacity: 0.5;
-  width: 100%;
-}
-.proc-mobile::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background: var(--green-color);
-  z-index: -1;
-  transform: skewx(-25deg);
-}
 /*____________________________- COMPLEMENTAIRE SKEW ____________________________*/
 .proc01:before,
 .proc04:before {
@@ -2429,7 +2389,6 @@ button.sable {
   width: 5rem;
   z-index: -2;
 }
-/* ____________________________ LOADING READY ANIMATION ____________________________*/
 .box-recent-coa {
   background: var(--light-color);
   width: max-content;
@@ -2438,29 +2397,70 @@ button.sable {
   background: var(--orange-color);
   padding: 2rem;
 }
-@media screen and (max-width: 620px) {
+/* ____________________________ MOBILE ____________________________*/
+.process {
+  margin: auto;
+  display: flex;
+  gap: 0.5rem;
+  transition: 0.9s ease-out;
+}
+.process .current {
+  opacity: 1;
+}
+.process h3 {
+  padding: 1rem 3rem;
+  font-weight: 300;
+  text-align: center;
+  color: var(--light-color);
+}
+.proc01,
+.proc02,
+.proc03,
+.proc04 {
+  position: relative;
+  opacity: 0.5;
+  width: 100%;
+  transition: 1s ease-in-out;
+}
+.proc01::after,
+.proc02::after,
+.proc03::after,
+.proc04::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: var(--green-color);
+  z-index: -1;
+  transform: skewx(-25deg);
+}
+@media screen and (max-width: 850px) {
+  .process {
+    display: flex;
+    transition: 1.5s ease;
+  }
+  .process h3 {
+    font-weight: 400;
+    letter-spacing: 5px;
+  }
   .process .current {
     opacity: 1;
   }
-  .process .proc01,
-  .process .proc02,
-  .process .proc03,
-  .process .proc04 {
-    display: none;
+  .process .shrink {
+    width: 0%;
+    color: transparent;
+    display: flex;
+    transition: 1s all ease-out;
   }
-  .process .proc-mobile {
-    display: block;
+  .process .proc04:before {
+    visibility: hidden;
+    transition: 0.3s ease;
   }
-  .process .proc-mobile::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background: var(--green-color);
-    z-index: -1;
-    transform: skewx(0);
+  .process .proc01:before {
+    visibility: hidden;
+    transition: 0.3s ease;
   }
 }
 /* ____________________________ DOWNLOAD SAVE YOUR SHIELD ____________________________ */
@@ -2510,7 +2510,7 @@ button.sable {
 }
 .information-box {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   gap: 2rem;
   width: 70%;

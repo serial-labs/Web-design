@@ -1,56 +1,5 @@
 // main: ../main.less
 
-/* ____________________________PROCESS PROGRESSION BAR____________________________ */
-.process {
-  margin: auto;
-  display: flex;
-  gap: 1rem;
-
-  .current {
-    opacity: 1;
-  }
-  h3 {
-    padding: 1rem 3rem;
-    font-weight: 300;
-    text-align: center;
-    color: var(--light-color);
-  }
-}
-.proc01, .proc02, .proc03, .proc04 {
-    position: relative;
-    opacity: 0.5;
-    width: 100%;
-
-      &::after {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 0;
-          bottom: 0;
-          width: 100%;
-          background: var(--green-color);
-          z-index: -1;
-          transform: skewx(-25deg);
-    }
-  }
-  .proc-mobile{   /* Text à modifier dans le HTML pour définir le bon nom du process en version mobile */
-    display: none;
-    position: relative;
-    opacity: 0.5;
-    width: 100%;
-
-      &::after {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 0;
-          bottom: 0;
-          width: 100%;
-          background: var(--green-color);
-          z-index: -1;
-          transform: skewx(-25deg);
-    }
-  }
 
 
 /*____________________________- COMPLEMENTAIRE SKEW ____________________________*/
@@ -74,7 +23,6 @@
   z-index: -2;
 }
 
-/* ____________________________ LOADING READY ANIMATION ____________________________*/
 
 .box-recent-coa {
   background: var(--light-color);
@@ -86,75 +34,74 @@
   }
 }
 
+/* ____________________________ MOBILE ____________________________*/
+
+.process {
+  margin: auto;
+  display: flex;
+  gap: 0.5rem;
+  transition: 0.9s ease-out;
+  .current {
+    opacity: 1;
+  }
+  h3 {
+    padding: 1rem 3rem;
+    font-weight: 300;
+    text-align: center;
+    color: var(--light-color);
+  }
+}
+.proc01, .proc02, .proc03, .proc04 {
+    position: relative;
+    opacity: 0.5;
+    width: 100%;
+    transition: 1s ease-in-out;
+      &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          background: var(--green-color);
+          z-index: -1;
+          transform: skewx(-25deg);
+    }
+}
 
 
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 850px) {
+
   .process {
+    display: flex;
+    transition: 1.5s ease;
+      h3 {
+        font-weight: 400;
+        letter-spacing: 5px;
+      }
       .current {
         opacity: 1;
       }
-      .proc01,
-      .proc02,
-      .proc03,
-      .proc04 {
-        display: none;
+      .shrink{
+        width: 0%;
+        color: transparent;
+        display: flex;
+        transition: 1s all ease-out;
       }
-      .proc-mobile {
-        display: block;
-        &::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        background: var(--green-color);
-        z-index: -1;
-        transform: skewx(0);
-        }
+      .proc04:before {
+        visibility: hidden;
+        transition: 0.3s ease;
       }
-  }
-}
-// @media screen and (max-width: 620px) {
-//   .process {
-//     display: flex;
-//     flex-direction: column;
-//     gap: 0.2rem;
-//       .current {
-//         opacity: 1;
-//       }
-//       .proc01,
-//       .proc02,
-//       .proc03,
-//       .proc04 {
-//         position: relative;
-//         width: 100%;
-      
-//         &::after {
-//           content: "";
-//           position: absolute;
-//           top: 0;
-//           left: 0;
-//           bottom: 0;
-//           width: 100%;
-//           background: var(--green-color);
-//           z-index: -1;
-//           transform: skewx(0deg);
-//         }
-//       }
-//       .proc01:before, .proc04:before {
-//         content: "";
-//         position: absolute;
-//         top: 0;
-//         bottom: 0;
-//         background: var(--green-color);
-//       }
-      
-//       .proc01:before, .proc04:before  {
-//         display: none;
-//       }
+      .proc01:before {
+        visibility: hidden;
+        transition: 0.3s ease;
+      }
+    }
    
-//   }
-  
-// }
+}
+
+
+
+
+
