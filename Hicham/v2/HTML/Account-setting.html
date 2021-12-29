@@ -100,13 +100,16 @@
             <label for="Lastname">Lastname name</label>
             <input type="text" id="Lastname" placeholder="Hannibal">
           </div>
-          <div class="container-gender">
-            <input type='radio' id='male' name='radio'>
-            <label for='male'>Male</label>
-            <input type='radio' id='female' name='radio'>
-            <label for='female'>Female</label>
-            <input type='radio' id='other' name='radio'>
-            <label for='other'>Other</label>
+          <div>
+            <label for="Gender">Gender</label>
+            <div class="container-gender">
+                <input checked="true" id="Gender" name="Gender" type="radio" value="Male">
+                <p onclick="this.previousElementSibling.checked = true;">Male</p>
+                <input id="Gender" name="Gender" type="radio" value="Female">
+                <p onclick="this.previousElementSibling.checked = true;">Female</p>
+                <input id="Gender" name="Gender" type="radio" value="Other">
+                <p onclick="this.previousElementSibling.checked = true;">Other</p>
+            </div>
           </div>
           <select id="country" name="country" class="form-control">
             <option value="N/A">Country</option>

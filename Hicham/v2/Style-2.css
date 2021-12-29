@@ -2875,7 +2875,7 @@ button.sable {
 .container-gender input[type="radio"] {
   display: none;
 }
-.container-gender input[type="radio"] + label {
+.container-gender input[type="radio"] + p {
   z-index: 10;
   margin: 1rem;
   position: relative;
@@ -2886,11 +2886,11 @@ button.sable {
   cursor: pointer;
   transition: all 200ms ease;
 }
-.container-gender input[type="radio"]:checked + label {
+.container-gender input[type="radio"]:checked + p {
   color: var(--light-color);
   background-color: var(--secondary-color);
 }
-.container-gender input[type="radio"] + label {
+.container-gender input[type="radio"] + p {
   padding: 0.5rem 2rem;
 }
 /* ------------------- SOCIAL LOGIN BUTTON ------------------ */
@@ -2966,6 +2966,9 @@ button.sable {
   /* width: 100%; */
   margin: auto;
 }
+.form-account-container form {
+  width: 100%;
+}
 .use-social-media,
 .password-section,
 .change-username,
@@ -2985,16 +2988,22 @@ button.sable {
 .use-social-media {
   align-items: center;
 }
-.use-social-media a {
+.use-social-media a,
+.use-social-media button {
   color: var(--secondary-color);
   font-size: 5rem;
 }
-.use-social-media a:hover {
+.use-social-media a:hover,
+.use-social-media button:hover {
   filter: drop-shadow(0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.459));
   color: var(--primary-color);
   transform: rotateY(50deg);
   transform: rotateZ(10deg);
   transition: 0.4s;
+}
+.use-social-media button {
+  border: none;
+  background-color: transparent;
 }
 .update-information select {
   background-color: #eee;

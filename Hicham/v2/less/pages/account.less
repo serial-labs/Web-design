@@ -176,7 +176,7 @@
   input[type="radio"] {
     display: none;
 
-    & + label {
+    & + p {
       z-index: 10;
       margin: 1rem;
       position: relative;
@@ -188,12 +188,12 @@
       transition: all 200ms ease;
     }
 
-    &:checked + label {
+    &:checked + p {
       color: var(--light-color);
       background-color: var(--secondary-color);
     }
 
-    & + label {
+    & + p {
       padding: 0.5rem 2rem;
     }
   }
@@ -286,6 +286,10 @@
     /* width: 100%; */
     margin: auto;
   }
+  
+  form {
+    width: 100%;
+  }
 }
 
 .use-social-media,
@@ -308,7 +312,7 @@
 .use-social-media {
   align-items: center;
 
-  a {
+  a, button {
     color: var(--secondary-color);
     font-size: 5rem;
     &:hover {
@@ -318,6 +322,11 @@
       transform: rotateZ(10deg);
       transition: 0.4s;
     }
+  }
+
+  button {
+    border: none;
+    background-color: transparent;
   }
 }
 
