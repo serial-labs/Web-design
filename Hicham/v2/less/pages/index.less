@@ -1,16 +1,17 @@
 // main: ../main.less
 
 #main-page {
-  //   &:before {
-  //     content: "";
-  //     background: url("/Images/SVG/new_wave.svg") no-repeat center center/contain;
-  //     position: absolute;
-  //     top: 0;
-  //     right: 0;
-  //     width: 100%;
-  //     height: 100%;
-  //     z-index: -5;
-  //   }
+    // &:before {
+    //   content: "";
+    //   background: url("/Images/SVG/new_wave.svg") no-repeat center center/contain;
+    //   position: absolute;
+    //   top: 0;
+    //   right: 0;
+    //   width: 100%;
+    //   height: 80vh;
+    //   z-index: -5;
+    // }
+  position: relative;
   color: var(--primary-color);
   img {
     width: 100%;
@@ -22,7 +23,7 @@
     margin-top: 2rem;
     padding: 3rem;
     max-width: 130rem;
-    height: 65vh;
+    height: 100%;
     .lion {
       width: 100%;
     }
@@ -47,12 +48,16 @@
     }
   }
   @media screen and (max-width: 999px) {
+
     .grid-home {
       gap: 5rem;
     }
-    .banner-container .lion {
-      width: 80%;
-      margin: auto;
+    .banner-container  {
+  
+      .lion{
+        width: 80%;
+        margin: auto;
+      }
     }
     .call-action {
       p,
@@ -63,7 +68,8 @@
       }
       .btn-dark {
         margin: auto;
-        width: 50%;
+        width: 40%;
+        padding: 0.5rem 1rem;
         font-size: 2rem;
       }
     }
@@ -116,7 +122,8 @@
       display: flex;
       flex-direction: column;
       img {
-        width: 50%;
+        width: 40%;
+        display: none;
       }
     }
   }

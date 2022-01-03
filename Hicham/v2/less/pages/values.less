@@ -7,8 +7,11 @@
   width: 30rem;
 }
 .search-bar {
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 0;
   position: relative;
+  input {
+    margin: 0;
+  }
 }
 
 .filter-icon, .search-icon {
@@ -90,11 +93,6 @@
     width: 20rem;
     padding: 1rem;
     transition: 0.5s ease-in;
-
-    &:hover {
-      transform: rotate3d(5, 9, 1, 15deg);
-      transition: 0.5s ease-in-out;
-      filter: drop-shadow(0 0 0.05rem #333);    }
   }
 }
 

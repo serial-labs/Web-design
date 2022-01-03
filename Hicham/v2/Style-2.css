@@ -1776,7 +1776,7 @@ ul {
   position: absolute;
   width: 100%;
   height: 22rem;
-  top: -2rem;
+  top: -7%;
   left: -3rem;
   opacity: 0.6;
   z-index: 1;
@@ -1787,7 +1787,7 @@ ul {
   position: absolute;
   width: 100%;
   height: 22rem;
-  bottom: -2rem;
+  bottom: -7%;
   right: -3rem;
   opacity: 0.6;
   transform: rotate(180deg);
@@ -3142,8 +3142,11 @@ button.sable {
   width: 30rem;
 }
 .search-bar {
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 0;
   position: relative;
+}
+.search-bar input {
+  margin: 0;
 }
 .filter-icon,
 .search-icon {
@@ -3218,11 +3221,6 @@ button.sable {
   width: 20rem;
   padding: 1rem;
   transition: 0.5s ease-in;
-}
-.value-container img:hover {
-  transform: rotate3d(5, 9, 1, 15deg);
-  transition: 0.5s ease-in-out;
-  filter: drop-shadow(0 0 0.05rem #333);
 }
 /* _____ CARDS VALUE __________ */
 .container-value {
@@ -3480,6 +3478,7 @@ button.sable {
   width: 100%;
 }
 #main-page {
+  position: relative;
   color: var(--primary-color);
   /* _________________________ ABOUT SECTION ___________________________ */
   /* _________________________ CHARGES SECTION  ___________________________ */
@@ -3496,7 +3495,7 @@ button.sable {
   margin-top: 2rem;
   padding: 3rem;
   max-width: 130rem;
-  height: 65vh;
+  height: 100%;
 }
 #main-page .banner-container .lion {
   width: 100%;
@@ -3536,7 +3535,8 @@ button.sable {
   }
   #main-page .call-action .btn-dark {
     margin: auto;
-    width: 50%;
+    width: 40%;
+    padding: 0.5rem 1rem;
     font-size: 2rem;
   }
 }
@@ -3582,7 +3582,8 @@ button.sable {
     flex-direction: column;
   }
   #main-page .about .grid-about img {
-    width: 50%;
+    width: 40%;
+    display: none;
   }
 }
 #main-page .section-charge-container {
@@ -3839,7 +3840,7 @@ header .logo {
   font-family: "aAttackGraffiti";
   font-size: 5rem;
   font-weight: 100;
-  background: linear-gradient(90deg, #df4571 22%, #fcb045 100%);
+  background: linear-gradient(90deg, #006ac6 22%, #165185 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
