@@ -3145,21 +3145,12 @@ button.sable {
   padding: 0.5rem 2rem;
   position: relative;
 }
-.search-bar::after {
-  content: '';
-  background: var(--light-opacity);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
 .filter-icon,
 .search-icon {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
+  width: 100%;
   gap: 2rem;
 }
 .filter-icon i,
@@ -3176,32 +3167,62 @@ button.sable {
   filter: drop-shadow(0 0 0.1rem rgba(0, 0, 0, 0.315));
 }
 .search-icon input {
-  width: 35rem;
-  height: 3rem;
+  width: 100%;
+  height: 3.5rem;
 }
 .blazon-for {
   padding: 2rem;
   margin: 1rem 0;
 }
-#value-btn {
-  border: 1px solid var(--secondary-color);
+.value-btn {
   background: var(--light-color);
   color: var(--secondary-color);
-  padding: 0.5rem;
+  border: 1px solid var(--secondary-color);
   text-align: center;
-  position: relative;
+  display: inline-block;
+  width: 15rem;
+  padding: 0.3rem;
 }
-#value-btn:hover {
+.value-btn:hover {
   color: var(--light-color);
-  background: var(--secondary-color);
-}
-#grid-wrapper-value {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  grid-gap: 0.5rem;
+  background: var(--primary-color);
 }
 .choosen-values {
   width: 100%;
+}
+/* _____ CARDS VALUE WITH FLOAT __________ */
+.value-container {
+  background: var(--light-opacity);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  width: 100%;
+  height: 100%;
+  margin: 1rem 0;
+  padding: 2rem;
+}
+.value-container .eagle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.value-container .fox {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+.value-container img {
+  width: 20rem;
+  padding: 1rem;
+  transition: 0.5s ease-in;
+}
+.value-container img:hover {
+  transform: rotate3d(5, 9, 1, 15deg);
+  transition: 0.5s ease-in-out;
+  filter: drop-shadow(0 0 0.05rem #333);
 }
 /* _____ CARDS VALUE __________ */
 .container-value {
@@ -3345,6 +3366,13 @@ button.sable {
   /* ____________________________*/
   .container-value .card-value {
     margin: auto;
+  }
+  .value-container .fox {
+    display: flex;
+    flex-direction: column;
+  }
+  #yourvalue + .btn-dark {
+    padding: 0.5rem;
   }
 }
 /* _______________________   AFTER LESS ____________________________ */
@@ -3791,15 +3819,21 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: var(--secondary-color);
+  background: #333;
+  background: var(--light-color);
   padding: 1rem 4rem ;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.2);
   position: sticky;
   top: 0;
   z-index: 70;
 }
 header a {
   color: white;
+  color: #333;
   margin: 0 1rem;
+}
+header a:hover {
+  color: var(--secondary-color);
 }
 header .logo {
   font-family: "aAttackGraffiti";
@@ -3829,7 +3863,7 @@ header nav ul li a:after {
   width: 0%;
   content: '.';
   color: transparent;
-  background: white;
+  background: var(--secondary-color);
   height: 1px;
 }
 header ul li a:hover:after {
@@ -3853,7 +3887,8 @@ header .hamburger:hover {
 header .line-ham {
   width: 32px;
   height: 3px;
-  background-color: white;
+  background-color: var(--light-color);
+  background-color: #333;
   transition: 500ms ease-in-out all;
   z-index: 60;
 }
@@ -3911,11 +3946,13 @@ header .three-active {
   display: flex;
   justify-content: flex-end;
   gap: 1rem;
-  background: var(--secondary-color);
-  padding: 1rem 5rem 0;
+  background: var(--light-color);
+  padding: 1rem 5rem ;
 }
-.sign-button-container .btn-light {
-  min-width: 10rem;
+.sign-button-container .btn-light,
+.sign-button-container .btn-dark {
+  max-width: 10%;
+  letter-spacing: 0;
 }
 @media screen and (max-width: 1050px) {
   header {

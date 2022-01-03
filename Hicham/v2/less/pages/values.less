@@ -10,20 +10,12 @@
   padding: 0.5rem 2rem;
   position: relative;
 }
-.search-bar::after{
-  content: '';
-  background: var(--light-opacity);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
+
 .filter-icon, .search-icon {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
+  width: 100%;
   gap: 2rem;
 }
 
@@ -37,37 +29,77 @@
 }
 .filter-icon img:hover, .filter-icon i:hover {
   filter: drop-shadow(0 0 0.1rem rgba(0, 0, 0, 0.315));
-
 }
+
 .search-icon input {
-  width: 35rem;
-  height: 3rem;
+  width: 100%;
+  height: 3.5rem;
 }
 .blazon-for {
   padding: 2rem;
   margin: 1rem 0;
 }
-#value-btn {
-  border: 1px solid var(--secondary-color);
+.value-btn {
   background: var(--light-color);
   color: var(--secondary-color);
-  padding: 0.5rem;
+  border: 1px solid var(--secondary-color);
   text-align: center;
-  position: relative;
+  display: inline-block;
+  width: 15rem;
+  padding: 0.3rem;
 }
 
-#value-btn:hover {
+.value-btn:hover {
   color: var(--light-color);
-  background: var(--secondary-color);
+  background: var(--primary-color);
 }
 #grid-wrapper-value {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  grid-gap: 0.5rem;
+  // display: grid;
+  // grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  // grid-gap: 0.5rem;
 }
 .choosen-values {
   width: 100%;
 }
+
+/* _____ CARDS VALUE WITH FLOAT __________ */
+
+.value-container {
+  background: var(--light-opacity);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  width: 100%;
+  height: 100%;
+  margin: 1rem 0;
+  padding: 2rem;
+  .eagle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .fox {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  img {
+    width: 20rem;
+    padding: 1rem;
+    transition: 0.5s ease-in;
+
+    &:hover {
+      transform: rotate3d(5, 9, 1, 15deg);
+      transition: 0.5s ease-in-out;
+      filter: drop-shadow(0 0 0.05rem #333);    }
+  }
+}
+
+
+
 
 
 /* _____ CARDS VALUE __________ */
@@ -217,5 +249,14 @@
   /* ____________________________*/
   .container-value .card-value {
       margin: auto;
+  }
+  .value-container {
+    .fox {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  #yourvalue + .btn-dark{
+    padding: 0.5rem;
   }
 }

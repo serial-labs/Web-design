@@ -14,16 +14,21 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: var(--secondary-color);
-  // background: #333;
+  background: #333;
+  background: var(--light-color);
   padding: 1rem 4rem ;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.2);
   position: sticky;
   top: 0;
   z-index: 70;
  
   a {
     color: white;
+    color: #333;
     margin: 0 1rem;
+    &:hover {
+      color: var(--secondary-color);
+    }
   }
   .logo {
       font-family: "aAttackGraffiti";
@@ -55,7 +60,7 @@ header {
   width: 0%;
   content: '.';
   color: transparent;
-  background: white;
+  background: var(--secondary-color);
   height: 1px;
 }
   ul li a:hover:after {
@@ -80,7 +85,8 @@ header {
   .line-ham {
     width: 32px;
     height: 3px;
-    background-color: white;
+    background-color: var(--light-color);
+    background-color: #333;
     transition: 500ms ease-in-out all;
     z-index: 60;
 
@@ -150,11 +156,12 @@ header {
   display: flex;
   justify-content: flex-end;
   gap: 1rem;
-  background: var(--secondary-color);
+  background: var(--light-color);
   // background: #333;
-  padding: 1rem 5rem 0;
-    .btn-light {
-      min-width: 10rem;
+  padding: 1rem 5rem ;
+    .btn-light, .btn-dark {
+      max-width: 10%;
+      letter-spacing: 0;
     }
 }
 
