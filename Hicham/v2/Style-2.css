@@ -158,14 +158,14 @@
   --max-width: 90rem;
   --max-width-home: 1280px;
 }
-html {
-  font-size: 62.5%;
-  overflow-x: hidden;
-}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
 }
 body {
   font-family: "poppins", sans-serif;
@@ -188,7 +188,7 @@ body:after {
 /* ________________SCROLL BAR_____________________________ */
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 13px;
 }
 /* Track */
 ::-webkit-scrollbar-track {
@@ -196,11 +196,11 @@ body:after {
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--secondary-color);
+  background: var(--primary-color);
   /* Handle on hover */
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--secondary-color);
+  background: var(--primary-color);
 }
 /* ____________________________ SECTION POUR TOUTES LES PAGES____________________________ */
 .main-section {
@@ -1948,8 +1948,72 @@ ul {
 }
 .blazon-apercu {
   background: var(--light-color);
-  padding: 8rem;
   border: 1px solid var(--dark-opacity);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+}
+.blazon-apercu .pshield {
+  position: absolute;
+  width: 45.2%;
+  height: 50.67%;
+  left: 27.33%;
+  top: 31.67%;
+  z-index: 20;
+}
+.blazon-apercu .phelmet {
+  position: absolute;
+  width: 24.67%;
+  height: 26.7%;
+  left: 37.67%;
+  top: 10.33%;
+  z-index: 40;
+}
+.blazon-apercu .pcrest {
+  position: absolute;
+  width: 24.67%;
+  height: 22.67%;
+  left: 37.67%;
+  top: 0;
+  z-index: 35;
+}
+.blazon-apercu .psupporters {
+  position: absolute;
+  width: 100%;
+  height: 55%;
+  left: 0;
+  top: 31.67%;
+  z-index: 18;
+}
+.blazon-apercu .pmantling {
+  position: absolute;
+  width: 94.67%;
+  height: 66.33%;
+  left: 2.67%;
+  top: 20.33%;
+  z-index: 15;
+}
+.blazon-apercu .pbanner {
+  position: absolute;
+  width: 100%;
+  height: 20.3%;
+  left: 0;
+  top: 79.67%;
+  z-index: 19;
+}
+.blazon-apercu .pname {
+  position: absolute;
+  width: 94.67%;
+  height: 10%;
+  left: 2.67%;
+  top: 0;
+  z-index: 40;
+}
+.blazon-apercu img {
+  max-width: 100%;
 }
 .ornaments-poll {
   background: var(--light-opacity);
@@ -2732,17 +2796,8 @@ button.sable {
 .gender {
   display: flex;
 }
-#container-sign select {
-  background-color: #eee;
-  border: none;
-  padding: 12px 15px;
-  margin: 8px 0;
-  width: 100%;
-}
-#container-sign .form h1 {
-  color: var(--secondary-color);
-}
-.container-signin {
+#container-sign {
+  display: flex;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
@@ -2753,26 +2808,36 @@ button.sable {
   max-width: 100%;
   min-height: 480px;
 }
-.container-signin.right-panel-active .sign-in-container {
+#container-sign.right-panel-active .sign-in-container {
   transform: translateX(100%);
 }
-.container-signin.right-panel-active .sign-up-container {
+#container-sign.right-panel-active .sign-up-container {
   transform: translateX(100%);
   opacity: 1;
   z-index: 5;
   animation: show 0.6s;
 }
-.container-signin.right-panel-active .overlay-container {
+#container-sign.right-panel-active .overlay-container {
   transform: translateX(-100%);
 }
-.container-signin.right-panel-active .overlay {
+#container-sign.right-panel-active .overlay {
   transform: translateX(50%);
 }
-.container-signin.right-panel-active .overlay-left {
+#container-sign.right-panel-active .overlay-left {
   transform: translateX(0);
 }
-.container-signin.right-panel-active .overlay-right {
+#container-sign.right-panel-active .overlay-right {
   transform: translateX(20%);
+}
+#container-sign select {
+  background-color: #eee;
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+}
+#container-sign .form h1 {
+  color: var(--secondary-color);
 }
 .form-container-signin {
   position: absolute;
@@ -2832,7 +2897,7 @@ button.sable {
   height: 100%;
   overflow: hidden;
   transition: transform 0.6s ease-in-out;
-  z-index: 100;
+  z-index: 40;
 }
 .overlay-panel {
   position: absolute;
@@ -3006,21 +3071,38 @@ button.sable {
   width: 100%;
 }
 @media screen and (max-width: 800px) {
-  .use-social-media,
-  .change-username,
-  .change-email,
-  .update-information,
-  .password-section,
-  .change-email {
-    gap: 1rem;
-    width: 100%;
+  .gender-signup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  .overlay-container {
-    display: none;
+  .gender-signup p {
+    width: 10rem;
   }
-  .form-container-signin {
-    width: 100%;
-    margin: auto;
+  .sign-up-container .btn-dark {
+    padding: 0.5rem 1rem;
+  }
+  #container-sign {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  #container-sign .social-container a {
+    margin: 0;
+  }
+  #container-sign .std-form {
+    padding: 1rem;
+  }
+  #container-sign .std-form h1 {
+    font-size: 2rem;
+    color: var(--primary-color);
+  }
+  #container-sign .overlay-container .overlay-left,
+  #container-sign .overlay-container .overlay-right {
+    padding: 1rem;
   }
 }
 .reset-password {
@@ -3698,6 +3780,10 @@ footer > p:last-child {
   }
 }
 /*____________________________NAVIGATION WITH MENU____________________________ */
+@font-face {
+  font-family: "aAttackGraffiti";
+  src: url("/font/aAttackGraffiti.ttf");
+}
 .nav-noscroll {
   overflow: initial;
 }
@@ -3713,11 +3799,16 @@ header {
 }
 header a {
   color: white;
-  margin: 0 1.5rem;
+  margin: 0 1rem;
 }
 header .logo {
-  font-family: "comforter", "poppins";
-  font-size: 6rem;
+  font-family: "aAttackGraffiti";
+  font-size: 5rem;
+  font-weight: 100;
+  background: linear-gradient(90deg, #df4571 22%, #fcb045 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 header .logo a {
   color: white;
@@ -3829,6 +3920,9 @@ header .three-active {
 @media screen and (max-width: 1050px) {
   header {
     padding: 1.5rem 4rem;
+  }
+  header .logo {
+    transform: translateY(0);
   }
   #navbar ul {
     display: none;
@@ -3978,4 +4072,7 @@ header .three-active {
 .popup-charge .charge .other-values {
   color: #333;
   opacity: 0.8;
+}
+.popup-charge .btn-dark {
+  width: 30%;
 }

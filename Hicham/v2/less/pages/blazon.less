@@ -380,8 +380,80 @@
 }
 .blazon-apercu {
   background: var(--light-color);
-  padding: 8rem;
   border: 1px solid var(--dark-opacity);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+
+  .pshield {
+    position: absolute;
+    width: 45.2%;
+    height: 50.67%;
+    left: 27.33%;
+    top: 31.67%;
+    z-index: 20;
+  }
+
+  .phelmet {
+    position: absolute;
+    width: 24.67%;
+    height: 26.7%;
+    left: 37.67%;
+    top: 10.33%;
+    z-index: 40;
+  }
+
+  .pcrest {
+    position: absolute;
+    width: 24.67%;
+    height: 22.67%;
+    left: 37.67%;
+    top: 0;
+    z-index: 35;
+  }
+
+  .psupporters {
+    position: absolute;
+    width: 100%;
+    height: 55%;
+    left: 0;
+    top: 31.67%;
+    z-index: 18;
+  }
+
+  .pmantling {
+    position: absolute;
+    width: 94.67%;
+    height: 66.33%;
+    left: 2.67%;
+    top: 20.33%;
+    z-index: 15;
+  }
+
+  .pbanner {
+    position: absolute;
+    width: 100%;
+    height: 20.3%;
+    left: 0;
+    top: 79.67%;
+    z-index: 19;
+  }
+
+  .pname {
+    position: absolute;
+    width: 94.67%;
+    height: 10%;
+    left: 2.67%;
+    top: 0;
+    z-index: 40;
+  }
+
+  img {
+    max-width: 100%;
+  }
 }
 
 .ornaments-poll {

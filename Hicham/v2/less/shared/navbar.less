@@ -1,6 +1,10 @@
 // main: ../main.less
 /*____________________________NAVIGATION WITH MENU____________________________ */
 
+@font-face {
+  font-family: "aAttackGraffiti";
+  src: url("/font/aAttackGraffiti.ttf");
+}
 
 .nav-noscroll {
     overflow: initial;
@@ -19,12 +23,17 @@ header {
  
   a {
     color: white;
-    margin: 0 1.5rem;
+    margin: 0 1rem;
   }
   .logo {
-    font-family: "comforter", "poppins";
-    font-size: 6rem;
-    // transform: translateY(-20%);
+      font-family: "aAttackGraffiti";
+      font-size: 5rem;
+      font-weight: 100;
+      background: linear-gradient(90deg, rgba(223,69,113,1) 22%, rgba(252,176,69,1) 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      // transform: translateY(-40%);
       a {
         color: white;
       }
@@ -152,6 +161,9 @@ header {
 @media screen and (max-width: 1050px) {
   header {
     padding: 1.5rem 4rem;
+    .logo {
+      transform:  translateY(0);
+    }
   }
   #navbar ul {
       display: none;
