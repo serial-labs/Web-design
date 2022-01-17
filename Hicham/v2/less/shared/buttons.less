@@ -15,6 +15,15 @@ input {
 	width: 100%;
 }
 
+.fakeinput {
+    background-color: rgb(252, 252, 252);
+	border: 1px solid rgba(51, 51, 51, 0.2);
+	padding: calc(0.3rem + 12px) calc(0.3rem + 15px);
+	margin: 8px 5px;
+	width: 100%;
+    height: calc((0.3rem + 15px) * 2 + (0.3rem * 2 + 1rem));
+}
+
 button {
     font-size: 1.8rem;
     line-height: 1.5;
@@ -56,6 +65,11 @@ button {
             color: var(--primary-color);
             transition: ease-in 0.5s;
         }
+    }
+
+    &-transparent {
+        .btn();
+        border : none;
     }
 
     &-disabled {

@@ -32,6 +32,25 @@
 
 .whp-loop(@minwhp);
 
+
+
+@media screen and (max-width: 800px) {
+    @minwhp-mobile: 10;
+    .whp-mobile-loop (@i) when (@i <= 100) {
+        .w@{i}p-mobile {
+            width: ~"@{i}%";
+        }
+        
+        .h@{i}p-mobile {
+            height: ~"@{i}%";
+        }
+
+        .whp-mobile-loop(@i + 5)
+    }
+
+    .whp-mobile-loop(@minwhp-mobile);
+}
+
 /*____________________________ PADDING + MARGIN ____________________________ */
 
 .p05 {

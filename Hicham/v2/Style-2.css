@@ -289,6 +289,14 @@ input {
   line-height: 1rem;
   width: 100%;
 }
+.fakeinput {
+  background-color: #fcfcfc;
+  border: 1px solid rgba(51, 51, 51, 0.2);
+  padding: calc(0.3rem + 12px) calc(0.3rem + 15px);
+  margin: 8px 5px;
+  width: 100%;
+  height: calc((0.3rem + 15px) * 2 + (0.3rem * 2 + 1rem));
+}
 button {
   font-size: 1.8rem;
   line-height: 1.5;
@@ -340,6 +348,18 @@ button {
   box-shadow: inset 35rem 0 0 1px var(--light-color);
   color: var(--primary-color);
   transition: ease-in 0.5s;
+}
+.btn-transparent {
+  padding: 0.5rem 3rem;
+  font-weight: 400;
+  min-width: 25%;
+  text-align: center;
+  letter-spacing: 1px;
+  transition: ease-out 0.3s;
+  z-index: 1;
+  cursor: pointer;
+  background: none;
+  border: none;
 }
 .btn-disabled {
   padding: 0.5rem 3rem;
@@ -590,6 +610,122 @@ sup a {
 }
 .h100p {
   height: 100%;
+}
+@media screen and (max-width: 800px) {
+  .w10p-mobile {
+    width: 10%;
+  }
+  .h10p-mobile {
+    height: 10%;
+  }
+  .w15p-mobile {
+    width: 15%;
+  }
+  .h15p-mobile {
+    height: 15%;
+  }
+  .w20p-mobile {
+    width: 20%;
+  }
+  .h20p-mobile {
+    height: 20%;
+  }
+  .w25p-mobile {
+    width: 25%;
+  }
+  .h25p-mobile {
+    height: 25%;
+  }
+  .w30p-mobile {
+    width: 30%;
+  }
+  .h30p-mobile {
+    height: 30%;
+  }
+  .w35p-mobile {
+    width: 35%;
+  }
+  .h35p-mobile {
+    height: 35%;
+  }
+  .w40p-mobile {
+    width: 40%;
+  }
+  .h40p-mobile {
+    height: 40%;
+  }
+  .w45p-mobile {
+    width: 45%;
+  }
+  .h45p-mobile {
+    height: 45%;
+  }
+  .w50p-mobile {
+    width: 50%;
+  }
+  .h50p-mobile {
+    height: 50%;
+  }
+  .w55p-mobile {
+    width: 55%;
+  }
+  .h55p-mobile {
+    height: 55%;
+  }
+  .w60p-mobile {
+    width: 60%;
+  }
+  .h60p-mobile {
+    height: 60%;
+  }
+  .w65p-mobile {
+    width: 65%;
+  }
+  .h65p-mobile {
+    height: 65%;
+  }
+  .w70p-mobile {
+    width: 70%;
+  }
+  .h70p-mobile {
+    height: 70%;
+  }
+  .w75p-mobile {
+    width: 75%;
+  }
+  .h75p-mobile {
+    height: 75%;
+  }
+  .w80p-mobile {
+    width: 80%;
+  }
+  .h80p-mobile {
+    height: 80%;
+  }
+  .w85p-mobile {
+    width: 85%;
+  }
+  .h85p-mobile {
+    height: 85%;
+  }
+  .w90p-mobile {
+    width: 90%;
+  }
+  .h90p-mobile {
+    height: 90%;
+  }
+  .w95p-mobile {
+    width: 95%;
+  }
+  .h95p-mobile {
+    height: 95%;
+  }
+  .w100p-mobile {
+    width: 100%;
+  }
+  .h100p-mobile {
+    height: 100%;
+  }
 }
 /*____________________________ PADDING + MARGIN ____________________________ */
 .p05 {
