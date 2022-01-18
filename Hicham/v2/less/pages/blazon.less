@@ -305,7 +305,9 @@
 /* ____________________________ CUSTOMIZE YOUR SHIELD ____________________________ */
 
 .creation .palettes button,
-.glares button {
+.glares button, 
+#palette_popup .divisions button, 
+#glare_popup .divisions button {
   overflow: hidden;
   padding: 7rem 0 0.5rem;
   border: 1px solid var(--dark-opacity);
@@ -319,27 +321,151 @@
   background-position: 0 0;
 }
 .creation .glares button[class^="ico-"]:hover,
-.creation .palettes button[class^="ico-"]:hover {
+.creation .palettes button[class^="ico-"]:hover, 
+#palette_popup .divisions button[class^="ico-"]:hover, 
+#glare_popup .divisions button[class^="ico-"]:hover {
   background-color: #afdb90;
   cursor: pointer;
 }
-.creation .palettes button.ico-4 {
+.creation .palettes button.ico-4, #palette_popup .divisions button.ico-4 {
   background-position: -210px -180px;
 }
-.creation .palettes button.ico-5 {
+.creation .palettes button.ico-5, #palette_popup .divisions button.ico-5 {
   background-position: -280px -180px;
 }
-.creation .palettes button.ico-6 {
+.creation .palettes button.ico-6, #palette_popup .divisions button.ico-6 {
   background-position: -350px -180px;
 }
-.creation .glares button.ico-1 {
+.creation .glares button.ico-1, #glare_popup .divisions button.ico-1 {
   background-position: 0 -90px;
 }
-.creation .glares button.ico-2 {
+.creation .glares button.ico-2, #glare_popup .divisions button.ico-2 {
   background-position: -70px -90px;
 }
-.creation .glares button.ico-3 {
+.creation .glares button.ico-3, #glare_popup .divisions button.ico-3 {
   background-position: -140px -90px;
+}
+
+// Ornament popup
+
+#orna_popup #thumbnails {
+  button {
+      background: url(/content/images/sprite-orna-3.3.png) no-repeat;
+
+      &.none {
+          background: url(/content/images/sprites_4.0.png) no-repeat -603px 10px;
+      }
+      //These loops generate class and background-position for each series of ornaments thumbnail
+      //
+      //mantlings: .cat1-1, .cat1-2, .cat1-3...
+      .generate-mantling(11);
+
+      .generate-mantling(@n, @i: 1) when (@i =< @n) {
+          &.cat1-@{i} {
+              background-position: -((@i - 1) * 100px) (0px);
+          }
+
+          .generate-mantling(@n, (@i + 1));
+      }
+      //
+      //supporters: .cat2-1, .cat2-2, .cat2-3...
+      .generate-supporters(14);
+
+      .generate-supporters(@n, @i: 1) when (@i =< @n) {
+          &.cat2-@{i} {
+              background-position: -((@i - 1) * 100px) (-100px);
+          }
+
+          .generate-supporters(@n, (@i + 1));
+      }
+      //
+      //helmets: .cat3-1, .cat3-2, .cat3-3...
+      .generate-helmets(8);
+
+      .generate-helmets(@n, @i: 1) when (@i =< @n) {
+          &.cat3-@{i} {
+              background-position: -((@i - 1) * 100px) (-200px);
+          }
+
+          .generate-helmets(@n, (@i + 1));
+      }
+      //
+      //crests: .cat4-1, .cat4-2, .cat4-3...
+      .generate-crests(5);
+
+      .generate-crests(@n, @i: 1) when (@i =< @n) {
+          &.cat4-@{i} {
+              background-position: -((@i - 1) * 100px) (-300px);
+          }
+
+          .generate-crests(@n, (@i + 1));
+      }
+      //
+      //banner: .cat5-1, .cat5-2, .cat5-3...
+      .generate-banner(6);
+
+      .generate-banner(@n, @i: 1) when (@i =< @n) {
+          &.cat5-@{i} {
+              background-position: -((@i - 1) * 100px) (-400px);
+          }
+
+          .generate-banner(@n, (@i + 1));
+      }
+
+      &.selected {
+        background-color: var(--green-color);
+      }
+  }
+}
+
+// Edit colorpicker
+
+#orna_popup #colorpicker .colorlist {
+  div {
+      padding: 1rem;
+  }
+
+  button {
+      display: inline-block;
+      vertical-align: middle;
+      width: 2rem;
+      height: 2rem;
+      border: 1px solid var(--dark-color);
+      opacity: 0.7;
+
+      &:hover {
+          opacity: 1;
+      }
+  }
+
+
+  .gules {
+      background-color: #ea4934;
+  }
+
+  .azur {
+      background-color: #0499e9;
+  }
+
+  .vert {
+      background-color: #269626;
+  }
+
+  .purpure {
+      background-color: #bb5ba0;
+  }
+
+  .or {
+      background-color: #fffd00;
+  }
+
+  .argent {
+      background-color: #f4f4f4;
+  }
+
+  .sable {
+      background-color: #020101;
+  }
 }
 
 /* ____________________________ EDIT YOUR SHIELD ____________________________ */
@@ -378,6 +504,12 @@
     background: var(--green-color);
     color: var(--light-color);
 }
+
+.download-container .blazon-apercu {
+  width: 250px;
+  height: 250px;
+}
+
 .blazon-apercu {
   background: var(--light-color);
   border: 1px solid var(--dark-opacity);
@@ -478,45 +610,48 @@
     .add-ornaments button {
       border: 1;
     }
-    .add-ornaments button[class^=ico-] {
-      padding: 61px 0 2px;
-      font-size: 13px;
-      line-height: 17px;
-      text-align: center;
-      width: 67px;
-    }
-    .add-ornaments [class^=ico-] {
-      position: relative;
-      border: 0.5px solid grey;
-      overflow: hidden;
-      background: url('/Images/sprite-ico-editor-3.1.png') no-repeat;
-      background-color: white;
-    }
+    
     .add-ornaments [class^=ico-]:hover {
       background-color: var(--green-color);
       color: white;
       cursor: pointer;
     }
+}
 
-    .add-ornaments .ico-2 {
-      background-position: -70px  0;
-    }
-    .add-ornaments .ico-4 {
-      background-position: -140px  0;
-    }
-    .add-ornaments .ico-3 {
-      background-position: -210px  0;
-    }
-    .add-ornaments .ico-4 {
-      background-position: -70px  0;
-    }
-    .add-ornaments .ico-5 {
-      background-position: -280px  0;
-    }
-    .add-ornaments .ico-6 {
-      background-position: -350px  0;
-    }
+.ornaments-poll .add-ornaments button[class^=ico-], .popup .divisions button[class^=ico-] {
+  padding: 61px 0 2px;
+  font-size: 13px;
+  line-height: 17px;
+  text-align: center;
+  width: 67px;
+}
+.ornaments-poll .add-ornaments [class^=ico-], .popup .divisions [class^=ico-] {
+  position: relative;
+  border: 0.5px solid grey;
+  overflow: hidden;
+  background: url('/Images/sprite-ico-editor-3.1.png') no-repeat;
+  background-color: white;
 
+  &.selected {
+    background-color: var(--green-color);
+    color: var(--light-color);
+  }
+}
+
+.ornaments-poll .add-ornaments .ico-2, .popup .divisions .ico-2 {
+  background-position: -70px  0;
+}
+.ornaments-poll .add-ornaments .ico-3, .popup .divisions .ico-3 {
+  background-position: -140px  0;
+}
+.ornaments-poll .add-ornaments .ico-4, .popup .divisions .ico-4 {
+  background-position: -210px  0;
+}
+.ornaments-poll .add-ornaments .ico-5, .popup .divisions .ico-5 {
+  background-position: -280px  0;
+}
+.ornaments-poll .add-ornaments .ico-6, .popup .divisions .ico-6 {
+  background-position: -350px  0;
 }
 
 
@@ -806,6 +941,12 @@ transition: 0.5s;
 
 .other-card a i{
   color: white;
+}
+
+.other-card .slider {
+  img {
+    padding: 0;
+  }
 }
 .other-card a:hover i{
   color: white;

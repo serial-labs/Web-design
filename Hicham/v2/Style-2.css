@@ -313,6 +313,11 @@ button {
   cursor: pointer;
   background: none;
 }
+@media screen and (max-width: 800px) {
+  .btn {
+    letter-spacing: 0;
+  }
+}
 .btn-dark {
   padding: 0.5rem 3rem;
   font-weight: 400;
@@ -325,6 +330,11 @@ button {
   background: none;
   color: var(--secondary-color);
   border: 1px solid var(--secondary-color);
+}
+@media screen and (max-width: 800px) {
+  .btn-dark {
+    letter-spacing: 0;
+  }
 }
 .btn-dark:hover {
   box-shadow: inset 35rem 0 0 1px var(--secondary-color);
@@ -344,6 +354,11 @@ button {
   color: var(--light-color);
   border: 1px solid var(--light-color);
 }
+@media screen and (max-width: 800px) {
+  .btn-light {
+    letter-spacing: 0;
+  }
+}
 .btn-light:hover {
   box-shadow: inset 35rem 0 0 1px var(--light-color);
   color: var(--primary-color);
@@ -361,6 +376,11 @@ button {
   background: none;
   border: none;
 }
+@media screen and (max-width: 800px) {
+  .btn-transparent {
+    letter-spacing: 0;
+  }
+}
 .btn-disabled {
   padding: 0.5rem 3rem;
   font-weight: 400;
@@ -374,6 +394,11 @@ button {
   opacity: 0.3;
   color: var(--secondary-color);
   border: 1px solid var(--secondary-color);
+}
+@media screen and (max-width: 800px) {
+  .btn-disabled {
+    letter-spacing: 0;
+  }
 }
 /* ____________________________ BUTTON FOR SKIPPING PAGES ____________________________*/
 .button-skip {
@@ -2011,7 +2036,9 @@ ul {
 }
 /* ____________________________ CUSTOMIZE YOUR SHIELD ____________________________ */
 .creation .palettes button,
-.glares button {
+.glares button,
+#palette_popup .divisions button,
+#glare_popup .divisions button {
   overflow: hidden;
   padding: 7rem 0 0.5rem;
   border: 1px solid var(--dark-opacity);
@@ -2025,27 +2052,211 @@ ul {
   background-position: 0 0;
 }
 .creation .glares button[class^="ico-"]:hover,
-.creation .palettes button[class^="ico-"]:hover {
+.creation .palettes button[class^="ico-"]:hover,
+#palette_popup .divisions button[class^="ico-"]:hover,
+#glare_popup .divisions button[class^="ico-"]:hover {
   background-color: #afdb90;
   cursor: pointer;
 }
-.creation .palettes button.ico-4 {
+.creation .palettes button.ico-4,
+#palette_popup .divisions button.ico-4 {
   background-position: -210px -180px;
 }
-.creation .palettes button.ico-5 {
+.creation .palettes button.ico-5,
+#palette_popup .divisions button.ico-5 {
   background-position: -280px -180px;
 }
-.creation .palettes button.ico-6 {
+.creation .palettes button.ico-6,
+#palette_popup .divisions button.ico-6 {
   background-position: -350px -180px;
 }
-.creation .glares button.ico-1 {
+.creation .glares button.ico-1,
+#glare_popup .divisions button.ico-1 {
   background-position: 0 -90px;
 }
-.creation .glares button.ico-2 {
+.creation .glares button.ico-2,
+#glare_popup .divisions button.ico-2 {
   background-position: -70px -90px;
 }
-.creation .glares button.ico-3 {
+.creation .glares button.ico-3,
+#glare_popup .divisions button.ico-3 {
   background-position: -140px -90px;
+}
+#orna_popup #thumbnails button {
+  background: url(/content/images/sprite-orna-3.3.png) no-repeat;
+}
+#orna_popup #thumbnails button.none {
+  background: url(/content/images/sprites_4.0.png) no-repeat -603px 10px;
+}
+#orna_popup #thumbnails button.cat1-1 {
+  background-position: 0px 0px;
+}
+#orna_popup #thumbnails button.cat1-2 {
+  background-position: -100px 0px;
+}
+#orna_popup #thumbnails button.cat1-3 {
+  background-position: -200px 0px;
+}
+#orna_popup #thumbnails button.cat1-4 {
+  background-position: -300px 0px;
+}
+#orna_popup #thumbnails button.cat1-5 {
+  background-position: -400px 0px;
+}
+#orna_popup #thumbnails button.cat1-6 {
+  background-position: -500px 0px;
+}
+#orna_popup #thumbnails button.cat1-7 {
+  background-position: -600px 0px;
+}
+#orna_popup #thumbnails button.cat1-8 {
+  background-position: -700px 0px;
+}
+#orna_popup #thumbnails button.cat1-9 {
+  background-position: -800px 0px;
+}
+#orna_popup #thumbnails button.cat1-10 {
+  background-position: -900px 0px;
+}
+#orna_popup #thumbnails button.cat1-11 {
+  background-position: -1000px 0px;
+}
+#orna_popup #thumbnails button.cat2-1 {
+  background-position: 0px -100px;
+}
+#orna_popup #thumbnails button.cat2-2 {
+  background-position: -100px -100px;
+}
+#orna_popup #thumbnails button.cat2-3 {
+  background-position: -200px -100px;
+}
+#orna_popup #thumbnails button.cat2-4 {
+  background-position: -300px -100px;
+}
+#orna_popup #thumbnails button.cat2-5 {
+  background-position: -400px -100px;
+}
+#orna_popup #thumbnails button.cat2-6 {
+  background-position: -500px -100px;
+}
+#orna_popup #thumbnails button.cat2-7 {
+  background-position: -600px -100px;
+}
+#orna_popup #thumbnails button.cat2-8 {
+  background-position: -700px -100px;
+}
+#orna_popup #thumbnails button.cat2-9 {
+  background-position: -800px -100px;
+}
+#orna_popup #thumbnails button.cat2-10 {
+  background-position: -900px -100px;
+}
+#orna_popup #thumbnails button.cat2-11 {
+  background-position: -1000px -100px;
+}
+#orna_popup #thumbnails button.cat2-12 {
+  background-position: -1100px -100px;
+}
+#orna_popup #thumbnails button.cat2-13 {
+  background-position: -1200px -100px;
+}
+#orna_popup #thumbnails button.cat2-14 {
+  background-position: -1300px -100px;
+}
+#orna_popup #thumbnails button.cat3-1 {
+  background-position: 0px -200px;
+}
+#orna_popup #thumbnails button.cat3-2 {
+  background-position: -100px -200px;
+}
+#orna_popup #thumbnails button.cat3-3 {
+  background-position: -200px -200px;
+}
+#orna_popup #thumbnails button.cat3-4 {
+  background-position: -300px -200px;
+}
+#orna_popup #thumbnails button.cat3-5 {
+  background-position: -400px -200px;
+}
+#orna_popup #thumbnails button.cat3-6 {
+  background-position: -500px -200px;
+}
+#orna_popup #thumbnails button.cat3-7 {
+  background-position: -600px -200px;
+}
+#orna_popup #thumbnails button.cat3-8 {
+  background-position: -700px -200px;
+}
+#orna_popup #thumbnails button.cat4-1 {
+  background-position: 0px -300px;
+}
+#orna_popup #thumbnails button.cat4-2 {
+  background-position: -100px -300px;
+}
+#orna_popup #thumbnails button.cat4-3 {
+  background-position: -200px -300px;
+}
+#orna_popup #thumbnails button.cat4-4 {
+  background-position: -300px -300px;
+}
+#orna_popup #thumbnails button.cat4-5 {
+  background-position: -400px -300px;
+}
+#orna_popup #thumbnails button.cat5-1 {
+  background-position: 0px -400px;
+}
+#orna_popup #thumbnails button.cat5-2 {
+  background-position: -100px -400px;
+}
+#orna_popup #thumbnails button.cat5-3 {
+  background-position: -200px -400px;
+}
+#orna_popup #thumbnails button.cat5-4 {
+  background-position: -300px -400px;
+}
+#orna_popup #thumbnails button.cat5-5 {
+  background-position: -400px -400px;
+}
+#orna_popup #thumbnails button.cat5-6 {
+  background-position: -500px -400px;
+}
+#orna_popup #thumbnails button.selected {
+  background-color: var(--green-color);
+}
+#orna_popup #colorpicker .colorlist div {
+  padding: 1rem;
+}
+#orna_popup #colorpicker .colorlist button {
+  display: inline-block;
+  vertical-align: middle;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid var(--dark-color);
+  opacity: 0.7;
+}
+#orna_popup #colorpicker .colorlist button:hover {
+  opacity: 1;
+}
+#orna_popup #colorpicker .colorlist .gules {
+  background-color: #ea4934;
+}
+#orna_popup #colorpicker .colorlist .azur {
+  background-color: #0499e9;
+}
+#orna_popup #colorpicker .colorlist .vert {
+  background-color: #269626;
+}
+#orna_popup #colorpicker .colorlist .purpure {
+  background-color: #bb5ba0;
+}
+#orna_popup #colorpicker .colorlist .or {
+  background-color: #fffd00;
+}
+#orna_popup #colorpicker .colorlist .argent {
+  background-color: #f4f4f4;
+}
+#orna_popup #colorpicker .colorlist .sable {
+  background-color: #020101;
 }
 /* ____________________________ EDIT YOUR SHIELD ____________________________ */
 .customize-coat {
@@ -2081,6 +2292,10 @@ ul {
 .customize-coat a:hover div {
   background: var(--green-color);
   color: var(--light-color);
+}
+.download-container .blazon-apercu {
+  width: 250px;
+  height: 250px;
 }
 .blazon-apercu {
   background: var(--light-color);
@@ -2174,41 +2389,50 @@ ul {
 .ornaments-poll .add-ornaments button {
   border: 1;
 }
-.ornaments-poll .add-ornaments button[class^=ico-] {
+.ornaments-poll .add-ornaments [class^=ico-]:hover {
+  background-color: var(--green-color);
+  color: white;
+  cursor: pointer;
+}
+.ornaments-poll .add-ornaments button[class^=ico-],
+.popup .divisions button[class^=ico-] {
   padding: 61px 0 2px;
   font-size: 13px;
   line-height: 17px;
   text-align: center;
   width: 67px;
 }
-.ornaments-poll .add-ornaments [class^=ico-] {
+.ornaments-poll .add-ornaments [class^=ico-],
+.popup .divisions [class^=ico-] {
   position: relative;
   border: 0.5px solid grey;
   overflow: hidden;
   background: url('/Images/sprite-ico-editor-3.1.png') no-repeat;
   background-color: white;
 }
-.ornaments-poll .add-ornaments [class^=ico-]:hover {
+.ornaments-poll .add-ornaments [class^=ico-].selected,
+.popup .divisions [class^=ico-].selected {
   background-color: var(--green-color);
-  color: white;
-  cursor: pointer;
+  color: var(--light-color);
 }
-.ornaments-poll .add-ornaments .ico-2 {
+.ornaments-poll .add-ornaments .ico-2,
+.popup .divisions .ico-2 {
   background-position: -70px 0;
 }
-.ornaments-poll .add-ornaments .ico-4 {
+.ornaments-poll .add-ornaments .ico-3,
+.popup .divisions .ico-3 {
   background-position: -140px 0;
 }
-.ornaments-poll .add-ornaments .ico-3 {
+.ornaments-poll .add-ornaments .ico-4,
+.popup .divisions .ico-4 {
   background-position: -210px 0;
 }
-.ornaments-poll .add-ornaments .ico-4 {
-  background-position: -70px 0;
-}
-.ornaments-poll .add-ornaments .ico-5 {
+.ornaments-poll .add-ornaments .ico-5,
+.popup .divisions .ico-5 {
   background-position: -280px 0;
 }
-.ornaments-poll .add-ornaments .ico-6 {
+.ornaments-poll .add-ornaments .ico-6,
+.popup .divisions .ico-6 {
   background-position: -350px 0;
 }
 /* ____________________________ FROM SCRATCH ____________________________ */
@@ -2486,6 +2710,9 @@ button.sable {
 .other-card a i {
   color: white;
 }
+.other-card .slider img {
+  padding: 0;
+}
 .other-card a:hover i {
   color: white;
   opacity: 0.8;
@@ -2672,10 +2899,6 @@ button.sable {
   justify-content: space-between;
   align-items: center;
   gap: 2.8rem;
-}
-.preview img {
-  border: 2px solid var(--dark-opacity);
-  padding: 3rem;
 }
 @media screen and (max-width: 900px) {
   .download-container {
@@ -3638,7 +3861,7 @@ button.sable {
 }
 #main-page .banner-container .grid-home {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   margin: auto;
   gap: 3rem;
 }
@@ -3750,6 +3973,14 @@ button.sable {
   z-index: -1;
   opacity: 0.3;
   clip-path: polygon(0 0, 100% 3.5%, 100% 100%, 0 100.5%);
+}
+@media screen and (max-width: 800px) {
+  #main-page .section-charge-container::after {
+    clip-path: polygon(0 0, 100% 1.5%, 100% 100%, 0 100.5%);
+  }
+  #main-page .section-charge-container::before {
+    clip-path: polygon(0 0, 100% 1.5%, 100% 100%, 0 100.5%);
+  }
 }
 #main-page .charge-section {
   position: relative;
@@ -4098,6 +4329,9 @@ header .three-active {
   header .logo {
     transform: translateY(0);
   }
+  header .logo a {
+    margin: 0;
+  }
   #navbar ul {
     display: none;
   }
@@ -4117,12 +4351,17 @@ header .three-active {
 }
 .popup-container {
   margin: 10rem auto;
-  position: relative;
+  position: fixed;
+  top: 5%;
+  left: 10%;
+  right: 10%;
   width: 80%;
-  height: 100%;
+  max-height: 90%;
+  overflow-y: scroll;
   background: var(--light-color);
   border: 1px solid var(--secondary-color);
   padding: 3rem;
+  z-index: 200;
 }
 .popup-container .fas {
   width: 100%;
@@ -4144,7 +4383,6 @@ header .three-active {
 }
 .popup-container .divisions .color {
   width: 8rem;
-  height: 8rem;
   color: #333;
   border: 1px solid var(--secondary-color);
 }
@@ -4169,9 +4407,7 @@ header .three-active {
 .popup-charge {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  position: relative;
   gap: 1rem;
   padding: 1rem;
   max-width: 50%;
@@ -4249,4 +4485,69 @@ header .three-active {
 }
 .popup-charge .btn-dark {
   width: 30%;
+}
+.slick-slider {
+  position: relative;
+  display: block;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -ms-touch-action: none;
+  touch-action: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+  margin: 0 4%;
+}
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  zoom: 1;
+}
+.slick-initialized .slick-slide {
+  display: block;
+}
+.slick-slide {
+  float: left;
+  display: none;
+}
+.slick-slider .slider-next {
+  left: 1%;
+}
+.slick-slider .slider-prev {
+  right: 1%;
+}
+.slick-slider .slider-next,
+.slick-slider .slider-prev {
+  position: absolute;
+  top: 45%;
+  display: block;
+  z-index: 101;
+  text-decoration: none;
+  border: 0;
+}
+.slick-slide,
+.slick-slide img,
+.slick-slider .slick-list,
+.slick-track {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.slider a i {
+  font-size: 2.5rem;
 }

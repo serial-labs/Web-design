@@ -3,12 +3,17 @@
 // _________________________ POPUP MY COAT HISTORY
 .popup-container {
   margin: 10rem auto;
-  position: relative;
+  position: fixed;
+  top: 5%;
+  left: 10%;
+  right: 10%;
   width: 80%;
-  height: 100%;
+  max-height: 90%;
+  overflow-y: scroll;
   background: var(--light-color);
   border: 1px solid var(--secondary-color);
   padding: 3rem;
+  z-index: 200;
   .fas {
     width: 100%;
     font-size: 2.8rem;
@@ -28,7 +33,6 @@
     padding: 1rem;
     .color {
       width: 8rem;
-      height: 8rem;
       color: #333;
       border: 1px solid var(--secondary-color);
     }
@@ -62,9 +66,7 @@
 .popup-charge {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  position: relative;
   gap: 1rem;
   padding: 1rem;
   max-width: 50%;

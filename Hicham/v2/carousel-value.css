@@ -2,17 +2,24 @@
   position: relative;
   top: 0;
   left: 0;
-  height: 50vh;
+  height: 40vh;
   overflow: hidden;
   margin: auto;
 }
+
+@media screen and (max-width: 800px) {
+  .slider-wrapper-value {
+    height: 50vh;
+  }
+}
+
 .slider-wrapper-value input {
   position: absolute;
   left: -9999px;
 }
 .slider-wrapper-value .slider-arrow-nav .nav-arrow {
   position: absolute;
-  top: 50%;
+  top: 25%;
   width: 3rem;
   height: 3rem;
   border: 3px solid #333;
@@ -36,8 +43,9 @@
 }
 .slider-wrapper-value .slide {
   position: absolute;
-  top: 25%;
+  top: 0;
   left: 25%;
+  right: 25%;
   width: 50%;
   height: 100%;
   z-index: 1;
