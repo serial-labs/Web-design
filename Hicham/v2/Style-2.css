@@ -2258,6 +2258,27 @@ ul {
 #orna_popup #colorpicker .colorlist .sable {
   background-color: #020101;
 }
+.blazon-apercu .gules {
+  background-color: #ea4934;
+}
+.blazon-apercu .azur {
+  background-color: #0499e9;
+}
+.blazon-apercu .vert {
+  background-color: #269626;
+}
+.blazon-apercu .purpure {
+  background-color: #bb5ba0;
+}
+.blazon-apercu .or {
+  background-color: #fffd00;
+}
+.blazon-apercu .argent {
+  background-color: #f4f4f4;
+}
+.blazon-apercu .sable {
+  background-color: #020101;
+}
 /* ____________________________ EDIT YOUR SHIELD ____________________________ */
 .customize-coat {
   display: flex;
@@ -4363,6 +4384,17 @@ header .three-active {
   padding: 3rem;
   z-index: 200;
 }
+@media screen and (max-width: 800px) {
+  .popup-container {
+    max-height: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+  }
+}
 .popup-container .fas {
   width: 100%;
   font-size: 2.8rem;
@@ -4410,7 +4442,6 @@ header .three-active {
   align-items: center;
   gap: 1rem;
   padding: 1rem;
-  max-width: 50%;
   margin: auto;
   background: var(--light-color);
   border: 1px solid rgba(51, 51, 51, 0.63);
