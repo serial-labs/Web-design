@@ -341,6 +341,10 @@ button {
   color: var(--light-color);
   transition: ease-in 0.5s;
 }
+.btn-dark.selected {
+  background-color: var(--green-color);
+  color: var(--light-color);
+}
 .btn-light {
   padding: 0.5rem 3rem;
   font-weight: 400;
@@ -2223,10 +2227,10 @@ ul {
 #orna_popup #thumbnails button.selected {
   background-color: var(--green-color);
 }
-#orna_popup #colorpicker .colorlist div {
+#colorpicker .colorlist div {
   padding: 1rem;
 }
-#orna_popup #colorpicker .colorlist button {
+#colorpicker .colorlist button {
   display: inline-block;
   vertical-align: middle;
   width: 2rem;
@@ -2234,28 +2238,28 @@ ul {
   border: 1px solid var(--dark-color);
   opacity: 0.7;
 }
-#orna_popup #colorpicker .colorlist button:hover {
+#colorpicker .colorlist button:hover {
   opacity: 1;
 }
-#orna_popup #colorpicker .colorlist .gules {
+#colorpicker .colorlist .gules {
   background-color: #ea4934;
 }
-#orna_popup #colorpicker .colorlist .azur {
+#colorpicker .colorlist .azur {
   background-color: #0499e9;
 }
-#orna_popup #colorpicker .colorlist .vert {
+#colorpicker .colorlist .vert {
   background-color: #269626;
 }
-#orna_popup #colorpicker .colorlist .purpure {
+#colorpicker .colorlist .purpure {
   background-color: #bb5ba0;
 }
-#orna_popup #colorpicker .colorlist .or {
+#colorpicker .colorlist .or {
   background-color: #fffd00;
 }
-#orna_popup #colorpicker .colorlist .argent {
+#colorpicker .colorlist .argent {
   background-color: #f4f4f4;
 }
-#orna_popup #colorpicker .colorlist .sable {
+#colorpicker .colorlist .sable {
   background-color: #020101;
 }
 .blazon-apercu .gules {
@@ -2307,8 +2311,30 @@ ul {
   flex: 1;
 }
 .set img {
-  width: 20%;
+  max-width: 20%;
+  max-height: 85%;
   margin: 0;
+}
+.color.gules {
+  background-color: #ea4934;
+}
+.color.azur {
+  background-color: #0499e9;
+}
+.color.sinople {
+  background-color: #269626;
+}
+.color.pourpre {
+  background-color: #bb5ba0;
+}
+.color.or {
+  background-color: #fffd00;
+}
+.color.argent {
+  background-color: #f4f4f4;
+}
+.color.sable {
+  background-color: #020101;
 }
 .customize-coat a:hover div {
   background: var(--green-color);
@@ -2492,25 +2518,25 @@ ul {
   border: none;
 }
 button.gules {
-  background: red;
+  background: #ea4934;
 }
 button.azur {
-  background: blue;
+  background: #0499e9;
 }
-button.sinople {
-  background: green;
+button.vert {
+  background: #269626;
 }
-button.purepure {
-  background: purple;
+button.purpure {
+  background: #bb5ba0;
 }
 button.or {
-  background: gold;
+  background: #fffd00;
 }
 button.argent {
-  background: silver;
+  background: #f4f4f4;
 }
 button.sable {
-  background: black;
+  background: #020101;
 }
 /* ______________________MY COATS WHEN LOGGED________________ */
 .main-section div:first-child h3 i {
@@ -2624,7 +2650,7 @@ button.sable {
   width: 100%;
   margin: 0;
 }
-#share-link .titre-border h3 {
+#share-link .titre-border > h3 {
   width: 100%;
   transform: translateY(0%);
 }
@@ -3792,7 +3818,7 @@ button.sable {
   position: relative;
   margin-top: 4rem;
 }
-.titre-border h3 {
+.titre-border > h3 {
   font-weight: 400;
   background: var(--secondary-color);
   color: var(--light-color);
@@ -3822,7 +3848,7 @@ button.sable {
 }
 @media screen and (max-width: 620px) {
   /* % Y à changer pour que le H3 se colle au text du dessus */
-  .titre-border h3 {
+  .titre-border > h3 {
     transform: translateY(-25%);
   }
 }

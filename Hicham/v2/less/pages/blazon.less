@@ -426,7 +426,7 @@
 @or: #fffd00;
 @argent: #f4f4f4;
 @sable: #020101;
-#orna_popup #colorpicker .colorlist {
+#colorpicker .colorlist {
   div {
       padding: 1rem;
   }
@@ -533,9 +533,41 @@
   flex: 1;
 }
 .set img {
-  width: 20%;
+  max-width: 20%;
+  max-height: 85%;
   margin: 0;
 }
+
+.color {
+  &.gules {
+    background-color: @gules;
+  }
+
+  &.azur {
+    background-color: @azur;
+  }
+
+  &.sinople {
+    background-color: @vert;
+  }
+
+  &.pourpre {
+    background-color: @purpure;
+  }
+
+  &.or {
+    background-color: @or;
+  }
+
+  &.argent {
+    background-color: @argent;
+  }
+
+  &.sable {
+    background-color: @sable;
+  }
+}
+
 .customize-coat a:hover div{
     background: var(--green-color);
     color: var(--light-color);
@@ -731,25 +763,25 @@
   border: none;
 }
 button.gules {
-  background: red;
+  background: @gules;
 }
 button.azur {
-  background: blue;
+  background: @azur;
 }
-button.sinople {
-  background: green;
+button.vert {
+  background: @vert;
 }
-button.purepure {
-  background: purple;
+button.purpure {
+  background: @purpure;
 }
 button.or {
-  background: gold;
+  background: @or;
 }
 button.argent {
-  background: silver;
+  background: @argent;
 }
 button.sable {
-  background: black;
+  background: @sable;
 }
 
 /* ______________________MY COATS WHEN LOGGED________________ */
@@ -865,7 +897,7 @@ button.sable {
     border: none;
     width: 100%;
     margin: 0;
-      h3 {
+      > h3 {
         width: 100%;
         transform: translateY(0%);
       }
