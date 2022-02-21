@@ -1,169 +1,148 @@
 @font-face {
-  font-family: "Lato";
+  font-family: 'Lato';
   font-style: italic;
   font-weight: 100;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/lato/v20/S6u-w4BMUTPHjxsIPy-v.ttf)
-    format("truetype");
+  src: url(https://fonts.gstatic.com/s/lato/v20/S6u-w4BMUTPHjxsIPy-v.ttf) format('truetype');
 }
 @font-face {
-  font-family: "Lato";
+  font-family: 'Lato';
   font-style: italic;
   font-weight: 300;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/lato/v20/S6u_w4BMUTPHjxsI9w2PHA.ttf)
-    format("truetype");
+  src: url(https://fonts.gstatic.com/s/lato/v20/S6u_w4BMUTPHjxsI9w2PHA.ttf) format('truetype');
 }
 @font-face {
-  font-family: "Lato";
+  font-family: 'Lato';
   font-style: italic;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/lato/v20/S6u8w4BMUTPHjxswWw.ttf)
-    format("truetype");
+  src: url(https://fonts.gstatic.com/s/lato/v20/S6u8w4BMUTPHjxswWw.ttf) format('truetype');
 }
 @font-face {
-  font-family: "Lato";
+  font-family: 'Lato';
   font-style: italic;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/lato/v20/S6u_w4BMUTPHjxsI5wqPHA.ttf)
-    format("truetype");
+  src: url(https://fonts.gstatic.com/s/lato/v20/S6u_w4BMUTPHjxsI5wqPHA.ttf) format('truetype');
 }
 @font-face {
-  font-family: "Lato";
+  font-family: 'Lato';
   font-style: italic;
   font-weight: 900;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/lato/v20/S6u_w4BMUTPHjxsI3wiPHA.ttf)
-    format("truetype");
+  src: url(https://fonts.gstatic.com/s/lato/v20/S6u_w4BMUTPHjxsI3wiPHA.ttf) format('truetype');
 }
 @font-face {
-  font-family: "Lato";
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 100;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/lato/v20/S6u8w4BMUTPHh30wWw.ttf)
-    format("truetype");
+  src: url(https://fonts.gstatic.com/s/lato/v20/S6u8w4BMUTPHh30wWw.ttf) format('truetype');
 }
 @font-face {
-  font-family: "Lato";
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/lato/v20/S6u9w4BMUTPHh7USew8.ttf)
-    format("truetype");
+  src: url(https://fonts.gstatic.com/s/lato/v20/S6u9w4BMUTPHh7USew8.ttf) format('truetype');
 }
 @font-face {
-  font-family: "Lato";
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/lato/v20/S6uyw4BMUTPHvxk.ttf)
-    format("truetype");
+  src: url(https://fonts.gstatic.com/s/lato/v20/S6uyw4BMUTPHvxk.ttf) format('truetype');
 }
 @font-face {
-  font-family: "Lato";
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/lato/v20/S6u9w4BMUTPHh6UVew8.ttf)
-    format("truetype");
+  src: url(https://fonts.gstatic.com/s/lato/v20/S6u9w4BMUTPHh6UVew8.ttf) format('truetype');
 }
 @font-face {
-  font-family: "Lato";
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 900;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/lato/v20/S6u9w4BMUTPHh50Xew8.ttf)
-    format("truetype");
+  src: url(https://fonts.gstatic.com/s/lato/v20/S6u9w4BMUTPHh50Xew8.ttf) format('truetype');
 }
 @font-face {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 100;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiGyp8kv8JHgFVrLPTedw.ttf)
-    format("truetype");
+  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiGyp8kv8JHgFVrLPTedw.ttf) format('truetype');
 }
 @font-face {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 200;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLFj_V1s.ttf)
-    format("truetype");
+  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLFj_V1s.ttf) format('truetype');
 }
 @font-face {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLDz8V1s.ttf)
-    format("truetype");
+  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLDz8V1s.ttf) format('truetype');
 }
 @font-face {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiEyp8kv8JHgFVrFJA.ttf)
-    format("truetype");
+  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiEyp8kv8JHgFVrFJA.ttf) format('truetype');
 }
 @font-face {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLGT9V1s.ttf)
-    format("truetype");
+  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLGT9V1s.ttf) format('truetype');
 }
 @font-face {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLEj6V1s.ttf)
-    format("truetype");
+  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLEj6V1s.ttf) format('truetype');
 }
 @font-face {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLCz7V1s.ttf)
-    format("truetype");
+  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLCz7V1s.ttf) format('truetype');
 }
 @font-face {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 800;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLDD4V1s.ttf)
-    format("truetype");
+  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLDD4V1s.ttf) format('truetype');
 }
 @font-face {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 900;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLBT5V1s.ttf)
-    format("truetype");
+  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLBT5V1s.ttf) format('truetype');
 }
 @font-face {
-  font-family: "Staatliches";
+  font-family: 'Staatliches';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/staatliches/v6/HI_OiY8KO6hCsQSoAPmtMbec.ttf)
-    format("truetype");
+  src: url(https://fonts.gstatic.com/s/staatliches/v6/HI_OiY8KO6hCsQSoAPmtMbec.ttf) format('truetype');
 }
 @font-face {
-  font-family: "Comforter";
+  font-family: 'Comforter';
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/comforter/v3/H4clBXOCl8nQnlaql3Qa6A.ttf)
-    format("truetype");
+  src: url(https://fonts.gstatic.com/s/comforter/v3/H4clBXOCl8nQnlaql3Qa6A.ttf) format('truetype');
 }
 :root {
   --primary-color: #141850;
@@ -1862,13 +1841,11 @@ ul {
   opacity: 0;
 }
 .test-or-direct .box:first-child::after {
-  background: url("/Images/be-yourself-young-cute-boy-mock-up_23-2148462265.jpg")
-    no-repeat center center / cover;
+  background: url("/Images/be-yourself-young-cute-boy-mock-up_23-2148462265.jpg") no-repeat center center / cover;
   transition: 0.5s ease-in-out;
 }
 .test-or-direct .box:last-child::after {
-  background: url("/Images/Planche\ Contact-1b.jpg") no-repeat center center /
-    cover;
+  background: url("/Images/Planche\ Contact-1b.jpg") no-repeat center center / cover;
   transition: 0.5s ease-in-out;
 }
 .test-or-direct .take-test {
@@ -2459,29 +2436,29 @@ ul {
 .ornaments-poll .add-ornaments button {
   border: 1;
 }
-.ornaments-poll .add-ornaments [class^="ico-"]:hover {
+.ornaments-poll .add-ornaments [class^=ico-]:hover {
   background-color: var(--green-color);
   color: white;
   cursor: pointer;
 }
-.ornaments-poll .add-ornaments button[class^="ico-"],
-.popup .divisions button[class^="ico-"] {
+.ornaments-poll .add-ornaments button[class^=ico-],
+.popup .divisions button[class^=ico-] {
   padding: 61px 0 2px;
   font-size: 13px;
   line-height: 17px;
   text-align: center;
   width: 67px;
 }
-.ornaments-poll .add-ornaments [class^="ico-"],
-.popup .divisions [class^="ico-"] {
+.ornaments-poll .add-ornaments [class^=ico-],
+.popup .divisions [class^=ico-] {
   position: relative;
   border: 0.5px solid grey;
   overflow: hidden;
-  background: url("/Images/sprite-ico-editor-3.1.png") no-repeat;
+  background: url('/Images/sprite-ico-editor-3.1.png') no-repeat;
   background-color: white;
 }
-.ornaments-poll .add-ornaments [class^="ico-"].selected,
-.popup .divisions [class^="ico-"].selected {
+.ornaments-poll .add-ornaments [class^=ico-].selected,
+.popup .divisions [class^=ico-].selected {
   background-color: var(--green-color);
   color: var(--light-color);
 }
@@ -2615,7 +2592,7 @@ button.sable {
   transition: 0.5s;
 }
 #share-popup::before {
-  content: "";
+  content: '';
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
   border-bottom: 15px solid var(--secondary-color);
@@ -3153,7 +3130,7 @@ button.sable {
 }
 .order-information .discount-link {
   color: var(--red-color);
-  font-family: "poppins";
+  font-family: 'poppins';
 }
 .order-information .discount-link:hover {
   text-decoration: underline;
@@ -3202,7 +3179,7 @@ button.sable {
 @media screen and (max-width: 800px) {
   /* _________ ORDER PAYMENT PAGE ________ */
   .purchase-paypal a {
-    width: 100%;
+    width: 100% ;
   }
 }
 @media screen and (max-width: 900px) {
@@ -3683,7 +3660,7 @@ button.sable {
 }
 .card-value .face1::after {
   display: block;
-  content: "";
+  content: '';
   position: absolute;
   z-index: 2;
   opacity: 0.3;
@@ -3692,13 +3669,7 @@ button.sable {
   width: 100%;
   height: 160%;
   transform: translateY(-30%);
-  background: linear-gradient(
-    226deg,
-    rgba(255, 255, 255, 0.4) 0%,
-    rgba(255, 255, 255, 0.4) 35%,
-    rgba(255, 255, 255, 0.2) 42%,
-    rgba(255, 255, 255, 0) 60%
-  );
+  background: linear-gradient(226deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.4) 35%, rgba(255, 255, 255, 0.2) 42%, rgba(255, 255, 255, 0) 60%);
   transition: 0.5s;
 }
 .card-value img {
@@ -4158,12 +4129,7 @@ button.sable {
   padding: 30px;
   box-shadow: 0 5px 10px grey;
 }
-#main-page
-  .random-blazon-section
-  .blazon-container
-  .blazon-wrapper
-  .blazon
-  img {
+#main-page .random-blazon-section .blazon-container .blazon-wrapper .blazon img {
   height: 100%;
   margin-bottom: 20px;
 }
@@ -4224,18 +4190,11 @@ footer .social-media .fa-github-alt:hover {
   color: #6e5494;
 }
 footer .social-media .fa-instagram:hover {
-  background: radial-gradient(
-    circle at 30% 107%,
-    #fdf497 0%,
-    #fdf497 5%,
-    #fd5949 45%,
-    #d6249f 60%,
-    #285aeb 90%
-  );
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
   border-radius: 15px;
 }
 footer .social-media .fa-discord:hover {
-  color: #5865f2;
+  color: #5865F2;
 }
 footer > p:last-child {
   font-size: 1.5rem;
@@ -4277,7 +4236,7 @@ header {
   justify-content: space-between;
   background: #333;
   background: var(--light-color);
-  padding: 1rem 4rem;
+  padding: 1rem 4rem ;
   border-bottom: 1px solid rgba(51, 51, 51, 0.2);
   position: sticky;
   top: 0;
@@ -4317,7 +4276,7 @@ header nav ul li a:after {
   right: 0;
   margin: auto;
   width: 0%;
-  content: ".";
+  content: '.';
   color: transparent;
   background: var(--secondary-color);
   height: 1px;
@@ -4403,7 +4362,7 @@ header .three-active {
   justify-content: flex-end;
   gap: 1rem;
   background: var(--light-color);
-  padding: 1rem 5rem;
+  padding: 1rem 5rem ;
 }
 .sign-button-container .btn-light,
 .sign-button-container .btn-dark {
