@@ -16,12 +16,14 @@
       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../Style-2.css" />
+    <link rel="stylesheet" href="Style-2.css" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <title>Contact us</title>
   </head>
 
   <body>
+    <div class="btn-dark test-contact">Sign In</div>
+    <div class="btn-dark test-contact">Sign Up</div>
     <header>
       <h1 class="logo"><a href="../HTML/index.html"> Myblazon</a></h1>
       <nav id="navbar">
@@ -73,9 +75,6 @@
         <h3 class="etiquette w50p p05 txtc">We'd love to get your feedback</h3>
       </div>
       <div class="contact-us">
-        <div>
-          <img src="../Images/Carousel/bc-fine-texture.jpg" alt="" />
-        </div>
         <form action="#">
           <label for="firstname">First name</label>
           <input type="text" name="firstname" id="firstname" />
@@ -93,7 +92,7 @@
             id="message"
             class="w100p"
             cols="30"
-            rows="10"
+            rows="7"
           ></textarea>
           <div class="row-fs gap2 my1">
             <label for="humain"> Are you:</label> <br />
@@ -117,9 +116,12 @@
               value="true"
             />
             a robot
+            <a href="#" class="btn-dark">Send</a>
           </div>
         </form>
-        <a href="#" class="btn-dark">Send</a>
+        <div id="img-container">
+          <img src="../img/bc-fine-texture.jpg" alt="" />
+        </div>
       </div>
     </section>
 

@@ -298,6 +298,7 @@ img {
 }
 /* ____________________________BUTTONS____________________________*/
 textarea {
+  padding: 0.2rem;
   font-size: 1.3rem;
   font-family: "poppins", sans-serif;
   max-width: 100%;
@@ -305,7 +306,9 @@ textarea {
 input {
   background-color: #fcfcfc;
   border: 1px solid rgba(51, 51, 51, 0.2);
-  padding: 12px 15px;
+  font-size: 1.5rem;
+  font-family: "poppins", sans-serif;
+  padding: 0.6rem;
   margin: 8px 5px;
   line-height: 1rem;
   width: 100%;
@@ -3887,7 +3890,8 @@ button.sable {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 3rem;
+  font-size: 1.6rem;
+  margin-top: 1rem;
 }
 .contact-us form {
   display: flex;
@@ -3895,22 +3899,38 @@ button.sable {
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
-  margin: 1rem;
 }
-.contact-us input {
-  margin: 0.5rem 0;
+.contact-us input,
+textarea {
+  margin: 0 0 0.5rem;
 }
 #IsRobot {
   width: fit-content;
 }
-.contact-us .btn-dark {
+.contact-us .form-right .btn-dark {
   width: 30%;
   align-self: flex-end;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 .contact-us img {
   object-fit: cover;
+  width: 70%;
+}
+.contact-us .row-fs {
+  margin: 1rem;
+  margin-bottom: 4rem;
   width: 100%;
+}
+.contact-us .form-img-send {
+  margin-top: 1rem;
+}
+.contact-us .form-right {
+  width: 30%;
+  float: right;
+  text-align: center;
+}
+.test-contact {
+  display: inline-block;
 }
 #main-page {
   position: relative;
