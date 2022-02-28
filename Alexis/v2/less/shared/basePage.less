@@ -1,0 +1,66 @@
+// main: ../main.less
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "poppins", sans-serif;
+    position: relative;
+    min-height: 100vh;
+    font-size: 1.8rem;
+
+    &:after {
+        content: "";
+        background-color: white;
+        background-image: url("https://www.transparenttextures.com/patterns/subtle-white-feathers.png");
+        z-index: -6;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.8;
+    }
+}
+
+/* ________________SCROLL BAR_____________________________ */
+/* width */
+::-webkit-scrollbar {
+    width: 13px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+
+    /* Handle on hover */
+    &:hover {
+        background: var(--primary-color);
+    }
+}
+
+
+
+/* ____________________________ SECTION POUR TOUTES LES PAGES____________________________ */
+.main-section {
+    max-width: var(--max-width);
+    position: relative;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+// Hide follow div that is not in solution
+.at4-follow-outer, .at4-thankyou {
+    display: none;
+}

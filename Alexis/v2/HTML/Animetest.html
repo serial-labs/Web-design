@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Test</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+    body {
+        background-color: #333;
+    }
+    .container {
+        position: relative;
+        height: 100vh;
+        width: 50%;
+        margin: auto;
+        border:4px  dashed forestgreen;
+    }
+    .obj , .shield {
+            position: absolute;            
+            top: 50%;
+            left: 50%;  
+            width: 100%;
+            height: 100%;
+            transform: translate(-50%,-50%);
+            opacity: 0;
+            animation: 30s infinite;
+            background-repeat:no-repeat;
+        }  
+    .shield {
+      background-size: 100% 100%;
+      border:1px  solid bisque;
+    } 
+    .obj {
+      background-size: contain;
+    }
+
+    .anima {
+        background-image: url('/Images/anime-image-2/shield.png')  ;
+        animation-name: step1;
+        /* //border:3px double darkseagreen; */
+    }
+
+    .animb {
+        background-image: url('/Images/anime-image-2/red-01.png')  ;
+        animation-name: step2;
+        border:3px double darkseagreen;
+    }
+    .animc {
+        background-image: url('/Images/anime-image-2/red-02.png')  ;
+        animation-name: step3;
+    }
+    .animd {
+        background-image: url('/Images/anime-image-2/red-03.png')  ;
+        animation-name: step4;
+    }
+    .anime {
+        background-image: url('/Images/anime-image-2/red-04.png')  ;
+        animation-name: step5;
+    }
+    .animf {
+        background-image: url('/Images/anime-image-2/red-05.png')  ;
+        animation-name: step6;
+    }
+    .animg {
+        background-image: url('/Images/anime-image-2/blue-01.png')  ;
+        animation-name: step7;
+    }
+    .animh {
+        background-image: url('/Images/anime-image-2/barre.png')  ;
+        animation-name: step8;
+        z-index: +1;
+    }
+    .animi {
+        background-image: url('/Images/anime-image-2/barre-grunge.png')  ;
+        animation-name: step9;
+        z-index: +1;
+    }
+    .animj {
+        background-image: url('/Images/anime-image-2/purepure-1.png')  ;
+        animation-name: step10;
+    }
+    .animk {
+        background-image: url('/Images/anime-image-2/purepure-2.png')  ;
+        animation-name: step11;
+    }
+    .animl {
+        background-image: url('/Images/anime-image-2/purepure-3.png')  ;
+        animation-name: step12;
+    }
+    .animm {
+        background-image: url('/Images/anime-image-2/purepure-4.png')  ;
+        animation-name: step13;
+    }
+    .animn {
+        background-image: url('/Images/anime-image-2/transition.png')  ;
+        animation-name: transition;
+    }
+    .animo {
+        background-image: url('/Images/anime-image-2/or.png')  ;
+        animation-name: step14;
+    }
+    .animp {
+        background-image: url('/Images/anime-image-2/pale.png')  ;
+        animation-name: step15;
+    }
+    .animp {
+        background-image: url('/Images/anime-image-2/pale-grunge.png')  ;
+        animation-name: step16;
+        z-index: 1;
+    }
+
+    .sun-1 {
+        position: absolute;
+        background-image: url('/Images/anime-image-2/SunInSplendour.png')  ;
+        top: 22%;
+        left: 50%;
+        
+        
+        
+        animation-name: sun-1;
+        z-index: +2;
+        border: 2px dotted olive; 
+    }
+    .sun-2 {
+        position: absolute;
+        background-image: url('/Images/anime-image-2/SunInSplendour.png')  ;
+        top: 42%;
+        left: 50%;
+        
+        
+        
+        animation-name: sun-2;
+        z-index: +2;
+    }
+    .sun-3 {
+        position: absolute;
+        background-image: url('/Images/anime-image-2/SunInSplendour.png')  ;
+        top: 62%;
+        left: 50%;
+        
+        
+        
+        animation-name: sun-3;
+        z-index: +2;
+        border: 2px dotted orange; 
+    }
+    .trefle-1 {
+        position: absolute;
+        background-image: url('/Images/anime-image-2/Trefoil.png')  ;
+        top: 22%;
+        left: 50%;
+        
+        
+        
+        animation-name: trefle-1;
+        z-index: +2;
+        border: 2px dotted orange;
+    }
+    .trefle-2 {
+        position: absolute;
+        background-image: url('/Images/anime-image-2/Trefoil.png')  ;
+        top: 42%;
+        left: 50%;
+        
+        
+        
+        animation-name: trefle-2;
+        z-index: +2;
+    }
+    .trefle-3 {
+        position: absolute;
+        background-image: url('/Images/anime-image-2/Trefoil.png')  ;
+        top: 62%;
+        left: 50%;
+        
+        
+        
+        animation-name: trefle-3;
+        z-index: +2;
+    }
+    .SharkUp {
+        position: absolute;
+        background-image: url('/Images/anime-image-2/Shark-up.png')  ;
+        left: 15%;
+        top: 42%;
+        
+        
+        animation-name: Shark;
+        z-index: +2;
+    }
+    .SharkDown {
+        position: absolute;
+        background-image: url('/Images/anime-image-2/Shark-Down.png')  ;
+        left: 85%;
+        top: 42%;
+        
+        
+        animation-name: Shark;
+        z-index: +2;
+        border: 2px dotted orange;
+    }
+    .rose-1 {
+        position: absolute;
+        background-image: url('/Images/anime-image-2/Rose.png')  ;
+        left: 30%;
+        top: 42%;
+        
+        
+        animation-name: rose-1;
+        z-index: +2;
+    }
+    .rose-2 {
+        position: absolute;
+        background-image: url('/Images/anime-image-2/Rose.png')  ;
+        left: 50%;
+        top: 42%;
+        
+        
+        animation-name: rose-2;
+        z-index: +2;
+    }
+    .rose-3 {
+        position: absolute;
+        background-image: url('/Images/anime-image-2/Rose.png')  ;
+        left: 70%;
+        top: 42%;
+        
+        
+        animation-name: rose-3;
+        z-index: +2;
+    }
+    .rose-4 {
+        position: absolute;
+        background-image: url('/Images/anime-image-2/Rose.png')  ;
+        left: 50%;
+        top: 15%;
+        
+        
+        animation-name: rose-3;
+        z-index: 55;
+    }
+    .rose-5 {
+        position: absolute;
+        background-image: url('/Images/anime-image-2/Rose.png')  ;
+        left: 50%;
+        top: 70%;
+        
+        
+        animation-name: rose-3;
+        z-index: 55;
+    }
+    .raisin-1 {
+        position: absolute;
+        background-image: url('/Images/anime-image-2/VineGrape.png')  ;
+        left: 28%;
+        top: 25%;
+
+        width:15%;
+        /* height: 200px; */
+        opacity: 1;
+        animation-name: raisin;
+        z-index: 55;
+    }
+    .raisin-2 {
+        position: absolute;
+        background-image: url('/Images/anime-image-2/VineGrape.png')  ;
+        left: 72%;
+        top: 25%;
+        animation-name: raisin;
+        z-index: 55;
+    }
+.obj {
+  width: 15%;
+  
+}
+
+    @keyframes step1 {
+        0% {opacity: 0;}
+        2% {opacity: 1;}
+    }
+    @keyframes step2 {
+        0% {opacity: 0;}
+        3% {opacity: 1;}
+    }
+    @keyframes step3 {
+        1% {opacity: 0;}
+        5% {opacity: 1;}
+    }
+    @keyframes step4 {
+        2% {opacity: 0;}
+        6% {opacity: 1;}
+    }
+    @keyframes step5 {
+        3% {opacity: 0;}
+        7% {opacity: 1;}
+        10% {opacity: 0;}
+    }
+    @keyframes step6 {
+        5% {opacity: 0;}
+        9% {opacity: 1;}
+        100% {opacity: 1;}
+    }
+    @keyframes step7 {
+        7% {opacity: 0;}
+        15% {opacity: 1;}
+        100% {opacity: 1;}
+    }
+    @keyframes step8 {
+        7% {opacity: 0;}
+        13% {opacity: 0.8;}
+        16% {opacity: 0;}
+    }
+    @keyframes step9 {
+        10% {opacity: 0;}
+        15% {opacity: 1;}
+        38% {filter: invert(0%);}
+        40% {filter: invert(100%);}
+        55% {opacity: 0.8;}
+        100% {opacity: 0.8; filter: invert(100%);}
+    }
+    @keyframes sun-1 {
+        16%     {opacity: 0.8;}
+        21%     {opacity: 1;}
+        31%     {opacity: 1;}
+        37%    {opacity: 0.5;}
+    }
+    @keyframes sun-2 {
+        17%     {opacity: 0;}
+        23%     {opacity: 1;}
+        33%     {opacity: 1;}
+        39%    {opacity: 0;}
+    }
+    @keyframes sun-3 {
+        19%     {opacity: 0;}
+        25%     {opacity: 1;}
+        35%     {opacity: 1;}
+        41%    {opacity: 0;}
+    }
+    @keyframes trefle-1 {
+        31%     {opacity: 0;}
+        37%     {opacity: 0.9;}
+        47%     {opacity: 0.9;}
+        53%    {opacity: 0;}
+    }
+    @keyframes trefle-2 {
+        32%     {opacity: 0;}
+        39%     {opacity: 0.9;}
+        49%     {opacity: 0.9;}
+        55%    {opacity: 0;}
+    }
+    @keyframes trefle-3 {
+        34%     {opacity: 0;}
+        40%     {opacity: 0.9;}
+        50%     {opacity: 0.9;}
+        56%    {opacity: 0;}
+    }
+    @keyframes Shark {
+        15%     {opacity: 0;}
+        21%     {opacity: 0.9;}
+        45%     {opacity: 0.9;}
+        50%    {opacity: 0;}
+    } 
+    @keyframes step10 {
+        20%     {opacity: 0;}
+        25%     {opacity: 1;}
+        30%     {opacity: 1;}
+        35%    {opacity: 0;}
+    } 
+    @keyframes step11 {
+        22%     {opacity: 0;}
+        27%     {opacity: 1;}
+        32%     {opacity: 1;}
+        37%    {opacity: 0;}
+    } 
+    @keyframes step12 {
+        24%     {opacity: 0;}
+        29%     {opacity: 1;}
+        34%     {opacity: 1;}
+        39%    {opacity: 0;}
+    } 
+    @keyframes step13 {
+        26%     {opacity: 0;}
+        31%     {opacity: 1;}
+        36%     {opacity: 1;}
+        51%    {opacity: 0;}
+    } 
+    @keyframes transition {
+        35%     {opacity: 0;}
+        40%     {opacity: 1;}
+        100%    {opacity: 1;}
+    } 
+    @keyframes step14 {
+        38%     {opacity: 0;}
+        43%     {opacity: 1;}
+        100%    {opacity: 1;}
+    } 
+    @keyframes step15 {
+        52%     {opacity: 0;}
+        55%     {opacity: 0.5;}
+        58%    {opacity: 0;}
+    } 
+    @keyframes step16 {
+        55%     {opacity: 0;}
+        60%     {opacity: 1;}
+        100%    {opacity: 1;}
+    } 
+    @keyframes rose-1 {
+        56%     {opacity: 0;}
+        59%     {opacity: 1;}
+        100%    {opacity: 1;}
+    } 
+    @keyframes rose-2 {
+        58%     {opacity: 0;}
+        61%     {opacity: 1;}
+        100%    {opacity: 1;}
+    } 
+    @keyframes rose-3 {
+        60%     {opacity: 0;}
+        63%     {opacity: 1;}
+        100%    {opacity: 1;}
+    } 
+    @keyframes raisin {
+        0%     {opacity: 1}
+        62%     {opacity: 1;}
+        65%     {opacity: 1;}
+        100%    {opacity: 1;}
+    } 
+    
+#OSD {
+  position: absolute ;
+  top:0px;
+  left:0px;
+  border: 2px dotted darkblue;
+  padding:5px;
+  color:black;
+  background-color: blanchedalmond;
+  
+}
+    /* TRY TO ADD ANOTHER ANIMATION TO THE FIRST ONE? / ROTATE LA BARRE POUR FAIRE UNE CROIX / CHANGER DE COULEUR */
+
+
+    </style>
+</head>
+<body>
+  <div id="OSD">
+    <p>Resize the browser window to fire the <code>resize</code> event.</p>
+    <p>Window height: <span id="height"></span></p>
+    <p>Window width: <span id="width"></span></p>
+
+    <p>shield position: <span id="shieldinfo"></span> </p>
+    <p>sun 1 position: <span id="sun1info"></span> </p>
+    <img src="/Images/anime-image-2/shield.png" width="120px" border="1px">
+    <p style='white-space: pre;' id="shieldAllinfo"></p>
+  </div>
+
+    <div class="container">
+        <div class="shield anima"></div>
+        <div class="shield animb"></div>
+        <div class="shield animc"></div>
+        <div class="shield animd"></div>
+        <div class="shield anime"></div>
+        <div class="shield animf"></div>
+        <div class="shield animg"></div>
+        <div class="shield animh"></div>
+        <div class="shield animi"></div>
+
+        <div class="shield animj"></div>
+        <div class="shield animk"></div>
+        <div class="shield animl"></div>
+        <div class="shield animm"></div>
+        <div class="shield animn"></div>
+        <div class="shield animo"></div>
+        <div class="shield animp"></div>
+        <div class="shield animq"></div>
+
+
+        <div class="obj rose-1"></div>
+        <div class="obj rose-2"></div>
+        <div class="obj rose-3"></div>
+        <div class="obj rose-4"></div>
+        <div class="obj rose-5"></div>
+
+        <div class="obj sun-1"></div>
+        <div class="obj sun-2"></div>
+        <div class="obj sun-3"></div>
+
+        <div class="obj trefle-1"></div>
+        <div class="obj trefle-2"></div>
+        <div class="obj trefle-3"></div>
+
+        <div class="obj SharkUp"></div>
+        <div class="obj SharkDown"></div>
+
+        <div class="obj raisin-1"></div>
+        <div class="obj raisin-2"></div> 
+
+    </div>
+
+
+
+
+
+
+</body>
+<script>
+const heightOutput = document.querySelector('#height');
+const widthOutput = document.querySelector('#width');
+const sun1 =  document.querySelector('.sun-1');
+const sun1info =  document.querySelector('#sun1info');
+const anima =  document.querySelector('.anima');
+const animainfo = document.querySelector('#shieldinfo');
+const p_shieldAllinfo = document.querySelector("#shieldAllinfo");
+//alert(anima);
+
+function reportWindowSize() {
+  heightOutput.textContent = window.innerHeight;
+  widthOutput.textContent = window.innerWidth;
+  p = getPosition(sun1);
+  panima=getPosition(anima);
+  console.log(panima);
+  sun1info.textContent = Math.round(p.x) + " x " + Math.round(p.y) +" X w:" +Math.round(p.w) + " x " + Math.round(p.h)+" -- cX:" +Math.round(p.centerX) + " cY:" + Math.round(p.centerY)+" -- " ;
+  animainfo.textContent = "x:"+ Math.round(panima.x) + " ; y:" + Math.round(panima.y) +" X w:" +Math.round(panima.w) + " x " + Math.round(panima.h)+" -- " ;
+  p_shieldAllinfo.textContent= listInfo (anima);
+}
+
+window.onresize = reportWindowSize;
+
+  function getPosition( element ) {
+    var rect = element.getBoundingClientRect();
+    return {
+        x: rect.left,
+        y: rect.top,
+        w: rect.right-rect.left+1,//rect.widthOutput,
+        h: rect.bottom-rect+top +1,// rect.heightOutput
+        centerX: rect.left + (rect.right-rect.left+1)/2,
+        centerY: rect.top  + (rect.bottom-rect.top+1)/2,
+    };
+  }
+
+  function listInfo (Lement) {
+    var rect = Lement.getBoundingClientRect();
+    //alert(Lement);
+      //let div = document.createElement('div');
+      let t="A!";
+      for (let key in rect) {
+        if(typeof rect[key] !== 'function') {
+          //let para = document.createElement('p');
+          //para.textContent  = `${ key } : ${ rect[key] }`;
+          t+=`${ key } : ${ rect[key] } \r\n`; //+'\r\n';
+        //whereToInsert.appendChild(para);
+        }
+      }
+      console.log(t);
+      return t;
+  }
+</script>
+</html>

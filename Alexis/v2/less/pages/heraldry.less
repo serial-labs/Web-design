@@ -1,0 +1,116 @@
+// main: ../main.less
+
+/* ____________________________PAGE ABOUT HERALDRY____________________________ */
+/* ------------- ETIQUETTE EXCEPTION CARDS--------------- */
+.creation-card {
+  padding: 0 2rem 2rem 2rem;
+  background: var(--secondary-color);
+  color: var(--light-color);
+  height: 40rem;
+}
+.creation-card .etiquette-link {
+  padding: 0.5rem 0.5rem;
+  transform: translate(0, -50%);
+  transition: 0.5s;
+}
+.arrow-heraldry:hover {
+  color: var(--green-color);
+  margin-left: 0.5rem;
+  transition: 0.5s;
+}
+
+/* ------------------ ETIQUETTE troisième TITRE ----------------------*/
+.glossary-card {
+  padding: 0 2rem 2rem 2rem;
+  background: var(--secondary-color);
+  color: var(--light-color);
+  line-height: 1.8;
+  height: 40rem;
+}
+.glossary-card .etiquette-link {
+  transform: translate(0, -50%);
+  transition: 0.5s;
+}
+/* ------------- H4 du HEADER ETIQUETTE (SOUS TITRE)--------------- */
+.etiquette-link {
+  transform: translate(100%);
+  background: var(--light-color);
+  color: var(--secondary-color);
+  transition: 0.5s;
+}
+.etiquette-link:hover {
+  background: var(--secondary-color);
+  color: var(--light-color);
+}
+.etiquette {
+  transform: translate(100%);
+  background: var(--light-color);
+  color: var(--secondary-color);
+  font-weight: 400;
+  border: 1px solid var(--secondary-color);
+  /* background: var(--primary-color);
+    color: var(--light-color);
+    font-weight: 300; */
+  transition: 0.5s;
+}
+/* ____________________________PAGE CREATION TECHNIQUE PAGE 02____________________________ */
+.mid-title {
+  background: var(--light-color);
+  color: var(--primary-color);
+  height: 4rem;
+  font-size: 2.5rem;
+}
+/* ____________________________PAGE CREATION TECHNIQUE PAGE 08____________________________ */
+.slogan {
+  background: var(--orange-color);
+  border: 1px solid var(--blue-light-color);
+}
+/* ____________________________PAGE GLOSSARY____________________________ */
+.alphabet a {
+  padding: 0 0.5rem;
+}
+.alphabet a:hover {
+  text-decoration: underline;
+  color: var(--secondary-color);
+}
+.alphabet .actif {
+  color: var(--secondary-color);
+  font-weight: 500;
+}
+.alphabet .vide {
+  text-decoration: none;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.item-glossaire {
+  background: var(--orange-color);
+  margin: 1rem 0;
+}
+
+
+@media screen and (max-width: 800px) {
+  /* ____________________________ */
+
+  .glossary-card {
+    height: fit-content;
+    margin-top: 3rem;
+  }
+  .creation-card {
+    height: fit-content;
+  }
+  .etiquette-link {
+    transform: translate(0%);
+    width: 100%;
+    background: var(--light-color);
+    color: var(--secondary-color);
+    transition: 0.5s;
+  }
+  .etiquette {
+    transform: translate(0%);
+    width: 100%;
+    background: var(--light-color);
+    color: var(--secondary-color);
+    transition: 0.5s;
+  }
+}

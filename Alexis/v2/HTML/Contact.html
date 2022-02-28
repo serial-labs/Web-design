@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/Style-2.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <title>Contact us</title>
+  </head>
+
+  <body>
+    <!-- landingpage -->
+    <section class="main-section">
+      <div>
+        <h1 class="titre-section titre-section-mobile">Contact the team</h1>
+        <h3 class="etiquette w50p p05 txtc">We'd love to get your feedback</h3>
+      </div>
+      <div class="contact-us">
+        <form action="#">
+          <div class="contact-form-container">
+            <div>
+              <label for="firstname">First name</label>
+              <input type="text" name="firstname" id="firstname" />
+              <label for="lastname">Last name</label>
+              <input type="text" name="lastname" id="lastname" />
+              <label for="email">Email</label>
+              <input type="text" name="email" id="email" />
+            </div>
+            <div>
+              <img src="/Images/Carousel/bc-fine-texture.jpg" alt="" />
+            </div>
+          </div>
+          <div class="contact-form-container">
+            <label for="subject">Subject</label>
+            <input type="text" name="subject" id="subject" />
+            <div class="col-c"></div>
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              name="message"
+              id="message"
+              class="w100p"
+              cols="30"
+              rows="7"
+            ></textarea>
+          </div>
+          <div class="row-fs gap2 my1">
+            <label for="humain"> Are you:</label> <br />
+            <input
+              data-val="true"
+              data-val-required="The IsRobot field is required."
+              id="IsRobot"
+              name="IsRobot"
+              type="radio"
+              value="False"
+            />
+            a human
+            <br />
+            <input
+              data-val="true"
+              checked="checked"
+              data-val-required="The IsRobot field is required."
+              id="IsRobot"
+              name="IsRobot"
+              type="radio"
+              value="true"
+            />
+            a robot
+            <a href="#" class="btn-dark">Send</a>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer-content row-c w50p ma">
+        <div>
+          <a href="/HTML/index.html">
+            <p>Home</p>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <p>About Myblazon</p>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <p>Terms of use</p>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <p>Privacy policy</p>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <p>Contact us</p>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <p>FAQ</p>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

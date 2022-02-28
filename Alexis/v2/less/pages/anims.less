@@ -1,0 +1,105 @@
+// main: ../main.less
+
+
+
+/*____________________________- COMPLEMENTAIRE SKEW ____________________________*/
+.proc01:before, .proc04:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: var(--green-color);
+}
+
+.proc01:before {
+  left: -1.1rem;
+  width: 3rem;
+  z-index: -1;
+  
+}
+.proc04:before {
+  right: -1.1rem;
+  width: 5rem;
+  z-index: -2;
+}
+
+
+.box-recent-coa {
+  background: var(--light-color);
+  width: max-content;
+
+  img:hover {
+    background: var(--orange-color);
+    padding: 2rem;
+  }
+}
+
+/* ____________________________ MOBILE ____________________________*/
+
+.process {
+  margin: auto;
+  display: flex;
+  gap: 0.5rem;
+  .current {
+    opacity: 1;
+  }
+  h3 {
+    padding: 1rem 3rem;
+    font-weight: 300;
+    text-align: center;
+    color: var(--light-color);
+  }
+}
+.proc01, .proc02, .proc03, .proc04 {
+    position: relative;
+    opacity: 0.5;
+    width: 100%;
+      &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          background: var(--green-color);
+          z-index: -1;
+          transform: skewx(-25deg);
+          transition: 0.4s  ease-out;
+
+    }
+}
+
+
+
+@media screen and (max-width: 850px) {
+
+  .process {
+    display: flex;
+      // h3 {
+      //   font-weight: 400;
+      //   letter-spacing: 5px;
+      // }
+      .current {
+        opacity: 1;
+      }
+      .proc01, .proc02, .proc03, .proc04 {
+        &::after{
+          transform: skewx(0);
+          transition: 0.5s ease;
+
+        }
+      }
+      .shrink{
+        width: 1rem;
+        color: transparent;
+        display: flex;
+        transition: 0.4s  ease-out;
+      }
+    }
+   
+}
+
+
+
+
+

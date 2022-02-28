@@ -1,0 +1,160 @@
+// main : ../main.less
+
+// _________________________ POPUP MY COAT HISTORY
+.popup-container {
+  margin: 10rem auto;
+  position: fixed;
+  top: 5%;
+  left: 10%;
+  right: 10%;
+  width: 80%;
+  max-height: 90%;
+  overflow-y: scroll;
+  background: var(--light-color);
+  border: 1px solid var(--secondary-color);
+  padding: 3rem;
+  z-index: 200;
+
+  @media screen and (max-width: 800px) {
+    max-height: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+  }
+
+  .fas {
+    width: 100%;
+    font-size: 2.8rem;
+    color: var(--red-color);
+    text-align: right;
+    &:hover {
+      color: var(--red-color);
+      opacity: 0.8;
+    }
+  }
+  .divisions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    .color {
+      width: 8rem;
+      color: #333;
+      border: 1px solid var(--secondary-color);
+    }
+    a:hover {
+      background: #afdb90;
+    }
+  }
+  .items-container {
+    border: 1px solid var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+    .item {
+      background: var(--light-opacity-color);
+      border: 1px solid var(--secondary-color);
+      width: 10rem;
+      height: 10rem;
+    }
+  }
+}
+
+
+
+
+
+// _________________________ POPUP CHARGE APPLICATION PAGE
+
+.popup-charge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  margin: auto;
+  background: var(--light-color);
+  border: 1px solid rgba(51, 51, 51, 0.63);
+
+  a {
+    width: 100%;
+    .fas {
+      width: 100%;
+      font-size: 2.8rem;
+      text-align: right;
+      color: var(--red-color);
+      &:hover {
+        color: var(--red-color);
+        opacity: 0.8;
+      }
+    }
+  }
+    h2 {
+      color: var(--secondary-color);
+      text-decoration: underline;
+    }
+    .charge {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem 0;
+      text-align: center;
+      width: 15rem;
+      margin: 1rem 0;
+      border: 1px solid var(--secondary-color);
+      background: var(--light-opacity);
+        &:hover {
+          background: var(--secondary-color);
+          .main-values {
+            color: var(--light-color);
+            & p:first-child {
+              color: var(--light-color);
+              font-weight: 500;
+            }
+          }
+          .other-values {
+            color: var(--light-opacity);
+          }
+          h4 {
+            background: var(--light-color);
+            color: var(--secondary-color);
+          }
+        }
+      img {
+        padding: 0.5rem;
+        width: 50%;
+      }
+      h4 {
+        background: var(--secondary-color);
+        width: 100%;
+        padding: 0.5rem 0;
+        font-weight: 500;
+        text-align: center;
+        color: var(--light-color);
+      }
+      .main-values {
+        padding: 0 0.5rem;
+        & p:first-child {
+          color: var(--red-color);
+        }
+      }
+      .other-values {
+        color: #333;
+        opacity: 0.8;
+      }
+    }    
+    .btn-dark {
+      width: 30%;
+    }
+
+}
+

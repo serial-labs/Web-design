@@ -1,0 +1,198 @@
+// main: ../main.less
+/*____________________________NAVIGATION WITH MENU____________________________ */
+
+@font-face {
+  font-family: "aAttackGraffiti";
+  src: url("/font/aAttackGraffiti.ttf");
+}
+
+.nav-noscroll {
+    overflow: initial;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #333;
+  background: var(--light-color);
+  padding: 1rem 4rem ;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 70;
+ 
+  a {
+    color: white;
+    color: #333;
+    margin: 0 1rem;
+    &:hover {
+      color: var(--secondary-color);
+    }
+  }
+  .logo {
+      font-family: "aAttackGraffiti";
+      font-size: 5rem;
+      font-weight: 100;
+      // background: linear-gradient(90deg, rgba(223,69,113,1) 22%, rgba(252,176,69,1) 100%);
+      background: linear-gradient(90deg, rgba(0,106,198,1) 22%, rgba(22,81,133,1) 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      // transform: translateY(-40%);
+      a {
+        color: white;
+      }
+  }
+
+  nav ul li a:after,
+  nav ul li a:before {
+  transition: all .5s;
+}
+  nav ul li a {
+  position: relative;
+}
+  nav ul li a:after {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: var(--secondary-color);
+  height: 1px;
+}
+  ul li a:hover:after {
+  width: 100%;
+}
+  ul {
+    display: flex;
+    list-style-type: none;
+  }
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    height: 25px;
+    justify-content: space-between;
+    margin: 1em 1em;
+    z-index: 60;
+  }
+  .hamburger:hover {
+    cursor: pointer;
+  }
+  
+  .line-ham {
+    width: 32px;
+    height: 3px;
+    background-color: var(--light-color);
+    background-color: #333;
+    transition: 500ms ease-in-out all;
+    z-index: 60;
+
+  }
+  
+  .nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .dropdown {
+    top: 0;
+    left: -100%;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--secondary-color);
+    transition: 800ms ease-in-out all;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid white;
+    z-index: 50;
+  }
+  
+  .dropdown p {
+    color: white;
+    margin: 0.6em 0;
+    border-bottom: 1px solid transparent;
+    padding: 0 1.2em;
+    /* adjust padding to make the underline longer or shorter */
+    padding-bottom: 4px;
+    /* this padding can be used to adjust the distance from text to underlink */
+    transition: 200ms ease all;
+  }
+  
+  .dropdown p:hover {
+    cursor: pointer;
+    border-bottom: 1px solid white;
+  }
+  
+  .dropdown-active {
+    top: 0;
+    left: 0;
+    display: none;
+  }
+  
+  .one-active {
+    background-color: white;
+    transform: translateY(13px) rotate(45deg);
+  }
+  
+  .two-active {
+    display: none;
+  }
+  
+  .three-active {
+    background-color: white;
+    transform: translateY(-9px) rotate(135deg);
+  }
+  
+}
+
+.sign-button-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  background: var(--light-color);
+  // background: #333;
+  padding: 1rem 5rem ;
+    .btn-light, .btn-dark {
+      max-width: 10%;
+      letter-spacing: 0;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+  header {
+    padding: 1.5rem 4rem;
+    .logo {
+      transform:  translateY(0);
+      a {
+        margin: 0;
+      }
+    }
+  }
+  #navbar ul {
+      display: none;
+  }
+
+  header .hamburger {
+      display: flex;
+      z-index: 60;
+  }
+
+  .sign-button-container {
+      display: none;
+  }
+
+  header .dropdown-active {
+    display: flex;
+  }
+  .nav-noscroll {
+    overflow: hidden;
+}
+}

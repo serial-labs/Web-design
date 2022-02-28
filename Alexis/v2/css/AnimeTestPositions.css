@@ -1,0 +1,79 @@
+.anima {
+  /* background-image: url('/Images/anime-image-2/shield.png')  ; */
+  animation-name: step1;
+  /* //border:3px double darkseagreen; */
+}
+
+.animb {
+  /* background-image: url('/Images/anime-image-2/red-03.png')  ; */
+  animation-name: step2;
+  border:3px double darkseagreen;
+}
+.animo {
+  /* background-image: url('/Images/anime-image-2/or.png')  ; */
+  animation-name: step16;
+}
+.animp {
+/* background-image: url('/Images/anime-image-2/pale-grunge.png')  ; */
+/* background-image: url('/Images/anime-image-2/barre-grunge.png')  ; */
+animation-name: step16;
+}
+
+.sun-1 {
+  /* background-image: url('/Images/anime-image-2/SunInSplendour.png')  ; */
+  top: 42%;
+  left: 50%;
+  
+  animation-name: sun-1;
+}
+.sun-2 {
+  /* background-image: url('/Images/anime-image-2/SunInSplendour.png')  ; */
+  top: 22%;
+  left: 50%;
+  animation-name: sun-2;
+
+}
+.sun-3 {
+  /* background-image: url('/Images/anime-image-2/SunInSplendour.png')  ; */
+  top: 82%;
+  left: 50%;
+  animation-name: sun-3;
+  border: 2px dotted orange; 
+}
+.trefle-1 {
+  background-image: url('/Images/anime-image-2/Trefoil.png')  ;
+  top: 52%;
+  left: 50%;
+  animation-name: trefle-1;
+  border: 2px dotted orange;
+}
+.trefle-2 {
+  background-image: url('/Images/anime-image-2/Trefoil.png')  ;
+  top: 42%;
+  left: 50%;
+  animation-name: trefle-2;
+}
+.trefle-3 {
+  position: absolute;
+  background-image: url('/Images/anime-image-2/Trefoil.png')  ;
+  top: 62%;
+  left: 50%;
+  animation-name: trefle-3;
+  z-index: +2;
+}
+.SharkUp {
+  background-image: url('/Images/anime-image-2/Shark-up.png')  ;
+  left: 15%;
+  top: 62%;
+  animation-name: Shark;
+}
+.SharkDown {
+  background-image: url('/Images/anime-image-2/Shark-Down.png')  ;
+  left: 85%;
+  top: 62%;
+  
+  
+  animation-name: Shark;
+  z-index: +2;
+  border: 2px dotted orange;
+}

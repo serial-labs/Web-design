@@ -1,0 +1,276 @@
+// main : ../main.less
+
+/* ____________________________ DOWNLOAD SAVE YOUR SHIELD ____________________________ */
+.download-container {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 1.5rem;
+}
+.preview {
+  border-right: 1px solid var(--dark-opacity);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.8rem;
+}
+
+@media screen and (max-width: 900px) {
+  .download-container {
+    align-items: center;
+  }
+
+  .download-container .preview {
+    border-right: none;
+  }
+}
+
+/* -----------------PASS CONTAINER---------------- */
+
+.download-basic, .download-standard, .download-premium {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  max-width: 15rem;
+  height: 100%;
+  margin-bottom: 6rem;
+  position: relative;
+}
+.titre-pass {
+  font-size: 1.5rem;
+}
+.information-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 70%;
+  padding: 1rem 2rem;
+  background: var(--secondary-color);
+  color: var(--light-color);
+}
+.information-box.information-box-contact {
+  width: 100%;
+  justify-content: center;
+}
+.information-box i {
+  font-size: 5rem;
+}
+.information-box a {
+  color: var(--light-color);
+}
+
+/* -----------------BASIC PASS---------------- */
+.download-basic {
+  border: 3px solid var(--green-color);
+
+}
+.download-basic:after {
+  content: "";
+  position: absolute;
+  top: 101.1% ;
+  border-left: 7.5rem solid transparent;
+  border-right: 7.5rem solid transparent;
+  border-top: 4rem solid var(--green-color);
+  z-index: -5;
+}
+
+.download-basic + small .btn-dark {
+  padding: 0.5rem 2rem;
+}
+
+.download-basic .icon {
+  display: flex;
+  flex-direction: column;
+  color: var(--green-color);
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem;
+}
+.download-basic .icon img {
+  width: 55%;
+}
+.download-basic .icon i {
+  font-size: 5rem;
+}
+.download-basic h4 {
+  width: 100%;
+  font-weight: 500;
+  text-align: center;
+  background: var(--green-color);
+  color: var(--light-color);
+}
+.download-basic small {
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  background: var(--light-color);
+  color: var(--green-color);
+}
+
+/* ---------------------STANDARD PASS------------------ */
+.download-standard {
+  border: 3px solid var(--secondary-color);
+  margin-right: 1rem;
+  margin-left: 0.5rem;
+}
+.download-standard:after {
+  content: "";
+  position: absolute;
+  top: 101.1% ;
+  border-left: 7.5rem solid transparent;
+  border-right: 7.5rem solid transparent;
+  border-top: 4rem solid var(--secondary-color);
+  z-index: -5;
+}
+
+.download-standard .icon {
+  padding: 0.5rem;
+
+  display: flex;
+  flex-direction: column;
+  color: var(--secondary-color);
+  width: 100%;
+
+  text-align: center;
+}
+.download-standard .icon i {
+  font-size: 5rem;
+}
+.download-standard h4 {
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  background: var(--secondary-color);
+  color: var(--light-color);
+}
+
+.download-standard small {
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  background: var(--light-color);
+  color: var(--secondary-color);
+}
+
+/* ---------------------PREMIUM PASS------------------ */
+.download-premium {
+  border: 3px solid #df4571;
+}
+.download-premium:after {
+  content: "";
+  position: absolute;
+  top: 101.1% ;
+  border-left: 7.5rem solid transparent;
+  border-right: 7.5rem solid transparent;
+  border-top: 4rem solid #df4571;
+  z-index: -5;
+}
+.download-premium .icon {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  color: #df4571;
+  width: 100%;
+  text-align: center;
+}
+.download-premium .icon i {
+  font-size: 5rem;
+}
+.download-premium h4 {
+  width: 100%;
+  font-weight: 500;
+  text-align: center;
+  background: #df4571;
+  color: var(--light-color);
+}
+.download-premium small {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    background: var(--light-color);
+    color: #df4571;
+}
+
+/* _____________________ ORDER payment PAGE _____________________ */
+.order-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 5rem 2rem;
+  width: 100%;
+  background: var(--light-opacity);
+}
+.order-information h3 {
+  color: var(--secondary-color);
+  margin: auto;
+}
+.order-information .discount-link {
+  color: var(--red-color);
+  font-family: 'poppins';
+}
+.order-information .discount-link:hover {
+  text-decoration: underline;
+  color: var(--green-color);
+}
+.order-information i {
+  transform: rotateX(360deg);
+  transform: rotateY(180deg);
+}
+.order-information i.fa-tag {
+  transform: rotateX(360deg);
+  transform: rotateY(180deg);
+}
+.order-information i.fa-check {
+  transform: rotateX(0);
+  transform: rotateY(0);
+}
+#DiscountBox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background: var(--orange-color);
+  padding: 1rem;
+}
+#DiscountBox label {
+  width: 60%;
+}
+.order-information .price-order {
+  background: var(--light-opacity-color);
+  width: 100%;
+  text-align: right;
+  color: #333;
+}
+.price-order p {
+  padding: 0.5rem 1rem;
+  border-top: 1px dotted #333;
+}
+.purchase-paypal {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  /* _________ ORDER PAYMENT PAGE ________ */
+
+  .purchase-paypal a {
+  width: 100% ;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  /* _________ ORDER PAYMENT PAGE ________ */
+  #DiscountBox label {
+  width: auto;
+  }
+}

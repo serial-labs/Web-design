@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/Style-2.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="sign-button-container">
+        <small><a href="#" class="btn-dark">Sign in</a></small>
+        <small><a href="#" class="btn-dark">Sign up</a></small> 
+    </div>
+    <header>
+        <!-- <h1 class="logo"><a href="/HTML/index.html"> Myblazon</a></h1> -->
+        <h1 class="logo"><a href="/HTML/index.html"> <i class="fas fa-spray-can"></i> <i class="fas fa-shield-alt"></i>Myblazon</a></h1>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Heraldry</a></li>
+                <li><a href="#">Create a shield </a></li>
+                <li><a href="#">Coat of arms</a></li>
+                <li><a href="#">Roll of arms</a></li>
+                <li><a href="#">Shop</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <div class="line-ham one"></div>
+            <div class="line-ham two"></div>
+            <div class="line-ham three"></div>
+        </div>
+        <div class="dropdown">
+            <a href="/HTML/index.html">
+                <p class="drop-item">Home</p>
+            </a>
+            <a href="#">
+                <p class="drop-item">Heraldry</p>
+            </a>
+            <a href="#">
+                <p class="drop-item">Create a shield</p>
+            </a>
+            <a href="#">
+                <p class="drop-item">Coat of arms</p>
+            </a>
+            <a href="#">
+                <p class="drop-item">Roll of arms</p>
+            </a>
+            <a href="#">
+                <p class="drop-item">Shop</p>
+            </a>
+            <a href="#">
+                <p class="drop-item">Sign in</p>
+            </a>
+            <a href="#">
+                <p class="drop-item">Sign up</p>
+            </a>
+        </div>
+    </header>
+</body>
+<script>
+    const hamburger = document.querySelector(".hamburger");
+
+function onDropClick(e) {
+  const dropdown = e.currentTarget.nextElementSibling;
+  const burgerBars = [].slice.call(e.currentTarget.children);
+
+  if (!dropdown.classList.contains("dropdown-active")) {
+    //If dropdown isn't active give it and the bars their active classes
+    dropdown.classList.add("dropdown-active");
+    burgerBars[0].classList.add("one-active");
+    burgerBars[1].classList.add("two-active");
+    burgerBars[2].classList.add("three-active");
+    document.getElementsByTagName("html")[0].classList.add("nav-noscroll");
+  } else if (dropdown.classList.contains("dropdown-active")) {
+    //else remove them
+    dropdown.classList.remove("dropdown-active");
+    burgerBars[0].classList.remove("one-active");
+    burgerBars[1].classList.remove("two-active");
+    burgerBars[2].classList.remove("three-active");
+    document.getElementsByTagName("html")[0].classList.remove("nav-noscroll");
+  }
+}
+
+hamburger.addEventListener("click", onDropClick);
+
+
+let isMobileSize = window.innerWidth < 1050;
+function onWindowResize() {
+  if (window.innerWidth <= 1050 && !isMobileSize) {
+    document.getElementsByClassName("dropdown")[0].classList.remove("dropdown-active");
+    let burgerBars = document.getElementsByClassName("hamburger")[0].children;
+    burgerBars[0].classList.remove("one-active");
+    burgerBars[1].classList.remove("two-active");
+    burgerBars[2].classList.remove("three-active");
+    document.getElementsByTagName("html")[0].classList.remove("nav-noscroll");
+
+    isMobileSize = true;
+  } else if (window.innerWidth > 1050 && isMobileSize) {
+    document.getElementsByClassName("dropdown")[0].classList.remove("dropdown-active");
+    let burgerBars = document.getElementsByClassName("hamburger")[0].children;
+    burgerBars[0].classList.remove("one-active");
+    burgerBars[1].classList.remove("two-active");
+    burgerBars[2].classList.remove("three-active");
+    document.getElementsByTagName("html")[0].classList.remove("nav-noscroll");
+
+    isMobileSize = false;
+  }
+}
+
+window.addEventListener('resize', onWindowResize, true);
+
+</script>
+
+</html>

@@ -1,0 +1,1110 @@
+// main : ../main.less
+
+/* ____________________________ROLL OF ARMS ____________________________ */
+.grid-wrapper .user-blazon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgb(232, 221, 199);
+    background: radial-gradient(
+        circle,
+        rgba(232, 221, 199, 1) 29%,
+        rgba(196, 179, 148, 1) 100%
+    );
+
+    &:hover {
+      background: rgb(255, 245, 225);
+      background: radial-gradient(
+          circle,
+          rgba(255, 245, 225, 1) 32%,
+          rgba(196, 179, 148, 1) 100%
+      );
+    }
+
+    img {
+      width: 100%;
+    }
+}
+
+/* ____________________________ TEST OR DIRECT ____________________________ */
+.test-or-direct {
+  display: grid;
+  font-size: 18px;
+  grid-template-columns: repeat(2, 1fr);
+  margin: auto;
+  grid-gap: 1.5rem;
+  text-align: center;
+  margin-top: 30px;
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 20rem;
+    width: 100%;
+    box-shadow: 0px 0px 5px rgb(46, 45, 45, 0.3);
+    /* transition: 0.5s; */
+
+    &:hover {
+      transition: 0.5s ease-in-out;
+
+      &:first-child::after,
+      &:last-child::after {
+        opacity: 0.3;
+      }
+    }
+
+    &:first-child::after, &:last-child::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      right: 0;
+      z-index: -1;
+      opacity: 0;
+    }
+
+    &:first-child::after {
+      background: url("/Images/be-yourself-young-cute-boy-mock-up_23-2148462265.jpg")
+        no-repeat center center/cover;
+      transition: 0.5s ease-in-out;
+    }
+
+    &:last-child::after {
+      background: url("/Images/Planche\ Contact-1b.jpg") no-repeat center
+        center/cover;
+      transition: 0.5s ease-in-out;
+    }
+  }
+
+  .take-test {
+    margin: auto;
+  }
+
+  p {
+    margin-bottom: 30px;
+    font-weight: 500;
+  }
+}
+
+.description-value {
+  /* max-width: 90rem; */
+  margin: auto;
+  text-align: justify;
+  line-height: 1.9;
+  padding: 30px;
+
+  p {
+    color: var(--primary-color);
+  }
+
+  span {
+    font-weight: 700;
+    color: var(--secondary-color);
+  }
+
+  &:last-child span:last-child {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+
+/* ____________________________ SIGN IN OR CREATE ____________________________ */
+.blazon-choose {
+  background: url("/Images/SVG/logo-lion.svg") no-repeat center center/contain;
+  width: 100%;
+  height: 40rem;
+}
+
+.learn-more-heraldry {
+  color: var(--light-color);
+  background: var(--secondary-color);
+
+  p {
+    font-size: 1.7rem;
+    text-align: justify;
+  }
+}
+
+/* ____________________________ CHOOSE YOUR COAT OF ARM ____________________________ */
+.coat-choice-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+  background: var(--light-opacity);
+  width: fit-content;
+  margin: auto;
+
+  span {
+    color: var(--red-color);
+  }
+  a {
+    width: 100%;
+    padding: 2rem;
+
+    &:hover {
+      background: var(--light-opacity);
+      background: linear-gradient(
+        90deg,
+        rgba(0, 106, 198, 1) 0%,
+        rgba(4, 80, 145, 1) 120%
+      );
+      color: var(--light-color);
+    }
+    &:hover span {
+      color: var(--primary-color);
+      font-weight: 500;
+    }
+  }
+
+  .values {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    font-size: 1.5rem;
+  }
+
+  img {
+    width: 8rem;
+  }
+}
+
+/* ____________________________ BLAZON GENERATED ____________________________ */
+.message-box {
+  max-width: 90rem;
+  background: rgb(0, 106, 198);
+  background: linear-gradient(
+      90deg,
+      rgba(0, 106, 198, 1) 0%,
+      rgba(0, 61, 115, 1) 100%
+  );
+  color: var(--light-color);
+  overflow: hidden;
+  z-index: +2;
+
+  &:after {
+    content: "";
+    background: url("/Images/SVG/corner-artdeco.svg") no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 22rem;
+    top: -7%;
+    left: -3rem;
+    opacity: 0.6;
+    z-index: 1;
+  }
+
+  &:before {
+    content: "";
+    background: url("/Images/SVG/corner-artdeco.svg") no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 22rem;
+    bottom: -7%;
+    right: -3rem;
+    opacity: 0.6;
+    transform: rotate(180deg);
+    z-index: 1;
+  }
+
+  p {
+    line-height: 3;
+  }
+}
+
+.value-choosen-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  background: var(--light-opacity);
+  padding: 2rem;
+
+  .utility-text:hover {
+    color: var(--green-color);
+    opacity: 0.8;
+    font-weight: 400;
+  }
+  span {
+      background: var(--secondary-color);
+      color: var(--light-color);
+      padding: 0.5rem 0;
+      min-width: 15rem;
+      text-align: center;
+    }
+    p {
+      width: 80%;
+      text-align: left;
+    }
+    a {
+      color: var(--secondary-color);
+    }
+  a:hover {
+    color: var(--green-color);
+  }
+}
+
+/* ____________________________ NAME YOUR FAVORITE CHARACTER ____________________________ */
+.form-name-character input {
+  background-color: #fff;
+  border: 1px solid #aaa0a3;
+  width: 70%;
+  line-height: 1rem;
+	padding: 12px 15px;
+  margin: auto;
+}
+.form-name-character input:last-child {
+  width: 70%;
+}
+.skip-btn {
+  text-align: right;
+  width: 100%;
+  padding: 0.5rem 1rem;
+}
+.skip-btn a,
+.skip-btn i {
+  opacity: 0.5;
+}
+.skip-btn:hover a {
+  opacity: 1;
+  color: var(--green-color);
+}
+.skip-btn a:hover i {
+  opacity: 1;
+  margin-left: 1rem;
+  color: var(--green-color);
+  transition: 0.5s;
+}
+
+/* ____________________________ NOW THIS IS YOUR COAT OF ARMS ____________________________ */
+.container-resume {
+  line-height: 2;
+  margin: auto;
+}
+.resume {
+  /* border-bottom: 1px solid var(--dark-color); */
+  padding: 0 3rem;
+  margin-top: 2rem;
+}
+.resume p {
+  font-size: 1.8rem;
+  margin: 1rem 0;
+}
+
+/* ____________________________ CUSTOMIZE YOUR SHIELD ____________________________ */
+
+.creation .palettes button,
+.glares button, 
+#palette_popup .divisions button, 
+#glare_popup .divisions button {
+  overflow: hidden;
+  padding: 7rem 0 0.5rem;
+  border: 1px solid var(--dark-opacity);
+  font-size: 13px;
+  text-align: center;
+  position: relative;
+  width: 7rem;
+  background-image: url("/Images/sprite-ico-editor-3.1.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: 0 0;
+}
+.creation .glares button[class^="ico-"]:hover,
+.creation .palettes button[class^="ico-"]:hover, 
+#palette_popup .divisions button[class^="ico-"]:hover, 
+#glare_popup .divisions button[class^="ico-"]:hover {
+  background-color: #afdb90;
+  cursor: pointer;
+}
+.creation .palettes button.ico-4, #palette_popup .divisions button.ico-4 {
+  background-position: -210px -180px;
+}
+.creation .palettes button.ico-5, #palette_popup .divisions button.ico-5 {
+  background-position: -280px -180px;
+}
+.creation .palettes button.ico-6, #palette_popup .divisions button.ico-6 {
+  background-position: -350px -180px;
+}
+.creation .glares button.ico-1, #glare_popup .divisions button.ico-1 {
+  background-position: 0 -90px;
+}
+.creation .glares button.ico-2, #glare_popup .divisions button.ico-2 {
+  background-position: -70px -90px;
+}
+.creation .glares button.ico-3, #glare_popup .divisions button.ico-3 {
+  background-position: -140px -90px;
+}
+
+// Ornament popup
+
+#orna_popup #thumbnails {
+  button {
+      background: url(/content/images/sprite-orna-3.3.png) no-repeat;
+
+      &.none {
+          background: url(/content/images/sprites_4.0.png) no-repeat -603px 10px;
+      }
+      //These loops generate class and background-position for each series of ornaments thumbnail
+      //
+      //mantlings: .cat1-1, .cat1-2, .cat1-3...
+      .generate-mantling(11);
+
+      .generate-mantling(@n, @i: 1) when (@i =< @n) {
+          &.cat1-@{i} {
+              background-position: -((@i - 1) * 100px) (0px);
+          }
+
+          .generate-mantling(@n, (@i + 1));
+      }
+      //
+      //supporters: .cat2-1, .cat2-2, .cat2-3...
+      .generate-supporters(14);
+
+      .generate-supporters(@n, @i: 1) when (@i =< @n) {
+          &.cat2-@{i} {
+              background-position: -((@i - 1) * 100px) (-100px);
+          }
+
+          .generate-supporters(@n, (@i + 1));
+      }
+      //
+      //helmets: .cat3-1, .cat3-2, .cat3-3...
+      .generate-helmets(8);
+
+      .generate-helmets(@n, @i: 1) when (@i =< @n) {
+          &.cat3-@{i} {
+              background-position: -((@i - 1) * 100px) (-200px);
+          }
+
+          .generate-helmets(@n, (@i + 1));
+      }
+      //
+      //crests: .cat4-1, .cat4-2, .cat4-3...
+      .generate-crests(5);
+
+      .generate-crests(@n, @i: 1) when (@i =< @n) {
+          &.cat4-@{i} {
+              background-position: -((@i - 1) * 100px) (-300px);
+          }
+
+          .generate-crests(@n, (@i + 1));
+      }
+      //
+      //banner: .cat5-1, .cat5-2, .cat5-3...
+      .generate-banner(6);
+
+      .generate-banner(@n, @i: 1) when (@i =< @n) {
+          &.cat5-@{i} {
+              background-position: -((@i - 1) * 100px) (-400px);
+          }
+
+          .generate-banner(@n, (@i + 1));
+      }
+
+      &.selected {
+        background-color: var(--green-color);
+      }
+  }
+}
+
+// Edit colorpicker
+@gules : #ea4934;
+@azur: #0499e9;
+@vert: #269626;
+@purpure: #bb5ba0;
+@or: #fffd00;
+@argent: #f4f4f4;
+@sable: #020101;
+#colorpicker .colorlist {
+  div {
+      padding: 1rem;
+  }
+
+  button {
+      display: inline-block;
+      vertical-align: middle;
+      width: 2rem;
+      height: 2rem;
+      border: 1px solid var(--dark-color);
+      opacity: 0.7;
+
+      &:hover {
+          opacity: 1;
+      }
+  }
+
+
+  .gules {
+    background-color: @gules;
+  }
+
+  .azur {
+    background-color: @azur;
+  }
+
+  .vert {
+    background-color: @vert;
+  }
+
+  .purpure {
+    background-color: @purpure;
+  }
+
+  .or {
+    background-color: @or;
+  }
+
+  .argent {
+    background-color: @argent;
+  }
+
+  .sable {
+    background-color: @sable;
+  }
+}
+
+.blazon-apercu {
+  .gules {
+    background-color: @gules;
+  }
+
+  .azur {
+    background-color: @azur;
+  }
+
+  .vert {
+    background-color: @vert;
+  }
+
+  .purpure {
+    background-color: @purpure;
+  }
+
+  .or {
+    background-color: @or;
+  }
+
+  .argent {
+    background-color: @argent;
+  }
+
+  .sable {
+    background-color: @sable;
+  }
+}
+
+/* ____________________________ EDIT YOUR SHIELD ____________________________ */
+.customize-coat {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 2rem;
+  max-width: 90rem;
+  background: var(--light-opacity);
+  padding: 2rem;
+}
+
+.customize-coat .set {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  height: fit-content;
+  padding: 1rem;
+  background: var(--light-color);
+  border: 1px solid var(--dark-opacity);
+}
+.customize-coat .edit-charges {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex: 1;
+}
+.set img {
+  max-width: 20%;
+  max-height: 85%;
+  margin: 0;
+}
+
+.color {
+  &.gules {
+    background-color: @gules;
+  }
+
+  &.azur {
+    background-color: @azur;
+  }
+
+  &.sinople {
+    background-color: @vert;
+  }
+
+  &.pourpre {
+    background-color: @purpure;
+  }
+
+  &.or {
+    background-color: @or;
+  }
+
+  &.argent {
+    background-color: @argent;
+  }
+
+  &.sable {
+    background-color: @sable;
+  }
+}
+
+.customize-coat a:hover div{
+    background: var(--green-color);
+    color: var(--light-color);
+}
+
+.download-container .blazon-apercu {
+  width: 250px;
+  height: 250px;
+}
+
+.blazon-apercu {
+  background: var(--light-color);
+  border: 1px solid var(--dark-opacity);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+
+  .pshield {
+    position: absolute;
+    width: 45.2%;
+    height: 50.67%;
+    left: 27.33%;
+    top: 31.67%;
+    z-index: 20;
+  }
+
+  .phelmet {
+    position: absolute;
+    width: 24.67%;
+    height: 26.7%;
+    left: 37.67%;
+    top: 10.33%;
+    z-index: 40;
+  }
+
+  .pcrest {
+    position: absolute;
+    width: 24.67%;
+    height: 22.67%;
+    left: 37.67%;
+    top: 0;
+    z-index: 35;
+  }
+
+  .psupporters {
+    position: absolute;
+    width: 100%;
+    height: 55%;
+    left: 0;
+    top: 31.67%;
+    z-index: 18;
+  }
+
+  .pmantling {
+    position: absolute;
+    width: 94.67%;
+    height: 66.33%;
+    left: 2.67%;
+    top: 20.33%;
+    z-index: 15;
+  }
+
+  .pbanner {
+    position: absolute;
+    width: 100%;
+    height: 20.3%;
+    left: 0;
+    top: 79.67%;
+    z-index: 19;
+  }
+
+  .pname {
+    position: absolute;
+    width: 94.67%;
+    height: 10%;
+    left: 2.67%;
+    top: 0;
+    z-index: 40;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.ornaments-poll {
+    background: var(--light-opacity);
+    padding: 2rem;
+    .quick-poll a{
+      color: var(--secondary-color);
+      border: 1px solid var(--secondary-color);
+      padding: 0.5rem 2rem;
+    }
+    .quick-poll a:hover {
+      background:var(--green-color);
+      color: var(--light-color);
+    }
+    .quick-poll {
+      margin-top: 5rem;
+      margin-right: 2rem;
+    }
+    .quick-poll i {
+      margin-right: 0.5rem;
+    }
+    .add-ornaments button {
+      border: 1;
+    }
+    
+    .add-ornaments [class^=ico-]:hover {
+      background-color: var(--green-color);
+      color: white;
+      cursor: pointer;
+    }
+}
+
+.ornaments-poll .add-ornaments button[class^=ico-], .popup .divisions button[class^=ico-] {
+  padding: 61px 0 2px;
+  font-size: 13px;
+  line-height: 17px;
+  text-align: center;
+  width: 67px;
+}
+.ornaments-poll .add-ornaments [class^=ico-], .popup .divisions [class^=ico-] {
+  position: relative;
+  border: 0.5px solid grey;
+  overflow: hidden;
+  background: url('/Images/sprite-ico-editor-3.1.png') no-repeat;
+  background-color: white;
+
+  &.selected {
+    background-color: var(--green-color);
+    color: var(--light-color);
+  }
+}
+
+.ornaments-poll .add-ornaments .ico-2, .popup .divisions .ico-2 {
+  background-position: -70px  0;
+}
+.ornaments-poll .add-ornaments .ico-3, .popup .divisions .ico-3 {
+  background-position: -140px  0;
+}
+.ornaments-poll .add-ornaments .ico-4, .popup .divisions .ico-4 {
+  background-position: -210px  0;
+}
+.ornaments-poll .add-ornaments .ico-5, .popup .divisions .ico-5 {
+  background-position: -280px  0;
+}
+.ornaments-poll .add-ornaments .ico-6, .popup .divisions .ico-6 {
+  background-position: -350px  0;
+}
+
+
+
+
+/* ____________________________ FROM SCRATCH ____________________________ */
+
+.grid-wrapper-scratch  {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: var(--light-opacity);
+  /* border: 1px solid var(--dark-opacity); */
+}
+
+.grid-wrapper-scratch div {
+  text-align: center;
+  padding: 1rem;
+}
+.grid-wrapper-scratch div:hover {
+  background: var(--orange-color);
+}
+/*____________________________ FROM SCRATCH COLOR ____________________________ */
+.colorpicker {
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  height: 5rem;
+  margin: auto;
+}
+.colorpicker div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 10%;
+}
+.colorpicker div:hover {
+  background: var(--green-color);
+}
+.colorpicker button {
+  width: 3.5rem;
+  height: 3.5rem;
+  border: none;
+}
+button.gules {
+  background: @gules;
+}
+button.azur {
+  background: @azur;
+}
+button.vert {
+  background: @vert;
+}
+button.purpure {
+  background: @purpure;
+}
+button.or {
+  background: @or;
+}
+button.argent {
+  background: @argent;
+}
+button.sable {
+  background: @sable;
+}
+
+/* ______________________MY COATS WHEN LOGGED________________ */
+.main-section div:first-child h3 i {
+  font-size: 1.8rem;
+  color: var(--secondary-color);
+  transition: 0.8s;
+
+}
+.main-section div:first-child h3 a:hover i {
+  opacity: 0.8;
+  transform: rotateZ(280deg);
+  transition: 0.8s;
+}
+.mycoat-logged {
+  margin-top: 2rem;
+  max-width: var(--max-width);
+}
+.mycoat-logged .resume {
+  min-width: 50%;
+  background: radial-gradient(circle, rgba(255,255,255,1) 58%, rgba(236,236,236,1) 100%);
+  // background: radial-gradient(circle, rgba(31,33,34,1) 22%, rgba(0,0,0,1) 100%);
+  border: 1px solid rgba(114, 114, 114, 0.3);
+  padding: 2rem;
+  color: white;
+}
+.mycoat-logged .resume > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("/Images/SVG/banner-3.svg") no-repeat center center/cover;
+  margin: auto;
+  height: 10rem;
+}
+.mycoat-logged .resume > div p {
+  width: fit-content;
+  transform: translateY(-50%);
+}
+.mycoat-logged .resume div + p {
+  color: var(--secondary-color);
+}
+#share-popup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--secondary-color);
+  border: 1px solid var(--dark-color);
+  width: 20rem;
+  margin: auto;
+  padding: 2rem 1rem;
+  color: white;
+  position: absolute;
+  // left: 59.5%;
+  transform: translate(263%, 1%);
+  transition: 0.5s;
+  &::before{
+    content: '';
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid var(--secondary-color);
+    position: absolute;
+    bottom: 100%;
+    left: 85%;
+  }
+  p {
+    margin-bottom: 1rem;
+  }
+  .btn-dark{
+    margin-top: 2rem;
+    width: 50%;
+      &:hover {
+        color: var(--light-color);
+        border: 1px solid white;
+      }
+  }
+  input {
+    margin: 0;  
+    padding: 1rem;
+    outline: 1px solid var(--dark-opacity);
+  }
+
+    a, button {
+      background: white;
+      color: var(--primary-color);
+      text-align: center;
+      width: 100%;
+      padding: 0.3rem;
+      border: none;
+        &:hover {
+          background: var(--primary-color);
+          color: white;
+        }
+    }
+}
+
+#share-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem;
+  background: var(--light-opacity);
+  border: 1px solid rgba(167, 163, 163, 0.466);
+
+  label, i { 
+    color: var(--secondary-color);
+    margin: 0 0.5rem;
+  }
+  .titre-border {
+    border: none;
+    width: 100%;
+    margin: 0;
+      > h3 {
+        width: 100%;
+        transform: translateY(0%);
+      }
+  }
+  input {
+    width: 100%;
+    margin: 0;
+  }
+  .information-box {
+    i {
+      color: var(--light-color);
+    }
+  }
+}
+
+/* ______________________HISTORY COAT OF ARMS________________ */
+.history-coats {
+  background: var(--light-opacity);
+  padding: 2rem;
+}
+.history-coats div:nth-child(2) {
+  background: var(--orange-color);
+  padding-top: 2rem;
+}
+.history-coats div:nth-child(2) small {
+  background: var(--secondary-color);
+  color: var(--light-color);
+  padding: 1rem;
+  margin-top: 2rem;
+}
+.history-coats div:nth-child(2) h3 {
+  background: var(--primary-color);
+  color: var(--light-color);
+  font-weight: 400;
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem;
+}
+.history-coats div:nth-child(2) a:hover{
+opacity: 0.7;
+transform: scale(1.1);
+transition: 0.5s;
+}
+.history-coats a {
+  min-width: 21rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+.old-shield-container {
+  background: var(--light-opacity);
+  padding: 1rem 2rem;
+}
+.old-shield-container h3 {
+  color: var(--secondary-color);
+}
+
+.old-shield{
+  background: var(--orange-color);
+  padding: 1.5rem;
+}
+.old-shield-container a i  {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+}
+.old-shield-container a:hover i {
+  color: var(--secondary-color);
+}
+.old-shield-container img {
+  filter: grayscale(1);
+}
+.old-shield-container a:hover img {
+  filter: grayscale(0);
+}
+.friend-card {
+  padding: 0.5rem 0;
+  background: var(--secondary-color);
+  color: var(--light-color);
+  /* height: 40rem; */
+}
+.friend-card h3, .other-card h3 {
+  color: var(--light-color);
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
+  width: 100%;
+}
+.friend-card i {
+  font-size: 10rem;
+}
+.friend-card a {
+  color: var(--light-color);
+}
+.friend-card a:hover i, .friend-card a:hover p {
+  opacity: 0.8;
+}
+.other-card {
+  padding: 0.5rem 0 1.2rem 0;
+  background: var(--secondary-color);
+  color: var(--light-color);
+}
+.other-card i {
+  font-size: 10rem;
+}
+
+.other-card p {
+  color: var(--light-color);
+}
+
+.other-card a i{
+  color: white;
+}
+
+.other-card .slider {
+  img {
+    padding: 0;
+  }
+}
+.other-card a:hover i{
+  color: white;
+  opacity: 0.8;
+}
+.other-card img {
+  filter: grayscale(1);
+  padding: 3rem;
+}
+.other-card a:hover img {
+  filter: grayscale(0);
+}
+
+/* _________ COAT EDIT APPLICATION PAGE ________ */
+.customize-coat .edit-charges .set {
+  height: 8rem;
+  margin: auto;
+}
+.customize-coat .edit-charges div{
+width: fit-content;
+}
+.quick-poll {
+display: none;
+}
+
+
+@media screen  and (max-width: 620px) {
+  /* ________COAT Old shield _______ */
+  .old-shield-container .fa-chevron-left, 
+  .old-shield-container .fa-chevron-right {
+      display: none;
+  }
+  /* ________COAT of arms MY _______ */
+  .mycoat-logged small {
+      gap: 0;
+      margin: 1rem;
+  }
+  .mycoat-logged small a {
+      width: 100%;
+  }
+  .mycoat-logged .resume > div p {
+    font-size: 1.3rem;
+    font-weight: 300;
+  }
+ 
+}
+
+@media screen and (max-width: 900px) {
+  /* _____________ Coat Download _______________*/
+  .preview {
+      border-right: none;
+      gap: 1rem;
+  }
+  .information-box-download {
+    margin: auto;
+    width: 100%;
+  }
+  .download-container {
+    gap: 0rem;
+    margin: 0;
+  }
+  #share-popup {
+    transform: translate(50%, 1%);
+    transition: 0.5s;
+    }
+
+    /* _____________ Coat application _______________*/
+
+  .customize-coat  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .edit-charges .set {
+      height: 100%;
+      width: auto;
+
+        .blazon-apercu {
+        display: flex;
+        margin: auto;
+        }
+        img {
+          width: 10%;
+        }
+    }
+  }
+  .button-save {
+    width: 50%;
+    .btn-dark {
+      width: 100%;
+    }
+  }
+}

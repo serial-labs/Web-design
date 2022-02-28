@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Staatliches&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="/Style-2.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <title>My coat of arms</title>
+</head>
+
+<body>
+
+  <!-- ---------------------------------------- -->
+  <section class="main-section">
+    <div>
+      <h1 class="titre-section">My coat of arms </h1>
+      <h3 class="etiquette w50p p05 txtc">Hannibal <a href="#" onclick="showPopUp();"><i class="fas fa-cog mx05 "></i></a></h3>
+      <div id="share-popup">
+        <p>This blazon is for:</p>
+        <a href="#">Me</a>
+        <a href="#">A friend</a>
+        <input type="text" placeholder="A friend" >
+        <a href="#">A team</a>
+        <a href="#" class="btn-dark">Ok !</a>
+      </div>
+    </div>
+
+    <div>
+      <div class="mycoat-logged">
+        <div class="resume txtc">
+          <img src="/Images/user01.png" alt="" />
+          <div>
+            <p>Power - Courage - Faith</p>
+          </div>
+          <p>Purpure a pale engrailed Or in dexter
+            three mean cats sejant Or langued Or and
+            armed Argent in senester three stags sejant Or.
+          </p>
+        </div>
+        <div id="share-link">
+          <div class="titre-border">
+            <h3>Give this blazon to someone</h3>
+          </div>
+            <label for="direct-link"><i class="fas fa-link"></i> Use the following link</label>
+            <input type="text" id="direct-link" placeholder="HTTP://MYBLAZON.COM/COATOFARMS/DISPLAY/COLLECTIT/3D12C1A8/7303">
+            <label for="mail-link"><i class="fas fa-envelope"></i> Or send an email</label>
+            <input type="text" id="mail-link" placeholder="Example@email.com">
+            <a href="#" class="btn-dark"><small> Send mail</small></a>
+        </div>
+        <div class="separatorh my3"></div>
+        <div class="information-box w100pp ma">
+          <i class="fas fa-info-circle fa-lg" ></i>
+          <p>This is your official coat of arms, this is what your friends will see</p>
+        </div>
+        <div class="row-c col-c-mobile-600 my3">
+          <small class="col-c gap1 txtc w50p">
+            <a href="#" class="btn-dark"><i class="fas fa-cog mx05 "></i> EDIT </a>
+            <small>Change your ornaments</small>
+          </small>
+          <small class="col-c gap1 txtc w50p">
+            <a href="#" class="btn-dark"><i class="fas fa-download mx05 "></i> DOWNLOAD</a>
+            <small>Get your coat of arms in HD!</small>
+          </small>
+          <small class="col-c gap1 txtc w50p">
+            <a href="#" class="btn-dark"><i class="fas fa-shopping-cart"></i> BUY</a>
+            <small>Your shield on great items</small>
+          </small>
+        </div>
+
+        <p class="utility-text">This coat of arms has been created
+          on 22/11/2021 by Vincii (Vincii)
+          using MyBlazon.com.
+        </p>
+        <div class="separatorh my2 "></div>
+        <p class="txtc ">Coat of Arms are heraldic bearings, insignia,
+          devices (etc). of a person, family, or corporation.
+          They are also widely used as emblems and logos, and
+          can be created from the moral or psychological
+          values that the owner stands for.
+        </p>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer>
+    <div class="footer-content row-c w50p ma">
+      <div>
+        <a href="/HTML/index.html">
+          <p>Home</p>
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <p>About Myblazon</p>
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <p>Terms of use</p>
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <p>Privacy policy</p>
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <p>Contact us</p>
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <p>FAQ</p>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    let isPopupShown = false;
+
+    function showPopUp() {
+      let popup = document.getElementById("share-popup");
+
+      if (isPopupShown) {
+        popup.style.display = "none";
+      } else {
+        popup.style.display = "flex";
+      }
+
+      isPopupShown = !isPopupShown;
+    }
+  </script>
+</body>
+
+</html>
